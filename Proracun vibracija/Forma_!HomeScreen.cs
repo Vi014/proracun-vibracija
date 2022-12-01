@@ -423,7 +423,7 @@ namespace Proracun_vibracija
                                 "      - Clutch release during downshift or coasting",
                                 "      - Torque converter imabalnce or incorrectly installed converter",
                                 "Second order",
-                                "Second order vibrations are caused either by two first order issues or but the up-and-down motion of the pistons. This reversal of \r\nmass and motion creates a natural vibration.",
+                                "Second order vibrations are caused either by two first order issues or by the up-and-down motion of the pistons. This reversal of \r\nmass and motion creates a natural vibration.",
                                 "On four cylinder engines, second order vibration is equal to",
                                 "engine firing frequency",
                                 "Third order",

@@ -387,6 +387,11 @@ namespace Proracun_vibracija
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1))))));
         }
 
+        private void otvoriTekst()
+        {
+            // if(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.FormaCentarTekst )
+        }
+
         private void button_D1_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D11, FormaCentarAgregatGlavni.D12, FormaCentarAgregatGlavni.D13))

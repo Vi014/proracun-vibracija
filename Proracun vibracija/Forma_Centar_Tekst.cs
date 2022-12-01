@@ -19,6 +19,8 @@ namespace Proracun_vibracija
             FormaHomeScreen = konstruktor;
         }
 
+        public Int32 EngineVibrations, EngineFiringFrequency, EngineAccessoryVibrations, CrankshaftPulley, TorqueConverter, EngineMounts, ExhaustHangers;
+
         public void PromenaJezika()
         {
             this.Text = FormaHomeScreen.jezik[319];
@@ -232,6 +234,14 @@ namespace Proracun_vibracija
             button2.Location = new Point(button2.Location.X, label64.Location.Y + (label64.Height - button2.Height) - 5);
 
             #endregion
+
+            EngineVibrations          = label9.Location.Y  - 5;
+            EngineFiringFrequency     = label43.Location.Y - 5;
+            EngineAccessoryVibrations = label62.Location.Y - 5;
+            CrankshaftPulley          = label20.Location.Y - 5;
+            TorqueConverter           = label24.Location.Y - 5;
+            EngineMounts              = label52.Location.Y - 5;
+            ExhaustHangers            = label58.Location.Y - 5;
         }
 
         private void Forma_Centar_Tekst_Load(object sender, EventArgs e)
@@ -259,6 +269,46 @@ namespace Proracun_vibracija
         private void CursorHand(object sender, MouseEventArgs e)
         {
             Cursor.Current = Cursors.Hand;
+        }
+
+        private void gotoBeginning(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, 0);
+        }
+
+        private void gotoEngineVibrations(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, EngineVibrations);
+        }
+
+        private void gotoEngineFiringFrequency(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, EngineFiringFrequency);
+        }
+
+        private void gotoEngineAccessoryVibrations(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, EngineAccessoryVibrations);
+        }
+
+        private void gotoCrankshaftPulley(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, CrankshaftPulley);
+        }
+
+        private void gotoTorqueConverter(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, TorqueConverter);
+        }
+
+        private void gotoEngineMounts(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, EngineMounts);
+        }
+
+        private void gotoExhaustHangers(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, ExhaustHangers);
         }
     }
 }

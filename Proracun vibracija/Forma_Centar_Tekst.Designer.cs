@@ -79,12 +79,15 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
@@ -99,9 +102,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).BeginInit();
@@ -352,6 +352,7 @@
             this.label18.Size = new System.Drawing.Size(215, 25);
             this.label18.TabIndex = 14;
             this.label18.Text = "label18 (link: list el 4)";
+            this.label18.Click += new System.EventHandler(this.gotoTorqueConverter);
             this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label42
@@ -365,6 +366,7 @@
             this.label42.Size = new System.Drawing.Size(483, 25);
             this.label42.TabIndex = 14;
             this.label42.Text = "label42 (link: fourth order engine firing frequency)";
+            this.label42.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
             this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label39
@@ -378,6 +380,7 @@
             this.label39.Size = new System.Drawing.Size(470, 25);
             this.label39.TabIndex = 14;
             this.label39.Text = "label39 (link: third order engine firing frequency)";
+            this.label39.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
             this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label50
@@ -391,6 +394,7 @@
             this.label50.Size = new System.Drawing.Size(481, 25);
             this.label50.TabIndex = 14;
             this.label50.Text = "label50 (link: engine firing frequency list el 2 text)";
+            this.label50.Click += new System.EventHandler(this.gotoExhaustHangers);
             this.label50.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label48
@@ -404,6 +408,7 @@
             this.label48.Size = new System.Drawing.Size(481, 25);
             this.label48.TabIndex = 14;
             this.label48.Text = "label48 (link: engine firing frequency list el 1 text)";
+            this.label48.Click += new System.EventHandler(this.gotoEngineMounts);
             this.label48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label36
@@ -417,6 +422,7 @@
             this.label36.Size = new System.Drawing.Size(498, 25);
             this.label36.TabIndex = 14;
             this.label36.Text = "label36 (link: second order engine firing frequency)";
+            this.label36.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
             this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label15
@@ -429,6 +435,7 @@
             this.label15.Size = new System.Drawing.Size(215, 25);
             this.label15.TabIndex = 14;
             this.label15.Text = "label15 (link: list el 2)";
+            this.label15.Click += new System.EventHandler(this.gotoCrankshaftPulley);
             this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label8
@@ -441,6 +448,7 @@
             this.label8.Size = new System.Drawing.Size(405, 25);
             this.label8.TabIndex = 14;
             this.label8.Text = "label8 (link: Engine accessory vibrations)";
+            this.label8.Click += new System.EventHandler(this.gotoEngineAccessoryVibrations);
             this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label6
@@ -453,6 +461,7 @@
             this.label6.Size = new System.Drawing.Size(356, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "label6 (link: Engine firing frequency)";
+            this.label6.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
             this.label6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label17
@@ -725,6 +734,16 @@
             this.label54.TabIndex = 13;
             this.label54.Text = "label54 (standard: engine mounts desc 2)";
             // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(16, 2933);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(499, 25);
+            this.label64.TabIndex = 13;
+            this.label64.Text = "label64 (standard: engine accessory vibrations list)";
+            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -734,6 +753,16 @@
             this.label60.Size = new System.Drawing.Size(428, 25);
             this.label60.TabIndex = 13;
             this.label60.Text = "label60 (standard: exhaust hangers desc 2)";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(16, 2908);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(536, 25);
+            this.label63.TabIndex = 13;
+            this.label63.Text = "label63 (standard: engine accessory vibrations desc 1)";
             // 
             // label59
             // 
@@ -784,6 +813,16 @@
             this.label11.Size = new System.Drawing.Size(359, 25);
             this.label11.TabIndex = 13;
             this.label11.Text = "label11 (standard: first order desc 1)";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(16, 2883);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(466, 25);
+            this.label62.TabIndex = 13;
+            this.label62.Text = "label62 (bold: engine accessory vibrations)";
             // 
             // label58
             // 
@@ -885,6 +924,7 @@
             this.label4.Size = new System.Drawing.Size(301, 25);
             this.label4.TabIndex = 14;
             this.label4.Text = "label4 (link: Engine vibrations)";
+            this.label4.Click += new System.EventHandler(this.gotoEngineVibrations);
             this.label4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label3
@@ -926,36 +966,7 @@
             this.button2.TabStop = false;
             this.button2.Text = "Return to top";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(16, 2883);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(466, 25);
-            this.label62.TabIndex = 13;
-            this.label62.Text = "label62 (bold: engine accessory vibrations)";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(16, 2908);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(536, 25);
-            this.label63.TabIndex = 13;
-            this.label63.Text = "label63 (standard: engine accessory vibrations desc 1)";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(16, 2933);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(499, 25);
-            this.label64.TabIndex = 13;
-            this.label64.Text = "label64 (standard: engine accessory vibrations list)";
+            this.button2.Click += new System.EventHandler(this.gotoBeginning);
             // 
             // Forma_Centar_Tekst
             // 
