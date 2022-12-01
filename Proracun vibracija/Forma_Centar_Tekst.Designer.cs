@@ -32,9 +32,23 @@
             this.zoomPicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label23 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.zoomablePictureBox6 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox5 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox3 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox4 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox1 = new Proracun_vibracija.ZoomablePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,7 +69,27 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -65,42 +99,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.zoomablePictureBox3 = new Proracun_vibracija.ZoomablePictureBox();
-            this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
-            this.zoomablePictureBox1 = new Proracun_vibracija.ZoomablePictureBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.zoomablePictureBox4 = new Proracun_vibracija.ZoomablePictureBox();
-            this.zoomablePictureBox5 = new Proracun_vibracija.ZoomablePictureBox();
-            this.label57 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -132,9 +141,11 @@
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label23);
+            this.panel1.Controls.Add(this.label61);
             this.panel1.Controls.Add(this.label57);
             this.panel1.Controls.Add(this.label56);
             this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.zoomablePictureBox6);
             this.panel1.Controls.Add(this.zoomablePictureBox5);
             this.panel1.Controls.Add(this.zoomablePictureBox3);
             this.panel1.Controls.Add(this.zoomablePictureBox4);
@@ -177,10 +188,16 @@
             this.panel1.Controls.Add(this.label38);
             this.panel1.Controls.Add(this.label55);
             this.panel1.Controls.Add(this.label54);
+            this.panel1.Controls.Add(this.label64);
+            this.panel1.Controls.Add(this.label60);
+            this.panel1.Controls.Add(this.label63);
+            this.panel1.Controls.Add(this.label59);
             this.panel1.Controls.Add(this.label53);
             this.panel1.Controls.Add(this.label44);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label62);
+            this.panel1.Controls.Add(this.label58);
             this.panel1.Controls.Add(this.label52);
             this.panel1.Controls.Add(this.label43);
             this.panel1.Controls.Add(this.label40);
@@ -209,6 +226,36 @@
             this.label23.TabIndex = 17;
             this.label23.Text = "label23 (italic-mini: Figure 1b)";
             // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(17, 2863);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(204, 20);
+            this.label61.TabIndex = 17;
+            this.label61.Text = "label61 (italic-mini: Figure 4)";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(17, 2355);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(204, 20);
+            this.label57.TabIndex = 17;
+            this.label57.Text = "label57 (italic-mini: Figure 3)";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(17, 2071);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(204, 20);
+            this.label56.TabIndex = 17;
+            this.label56.Text = "label56 (italic-mini: Figure 2)";
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -218,6 +265,72 @@
             this.label22.Size = new System.Drawing.Size(213, 20);
             this.label22.TabIndex = 17;
             this.label22.Text = "label22 (italic-mini: Figure 1a)";
+            // 
+            // zoomablePictureBox6
+            // 
+            this.zoomablePictureBox6.Image = global::Proracun_vibracija.Properties.Resources.centar05;
+            this.zoomablePictureBox6.Location = new System.Drawing.Point(21, 2453);
+            this.zoomablePictureBox6.Name = "zoomablePictureBox6";
+            this.zoomablePictureBox6.Size = new System.Drawing.Size(400, 407);
+            this.zoomablePictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox6.TabIndex = 16;
+            this.zoomablePictureBox6.TabStop = false;
+            this.zoomablePictureBox6.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox5
+            // 
+            this.zoomablePictureBox5.Image = global::Proracun_vibracija.Properties.Resources.centar04;
+            this.zoomablePictureBox5.Location = new System.Drawing.Point(291, 2094);
+            this.zoomablePictureBox5.Name = "zoomablePictureBox5";
+            this.zoomablePictureBox5.Size = new System.Drawing.Size(253, 258);
+            this.zoomablePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox5.TabIndex = 16;
+            this.zoomablePictureBox5.TabStop = false;
+            this.zoomablePictureBox5.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox3
+            // 
+            this.zoomablePictureBox3.Image = global::Proracun_vibracija.Properties.Resources.centar02;
+            this.zoomablePictureBox3.Location = new System.Drawing.Point(21, 1680);
+            this.zoomablePictureBox3.Name = "zoomablePictureBox3";
+            this.zoomablePictureBox3.Size = new System.Drawing.Size(690, 388);
+            this.zoomablePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox3.TabIndex = 16;
+            this.zoomablePictureBox3.TabStop = false;
+            this.zoomablePictureBox3.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox4
+            // 
+            this.zoomablePictureBox4.Image = global::Proracun_vibracija.Properties.Resources.centar03;
+            this.zoomablePictureBox4.Location = new System.Drawing.Point(21, 2094);
+            this.zoomablePictureBox4.Name = "zoomablePictureBox4";
+            this.zoomablePictureBox4.Size = new System.Drawing.Size(264, 258);
+            this.zoomablePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox4.TabIndex = 16;
+            this.zoomablePictureBox4.TabStop = false;
+            this.zoomablePictureBox4.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox2
+            // 
+            this.zoomablePictureBox2.Image = global::Proracun_vibracija.Properties.Resources.centar01;
+            this.zoomablePictureBox2.Location = new System.Drawing.Point(21, 723);
+            this.zoomablePictureBox2.Name = "zoomablePictureBox2";
+            this.zoomablePictureBox2.Size = new System.Drawing.Size(514, 131);
+            this.zoomablePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox2.TabIndex = 16;
+            this.zoomablePictureBox2.TabStop = false;
+            this.zoomablePictureBox2.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox1
+            // 
+            this.zoomablePictureBox1.Image = global::Proracun_vibracija.Properties.Resources.centar00;
+            this.zoomablePictureBox1.Location = new System.Drawing.Point(21, 551);
+            this.zoomablePictureBox1.Name = "zoomablePictureBox1";
+            this.zoomablePictureBox1.Size = new System.Drawing.Size(469, 146);
+            this.zoomablePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox1.TabIndex = 16;
+            this.zoomablePictureBox1.TabStop = false;
+            this.zoomablePictureBox1.Click += new System.EventHandler(this.zoom);
             // 
             // label9
             // 
@@ -240,6 +353,71 @@
             this.label18.TabIndex = 14;
             this.label18.Text = "label18 (link: list el 4)";
             this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Blue;
+            this.label42.Location = new System.Drawing.Point(16, 1327);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(483, 25);
+            this.label42.TabIndex = 14;
+            this.label42.Text = "label42 (link: fourth order engine firing frequency)";
+            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Blue;
+            this.label39.Location = new System.Drawing.Point(16, 1252);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(470, 25);
+            this.label39.TabIndex = 14;
+            this.label39.Text = "label39 (link: third order engine firing frequency)";
+            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Blue;
+            this.label50.Location = new System.Drawing.Point(16, 1527);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(481, 25);
+            this.label50.TabIndex = 14;
+            this.label50.Text = "label50 (link: engine firing frequency list el 2 text)";
+            this.label50.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Blue;
+            this.label48.Location = new System.Drawing.Point(16, 1477);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(481, 25);
+            this.label48.TabIndex = 14;
+            this.label48.Text = "label48 (link: engine firing frequency list el 1 text)";
+            this.label48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Blue;
+            this.label36.Location = new System.Drawing.Point(16, 1177);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(498, 25);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "label36 (link: second order engine firing frequency)";
+            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label15
             // 
@@ -447,6 +625,156 @@
             this.label12.TabIndex = 13;
             this.label12.Text = "label12 (standard: first order desc 2)";
             // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(16, 1552);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(491, 25);
+            this.label51.TabIndex = 13;
+            this.label51.Text = "label51 (standard: engine firing frequency list el 3)";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(16, 1502);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(504, 25);
+            this.label49.TabIndex = 13;
+            this.label49.Text = "label49 (standard: engine firing frequency list el 2 -)";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(16, 1452);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(504, 25);
+            this.label47.TabIndex = 13;
+            this.label47.Text = "label47 (standard: engine firing frequency list el 1 -)";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(16, 1427);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(528, 25);
+            this.label46.TabIndex = 13;
+            this.label46.Text = "label46 (standard: engine firing frequency list prelude)";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(16, 1402);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(487, 25);
+            this.label45.TabIndex = 13;
+            this.label45.Text = "label45 (standard: engine firing frequency desc 2)";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(16, 1152);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(394, 25);
+            this.label35.TabIndex = 13;
+            this.label35.Text = "label35 (standard: second order desc 2)";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(16, 1302);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(379, 25);
+            this.label41.TabIndex = 13;
+            this.label41.Text = "label41 (standard: fourth order desc 1)";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(16, 1227);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(366, 25);
+            this.label38.TabIndex = 13;
+            this.label38.Text = "label38 (standard: third order desc 1)";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(16, 1652);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(409, 25);
+            this.label55.TabIndex = 13;
+            this.label55.Text = "label55 (standard: engine mounts desc 3)";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(16, 1627);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(409, 25);
+            this.label54.TabIndex = 13;
+            this.label54.Text = "label54 (standard: engine mounts desc 2)";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(16, 2425);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(428, 25);
+            this.label60.TabIndex = 13;
+            this.label60.Text = "label60 (standard: exhaust hangers desc 2)";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(16, 2400);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(428, 25);
+            this.label59.TabIndex = 13;
+            this.label59.Text = "label59 (standard: exhaust hangers desc 1)";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(16, 1602);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(409, 25);
+            this.label53.TabIndex = 13;
+            this.label53.Text = "label53 (standard: engine mounts desc 1)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(16, 1377);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(487, 25);
+            this.label44.TabIndex = 13;
+            this.label44.Text = "label44 (standard: engine firing frequency desc 1)";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(16, 1127);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(394, 25);
+            this.label34.TabIndex = 13;
+            this.label34.Text = "label34 (standard: second order desc 1)";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -456,6 +784,56 @@
             this.label11.Size = new System.Drawing.Size(359, 25);
             this.label11.TabIndex = 13;
             this.label11.Text = "label11 (standard: first order desc 1)";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(16, 2375);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(346, 25);
+            this.label58.TabIndex = 13;
+            this.label58.Text = "label58 (bold: exhaust hangers)";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(16, 1577);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(325, 25);
+            this.label52.TabIndex = 13;
+            this.label52.Text = "label52 (bold: engine mounts)";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(16, 1352);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(413, 25);
+            this.label43.TabIndex = 13;
+            this.label43.Text = "label43 (bold: engine firing frequency)";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(16, 1277);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(294, 25);
+            this.label40.TabIndex = 13;
+            this.label40.Text = "label40 (bold: fourth order)";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(16, 1202);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(280, 25);
+            this.label37.TabIndex = 13;
+            this.label37.Text = "label37 (bold: third order)";
             // 
             // label33
             // 
@@ -541,7 +919,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1200, 61);
+            this.button2.Location = new System.Drawing.Point(1197, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 73);
             this.button2.TabIndex = 12;
@@ -549,315 +927,35 @@
             this.button2.Text = "Return to top";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // label34
+            // label62
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(16, 1127);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(394, 25);
-            this.label34.TabIndex = 13;
-            this.label34.Text = "label34 (standard: second order desc 1)";
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(16, 2883);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(466, 25);
+            this.label62.TabIndex = 13;
+            this.label62.Text = "label62 (bold: engine accessory vibrations)";
             // 
-            // label36
+            // label63
             // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Blue;
-            this.label36.Location = new System.Drawing.Point(16, 1177);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(498, 25);
-            this.label36.TabIndex = 14;
-            this.label36.Text = "label36 (link: second order engine firing frequency)";
-            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(16, 2908);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(536, 25);
+            this.label63.TabIndex = 13;
+            this.label63.Text = "label63 (standard: engine accessory vibrations desc 1)";
             // 
-            // label35
+            // label64
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(16, 1152);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(394, 25);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "label35 (standard: second order desc 2)";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(16, 1202);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(280, 25);
-            this.label37.TabIndex = 13;
-            this.label37.Text = "label37 (bold: third order)";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(16, 1227);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(366, 25);
-            this.label38.TabIndex = 13;
-            this.label38.Text = "label38 (standard: third order desc 1)";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Blue;
-            this.label39.Location = new System.Drawing.Point(16, 1252);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(470, 25);
-            this.label39.TabIndex = 14;
-            this.label39.Text = "label39 (link: third order engine firing frequency)";
-            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(16, 1277);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(294, 25);
-            this.label40.TabIndex = 13;
-            this.label40.Text = "label40 (bold: fourth order)";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(16, 1302);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(379, 25);
-            this.label41.TabIndex = 13;
-            this.label41.Text = "label41 (standard: fourth order desc 1)";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Blue;
-            this.label42.Location = new System.Drawing.Point(16, 1327);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(483, 25);
-            this.label42.TabIndex = 14;
-            this.label42.Text = "label42 (link: fourth order engine firing frequency)";
-            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(16, 1352);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(413, 25);
-            this.label43.TabIndex = 13;
-            this.label43.Text = "label43 (bold: engine firing frequency)";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(16, 1377);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(487, 25);
-            this.label44.TabIndex = 13;
-            this.label44.Text = "label44 (standard: engine firing frequency desc 1)";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(16, 1402);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(487, 25);
-            this.label45.TabIndex = 13;
-            this.label45.Text = "label45 (standard: engine firing frequency desc 2)";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(16, 1427);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(528, 25);
-            this.label46.TabIndex = 13;
-            this.label46.Text = "label46 (standard: engine firing frequency list prelude)";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(16, 1452);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(504, 25);
-            this.label47.TabIndex = 13;
-            this.label47.Text = "label47 (standard: engine firing frequency list el 1 -)";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Blue;
-            this.label48.Location = new System.Drawing.Point(16, 1477);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(481, 25);
-            this.label48.TabIndex = 14;
-            this.label48.Text = "label48 (link: engine firing frequency list el 1 text)";
-            this.label48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(16, 1502);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(504, 25);
-            this.label49.TabIndex = 13;
-            this.label49.Text = "label49 (standard: engine firing frequency list el 2 -)";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Blue;
-            this.label50.Location = new System.Drawing.Point(16, 1527);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(481, 25);
-            this.label50.TabIndex = 14;
-            this.label50.Text = "label50 (link: engine firing frequency list el 2 text)";
-            this.label50.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(16, 1552);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(491, 25);
-            this.label51.TabIndex = 13;
-            this.label51.Text = "label51 (standard: engine firing frequency list el 3)";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(16, 1577);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(325, 25);
-            this.label52.TabIndex = 13;
-            this.label52.Text = "label52 (bold: engine mounts)";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(16, 1602);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(409, 25);
-            this.label53.TabIndex = 13;
-            this.label53.Text = "label53 (standard: engine mounts desc 1)";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(16, 1627);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(409, 25);
-            this.label54.TabIndex = 13;
-            this.label54.Text = "label54 (standard: engine mounts desc 2)";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(16, 1652);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(409, 25);
-            this.label55.TabIndex = 13;
-            this.label55.Text = "label55 (standard: engine mounts desc 3)";
-            // 
-            // zoomablePictureBox3
-            // 
-            this.zoomablePictureBox3.Image = global::Proracun_vibracija.Properties.Resources.centar02;
-            this.zoomablePictureBox3.Location = new System.Drawing.Point(21, 1680);
-            this.zoomablePictureBox3.Name = "zoomablePictureBox3";
-            this.zoomablePictureBox3.Size = new System.Drawing.Size(690, 388);
-            this.zoomablePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox3.TabIndex = 16;
-            this.zoomablePictureBox3.TabStop = false;
-            this.zoomablePictureBox3.Click += new System.EventHandler(this.zoom);
-            // 
-            // zoomablePictureBox2
-            // 
-            this.zoomablePictureBox2.Image = global::Proracun_vibracija.Properties.Resources.centar01;
-            this.zoomablePictureBox2.Location = new System.Drawing.Point(21, 723);
-            this.zoomablePictureBox2.Name = "zoomablePictureBox2";
-            this.zoomablePictureBox2.Size = new System.Drawing.Size(514, 131);
-            this.zoomablePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox2.TabIndex = 16;
-            this.zoomablePictureBox2.TabStop = false;
-            this.zoomablePictureBox2.Click += new System.EventHandler(this.zoom);
-            // 
-            // zoomablePictureBox1
-            // 
-            this.zoomablePictureBox1.Image = global::Proracun_vibracija.Properties.Resources.centar00;
-            this.zoomablePictureBox1.Location = new System.Drawing.Point(21, 551);
-            this.zoomablePictureBox1.Name = "zoomablePictureBox1";
-            this.zoomablePictureBox1.Size = new System.Drawing.Size(469, 146);
-            this.zoomablePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox1.TabIndex = 16;
-            this.zoomablePictureBox1.TabStop = false;
-            this.zoomablePictureBox1.Click += new System.EventHandler(this.zoom);
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(17, 2071);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(204, 20);
-            this.label56.TabIndex = 17;
-            this.label56.Text = "label56 (italic-mini: Figure 2)";
-            // 
-            // zoomablePictureBox4
-            // 
-            this.zoomablePictureBox4.Image = global::Proracun_vibracija.Properties.Resources.centar03;
-            this.zoomablePictureBox4.Location = new System.Drawing.Point(21, 2094);
-            this.zoomablePictureBox4.Name = "zoomablePictureBox4";
-            this.zoomablePictureBox4.Size = new System.Drawing.Size(264, 258);
-            this.zoomablePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox4.TabIndex = 16;
-            this.zoomablePictureBox4.TabStop = false;
-            this.zoomablePictureBox4.Click += new System.EventHandler(this.zoom);
-            // 
-            // zoomablePictureBox5
-            // 
-            this.zoomablePictureBox5.Image = global::Proracun_vibracija.Properties.Resources.centar04;
-            this.zoomablePictureBox5.Location = new System.Drawing.Point(291, 2094);
-            this.zoomablePictureBox5.Name = "zoomablePictureBox5";
-            this.zoomablePictureBox5.Size = new System.Drawing.Size(253, 258);
-            this.zoomablePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox5.TabIndex = 16;
-            this.zoomablePictureBox5.TabStop = false;
-            this.zoomablePictureBox5.Click += new System.EventHandler(this.zoom);
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(759, 2144);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(204, 20);
-            this.label57.TabIndex = 17;
-            this.label57.Text = "label57 (italic-mini: Figure 3)";
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(16, 2933);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(499, 25);
+            this.label64.TabIndex = 13;
+            this.label64.Text = "label64 (standard: engine accessory vibrations list)";
             // 
             // Forma_Centar_Tekst
             // 
@@ -877,11 +975,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -954,5 +1053,13 @@
         private System.Windows.Forms.Label label57;
         private ZoomablePictureBox zoomablePictureBox5;
         private ZoomablePictureBox zoomablePictureBox4;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label61;
+        private ZoomablePictureBox zoomablePictureBox6;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
     }
 }

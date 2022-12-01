@@ -205,6 +205,32 @@ namespace Proracun_vibracija
             label57.Location = new Point(label1.Location.X, zoomablePictureBox4.Bottom + 20);
             label57.Text = FormaHomeScreen.jezik[374];
 
+            label58.Location = new Point(label1.Location.X, label57.Bottom + 20);
+            label58.Text = FormaHomeScreen.jezik[375];
+
+            label59.Location = new Point(label1.Location.X, label58.Bottom + 20);
+            label59.Text = FormaHomeScreen.jezik[376];
+
+            label60.Location = new Point(label1.Location.X, label59.Bottom + 20);
+            label60.Text = FormaHomeScreen.jezik[377];
+
+            zoomablePictureBox6.Location = new Point(label1.Location.X, label60.Bottom + 20);
+
+            label61.Location = new Point(label1.Location.X, zoomablePictureBox6.Bottom + 20);
+            label61.Text = FormaHomeScreen.jezik[378];
+
+            label62.Location = new Point(label1.Location.X, label61.Bottom + 20);
+            label62.Text = FormaHomeScreen.jezik[379];
+
+            label63.Location = new Point(label1.Location.X, label62.Bottom + 20);
+            label63.Text = FormaHomeScreen.jezik[380];
+
+            label64.Location = new Point(label1.Location.X, label63.Bottom + 20);
+            label64.Text = FormaHomeScreen.jezik[381];
+
+            button1.Text = FormaHomeScreen.jezik[314];
+            button2.Location = new Point(button2.Location.X, label64.Location.Y + (label64.Height - button2.Height) - 5);
+
             #endregion
         }
 

@@ -379,10 +379,8 @@ namespace Proracun_vibracija
                                 // uopste korisceno
                                 "Greška", // 311
                                 "Informacije", // 312
-                                "Upozorenje", // 313
-
-                                // Forma_Uvod
-                                "Return to top", // 314
+                                "Upozorenje", // 
+                                "Return to top", // 314 // na Forma_Uvod i Forma_Centar_Tekst
 
                                 // Forma_TestVoznja
                                 "Return to top", // 315
@@ -416,7 +414,7 @@ namespace Proracun_vibracija
                                 "Figure 1a (TVD as specified)",
                                 "Figure 1b (Improper TVD)",
                                 "Torque converter",
-                                "The torque converter frrequency is the same as the engine frequency. The torque converter can be suspected as the cause of noise \r\nor vibration when an NVH concern is torque sensitive.",
+                                "The torque converter frrequency is the same as the engine frequency. The torque converter can be suspected as the cause of \r\nnoise or vibration when an NVH concern is torque sensitive.",
                                 "Refer to torque converter test drive tips.",
                                 "Torque converter vibrations can be caused by:",
                                 "      -",
@@ -435,7 +433,7 @@ namespace Proracun_vibracija
                                 "On eight cylinder engines, second order vibration is equal to",
                                 "engine firing frequency",
                                 "Engine firing frequency",
-                                "Firing frequency refers to the force created by the engine each time cylinder fires. This is the natural vibration of the internal \r\ncombustion engine. Firing frequency is load dependent. Higher the engine load is, frequency is more prominent. If there is a problem \r\non the engine, which is affecting combustion process, this vibration will increase.",
+                                "Firing frequency refers to the force created by the engine each time cylinder fires. This is the natural vibration of the internal \r\ncombustion engine. Firing frequency is load dependent. Higher the engine load is, frequency is more prominent. If there is a \r\nproblem on the engine, which is affecting combustion process, this vibration will increase.",
                                 "Even that firing frequency is natural to ICE, it have to be isolated from the vehicle body.",
                                 "Firing frequency vibrations could be caused by:",
                                 "      -",
@@ -448,7 +446,15 @@ namespace Proracun_vibracija
                                 "Inspect engine mounts for cracks or damage to the insulator and the bracket (figure 2). Grounded, the engine mounted bracket \r\ncontacting the frame-mounted bracket, or strained engine mounts may not isolate engine vibrations.",
                                 "Engine mounts must be installed correctly and tighten with the specific torque. If the mounts are installed incorrectly or incorrect \r\nparts are used, they cannot absorb engine vibration. Pay attention on proper type of engine mount installed. (figure 3)",
                                 "Figure 2",
-                                "Figure 3"
+                                "Figure 3",
+                                "Exhaust hangers",
+                                "The compelling force of exhaust exiting each cylinder creates a pulsation on the exhaust manifold. The pulsating pressure at the \r\nexhaust manifold produces acoustic energy, which is transmitted to the exhaust pipe.",
+                                "The pulsating sound waves traveling through the exhaust pipe are a source of vibration for the exhaust system. The combination \r\nof engine and exhaust vibrations within the exhaust system must be isolated to prevent them from acting on the body of the \r\nvehicle. Exhaust hangers (figure 4) are used to suspend the exhaust pipe from the body and to prevent transmission of vibration \r\nto the body.",
+                                "Figure 4",
+                                "Engine accessory vibrations",
+                                "Engine accessories related vibrations can be found either by engine accessory test (refer to test drive section) or by calculation \r\nbased on engine RPM and ratio between accessories and crankshaft pulley.",
+                                "Engine acessory vibrations could be caused by: \r\n      - Out of balance component \r\n      - Worn out components \r\n      - Out of round pulley \r\n      - Untightens of pulley \r\n      - Untightens of component \r\n      - Worn out component shaft bearings \r\n      - Pressure fluctuation (e.g. power steering pump) \r\n      - Overcharged refrigerant (AC compressor)"
+                                // 381
                                 };
 
         private void PromenaJezika()
