@@ -29,5 +29,11 @@ namespace Proracun_vibracija
             PromenaJezika();
             this.Location = new Point(0, 0);
         }
+
+        private void Forma_Uvod_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormaHomeScreen.FormaUvod           = null;
+            FormaHomeScreen.dugmeDodatnoEnabled = true;
+        }
     }
 }
