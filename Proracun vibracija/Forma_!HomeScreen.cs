@@ -162,7 +162,69 @@ namespace Proracun_vibracija
                                 "Izmerene vrednosti",
                                 "Brzina vozila (km/h)",
                                 "Frekvencija",
-                                "Izvrši racun"
+                                "Izvrši racun",
+                                "Greška, nedovoljno polja popunjeno.",
+                                "Greška, u nekom od polja je uneta nevažeća vrednost.",
+
+                                // Forma_Desni_Tabela
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.Text",
+                                "Brzina vozila",
+                                "Frekvencije točka",
+                                "Prvog reda",
+                                "Drugog reda",
+                                "Trećeg reda",
+                                "Četvrtog reda",
+                                "Frekvencije kardana",
+                                "Prvog reda",
+                                "Drugog reda",
+                                "Trećeg reda",
+                                "Četvrtog reda",
+                                "Izmerene frekvencije",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()",
+
+                                // Forma_Desni_Grafik
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik.Text",
+                                "Iscrtaj ponovo",
+                                "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV NE ISPUNJEN",
+                                "FT",
+                                "FT2",
+                                "FT3",
+                                "FT4",
+                                "FK",
+                                "FK2",
+                                "FK3",
+                                "FK4",
+                                "FT - frekvencija točka prvog reda",
+                                "FT2 - frekvencija točka drugog reda",
+                                "FT3 - frekvencija točka trećeg reda",
+                                "FT4 - frekvencija točka četvrtog reda",
+                                "FK - frekvencija kardana prvog reda",
+                                "FK2 - frekvencija kardana drugog reda",
+                                "FK3 - frekvencija kardana trećeg reda",
+                                "FK4 - frekvencija kardana četvrtog reda"
                                 };
 
         private void PromenaJezika()
@@ -188,6 +250,8 @@ namespace Proracun_vibracija
             if (FormaDesniGlavni != null)
             {
                 FormaDesniGlavni.PromenaJezika();
+                if (FormaDesniGlavni.FormaDesniTabela != null) FormaDesniGlavni.FormaDesniTabela.PromenaJezika();
+                if (FormaDesniGlavni.FormaDesniGrafik != null) FormaDesniGlavni.FormaDesniGrafik.PromenaJezika();
             }
         }
 
@@ -334,12 +398,76 @@ namespace Proracun_vibracija
             jezik[123] = "Brzina vozila (km/h)";
             jezik[124] = "Frekvencija";
             jezik[125] = "Izvrši racun";
+            jezik[126] = "Greška, nedovoljno polja popunjeno.";
+            jezik[127] = "Greška, u nekom od polja je uneta nevažeća vrednost.";
+
+            // Forma_Desni_Tabela
+            jezik[128] = "PLACEHOLDERSTRING Forma_Desni_Tabela.Text";
+            jezik[129] = "Brzina vozila";
+            jezik[130] = "Frekvencije točka";
+            jezik[131] = "Prvog reda";
+            jezik[132] = "Drugog reda";
+            jezik[133] = "Trećeg reda";
+            jezik[134] = "Četvrtog reda";
+            jezik[135] = "Frekvencije kardana";
+            jezik[136] = "Prvog reda";
+            jezik[137] = "Drugog reda";
+            jezik[138] = "Trećeg reda";
+            jezik[139] = "Četvrtog reda";
+            jezik[140] = "Izmerene frekvencije";
+            jezik[141] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()";
+            jezik[142] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()";
+            jezik[143] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()";
+            jezik[144] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()";
+            jezik[145] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()";
+            jezik[146] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()";
+            jezik[147] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()";
+            jezik[148] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()";
+
+            // Forma_Desni_Grafik
+            jezik[149] = "PLACEHOLDERSTRING Forma_Desni_Grafik.Text";
+            jezik[150] = "Iscrtaj ponovo";
+            jezik[151] = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            jezik[152] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN";
+            jezik[153] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN";
+            jezik[154] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN";
+            jezik[155] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV NE ISPUNJEN";
+            jezik[156] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN";
+            jezik[157] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV NE ISPUNJEN";
+            jezik[158] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN";
+            jezik[159] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV NE ISPUNJEN";
+            jezik[160] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN";
+            jezik[161] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV NE ISPUNJEN";
+            jezik[162] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN";
+            jezik[163] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV NE ISPUNJEN";
+            jezik[164] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN";
+            jezik[165] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV NE ISPUNJEN";
+            jezik[166] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN";
+            jezik[167] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV NE ISPUNJEN";
+            jezik[168] = "FT";
+            jezik[169] = "FT2";
+            jezik[170] = "FT3";
+            jezik[171] = "FT4";
+            jezik[172] = "FK";
+            jezik[173] = "FK2";
+            jezik[174] = "FK3";
+            jezik[175] = "FK4";
+            jezik[176] = "FT - frekvencija točka prvog reda";
+            jezik[177] = "FT2 - frekvencija točka drugog reda";
+            jezik[178] = "FT3 - frekvencija točka trećeg reda";
+            jezik[179] = "FT4 - frekvencija točka četvrtog reda";
+            jezik[180] = "FK - frekvencija kardana prvog reda";
+            jezik[181] = "FK2 - frekvencija kardana drugog reda";
+            jezik[182] = "FK3 - frekvencija kardana trećeg reda";
+            jezik[183] = "FK4 - frekvencija kardana četvrtog reda";
 
             PromenaJezika();
         }
 
         private void jezikDugme_Engleski_Click(object sender, EventArgs e)
         {
+            for (Int32 i = 0; i < jezik.Length; i++) jezik[i] = "P ID " + i.ToString();
+            /*
             // Forma_HomeScreen
             jezik[0]   = "Vibration calculator";
             jezik[1]   = "Test drive tips";
@@ -481,6 +609,32 @@ namespace Proracun_vibracija
             jezik[123] = "P ID 123";
             jezik[124] = "P ID 124";
             jezik[125] = "P ID 125";
+            jezik[126] = "P ID 126";
+            jezik[127] = "P ID 127";
+
+            // Forma_Desni_Tabela
+            jezik[128] = "P ID 128";
+            jezik[129] = "P ID 129";
+            jezik[130] = "P ID 130";
+            jezik[131] = "P ID 131";
+            jezik[132] = "P ID 132";
+            jezik[133] = "P ID 133";
+            jezik[134] = "P ID 134";
+            jezik[135] = "P ID 135";
+            jezik[136] = "P ID 136";
+            jezik[137] = "P ID 137";
+            jezik[138] = "P ID 138";
+            jezik[139] = "P ID 139";
+            jezik[140] = "P ID 140";
+            jezik[141] = "P ID 141";
+            jezik[142] = "P ID 142";
+            jezik[143] = "P ID 143";
+            jezik[144] = "P ID 144";
+            jezik[145] = "P ID 145";
+            jezik[146] = "P ID 146";
+            jezik[147] = "P ID 147";
+            jezik[148] = "P ID 148";
+            jezik[149] = "P ID 149"; */
 
             PromenaJezika();
         }
@@ -501,6 +655,7 @@ namespace Proracun_vibracija
         {
             FormaCentarGlavni = new Forma_Centar_Glavni(this);
             FormaCentarGlavni.Owner = this;
+
             FormaCentarGlavni.Show();
 
             dugmeCentar.Enabled = false;

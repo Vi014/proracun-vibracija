@@ -11,7 +11,9 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Desni_Glavni : Form
     {
-        public Forma_HomeScreen FormaHomeScreen;
+        public Forma_HomeScreen   FormaHomeScreen;
+        public Forma_Desni_Tabela FormaDesniTabela;
+        public Forma_Desni_Grafik FormaDesniGrafik;
 
         public Forma_Desni_Glavni(Forma_HomeScreen konstruktor)
         {
@@ -412,12 +414,14 @@ namespace Proracun_vibracija
 
         Boolean _v1unet, _v2unet, _v3unet;
         public Boolean v1unet, v2unet, v3unet;
-        Double _W, _H, _R, _I,
+        Int32 _W, _H, _R;
+        public Int32 W, H, R;
+        Double _I,
                 _V1,  _V2,  _V3,
                 _F11, _F12, _F13,
                 _F21, _F22, _F23,
                 _F31, _F32, _F33;
-        public Double W, H, R, I,
+        public Double I,
                         V1,  V2,  V3,
                         F11, F12, F13,
                         F21, F22, F23,
@@ -435,7 +439,207 @@ namespace Proracun_vibracija
         private void ResetVrednosti()
         {
             _v1unet = _v2unet = _v3unet = false;
-            _W = _H = _R = _I = _V1 = _V2 = _V3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0;
+            _W = _H = _R = 0;
+            _I = _V1 = _V2 = _V3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0;
+        }
+
+        private Boolean Provera()
+        {
+            if (textBox_W.Text == "W") return false;
+            if (textBox_H.Text == "H") return false;
+            if (textBox_R.Text == "R") return false;
+
+            if (textBox_V1.Text != "V1" && (textBox_F11.Text != "F11" || textBox_F12.Text != "F12" || textBox_F13.Text != "F13")) _v1unet = true;
+            if (textBox_V2.Text != "V2" && (textBox_F21.Text != "F21" || textBox_F22.Text != "F22" || textBox_F23.Text != "F23")) _v2unet = true;
+            if (textBox_V3.Text != "V3" && (textBox_F31.Text != "F31" || textBox_F32.Text != "F32" || textBox_F33.Text != "F33")) _v3unet = true;
+
+            if (_v1unet || _v2unet || _v3unet) return true;
+            else return false;
+        }
+
+        private Boolean Ucitavanje()
+        {
+            if (!Int32.TryParse(textBox_W.Text, out _W)) return false;
+            if (_W <= 0) return false;
+            if (!Int32.TryParse(textBox_H.Text, out _H)) return false;
+            if (_H <= 0) return false;
+            if (!Int32.TryParse(textBox_R.Text, out _R)) return false;
+            if (_R <= 0) return false;
+
+            if (textBox_I.Text != "I")
+            {
+                if(!Double.TryParse(textBox_I.Text, out _I)) return false;
+                if (_I <= 0) return false;
+            }
+
+            if(_v1unet)
+            {
+                if(!Double.TryParse(textBox_V1.Text, out _V1)) return false;
+                if (_V1 < 5 || _V1 > 200) return false;
+
+                if(textBox_F11.Text != "F11")
+                {
+                    if(!Double.TryParse(textBox_F11.Text, out _F11)) return false;
+                    if (_F11 <= 0) return false;
+                }
+                if(textBox_F12.Text != "F12")
+                {
+                    if(!Double.TryParse(textBox_F12.Text, out _F12)) return false;
+                    if (_F12 <= 0) return false;
+                }
+                if(textBox_F13.Text != "F13")
+                {
+                    if(!Double.TryParse(textBox_F13.Text, out _F13)) return false;
+                    if (_F13 <= 0) return false;
+                }
+            }
+            if (_v2unet)
+            {
+                if (!Double.TryParse(textBox_V2.Text, out _V2)) return false;
+                if (_V2 < 5 || _V2 > 200) return false;
+
+                if (textBox_F21.Text != "F21")
+                {
+                    if (!Double.TryParse(textBox_F21.Text, out _F21)) return false;
+                    if (_F21 <= 0) return false;
+                }
+                if (textBox_F22.Text != "F22")
+                {
+                    if (!Double.TryParse(textBox_F22.Text, out _F22)) return false;
+                    if (_F22 <= 0) return false;
+                }
+                if (textBox_F23.Text != "F23")
+                {
+                    if (!Double.TryParse(textBox_F23.Text, out _F23)) return false;
+                    if (_F23 <= 0) return false;
+                }
+            }
+            if (_v3unet)
+            {
+                if (!Double.TryParse(textBox_V3.Text, out _V3)) return false;
+                if (_V3 < 5 || _V3 > 200) return false;
+
+                if (textBox_F31.Text != "F31")
+                {
+                    if (!Double.TryParse(textBox_F31.Text, out _F31)) return false;
+                    if (_F31 <= 0) return false;
+                }
+                if (textBox_F32.Text != "F32")
+                {
+                    if (!Double.TryParse(textBox_F32.Text, out _F32)) return false;
+                    if (_F32 <= 0) return false;
+                }
+                if (textBox_F33.Text != "F33")
+                {
+                    if (!Double.TryParse(textBox_F33.Text, out _F33)) return false;
+                    if (_F33 <= 0) return false;
+                }
+            }
+
+            return true;
+        }
+
+        private void Konvertovanje()
+        {
+            v1unet = _v1unet;
+            v2unet = _v2unet;
+            v3unet = _v3unet;
+            W = _W;
+            H = _H;
+            R = _R;
+            I = _I;
+            V1 = _V1;
+            V2 = _V2;
+            V3 = _V3;
+            F11 = _F11;
+            F12 = _F12;
+            F13 = _F13;
+            F21 = _F21;
+            F22 = _F22;
+            F23 = _F23;
+            F31 = _F31;
+            F32 = _F32;
+            F33 = _F33;
+        }
+
+        private void Racun()
+        {
+            DT = (((Double)2 * H * W) / 2540) + R;
+
+            if (v1unet)
+            {
+                FT1   = (V1 / 8) * (((20800 / DT) * 5) / 3600);
+                FT1x2 = FT1 * 2;
+                FT1x3 = FT1 * 3;
+                FT1x4 = FT1 * 4;
+                if (I != 0)
+                {
+                    FK1   = FT1 * I;
+                    FK1x2 = FK1 * 2;
+                    FK1x3 = FK1 * 3;
+                    FK1x4 = FK1 * 4;
+
+                    FK1   = Math.Round(FK1,   1, MidpointRounding.AwayFromZero);
+                    FK1x2 = Math.Round(FK1x2, 1, MidpointRounding.AwayFromZero);
+                    FK1x3 = Math.Round(FK1x3, 1, MidpointRounding.AwayFromZero);
+                    FK1x4 = Math.Round(FK1x4, 1, MidpointRounding.AwayFromZero);
+                }
+
+                FT1   = Math.Round(FT1,   1, MidpointRounding.AwayFromZero);
+                FT1x2 = Math.Round(FT1x2, 1, MidpointRounding.AwayFromZero);
+                FT1x3 = Math.Round(FT1x3, 1, MidpointRounding.AwayFromZero);
+                FT1x4 = Math.Round(FT1x4, 1, MidpointRounding.AwayFromZero);
+            }
+
+            if (v2unet)
+            {
+                FT2   = (V2 / 8) * (((20800 / DT) * 5) / 3600);
+                FT2x2 = FT2 * 2;
+                FT2x3 = FT2 * 3;
+                FT2x4 = FT2 * 4;
+                if (I != 0)
+                {
+                    FK2   = FT2 * I;
+                    FK2x2 = FK2 * 2;
+                    FK2x3 = FK2 * 3;
+                    FK2x4 = FK2 * 4;
+
+                    FK2   = Math.Round(FK2,   1, MidpointRounding.AwayFromZero);
+                    FK2x2 = Math.Round(FK2x2, 1, MidpointRounding.AwayFromZero);
+                    FK2x3 = Math.Round(FK2x3, 1, MidpointRounding.AwayFromZero);
+                    FK2x4 = Math.Round(FK2x4, 1, MidpointRounding.AwayFromZero);
+                }
+
+                FT2   = Math.Round(FT2,   1, MidpointRounding.AwayFromZero);
+                FT2x2 = Math.Round(FT2x2, 1, MidpointRounding.AwayFromZero);
+                FT2x3 = Math.Round(FT2x3, 1, MidpointRounding.AwayFromZero);
+                FT2x4 = Math.Round(FT2x4, 1, MidpointRounding.AwayFromZero);
+            }
+
+            if (v3unet)
+            {
+                FT3   = (V3 / 8) * (((20800 / DT) * 5) / 3600);
+                FT3x2 = FT3 * 2;
+                FT3x3 = FT3 * 3;
+                FT3x4 = FT3 * 4;
+                if (I != 0)
+                {
+                    FK3   = FT3 * I;
+                    FK3x2 = FK3 * 2;
+                    FK3x3 = FK3 * 3;
+                    FK3x4 = FK3 * 4;
+
+                    FK3   = Math.Round(FK3,   1, MidpointRounding.AwayFromZero);
+                    FK3x2 = Math.Round(FK3x2, 1, MidpointRounding.AwayFromZero);
+                    FK3x3 = Math.Round(FK3x3, 1, MidpointRounding.AwayFromZero);
+                    FK3x4 = Math.Round(FK3x4, 1, MidpointRounding.AwayFromZero);
+                }
+
+                FT3   = Math.Round(FT3,   1, MidpointRounding.AwayFromZero);
+                FT3x2 = Math.Round(FT3x2, 1, MidpointRounding.AwayFromZero);
+                FT3x3 = Math.Round(FT3x3, 1, MidpointRounding.AwayFromZero);
+                FT3x4 = Math.Round(FT3x4, 1, MidpointRounding.AwayFromZero);
+            }
         }
 
         #endregion
@@ -443,6 +647,49 @@ namespace Proracun_vibracija
         private void button_Racun_Click(object sender, EventArgs e)
         {
             ResetVrednosti();
+            if (Provera())
+            {
+                if (Ucitavanje())
+                {
+                    Konvertovanje();
+                    Racun();
+                    if (FormaDesniTabela == null && FormaDesniGrafik == null) button_Tabela.Enabled = button_Grafik.Enabled = true;
+                    if (FormaDesniTabela != null) FormaDesniTabela.IspisVrednosti();
+                    if (FormaDesniGrafik != null) FormaDesniGrafik.Racun();
+                }
+                else MessageBox.Show(FormaHomeScreen.jezik[127]);
+            }
+            else MessageBox.Show(FormaHomeScreen.jezik[126]);
+        }
+
+        private void button_Tabela_Click(object sender, EventArgs e)
+        {
+            FormaDesniTabela = new Forma_Desni_Tabela(this);
+            FormaDesniTabela.Owner = this;
+            FormaDesniTabela.Show();
+
+            button_Tabela.Enabled = false;
+        }
+
+        public Boolean buttonTabelaEnabled
+        {
+            get { return button_Tabela.Enabled;  }
+            set { button_Tabela.Enabled = value; }
+        }
+
+        private void button_Grafik_Click(object sender, EventArgs e)
+        {
+            FormaDesniGrafik = new Forma_Desni_Grafik(this);
+            FormaDesniGrafik.Owner = this;
+            FormaDesniGrafik.Show();
+
+            button_Grafik.Enabled = false;
+        }
+
+        public Boolean buttonGrafikEnabled
+        {
+            get { return button_Grafik.Enabled;  }
+            set { button_Grafik.Enabled = value; }
         }
     }
 }

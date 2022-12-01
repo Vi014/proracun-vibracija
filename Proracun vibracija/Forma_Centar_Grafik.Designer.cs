@@ -68,7 +68,7 @@
             // checkBox_L2
             // 
             this.checkBox_L2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_L2.ForeColor = System.Drawing.Color.DarkCyan;
+            this.checkBox_L2.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.checkBox_L2.Location = new System.Drawing.Point(1263, 38);
             this.checkBox_L2.Name = "checkBox_L2";
             this.checkBox_L2.Size = new System.Drawing.Size(49, 20);

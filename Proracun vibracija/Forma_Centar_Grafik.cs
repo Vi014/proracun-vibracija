@@ -17,7 +17,7 @@ namespace Proracun_vibracija
         Pen p = new Pen(Color.Black, 2);
 
         Pen p_L1 = new Pen(Color.Blue,     2);
-        Pen p_L2 = new Pen(Color.DarkCyan, 2);
+        Pen p_L2 = new Pen(Color.DarkGoldenrod, 2);
         Pen p_L3 = new Pen(Color.Green,    2);
         Pen p_L4 = new Pen(Color.Orange,   2);
         Pen p_L5 = new Pen(Color.Purple,   2);
@@ -29,7 +29,7 @@ namespace Proracun_vibracija
         SolidBrush cetkaError = new SolidBrush(Color.Red);
 
         SolidBrush cetkaL1 = new SolidBrush(Color.Blue);
-        SolidBrush cetkaL2 = new SolidBrush(Color.DarkCyan);
+        SolidBrush cetkaL2 = new SolidBrush(Color.DarkGoldenrod);
         SolidBrush cetkaL3 = new SolidBrush(Color.Green);
         SolidBrush cetkaL4 = new SolidBrush(Color.Orange);
         SolidBrush cetkaL5 = new SolidBrush(Color.Purple);
@@ -95,6 +95,8 @@ namespace Proracun_vibracija
 
         public void Racun()
         {
+            checkBox_L1.Checked = checkBox_L2.Checked = checkBox_L3.Checked = checkBox_L4.Checked = checkBox_L5.Checked = checkBox_L6.Checked = false;
+
             RPM_Stek.Clear();
             Frekvencije_Stek.Clear();
 

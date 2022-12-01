@@ -346,15 +346,9 @@ namespace Proracun_vibracija
 
         private Boolean Provera()
         {
-            if (textBox_RPM1.Text != "RPM1" && textBox_RPM1.Text != "0")
-                if ((textBox_F11.Text != "F11" && textBox_F11.Text != "0") || (textBox_F12.Text != "F12" && textBox_F12.Text != "0") || (textBox_F13.Text != "F13" && textBox_F13.Text != "0")) _rpm1unet = true;
-                else _rpm1unet = false;
-            if (textBox_RPM2.Text != "RPM2" && textBox_RPM2.Text != "0")
-                if ((textBox_F21.Text != "F21" && textBox_F21.Text != "0") || (textBox_F22.Text != "F22" && textBox_F22.Text != "0") || (textBox_F23.Text != "F23" && textBox_F23.Text != "0")) _rpm2unet = true;
-                else _rpm2unet = false;
-            if (textBox_RPM3.Text != "RPM3" && textBox_RPM3.Text != "0")
-                if ((textBox_F31.Text != "F31" && textBox_F31.Text != "0") || (textBox_F32.Text != "F32" && textBox_F32.Text != "0") || (textBox_F33.Text != "F33" && textBox_F33.Text != "0")) _rpm3unet = true;
-                else _rpm3unet = false;
+            if (textBox_RPM1.Text != "RPM1" && (textBox_F11.Text != "F11" || textBox_F12.Text != "F12" || textBox_F13.Text != "F13")) _rpm1unet = true;
+            if (textBox_RPM2.Text != "RPM2" && (textBox_F21.Text != "F21" || textBox_F22.Text != "F22" || textBox_F23.Text != "F23")) _rpm2unet = true;
+            if (textBox_RPM3.Text != "RPM3" && (textBox_F31.Text != "F31" || textBox_F32.Text != "F32" || textBox_F33.Text != "F33")) _rpm3unet = true;
 
             if (_rpm1unet || _rpm2unet || _rpm3unet) return true;
             else return false;
@@ -371,27 +365,18 @@ namespace Proracun_vibracija
 
                 if (textBox_F11.Text != "F11")
                 {
-                    if (Double.TryParse(textBox_F11.Text, out _F11))
-                    {
-                        if (_F11 < 0 || _F11 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F11.Text, out _F11)) return false;
+                    if (_F11 <= 0 || _F11 > 500) return false;
                 }
                 if (textBox_F12.Text != "F12")
                 {
-                    if (Double.TryParse(textBox_F12.Text, out _F12))
-                    {
-                        if (_F12 < 0 || _F12 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F12.Text, out _F12)) return false;
+                    if (_F12 <= 0 || _F12 > 500) return false;
                 }
                 if (textBox_F13.Text != "F13")
                 {
-                    if (Double.TryParse(textBox_F13.Text, out _F13))
-                    {
-                        if (_F13 < 0 || _F13 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F13.Text, out _F13)) return false;
+                    if (_F13 <= 0 || _F13 > 500) return false;
                 }
             }
             if (_rpm2unet)
@@ -401,27 +386,18 @@ namespace Proracun_vibracija
 
                 if (textBox_F21.Text != "F21")
                 {
-                    if (Double.TryParse(textBox_F21.Text, out _F21))
-                    {
-                        if (_F21 < 0 || _F21 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F21.Text, out _F21)) return false;
+                    if (_F21 <= 0 || _F21 > 500) return false;
                 }
                 if (textBox_F22.Text != "F22")
                 {
-                    if (Double.TryParse(textBox_F22.Text, out _F22))
-                    {
-                        if (_F22 < 0 || _F22 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F22.Text, out _F22)) return false;
+                    if (_F22 <= 0 || _F22 > 500) return false;
                 }
                 if (textBox_F23.Text != "F23")
                 {
-                    if (Double.TryParse(textBox_F23.Text, out _F23))
-                    {
-                        if (_F23 < 0 || _F23 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F23.Text, out _F23)) return false;
+                    if (_F23 <= 0 || _F23 > 500) return false;
                 }
             }
             if (_rpm3unet)
@@ -431,27 +407,18 @@ namespace Proracun_vibracija
 
                 if (textBox_F31.Text != "F31")
                 {
-                    if (Double.TryParse(textBox_F31.Text, out _F31))
-                    {
-                        if (_F31 < 0 || _F31 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F31.Text, out _F31)) return false;
+                    if (_F31 <= 0 || _F31 > 500) return false;
                 }
                 if (textBox_F32.Text != "F32")
                 {
-                    if (Double.TryParse(textBox_F32.Text, out _F32))
-                    {
-                        if (_F32 < 0 || _F32 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F32.Text, out _F32)) return false;
+                    if (_F32 <= 0 || _F32 > 500) return false;
                 }
                 if (textBox_F33.Text != "F33")
                 {
-                    if (Double.TryParse(textBox_F33.Text, out _F33))
-                    {
-                        if (_F33 < 0 || _F33 > 500) return false;
-                    }
-                    else return false;
+                    if (!Double.TryParse(textBox_F33.Text, out _F33)) return false;
+                    if (_F33 <= 0 || _F33 > 500) return false;
                 }
             }
 

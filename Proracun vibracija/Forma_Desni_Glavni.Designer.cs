@@ -345,6 +345,7 @@
             this.button_Grafik.Size = new System.Drawing.Size(54, 46);
             this.button_Grafik.TabIndex = 18;
             this.button_Grafik.UseVisualStyleBackColor = true;
+            this.button_Grafik.Click += new System.EventHandler(this.button_Grafik_Click);
             // 
             // button_Tabela
             // 
@@ -356,6 +357,7 @@
             this.button_Tabela.Size = new System.Drawing.Size(54, 46);
             this.button_Tabela.TabIndex = 17;
             this.button_Tabela.UseVisualStyleBackColor = true;
+            this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
             // 
             // Forma_Desni_Glavni
             // 
