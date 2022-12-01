@@ -206,7 +206,8 @@ namespace Proracun_vibracija
             }
             else
             {
-                brPodeljakaY = Convert.ToInt32(Ymax); // ovaj kod je tu da u slucaju da je Ymax ispod 10 se ne desi divide by zero greska na liniji 213 - evkivalenta nije potrebna za Xmax jer je na Forma_Centar_Glavni 100 minimum za RPM
+                brPodeljakaY = Convert.ToInt32(Ymax); // ovaj kod je tu da u slucaju da je Ymax ispod 10 se ne desi divide by zero greska na liniji gde se podeljakY racuna - evkivalenta nije potrebna za Xmax jer je na Forma_Centar_Glavni 100 minimum za RPM
+                                                      // takodje je tu da jednostavno ulepsa grafik, u slucaju da nam je najveca frekvencija manja od 10 program bi normalno napravio samo jedan odeljak od 10; ovako ce napraviti vise odeljaka od po 1
             }
 
             podeljakX = Convert.ToInt32(X_Razdaljina_Piksel) / brPodeljakaX;
@@ -284,12 +285,15 @@ namespace Proracun_vibracija
             }
 
             // y-brojaci
-            j = 10;
+            Int32 yOdeljak; // vrsimo proveru toga da li je najveca frekvencija manja od 10 ili nije, ako jeste, stavljamo odeljke od po 1, ako nije, stavljamo odeljke od po 10
+            if (Ymax >= 10) yOdeljak = 10;
+            else yOdeljak = 1;
+            j = yOdeljak;
             for (i = centarY - podeljakY; i > 0; i -= podeljakY)
             {
                 g.DrawLine(p, centarX - 5, i, centarX + 5, i);
                 g.DrawString(j.ToString(), font, cetka, 0, i - 7);
-                j += 10;
+                j += yOdeljak;
             }
 
             if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet)

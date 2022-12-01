@@ -185,7 +185,15 @@ namespace Proracun_vibracija
             konverzijaY = (Double)Y_Razdaljina_Piksel / Ymax;
 
             brPodeljakaX = Convert.ToInt32(Xmax / 100);
-            brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            if (Ymax >= 10)
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            }
+            else
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax); // ovaj kod je tu da u slucaju da je Ymax ispod 10 se ne desi divide by zero greska na liniji gde se podeljakY racuna - evkivalenta nije potrebna za Xmax jer je na Forma_Centar_Glavni 100 minimum za RPM
+                                                      // takodje je tu da jednostavno ulepsa grafik, u slucaju da nam je najveca frekvencija manja od 10 program bi normalno napravio samo jedan odeljak od 10; ovako ce napraviti vise odeljaka od po 1
+            }
 
             podeljakX = Convert.ToInt32(X_Razdaljina_Piksel) / brPodeljakaX;
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
@@ -262,12 +270,15 @@ namespace Proracun_vibracija
             }
 
             // y-brojaci
-            j = 10;
+            Int32 yOdeljak; // vrsimo proveru toga da li je najveca frekvencija manja od 10 ili nije, ako jeste, stavljamo odeljke od po 1, ako nije, stavljamo odeljke od po 10
+            if (Ymax >= 10) yOdeljak = 10;
+            else yOdeljak = 1;
+            j = yOdeljak;
             for (i = centarY - podeljakY; i > 0; i -= podeljakY)
             {
                 g.DrawLine(p, centarX - 5, i, centarX + 5, i);
                 g.DrawString(j.ToString(), font, cetka, 0, i - 7);
-                j += 10;
+                j += yOdeljak;
             }
 
             if (FormaCentarGlavni.rpm1unet)
@@ -372,45 +383,79 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && (arg3 >= (FormaCentarGlavni.F33 - 1) && arg3 <= (FormaCentarGlavni.F33 + 1))))));
         }
 
+        private void otvoriTekst()
+        {
+            if (FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarGlavni);
+                FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarGlavni;
+                FormaCentarGlavni.FormaCentarTekst.Show();
+            }
+            else
+            {
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, 0);
+                FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
+        }
+
+        private void otvoriTekstAlt()
+        {
+            if (FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarGlavni);
+                FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarGlavni;
+                FormaCentarGlavni.FormaCentarTekst.Show();
+
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarGlavni.FormaCentarTekst.EngineFiringFrequency);
+            }
+            else
+            {
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarGlavni.FormaCentarTekst.EngineFiringFrequency);
+                FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
+        }
+
         private void button_FM_Click(object sender, EventArgs e)
         {
-            if(provera(FormaCentarGlavni.FM1, FormaCentarGlavni.FM2, FormaCentarGlavni.FM3))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[33]);
+            if (provera(FormaCentarGlavni.FM1, FormaCentarGlavni.FM2, FormaCentarGlavni.FM3))
+                otvoriTekst();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[34]);
         }
 
         private void button_FM2_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarGlavni.FM12, FormaCentarGlavni.FM22, FormaCentarGlavni.FM32))
-                MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[35]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[36]);
         }
 
         private void button_FM3_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarGlavni.FM13, FormaCentarGlavni.FM23, FormaCentarGlavni.FM33))
-                MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[37]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[38]);
         }
 
         private void button_FM4_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarGlavni.FM14, FormaCentarGlavni.FM24, FormaCentarGlavni.FM34))
-                MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[39]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[40]);
         }
 
         private void button_FB_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarGlavni.FB1, FormaCentarGlavni.FB2, FormaCentarGlavni.FB3))
-                MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[41]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[42]);
         }
 
         private void button_FP_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarGlavni.FP1, FormaCentarGlavni.FP2, FormaCentarGlavni.FP3))
-                MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[43]);
+                otvoriTekstAlt();
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[44]);
         }
 

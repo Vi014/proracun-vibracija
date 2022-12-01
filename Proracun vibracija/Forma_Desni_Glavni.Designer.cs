@@ -534,7 +534,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Glavni";
-            this.Text = "~";
+            this.Text = "PLACEHOLDERSTRING Forma_Desni_Glavni.Text";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Desni_Glavni_FormClosed);
             this.Load += new System.EventHandler(this.Forma_Desni_Glavni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

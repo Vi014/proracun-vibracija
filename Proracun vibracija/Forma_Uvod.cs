@@ -253,7 +253,7 @@ namespace Proracun_vibracija
 
         private void zoom(object sender, EventArgs e)
         {
-            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1, this);
+            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1, this); // KADA PRAVIS NOVU FORMU SA TEKSTOM, URADI SEND TO BACK NA PANELU, INACE SE ZOOMPICTURE I BUTTON1 NECE VIDETI KADA POKUSAVAS DA OTVORIS NEKU SLIKU
         }
 
         private void button1_Click(object sender, EventArgs e)

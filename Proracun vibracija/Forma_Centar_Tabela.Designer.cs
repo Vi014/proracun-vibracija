@@ -461,7 +461,7 @@
             this.button_FM.Text = "?";
             this.button_FM.UseVisualStyleBackColor = true;
             this.button_FM.Visible = false;
-            this.button_FM.Click += new System.EventHandler(this.button_FM_Click);
+            this.button_FM.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_FM2
             // 
@@ -477,7 +477,7 @@
             this.button_FM2.Text = "?";
             this.button_FM2.UseVisualStyleBackColor = true;
             this.button_FM2.Visible = false;
-            this.button_FM2.Click += new System.EventHandler(this.button_FM2_Click);
+            this.button_FM2.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_FM3
             // 
@@ -493,7 +493,7 @@
             this.button_FM3.Text = "?";
             this.button_FM3.UseVisualStyleBackColor = true;
             this.button_FM3.Visible = false;
-            this.button_FM3.Click += new System.EventHandler(this.button_FM3_Click);
+            this.button_FM3.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_FM4
             // 
@@ -509,7 +509,7 @@
             this.button_FM4.Text = "?";
             this.button_FM4.UseVisualStyleBackColor = true;
             this.button_FM4.Visible = false;
-            this.button_FM4.Click += new System.EventHandler(this.button_FM4_Click);
+            this.button_FM4.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_FB
             // 
@@ -525,7 +525,7 @@
             this.button_FB.Text = "?";
             this.button_FB.UseVisualStyleBackColor = true;
             this.button_FB.Visible = false;
-            this.button_FB.Click += new System.EventHandler(this.button_FB_Click);
+            this.button_FB.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_FP
             // 
@@ -541,7 +541,7 @@
             this.button_FP.Text = "?";
             this.button_FP.UseVisualStyleBackColor = true;
             this.button_FP.Visible = false;
-            this.button_FP.Click += new System.EventHandler(this.button_FP_Click);
+            this.button_FP.Click += new System.EventHandler(this.otvoriTekstAlt);
             // 
             // Forma_Centar_Tabela
             // 

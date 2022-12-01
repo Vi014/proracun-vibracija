@@ -528,7 +528,7 @@ namespace Proracun_vibracija
 
             #region checkBox1Checked
 
-            if (FormaDesniGlavni.checkBox1Checked)
+            if (FormaDesniGlavni.W2 != 0)
             {
                 label_FT2.Enabled     = label_FT2.Visible =
                     label_FK2.Enabled = label_FK2.Visible =

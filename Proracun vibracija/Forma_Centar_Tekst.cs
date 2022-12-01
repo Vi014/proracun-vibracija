@@ -230,7 +230,7 @@ namespace Proracun_vibracija
             label64.Location = new Point(label1.Location.X, label63.Bottom + 20);
             label64.Text = FormaCentarGlavni.FormaHomeScreen.jezik[381];
 
-            button1.Text = FormaCentarGlavni.FormaHomeScreen.jezik[314];
+            button2.Text = FormaCentarGlavni.FormaHomeScreen.jezik[314];
             button2.Location = new Point(button2.Location.X, label64.Location.Y + (label64.Height - button2.Height) - 5);
 
             #endregion
@@ -257,7 +257,7 @@ namespace Proracun_vibracija
 
         private void zoom(object sender, EventArgs e)
         {
-            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1, this);
+            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1, this); // KADA PRAVIS NOVU FORMU SA TEKSTOM, URADI SEND TO BACK NA PANELU, INACE SE ZOOMPICTURE I BUTTON1 NECE VIDETI KADA POKUSAVAS DA OTVORIS NEKU SLIKU
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -268,7 +268,7 @@ namespace Proracun_vibracija
 
         private void CursorHand(object sender, MouseEventArgs e)
         {
-            Cursor.Current = Cursors.Hand;
+            Cursor.Current = Cursors.Hand; // ovo je za MouseMove na labelima koju sluze kao linkovi, da bi se mis pretvorio u onaj kursor sa pokazujucom rukom kao u browserima
         }
 
         private void gotoBeginning(object sender, EventArgs e)

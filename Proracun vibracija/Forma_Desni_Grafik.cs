@@ -138,7 +138,7 @@ namespace Proracun_vibracija
                 checkBox_L7.Enabled = button_FKx3.Enabled =
                 checkBox_L8.Enabled = button_FKx4.Enabled = true;
 
-            if (FormaDesniGlavni.checkBox1Checked)
+            if (FormaDesniGlavni.W2 != 0)
             {
                 checkBox_L21.Enabled = checkBox_L22.Enabled = checkBox_L23.Enabled = checkBox_L24.Enabled = true;
                 if (FormaDesniGlavni.I != 0) checkBox_L25.Enabled = checkBox_L26.Enabled = checkBox_L27.Enabled = checkBox_L28.Enabled = true;
@@ -251,7 +251,15 @@ namespace Proracun_vibracija
             konverzijaY = (Double)Y_Razdaljina_Piksel / Ymax;
 
             brPodeljakaX = Convert.ToInt32(Xmax / 5);
-            brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            if (Ymax >= 10)
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            }
+            else
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax); // ovaj kod je tu da u slucaju da je Ymax ispod 10 se ne desi divide by zero greska na liniji gde se podeljakY racuna - evkivalenta nije potrebna za Xmax jer je na Forma_Centar_Glavni 100 minimum za RPM
+                                                      // takodje je tu da jednostavno ulepsa grafik, u slucaju da nam je najveca frekvencija manja od 10 program bi normalno napravio samo jedan odeljak od 10; ovako ce napraviti vise odeljaka od po 1
+            }
 
             podeljakX = Convert.ToInt32(X_Razdaljina_Piksel) / brPodeljakaX;
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
@@ -280,25 +288,28 @@ namespace Proracun_vibracija
             else
                 button_FTx4.ForeColor = button_FTx4.FlatAppearance.BorderColor = Color.Black;
 
-            if (provera(FormaDesniGlavni.FK1, FormaDesniGlavni.FK2, FormaDesniGlavni.FK3, FormaDesniGlavni.FK2_1, FormaDesniGlavni.FK2_2, FormaDesniGlavni.FK2_3))
-                button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Red;
-            else
-                button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Black;
+            if (FormaDesniGlavni.I != 0)
+            {
+                if (provera(FormaDesniGlavni.FK1, FormaDesniGlavni.FK2, FormaDesniGlavni.FK3, FormaDesniGlavni.FK2_1, FormaDesniGlavni.FK2_2, FormaDesniGlavni.FK2_3))
+                    button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Red;
+                else
+                    button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Black;
 
-            if (provera(FormaDesniGlavni.FK1x2, FormaDesniGlavni.FK2x2, FormaDesniGlavni.FK3x2, FormaDesniGlavni.FK2_1x2, FormaDesniGlavni.FK2_2x2, FormaDesniGlavni.FK2_3x2))
-                button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Red;
-            else
-                button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Black;
+                if (provera(FormaDesniGlavni.FK1x2, FormaDesniGlavni.FK2x2, FormaDesniGlavni.FK3x2, FormaDesniGlavni.FK2_1x2, FormaDesniGlavni.FK2_2x2, FormaDesniGlavni.FK2_3x2))
+                    button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Red;
+                else
+                    button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Black;
 
-            if (provera(FormaDesniGlavni.FK1x3, FormaDesniGlavni.FK2x3, FormaDesniGlavni.FK3x3, FormaDesniGlavni.FK2_1x3, FormaDesniGlavni.FK2_2x3, FormaDesniGlavni.FK2_3x3))
-                button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Red;
-            else
-                button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Black;
+                if (provera(FormaDesniGlavni.FK1x3, FormaDesniGlavni.FK2x3, FormaDesniGlavni.FK3x3, FormaDesniGlavni.FK2_1x3, FormaDesniGlavni.FK2_2x3, FormaDesniGlavni.FK2_3x3))
+                    button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Red;
+                else
+                    button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Black;
 
-            if (provera(FormaDesniGlavni.FK1x4, FormaDesniGlavni.FK2x4, FormaDesniGlavni.FK3x4, FormaDesniGlavni.FK2_1x4, FormaDesniGlavni.FK2_2x4, FormaDesniGlavni.FK2_3x4))
-                button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Red;
-            else
-                button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Black;
+                if (provera(FormaDesniGlavni.FK1x4, FormaDesniGlavni.FK2x4, FormaDesniGlavni.FK3x4, FormaDesniGlavni.FK2_1x4, FormaDesniGlavni.FK2_2x4, FormaDesniGlavni.FK2_3x4))
+                    button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Red;
+                else
+                    button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Black;
+            }
 
             #endregion
         }
@@ -340,12 +351,15 @@ namespace Proracun_vibracija
             }
 
             // y-brojaci
-            j = 10;
+            Int32 yOdeljak; // vrsimo proveru toga da li je najveca frekvencija manja od 10 ili nije, ako jeste, stavljamo odeljke od po 1, ako nije, stavljamo odeljke od po 10
+            if (Ymax >= 10) yOdeljak = 10;
+            else yOdeljak = 1;
+            j = yOdeljak;
             for (i = centarY - podeljakY; i > 0; i -= podeljakY)
             {
                 g.DrawLine(p, centarX - 5, i, centarX + 5, i);
                 g.DrawString(j.ToString(), font, cetka, 0, i - 7);
-                j += 10;
+                j += yOdeljak;
             }
 
             if (FormaDesniGlavni.v1unet)
@@ -542,7 +556,7 @@ namespace Proracun_vibracija
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (arg3 >= (FormaDesniGlavni.F31 - 1) && arg3 <= (FormaDesniGlavni.F31 + 1))) ||
                                                  (FormaDesniGlavni.F32 != 0 && (arg3 >= (FormaDesniGlavni.F32 - 1) && arg3 <= (FormaDesniGlavni.F32 + 1))) ||
                                                  (FormaDesniGlavni.F33 != 0 && (arg3 >= (FormaDesniGlavni.F33 - 1) && arg3 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
+                (FormaDesniGlavni.W2 != 0 &&
                     (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (arg1alt >= (FormaDesniGlavni.F11 - 1) && arg1alt <= (FormaDesniGlavni.F11 + 1))) ||
                                                  (FormaDesniGlavni.F12 != 0 && (arg1alt >= (FormaDesniGlavni.F12 - 1) && arg1alt <= (FormaDesniGlavni.F12 + 1))) ||
                                                  (FormaDesniGlavni.F13 != 0 && (arg1alt >= (FormaDesniGlavni.F13 - 1) && arg1alt <= (FormaDesniGlavni.F13 + 1))))) ||

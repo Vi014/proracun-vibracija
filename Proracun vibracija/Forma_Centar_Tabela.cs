@@ -411,38 +411,39 @@ namespace Proracun_vibracija
             #endregion
         }
 
-        #region dugmici sa znakom pitanja
 
-        private void button_FM_Click(object sender, EventArgs e)
+        private void otvoriTekst(object sender, EventArgs e)
         {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[24]);
+            if (FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarGlavni);
+                FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarGlavni;
+                FormaCentarGlavni.FormaCentarTekst.Show();
+            }
+            else
+            {
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, 0);
+                FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
         }
 
-        private void button_FM2_Click(object sender, EventArgs e)
+        private void otvoriTekstAlt(object sender, EventArgs e)
         {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[25]);
-        }
+            if (FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarGlavni);
+                FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarGlavni;
+                FormaCentarGlavni.FormaCentarTekst.Show();
 
-        private void button_FM3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[26]);
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarGlavni.FormaCentarTekst.EngineFiringFrequency);
+            }
+            else
+            {
+                FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarGlavni.FormaCentarTekst.EngineFiringFrequency);
+                FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
         }
-
-        private void button_FM4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[27]);
-        }
-
-        private void button_FB_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[28]);
-        }
-
-        private void button_FP_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[29]);
-        }
-
-        #endregion
     }
 }

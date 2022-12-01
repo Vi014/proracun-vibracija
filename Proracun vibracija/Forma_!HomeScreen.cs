@@ -53,28 +53,28 @@ namespace Proracun_vibracija
                                 "Frekvencija bregaste",
                                 "Frekvencija paljenja",
                                 "Izmerene frekvencije",                               
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM2_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM3_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM4_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FB_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FP_Click",
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM2_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM3_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM4_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FB_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FP_Click", // obrisati
 
                                 // Forma_Centar_Grafik
                                 "Vibracije motora",
                                 "Iscrtaj ponovo",
                                 "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV ISPUNJEN", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV NE ISPUNJEN", // ne brisati ove za uslov ne ispunjen, one se idalje koriste
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV NE ISPUNJEN",
                                 "FM",
                                 "FM2",
@@ -126,7 +126,7 @@ namespace Proracun_vibracija
                                 "Iscrtaj ponovo",
                                 "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN", // obrisati
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN", // ne brisati ove za uslov ne ispunjen
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN", // ne brisati ove za uslov ne ispunjen, one se idalje koriste
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN",
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN", // obrisati
@@ -452,8 +452,25 @@ namespace Proracun_vibracija
                                 "Figure 4",
                                 "Engine accessory vibrations",
                                 "Engine accessories related vibrations can be found either by engine accessory test (refer to test drive section) or by calculation \r\nbased on engine RPM and ratio between accessories and crankshaft pulley.",
-                                "Engine acessory vibrations could be caused by: \r\n      - Out of balance component \r\n      - Worn out components \r\n      - Out of round pulley \r\n      - Untightens of pulley \r\n      - Untightens of component \r\n      - Worn out component shaft bearings \r\n      - Pressure fluctuation (e.g. power steering pump) \r\n      - Overcharged refrigerant (AC compressor)"
+                                "Engine acessory vibrations could be caused by: \r\n      - Out of balance component \r\n      - Worn out components \r\n      - Out of round pulley \r\n      - Untightens of pulley \r\n      - Untightens of component \r\n      - Worn out component shaft bearings \r\n      - Pressure fluctuation (e.g. power steering pump) \r\n      - Overcharged refrigerant (AC compressor)",
                                 // 381
+
+                                // Forma_Desni_Tekst_Driveline
+                                "PLACEHOLDERSTRING Forma_Desni_Tekst_Driveline.Text",
+                                "Driveline-related concerns are usually caused by the following conditions: \r\n      - A propeller shaft imbalance \r\n      - A damaged propeller shaft \r\n      - Missing shaft balance weights \r\n      - Improper propeller shaft operating angles \r\n      - Worn universal or CV joint \r\n      - Worn center bearings \r\n      - Loose spring U-bolts \r\n      - Loose or broken springs \r\n      - Damaged axle shaft bearings \r\n      - Loose pinion gear nut \r\n      - Excessive pinion flange runout \r\n      - Pinion and ring gear pitch line variation",
+                                "Drive shaft vibrations can be classified into three different orders: first-order, second-order, and fourth-order.",
+                                "A first-order vibration may be caused by a: \r\n      - A damaged or bent propeller shaft \r\n      - A damaged driveline components \r\n      - Worn CV or U joint \r\n      - A propeller shaft imbalance \r\n      - Hydromount sliping \r\n      - Driveshaft central bearing damage \r\n      - Loose pinion gear nut \r\n      - Worn pinion gear",
+                                "A second-order vibration may be caused by:  \r\n      - Driveshaft angle \r\n      - U-joint cancelation \r\n      - Worn CV or U joint",
+                                "A fourth-order vibration may be caused by a: \r\n      - Driveshaft angle \r\n      - Worn CV or U joint",
+                                "Check the following:",
+                                "      -",
+                                "Driveshaft runout",
+                                "      -",
+                                "Missing balance weights",
+                                "      -",
+                                "Pinion and ring gear pitch line",
+                                "      -",
+                                "Driveline operating angles"
                                 };
 
         private void PromenaJezika()
@@ -473,7 +490,7 @@ namespace Proracun_vibracija
                 FormaCentarGlavni.PromenaJezika();
                 if (FormaCentarGlavni.FormaCentarTabela != null) FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
                 if (FormaCentarGlavni.FormaCentarGrafik != null) FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
-                if (FormaCentarGlavni.FormaCentarTekst != null)  FormaCentarGlavni.FormaCentarTekst.PromenaJezika();
+                if (FormaCentarGlavni.FormaCentarTekst  != null) FormaCentarGlavni.FormaCentarTekst.PromenaJezika();
 
                 if (FormaCentarGlavni.FormaCentarAgregatGlavni != null)
                 {
@@ -488,6 +505,7 @@ namespace Proracun_vibracija
                 FormaDesniGlavni.PromenaJezika();
                 if (FormaDesniGlavni.FormaDesniTabela != null) FormaDesniGlavni.FormaDesniTabela.PromenaJezika();
                 if (FormaDesniGlavni.FormaDesniGrafik != null) FormaDesniGlavni.FormaDesniGrafik.PromenaJezika();
+                if (FormaDesniGlavni.FormaDesniTekstDriveline != null) FormaDesniGlavni.FormaDesniTekstDriveline.PromenaJezika();
             }
         }
 
