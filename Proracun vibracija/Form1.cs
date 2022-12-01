@@ -16,7 +16,7 @@ namespace Proracun_vibracija
             InitializeComponent();
         }
 
-        // todo: prebaci forma_centar_tabela_2 na pravo mesto, popravi unos podataka u forma_centar_tabela_1, popravi x-osu, dodaj proveru vrednosti na forma_centar_glavni, ulepsaj grafik
+        // todo: prebaci forma_centar_tabela_2 na pravo mesto
 
         public Forma_Centar_Glavni FormaCentarGlavni;
 
@@ -106,7 +106,19 @@ namespace Proracun_vibracija
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV ISPUNJEN",
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV NE ISPUNJEN",
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV NE ISPUNJEN"
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV NE ISPUNJEN",
+                                "FM",
+                                "FM2",
+                                "FM3",
+                                "FM4",
+                                "FB",
+                                "FP",
+                                "FM - frekvencija motora",
+                                "FM2 - frekvencija motora drugog reda",
+                                "FM3 - frekvencija motora trećeg reda",
+                                "FM4 - frekvencija motora četvrtog reda",
+                                "FB - frekvencija bregaste",
+                                "FP - frekvencija paljenja"
                                 };
 
         //public String jezik
@@ -223,6 +235,18 @@ namespace Proracun_vibracija
             jezik[70] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV NE ISPUNJEN";
             jezik[71] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV ISPUNJEN";
             jezik[72] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV NE ISPUNJEN";
+            jezik[73] = "FM";
+            jezik[74] = "FM2";
+            jezik[75] = "FM3";
+            jezik[76] = "FM4";
+            jezik[77] = "FB";
+            jezik[78] = "FP";
+            jezik[79] = "FM - frekvencija motora";
+            jezik[80] = "FM2 - frekvencija motora drugog reda";
+            jezik[81] = "FM3 - frekvencija motora trećeg reda";
+            jezik[82] = "FM4 - frekvencija motora četvrtog reda";
+            jezik[83] = "FB - frekvencija bregaste";
+            jezik[84] = "FP - frekvencija paljenja";
 
             PromenaJezika();
         }
@@ -313,6 +337,18 @@ namespace Proracun_vibracija
             jezik[70] = "P ID 70";
             jezik[71] = "P ID 71";
             jezik[72] = "P ID 72";
+            jezik[73] = "P ID 73";
+            jezik[74] = "P ID 74";
+            jezik[75] = "P ID 75";
+            jezik[76] = "P ID 76";
+            jezik[77] = "P ID 77";
+            jezik[78] = "P ID 78";
+            jezik[79] = "P ID 79";
+            jezik[80] = "P ID 80";
+            jezik[81] = "P ID 81";
+            jezik[82] = "P ID 82";
+            jezik[83] = "P ID 83";
+            jezik[84] = "P ID 84";
 
             PromenaJezika();
         }

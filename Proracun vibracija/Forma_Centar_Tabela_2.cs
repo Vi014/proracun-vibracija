@@ -36,7 +36,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Tabela_2_Load(object sender, EventArgs e)
         {
             PromenaJezika();
-            this.Location = new Point(FormaCentarTabela1.Right, FormaCentarTabela1.Bottom);
+            this.Location = new Point(FormaCentarTabela1.Left + 20, FormaCentarTabela1.Top + 20);
 
             textBox_DR_Watermark();
             textBox_D1_Watermark();
@@ -232,25 +232,66 @@ namespace Proracun_vibracija
 
         private Boolean Ucitavanje()
         {
-            /*if(!Double.TryParse(textBox_DR.Text, out DR)) return false;
-            
-            if (textBox_D1.Text != "D1" && !Double.TryParse(textBox_D1.Text, out D1)) return false;
-            if (textBox_D2.Text != "D2" && !Double.TryParse(textBox_D2.Text, out D2)) return false;
-            if (textBox_D3.Text != "D3" && !Double.TryParse(textBox_D3.Text, out D3)) return false;
-            if (textBox_D4.Text != "D4" && !Double.TryParse(textBox_D4.Text, out D4)) return false;
-            if (textBox_D5.Text != "D5" && !Double.TryParse(textBox_D5.Text, out D5)) return false;
-            if (textBox_D6.Text != "D6" && !Double.TryParse(textBox_D6.Text, out D6)) return false;*/
-
+            //////////////////////////////////////////////////////////
             if (!Double.TryParse(textBox_DR.Text, out _DR)) return false;
-
-            if (textBox_D1.Text != "D1" && !Double.TryParse(textBox_D1.Text, out _D1)) return false;
-            if (textBox_D2.Text != "D2" && !Double.TryParse(textBox_D2.Text, out _D2)) return false;
-            if (textBox_D3.Text != "D3" && !Double.TryParse(textBox_D3.Text, out _D3)) return false;
-            if (textBox_D4.Text != "D4" && !Double.TryParse(textBox_D4.Text, out _D4)) return false;
-            if (textBox_D5.Text != "D5" && !Double.TryParse(textBox_D5.Text, out _D5)) return false;
-            if (textBox_D6.Text != "D6" && !Double.TryParse(textBox_D6.Text, out _D6)) return false;
-
+            if (_DR <= 0) return false;
+            //////////////////////////////////////////////////////////
+            if (textBox_D1.Text != "D1")
+            {
+                if (Double.TryParse(textBox_D1.Text, out _D1))
+                {
+                    if (_D1 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
+            if (textBox_D2.Text != "D2")
+            {
+                if (Double.TryParse(textBox_D2.Text, out _D2))
+                {
+                    if (_D2 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
+            if (textBox_D3.Text != "D3")
+            {
+                if (Double.TryParse(textBox_D3.Text, out _D3))
+                {
+                    if (_D3 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
+            if (textBox_D4.Text != "D4")
+            {
+                if (Double.TryParse(textBox_D4.Text, out _D4))
+                {
+                    if (_D4 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
+            if (textBox_D5.Text != "D5")
+            {
+                if (Double.TryParse(textBox_D5.Text, out _D5))
+                {
+                    if (_D5 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
+            if (textBox_D6.Text != "D6")
+            {
+                if (Double.TryParse(textBox_D6.Text, out _D6))
+                {
+                    if (_D6 <= 0) return false;
+                }
+                else return false;
+            }
+            //////////////////////////////////////////////////////////
             return true;
+            //////////////////////////////////////////////////////////
         }
 
         private void Konverzija()

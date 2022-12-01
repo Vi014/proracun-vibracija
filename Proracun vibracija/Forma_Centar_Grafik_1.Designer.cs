@@ -56,67 +56,73 @@
             // 
             // checkBox_L1
             // 
-            this.checkBox_L1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L1.ForeColor = System.Drawing.Color.Blue;
             this.checkBox_L1.Location = new System.Drawing.Point(1263, 12);
             this.checkBox_L1.Name = "checkBox_L1";
             this.checkBox_L1.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L1.TabIndex = 0;
-            this.checkBox_L1.Text = "L1";
+            this.checkBox_L1.Text = "FM";
             this.checkBox_L1.UseVisualStyleBackColor = true;
             this.checkBox_L1.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
             // checkBox_L2
             // 
-            this.checkBox_L2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L2.ForeColor = System.Drawing.Color.DarkCyan;
             this.checkBox_L2.Location = new System.Drawing.Point(1263, 38);
             this.checkBox_L2.Name = "checkBox_L2";
             this.checkBox_L2.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L2.TabIndex = 1;
-            this.checkBox_L2.Text = "L2";
+            this.checkBox_L2.Text = "FM2";
             this.checkBox_L2.UseVisualStyleBackColor = true;
             this.checkBox_L2.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
             // checkBox_L3
             // 
-            this.checkBox_L3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L3.ForeColor = System.Drawing.Color.Green;
             this.checkBox_L3.Location = new System.Drawing.Point(1263, 64);
             this.checkBox_L3.Name = "checkBox_L3";
             this.checkBox_L3.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L3.TabIndex = 2;
-            this.checkBox_L3.Text = "L3";
+            this.checkBox_L3.Text = "FM3";
             this.checkBox_L3.UseVisualStyleBackColor = true;
             this.checkBox_L3.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
             // checkBox_L4
             // 
-            this.checkBox_L4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L4.ForeColor = System.Drawing.Color.Orange;
             this.checkBox_L4.Location = new System.Drawing.Point(1263, 90);
             this.checkBox_L4.Name = "checkBox_L4";
             this.checkBox_L4.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L4.TabIndex = 3;
-            this.checkBox_L4.Text = "L4";
+            this.checkBox_L4.Text = "FM4";
             this.checkBox_L4.UseVisualStyleBackColor = true;
             this.checkBox_L4.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
             // checkBox_L5
             // 
-            this.checkBox_L5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L5.ForeColor = System.Drawing.Color.Purple;
             this.checkBox_L5.Location = new System.Drawing.Point(1263, 116);
             this.checkBox_L5.Name = "checkBox_L5";
             this.checkBox_L5.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L5.TabIndex = 4;
-            this.checkBox_L5.Text = "L5";
+            this.checkBox_L5.Text = "FB";
             this.checkBox_L5.UseVisualStyleBackColor = true;
             this.checkBox_L5.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
             // checkBox_L6
             // 
-            this.checkBox_L6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_L6.ForeColor = System.Drawing.Color.Black;
             this.checkBox_L6.Location = new System.Drawing.Point(1263, 142);
             this.checkBox_L6.Name = "checkBox_L6";
             this.checkBox_L6.Size = new System.Drawing.Size(49, 20);
             this.checkBox_L6.TabIndex = 5;
-            this.checkBox_L6.Text = "L6";
+            this.checkBox_L6.Text = "FP";
             this.checkBox_L6.UseVisualStyleBackColor = true;
             this.checkBox_L6.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
             // 
@@ -131,10 +137,9 @@
             // 
             // button_FP
             // 
-            this.button_FP.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FP.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FP.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FP.ForeColor = System.Drawing.Color.Red;
+            this.button_FP.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FP.Location = new System.Drawing.Point(1318, 142);
             this.button_FP.Name = "button_FP";
             this.button_FP.Size = new System.Drawing.Size(20, 20);
@@ -145,10 +150,9 @@
             // 
             // button_FB
             // 
-            this.button_FB.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FB.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FB.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FB.ForeColor = System.Drawing.Color.Red;
+            this.button_FB.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FB.Location = new System.Drawing.Point(1318, 116);
             this.button_FB.Name = "button_FB";
             this.button_FB.Size = new System.Drawing.Size(20, 20);
@@ -159,10 +163,9 @@
             // 
             // button_FM4
             // 
-            this.button_FM4.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FM4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FM4.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FM4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FM4.ForeColor = System.Drawing.Color.Red;
+            this.button_FM4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FM4.Location = new System.Drawing.Point(1318, 90);
             this.button_FM4.Name = "button_FM4";
             this.button_FM4.Size = new System.Drawing.Size(20, 20);
@@ -173,10 +176,9 @@
             // 
             // button_FM3
             // 
-            this.button_FM3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FM3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FM3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FM3.ForeColor = System.Drawing.Color.Red;
+            this.button_FM3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FM3.Location = new System.Drawing.Point(1318, 64);
             this.button_FM3.Name = "button_FM3";
             this.button_FM3.Size = new System.Drawing.Size(20, 20);
@@ -187,10 +189,9 @@
             // 
             // button_FM2
             // 
-            this.button_FM2.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FM2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FM2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FM2.ForeColor = System.Drawing.Color.Red;
+            this.button_FM2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FM2.Location = new System.Drawing.Point(1318, 38);
             this.button_FM2.Name = "button_FM2";
             this.button_FM2.Size = new System.Drawing.Size(20, 20);
@@ -201,10 +202,9 @@
             // 
             // button_FM
             // 
-            this.button_FM.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button_FM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_FM.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_FM.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FM.ForeColor = System.Drawing.Color.Red;
+            this.button_FM.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_FM.Location = new System.Drawing.Point(1318, 12);
             this.button_FM.Name = "button_FM";
             this.button_FM.Size = new System.Drawing.Size(20, 20);

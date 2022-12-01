@@ -35,7 +35,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Glavni_Load(object sender, EventArgs e)
         {
             PromenaJezika();
-            this.Location = new Point(FormaHomeScreen.Right, FormaHomeScreen.Bottom);
+            this.Location = new Point(FormaHomeScreen.Left + 20, FormaHomeScreen.Top + 20);
 
             textBox_RPM1_Watermark();
             textBox_RPM2_Watermark();
@@ -338,7 +338,6 @@ namespace Proracun_vibracija
         private void ResetVrednosti()
         {
             _rpm1unet = _rpm2unet = _rpm3unet = false;
-            // button1.Enabled = button2.Enabled = false;
             _brojCilindara = 0;
             _RPM1 = _RPM2 = _RPM3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0; // Double cija je vrednost null zapravo ima vrednost 0 tako da je ovo OK.
         }
@@ -361,29 +360,97 @@ namespace Proracun_vibracija
 
         private Boolean Ucitavanje()
         {
-            _brojCilindara = Convert.ToInt32(comboBox_BrojCilindara.Text); // radi kako treba
+            _brojCilindara = Convert.ToInt32(comboBox_BrojCilindara.Text);
 
             if (_rpm1unet)
             {
                 if (!Double.TryParse(textBox_RPM1.Text, out _RPM1)) return false;
-                if (textBox_F11.Text != "F11" && !Double.TryParse(textBox_F11.Text, out _F11)) return false;
-                if (textBox_F12.Text != "F12" && !Double.TryParse(textBox_F12.Text, out _F12)) return false;
-                if (textBox_F13.Text != "F13" && !Double.TryParse(textBox_F13.Text, out _F13)) return false;
+                if (_RPM1 < 100 || _RPM1 > 8000) return false;
+
+                if (textBox_F11.Text != "F11")
+                {
+                    if (Double.TryParse(textBox_F11.Text, out _F11))
+                    {
+                        if (_F11 < 0 || _F11 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F12.Text != "F12")
+                {
+                    if (Double.TryParse(textBox_F12.Text, out _F12))
+                    {
+                        if (_F12 < 0 || _F12 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F13.Text != "F13")
+                {
+                    if (Double.TryParse(textBox_F13.Text, out _F13))
+                    {
+                        if (_F13 < 0 || _F13 > 500) return false;
+                    }
+                    else return false;
+                }
             }
             if (_rpm2unet)
             {
                 if (!Double.TryParse(textBox_RPM2.Text, out _RPM2)) return false;
-                if (textBox_F21.Text != "F21" && !Double.TryParse(textBox_F21.Text, out _F21)) return false;
-                if (textBox_F22.Text != "F22" && !Double.TryParse(textBox_F22.Text, out _F22)) return false;
-                if (textBox_F23.Text != "F23" && !Double.TryParse(textBox_F23.Text, out _F23)) return false;
+                if (_RPM2 < 100 || _RPM2 > 8000) return false;
+
+                if (textBox_F21.Text != "F21")
+                {
+                    if (Double.TryParse(textBox_F21.Text, out _F21))
+                    {
+                        if (_F21 < 0 || _F21 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F22.Text != "F22")
+                {
+                    if (Double.TryParse(textBox_F22.Text, out _F22))
+                    {
+                        if (_F22 < 0 || _F22 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F23.Text != "F23")
+                {
+                    if (Double.TryParse(textBox_F23.Text, out _F23))
+                    {
+                        if (_F23 < 0 || _F23 > 500) return false;
+                    }
+                    else return false;
+                }
             }
             if (_rpm3unet)
             {
                 if (!Double.TryParse(textBox_RPM3.Text, out _RPM3)) return false;
-                if (textBox_F31.Text != "F31" && !Double.TryParse(textBox_F31.Text, out _F31)) return false;
-                if (textBox_F32.Text != "F32" && !Double.TryParse(textBox_F32.Text, out _F32)) return false;
-                if (textBox_F33.Text != "F33" && !Double.TryParse(textBox_F33.Text, out _F33)) return false;
-                //if (textBox_F33.Text != "F33") if (!Double.TryParse(textBox_F33.Text, out F33)) return false;
+                if (_RPM3 < 100 || _RPM3 > 8000) return false;
+
+                if (textBox_F31.Text != "F31")
+                {
+                    if (Double.TryParse(textBox_F31.Text, out _F31))
+                    {
+                        if (_F31 < 0 || _F31 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F32.Text != "F32")
+                {
+                    if (Double.TryParse(textBox_F32.Text, out _F32))
+                    {
+                        if (_F32 < 0 || _F32 > 500) return false;
+                    }
+                    else return false;
+                }
+                if (textBox_F33.Text != "F33")
+                {
+                    if (Double.TryParse(textBox_F33.Text, out _F33))
+                    {
+                        if (_F33 < 0 || _F33 > 500) return false;
+                    }
+                    else return false;
+                }
             }
 
             return true;

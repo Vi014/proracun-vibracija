@@ -37,7 +37,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Tabela_1_Load(object sender, EventArgs e)
         {
             PromenaJezika();
-            this.Location = new Point(FormaCentarGlavni.Right, FormaCentarGlavni.Bottom);
+            this.Location = new Point(FormaCentarGlavni.Left + 20, FormaCentarGlavni.Top + 20);
 
             #region text box sranja
 
@@ -82,6 +82,24 @@ namespace Proracun_vibracija
 
         public void IspisVrednosti()
         {
+            textBox_RPM1.Text     = textBox_RPM2.Text = textBox_RPM3.Text =
+                textBox_FM1.Text  = textBox_FM2.Text  = textBox_FM3.Text  =
+                textBox_FM12.Text = textBox_FM22.Text = textBox_FM32.Text =
+                textBox_FM13.Text = textBox_FM23.Text = textBox_FM33.Text =
+                textBox_FM14.Text = textBox_FM24.Text = textBox_FM34.Text =
+                textBox_FB1.Text  = textBox_FB2.Text  = textBox_FB3.Text  =
+                textBox_FP1.Text  = textBox_FP2.Text  = textBox_FP3.Text  =
+                textBox_F11.Text  = textBox_F12.Text  = textBox_F13.Text  =
+                textBox_F21.Text  = textBox_F22.Text  = textBox_F23.Text  =
+                textBox_F31.Text  = textBox_F32.Text  = textBox_F33.Text  = "";
+
+            button_FM.Visible      = button_FM.Enabled  =
+                button_FM2.Visible = button_FM2.Enabled =
+                button_FM3.Visible = button_FM3.Enabled =
+                button_FM4.Visible = button_FM4.Enabled =
+                button_FB.Visible  = button_FB.Enabled  =
+                button_FP.Visible  = button_FP.Enabled  = false;
+
             #region rpm1
 
             if (FormaCentarGlavni.rpm1unet)
@@ -103,7 +121,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FM.Visible = button_FM.Enabled = false;
                     textBox_FM1.BackColor = textBox_FM1.BackColor;
                     textBox_FM1.ForeColor = Color.Gray;
                 }
@@ -119,7 +136,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FM2.Visible = button_FM2.Enabled = false;
                     textBox_FM12.BackColor = textBox_FM12.BackColor;
                     textBox_FM12.ForeColor = Color.Gray;
                 }
@@ -135,7 +151,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FM3.Visible = button_FM3.Enabled = false;
                     textBox_FM13.BackColor = textBox_FM13.BackColor;
                     textBox_FM13.ForeColor = Color.Gray;
                 }
@@ -151,7 +166,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FM4.Visible = button_FM4.Enabled = false;
                     textBox_FM14.BackColor = textBox_FM14.BackColor;
                     textBox_FM14.ForeColor = Color.Gray;
                 }
@@ -167,7 +181,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FB.Visible = button_FB.Enabled = false;
                     textBox_FB1.BackColor = textBox_FB1.BackColor;
                     textBox_FB1.ForeColor = Color.Gray;
                 }
@@ -183,7 +196,6 @@ namespace Proracun_vibracija
                 }
                 else
                 {
-                    button_FP.Visible = button_FP.Enabled = false;
                     textBox_FP1.BackColor = textBox_FP1.BackColor;
                     textBox_FP1.ForeColor = Color.Gray;
                 }

@@ -36,7 +36,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Tabela_3_Load(object sender, EventArgs e)
         {
             PromenaJezika();
-            this.Location = new Point(FormaCentarTabela2.Right, FormaCentarTabela2.Bottom);
+            this.Location = new Point(FormaCentarTabela2.Left + 20, FormaCentarTabela2.Top + 20);
 
             #region text box sranja
 
@@ -84,6 +84,24 @@ namespace Proracun_vibracija
 
         public void Matematika()
         {
+            textBox_RPM1.Text    = textBox_RPM2.Text = textBox_RPM3.Text =
+                textBox_D11.Text = textBox_D12.Text  = textBox_D13.Text  =
+                textBox_D21.Text = textBox_D22.Text  = textBox_D23.Text  =
+                textBox_D31.Text = textBox_D32.Text  = textBox_D33.Text  =
+                textBox_D41.Text = textBox_D42.Text  = textBox_D43.Text  =
+                textBox_D51.Text = textBox_D52.Text  = textBox_D53.Text  =
+                textBox_D61.Text = textBox_D62.Text  = textBox_D63.Text  =
+                textBox_F11.Text = textBox_F12.Text  = textBox_F13.Text  =
+                textBox_F21.Text = textBox_F22.Text  = textBox_F23.Text  =
+                textBox_F31.Text = textBox_F32.Text  = textBox_F33.Text  = "";
+
+            button_D1.Visible     = button_D1.Enabled =
+                button_D2.Visible = button_D2.Enabled =
+                button_D3.Visible = button_D3.Enabled =
+                button_D4.Visible = button_D4.Enabled =
+                button_D5.Visible = button_D5.Enabled =
+                button_D6.Visible = button_D6.Enabled = false;
+
             #region rpm1unet
             if (FormaCentarTabela2.FormaCentarTabela1.FormaCentarGlavni.rpm1unet)
             {
