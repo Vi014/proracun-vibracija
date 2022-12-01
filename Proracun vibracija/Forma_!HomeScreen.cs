@@ -255,7 +255,6 @@ namespace Proracun_vibracija
                                 "FK4",
 
                                 // Forma_Desni_Tabela
-
                                 "Frekvencije točka 2",
                                 "Frekvencije kardana 2",
                                 
@@ -349,10 +348,10 @@ namespace Proracun_vibracija
                                 "in vehicles could be:",
                                 "      - Combustion \r\n      - Tires contacting a rough road \r\n      - Imbalance or run-out of a rotating component \r\n      - Fluctuation of friction surfaces",
                                 "A",
-                                "Resonance System",
+                                "Resonance System", // 289
                                 "is any component on the vehicle that resonates when it recieves a vibrating force.",
                                 "All components will resonate if the vibrating force matches the natural frequency. \r\nSome examples are: \r\n      - Tires resonate when vibrated by the road \r\n      - Suspension systems will resonate with an out of balance tire \r\n      - An exhaust system will resonate when vibrated by the engine",
-                                "The",
+                                "The", // 292, label41
                                 "Transmission System",
                                 "is the path in the vehicle that carries the vibration from the resonance system to the vibrating element.",
                                 "Examples of a transmission system or path are the: \r\n      - Exhaust system \r\n      - Engine mounts",
@@ -361,9 +360,11 @@ namespace Proracun_vibracija
                                 "Vibrating element",
                                 "is the component that generates the vibration or sound that can be sensed.",
                                 "Examples of Vibrating elements are: \r\n      - Body \r\n      - Steering wheel \r\n      - Seat \r\n      - Shifter \r\n      - Mirror",
-                                "In most of the cases, NVH issue is resolved by fixing the source of the vibrating force, but sometimes any change in transmission process can be the repair.",
+                                "In most of the cases, NVH issue is resolved by fixing the source of the vibrating force, \r\nbut sometimes any change in transmission process can be the repair.",
                                 "For example: \r\n      - Vibrating force is engine \r\n      - Resonating system is exhaust \r\n      - Transmission system is contact of the exhaust and body \r\n      - Vibrating element is the body panel",
-                                "By repairing elastic contact between exhaust and body, NVH problem will be resolved."
+                                "By repairing elastic contact between exhaust and body, NVH problem will be resolved.",
+                                "Measuring the frequency",
+                                "In order to find the source of vehicle vibrations it is necessary to measure the vibrating frequency and engine/vehicle speed \r\nat which that vibration frequency occurs. There are many tools as shown in the figures below."
                                 };
 
         private void PromenaJezika()

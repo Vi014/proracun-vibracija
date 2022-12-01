@@ -24,6 +24,18 @@ namespace Proracun_vibracija
         public void PromenaJezika() // za vertikalne razmake izmedju dva labela, bottom + 20 za veliki razmak (razmak izmedju dva razlicita paragrafa) ili bottom + 1 za mali razmak (razmak izmedju dve razlicite linije u jednom paragrafu)
         {
             this.Text = FormaHomeScreen.jezik[251];
+            // za recenice gde je jedan deo u italicu (npr "the <i>transmission system</i> bla bla")
+            // ako je ovaj deo recenice sto ide posle italika dovoljno velik da se mora razdvojiti u vise redova
+            // on ce morati da se pise kao dva odvojena labela (a samim tim i dva odvojena elementa u nizu jezik)
+            // zato sto ovaj prvi label koji ide posle italika
+            // ima kao svoje koordinate mesto direktno desno od italika
+            // te ako bi se u njega ubacio novi red, taj sam novi red bi bio pomeren ka desno
+            // npr
+            // ITALIKNESTO ostatakteksta ostatakteksta
+            //             ostatakteksta
+            // umesto
+            // ITALIKNESTO ostatakteksta ostatakteksta
+            // ostatakteksta
 
             #region dokument
 
@@ -167,6 +179,61 @@ namespace Proracun_vibracija
             label40.Location = new Point(label1.Location.X, label37.Bottom + 1);
             label40.Text = FormaHomeScreen.jezik[291];
 
+
+
+            label41.Location = new Point(label1.Location.X, label40.Bottom + 20);
+            label41.Text = FormaHomeScreen.jezik[292]; // The
+
+            label42.Location = new Point(label41.Right - 5, label41.Location.Y);
+            label42.Text = FormaHomeScreen.jezik[293];
+
+            label43.Location = new Point(label42.Right - 5, label41.Location.Y);
+            label43.Text = FormaHomeScreen.jezik[294];
+
+            label44.Location = new Point(label1.Location.X, label41.Bottom + 1);
+            label44.Text = FormaHomeScreen.jezik[295];
+
+            label45.Location = new Point(label1.Location.X, label44.Bottom + 1);
+            label45.Text = FormaHomeScreen.jezik[296];
+
+
+
+            label46.Location = new Point(label1.Location.X, label45.Bottom + 20);
+            label46.Text = FormaHomeScreen.jezik[297];
+
+            label47.Location = new Point(label46.Right - 5, label46.Location.Y);
+            label47.Text = FormaHomeScreen.jezik[298];
+
+            label48.Location = new Point(label47.Right - 5, label46.Location.Y);
+            label48.Text = FormaHomeScreen.jezik[299];
+
+            label49.Location = new Point(label1.Location.X, label46.Bottom + 1);
+            label49.Text = FormaHomeScreen.jezik[300];
+
+
+
+            label50.Location = new Point(label1.Location.X, label49.Bottom + 20);
+            label50.Text = FormaHomeScreen.jezik[301];
+
+            label51.Location = new Point(label1.Location.X, label50.Bottom + 1);
+            label51.Text = FormaHomeScreen.jezik[302];
+
+            label52.Location = new Point(label1.Location.X, label51.Bottom + 1);
+            label52.Text = FormaHomeScreen.jezik[303];
+
+
+
+            label53.Location = new Point(label1.Location.X, label52.Bottom + 20);
+            label53.Text = FormaHomeScreen.jezik[304];
+
+            label54.Location = new Point(label1.Location.X, label53.Bottom + 1);
+            label54.Text = FormaHomeScreen.jezik[305];
+
+            pictureBox10.Location = new Point(label1.Location.X, label54.Bottom + 20);
+            pictureBox11.Location = new Point(pictureBox10.Right + 5, pictureBox10.Location.Y);
+            pictureBox12.Location = new Point(pictureBox11.Right + 5, pictureBox10.Location.Y);
+            pictureBox13.Location = new Point(pictureBox12.Right + 5, pictureBox10.Location.Y);
+
             #endregion
         }
 
@@ -180,6 +247,46 @@ namespace Proracun_vibracija
         {
             FormaHomeScreen.FormaUvod           = null;
             FormaHomeScreen.dugmeDodatnoEnabled = true;
+        }
+
+        private void zoom(object sender, EventArgs e)
+        {
+            Image slika = (sender as PictureBox).Image;
+
+            zoomPicture.Image = slika;
+            zoomPicture.Visible = button1.Visible = true;
+            panel1.Enabled = false;
+
+            Int32 panelH = panel1.Height,
+                    panelW = panel1.Width,
+                    slikaH = slika.Height,
+                    slikaW = slika.Width,
+                    centarX = panelW / 2 + panel1.Location.X,
+                    centarY = panelH / 2 + panel1.Location.Y;
+            Double ratioH = 0, ratioW = 0;
+
+            for (Double i = 0; slikaH * i <= panelH; i += 0.25) ratioH = i;
+            for (Double i = 0; slikaW * i <= panelW; i += 0.25) ratioW = i;
+
+            if (ratioH < ratioW)
+            {
+                zoomPicture.Height = Convert.ToInt32(slikaH * ratioH);
+                zoomPicture.Width  = Convert.ToInt32(slikaW * ratioH);
+            }
+            else
+            {
+                zoomPicture.Height = Convert.ToInt32(slikaH * ratioW);
+                zoomPicture.Width  = Convert.ToInt32(slikaW * ratioW);
+            }
+
+            zoomPicture.Location = new Point((centarX - zoomPicture.Width / 2), (centarY - zoomPicture.Height / 2));
+            button1.Location     = new Point(zoomPicture.Right, zoomPicture.Top);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            zoomPicture.Visible = button1.Visible = false;
+            panel1.Enabled = true;
         }
     }
 }
