@@ -204,41 +204,64 @@ namespace Proracun_vibracija
 
         private void button1_Click(object sender, EventArgs e)
         {
+            _DR = _D1 = _D2 = _D3 = _D4 = _D5 = _D6 = 0;
             if (textBox_DR.Text != "DR" && (textBox_D1.Text != "D1" || textBox_D2.Text != "D2" || textBox_D3.Text != "D3" || textBox_D4.Text != "D4" || textBox_D5.Text != "D5" || textBox_D6.Text != "D6"))
             {
-                if (FormaCentarTabela3 == null)
+                if (Ucitavanje())
                 {
-                    if (Ucitavanje())
+                    if (FormaCentarTabela3 == null)
                     {
+                        Konverzija();
                         FormaCentarTabela3 = new Forma_Centar_Tabela_3(this);
                         FormaCentarTabela3.Owner = this;
                         FormaCentarTabela3.Show();
                     }
-                    else MessageBox.Show(FormaCentarTabela1.FormaCentarGlavni.FormaHomeScreen.jezik[40]);
+                    else
+                    {
+                        Konverzija();
+                        FormaCentarTabela3.Matematika();
+                    }
                 }
-                else
-                {
-                    if (Ucitavanje()) FormaCentarTabela3.Matematika();
-                    else MessageBox.Show(FormaCentarTabela1.FormaCentarGlavni.FormaHomeScreen.jezik[40]);
-                }
+                else MessageBox.Show(FormaCentarTabela1.FormaCentarGlavni.FormaHomeScreen.jezik[40]);
             }
             else MessageBox.Show(FormaCentarTabela1.FormaCentarGlavni.FormaHomeScreen.jezik[39]);
         }
 
         public Double DR, D1, D2, D3, D4, D5, D6;
+        Double _DR, _D1, _D2, _D3, _D4, _D5, _D6;
 
         private Boolean Ucitavanje()
         {
-            if(!Double.TryParse(textBox_DR.Text, out DR)) return false;
-
+            /*if(!Double.TryParse(textBox_DR.Text, out DR)) return false;
+            
             if (textBox_D1.Text != "D1" && !Double.TryParse(textBox_D1.Text, out D1)) return false;
             if (textBox_D2.Text != "D2" && !Double.TryParse(textBox_D2.Text, out D2)) return false;
             if (textBox_D3.Text != "D3" && !Double.TryParse(textBox_D3.Text, out D3)) return false;
             if (textBox_D4.Text != "D4" && !Double.TryParse(textBox_D4.Text, out D4)) return false;
             if (textBox_D5.Text != "D5" && !Double.TryParse(textBox_D5.Text, out D5)) return false;
-            if (textBox_D6.Text != "D6" && !Double.TryParse(textBox_D6.Text, out D6)) return false;
+            if (textBox_D6.Text != "D6" && !Double.TryParse(textBox_D6.Text, out D6)) return false;*/
+
+            if (!Double.TryParse(textBox_DR.Text, out _DR)) return false;
+
+            if (textBox_D1.Text != "D1" && !Double.TryParse(textBox_D1.Text, out _D1)) return false;
+            if (textBox_D2.Text != "D2" && !Double.TryParse(textBox_D2.Text, out _D2)) return false;
+            if (textBox_D3.Text != "D3" && !Double.TryParse(textBox_D3.Text, out _D3)) return false;
+            if (textBox_D4.Text != "D4" && !Double.TryParse(textBox_D4.Text, out _D4)) return false;
+            if (textBox_D5.Text != "D5" && !Double.TryParse(textBox_D5.Text, out _D5)) return false;
+            if (textBox_D6.Text != "D6" && !Double.TryParse(textBox_D6.Text, out _D6)) return false;
 
             return true;
+        }
+
+        private void Konverzija()
+        {
+            DR = _DR;
+            D1 = _D1;
+            D2 = _D2;
+            D3 = _D3;
+            D4 = _D4;
+            D5 = _D5;
+            D6 = _D6;
         }
     }
 }

@@ -16,6 +16,8 @@ namespace Proracun_vibracija
             InitializeComponent();
         }
 
+        // todo: prebaci forma_centar_tabela_2 na pravo mesto, popravi unos podataka u forma_centar_tabela_1, popravi x-osu, dodaj proveru vrednosti na forma_centar_glavni, ulepsaj grafik
+
         public Forma_Centar_Glavni FormaCentarGlavni;
 
         #region Jezik
@@ -86,7 +88,25 @@ namespace Proracun_vibracija
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D3_Click",
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D4_Click",
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D5_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D6_Click"
+                                "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D6_Click",
+
+                                // Forma_Centar_Grafik_1
+                                "Vibracije motora",
+                                "Vibracije agregata",
+                                "Iscrtaj ponovo",
+                                "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM2_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM4_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV NE ISPUNJEN"
                                 };
 
         //public String jezik
@@ -109,6 +129,10 @@ namespace Proracun_vibracija
                         FormaCentarGlavni.FormaCentarTabela1.FormaCentarTabela2.PromenaJezika();
                         if (FormaCentarGlavni.FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3 != null) FormaCentarGlavni.FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3.PromenaJezika();
                     }
+                }
+                if (FormaCentarGlavni.FormaCentarGrafik1 != null)
+                {
+                    FormaCentarGlavni.FormaCentarGrafik1.PromenaJezika();
                 }
             }
         }
@@ -182,6 +206,24 @@ namespace Proracun_vibracija
             jezik[55] = "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D5_Click";
             jezik[56] = "PLACEHOLDERSTRING Forma_Centar_Tabela_3.button_D6_Click";
 
+            // Forma_Centar_Grafik_1
+            jezik[57] = "Vibracije motora";
+            jezik[58] = "Vibracije agregata";
+            jezik[59] = "Iscrtaj ponovo";
+            jezik[60] = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            jezik[61] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM_Click USLOV ISPUNJEN";
+            jezik[62] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM_Click USLOV NE ISPUNJEN";
+            jezik[63] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM2_Click USLOV ISPUNJEN";
+            jezik[64] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM2_Click USLOV NE ISPUNJEN";
+            jezik[65] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV ISPUNJEN";
+            jezik[66] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV NE ISPUNJEN";
+            jezik[67] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV ISPUNJEN";
+            jezik[68] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FM3_Click USLOV NE ISPUNJEN";
+            jezik[69] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV ISPUNJEN";
+            jezik[70] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FB_Click USLOV NE ISPUNJEN";
+            jezik[71] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV ISPUNJEN";
+            jezik[72] = "PLACEHOLDERSTRING Forma_Centar_Grafik_1.button_FP_Click USLOV NE ISPUNJEN";
+
             PromenaJezika();
         }
 
@@ -253,6 +295,24 @@ namespace Proracun_vibracija
             jezik[54] = "P ID 54";
             jezik[55] = "P ID 55";
             jezik[56] = "P ID 56";
+
+            // Forma_Centar_Grafik_1
+            jezik[57] = "Engine-related vibrations";
+            jezik[58] = "P ID 58";
+            jezik[59] = "P ID 59";
+            jezik[60] = "P ID 60";
+            jezik[61] = "P ID 61";
+            jezik[62] = "P ID 62";
+            jezik[63] = "P ID 63";
+            jezik[64] = "P ID 64";
+            jezik[65] = "P ID 65";
+            jezik[66] = "P ID 66";
+            jezik[67] = "P ID 67";
+            jezik[68] = "P ID 68";
+            jezik[69] = "P ID 69";
+            jezik[70] = "P ID 70";
+            jezik[71] = "P ID 71";
+            jezik[72] = "P ID 72";
 
             PromenaJezika();
         }

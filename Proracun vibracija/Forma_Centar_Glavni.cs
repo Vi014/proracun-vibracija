@@ -13,6 +13,7 @@ namespace Proracun_vibracija
     {
         public Forma_HomeScreen      FormaHomeScreen;
         public Forma_Centar_Tabela_1 FormaCentarTabela1;
+        public Forma_Centar_Grafik_1 FormaCentarGrafik1;
 
         public Forma_Centar_Glavni(Forma_HomeScreen konstruktor)
         {
@@ -317,9 +318,9 @@ namespace Proracun_vibracija
 
         #region matematika
 
-        public Boolean rpm1unet, rpm2unet, rpm3unet, unosUspesan;
+        public Boolean rpm1unet, rpm2unet, rpm3unet;
         public Int32 brojCilindara;
-        public Double  RPM1, RPM2, RPM3,
+        public Double   RPM1, RPM2, RPM3,
                         F11, F12, F13,
                         F21, F22, F23,
                         F31, F32, F33,
@@ -327,57 +328,85 @@ namespace Proracun_vibracija
                         FM2, FM22, FM23, FM24, FB2, FP2,
                         FM3, FM32, FM33, FM34, FB3, FP3;
 
+        Boolean _rpm1unet, _rpm2unet, _rpm3unet;
+        Int32 _brojCilindara;
+        Double          _RPM1, _RPM2, _RPM3,
+                        _F11, _F12, _F13,
+                        _F21, _F22, _F23,
+                        _F31, _F32, _F33;
+
         private void ResetVrednosti()
         {
-            rpm1unet = rpm2unet = rpm3unet = unosUspesan = button1.Enabled = button2.Enabled = false;
-            brojCilindara = 0;
-            RPM1 = RPM2 = RPM3 = F11 = F12 = F13 = F21 = F22 = F23 = F31 = F32 = F33 = 0; // Double cija je vrednost null zapravo ima vrednost 0 tako da je ovo OK.
+            _rpm1unet = _rpm2unet = _rpm3unet = false;
+            // button1.Enabled = button2.Enabled = false;
+            _brojCilindara = 0;
+            _RPM1 = _RPM2 = _RPM3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0; // Double cija je vrednost null zapravo ima vrednost 0 tako da je ovo OK.
         }
 
         private Boolean Provera()
         {
             if (textBox_RPM1.Text != "RPM1" && textBox_RPM1.Text != "0")
-                if ((textBox_F11.Text != "F11" && textBox_F11.Text != "0") || (textBox_F12.Text != "F12" && textBox_F12.Text != "0") || (textBox_F13.Text != "F13" && textBox_F13.Text != "0")) rpm1unet = true;
-                else rpm1unet = false;
+                if ((textBox_F11.Text != "F11" && textBox_F11.Text != "0") || (textBox_F12.Text != "F12" && textBox_F12.Text != "0") || (textBox_F13.Text != "F13" && textBox_F13.Text != "0")) _rpm1unet = true;
+                else _rpm1unet = false;
             if (textBox_RPM2.Text != "RPM2" && textBox_RPM2.Text != "0")
-                if ((textBox_F21.Text != "F21" && textBox_F21.Text != "0") || (textBox_F22.Text != "F22" && textBox_F22.Text != "0") || (textBox_F23.Text != "F23" && textBox_F23.Text != "0")) rpm2unet = true;
-                else rpm2unet = false;
+                if ((textBox_F21.Text != "F21" && textBox_F21.Text != "0") || (textBox_F22.Text != "F22" && textBox_F22.Text != "0") || (textBox_F23.Text != "F23" && textBox_F23.Text != "0")) _rpm2unet = true;
+                else _rpm2unet = false;
             if (textBox_RPM3.Text != "RPM3" && textBox_RPM3.Text != "0")
-                if ((textBox_F31.Text != "F31" && textBox_F31.Text != "0") || (textBox_F32.Text != "F32" && textBox_F32.Text != "0") || (textBox_F33.Text != "F33" && textBox_F33.Text != "0")) rpm3unet = true;
-                else rpm3unet = false;
+                if ((textBox_F31.Text != "F31" && textBox_F31.Text != "0") || (textBox_F32.Text != "F32" && textBox_F32.Text != "0") || (textBox_F33.Text != "F33" && textBox_F33.Text != "0")) _rpm3unet = true;
+                else _rpm3unet = false;
 
-            if (rpm1unet || rpm2unet || rpm3unet) return true;
+            if (_rpm1unet || _rpm2unet || _rpm3unet) return true;
             else return false;
         }
 
         private Boolean Ucitavanje()
         {
-            brojCilindara = Convert.ToInt32(comboBox_BrojCilindara.Text); // radi kako treba
+            _brojCilindara = Convert.ToInt32(comboBox_BrojCilindara.Text); // radi kako treba
 
-            if (rpm1unet)
+            if (_rpm1unet)
             {
-                if (!Double.TryParse(textBox_RPM1.Text, out RPM1)) return false;
-                if (textBox_F11.Text != "F11" && !Double.TryParse(textBox_F11.Text, out F11)) return false;
-                if (textBox_F12.Text != "F12" && !Double.TryParse(textBox_F12.Text, out F12)) return false;
-                if (textBox_F13.Text != "F13" && !Double.TryParse(textBox_F13.Text, out F13)) return false;
+                if (!Double.TryParse(textBox_RPM1.Text, out _RPM1)) return false;
+                if (textBox_F11.Text != "F11" && !Double.TryParse(textBox_F11.Text, out _F11)) return false;
+                if (textBox_F12.Text != "F12" && !Double.TryParse(textBox_F12.Text, out _F12)) return false;
+                if (textBox_F13.Text != "F13" && !Double.TryParse(textBox_F13.Text, out _F13)) return false;
             }
-            if (rpm2unet)
+            if (_rpm2unet)
             {
-                if (!Double.TryParse(textBox_RPM2.Text, out RPM2)) return false;
-                if (textBox_F21.Text != "F21" && !Double.TryParse(textBox_F21.Text, out F21)) return false;
-                if (textBox_F22.Text != "F22" && !Double.TryParse(textBox_F22.Text, out F22)) return false;
-                if (textBox_F23.Text != "F23" && !Double.TryParse(textBox_F23.Text, out F23)) return false;
+                if (!Double.TryParse(textBox_RPM2.Text, out _RPM2)) return false;
+                if (textBox_F21.Text != "F21" && !Double.TryParse(textBox_F21.Text, out _F21)) return false;
+                if (textBox_F22.Text != "F22" && !Double.TryParse(textBox_F22.Text, out _F22)) return false;
+                if (textBox_F23.Text != "F23" && !Double.TryParse(textBox_F23.Text, out _F23)) return false;
             }
-            if (rpm3unet)
+            if (_rpm3unet)
             {
-                if (!Double.TryParse(textBox_RPM3.Text, out RPM3)) return false;
-                if (textBox_F31.Text != "F31" && !Double.TryParse(textBox_F31.Text, out F31)) return false;
-                if (textBox_F32.Text != "F32" && !Double.TryParse(textBox_F32.Text, out F32)) return false;
-                if (textBox_F33.Text != "F33" && !Double.TryParse(textBox_F33.Text, out F33)) return false;
+                if (!Double.TryParse(textBox_RPM3.Text, out _RPM3)) return false;
+                if (textBox_F31.Text != "F31" && !Double.TryParse(textBox_F31.Text, out _F31)) return false;
+                if (textBox_F32.Text != "F32" && !Double.TryParse(textBox_F32.Text, out _F32)) return false;
+                if (textBox_F33.Text != "F33" && !Double.TryParse(textBox_F33.Text, out _F33)) return false;
                 //if (textBox_F33.Text != "F33") if (!Double.TryParse(textBox_F33.Text, out F33)) return false;
             }
 
             return true;
+        }
+
+        private void Konvertovanje()
+        {
+            rpm1unet = _rpm1unet;
+            rpm2unet = _rpm2unet;
+            rpm3unet = _rpm3unet;
+            brojCilindara = _brojCilindara;
+            RPM1 = _RPM1;
+            RPM2 = _RPM2;
+            RPM3 = _RPM3;
+            F11 = _F11;
+            F12 = _F12;
+            F13 = _F13;
+            F21 = _F21;
+            F22 = _F22;
+            F23 = _F23;
+            F31 = _F31;
+            F32 = _F32;
+            F33 = _F33;
         }
 
         private void Racun()
@@ -420,27 +449,23 @@ namespace Proracun_vibracija
             {
                 if (Ucitavanje())
                 {
+                    Konvertovanje(); /* Ako se ispostavi da neke vrednosti nismo dobro uneli, izazvacemo reset vrednosti. Ovo samo po sebi nije problem, sem ako posle greske mi pokusamo da unesemo vrednosti u Forma_Centar_Tabela_2 i refreshujemo Forma_Centar_Tabela_3.
+                                        Ako nesto nije uneto kako valja, resetovace se samo privremene promenljive (tj one sa donjim crtama u imenu), dok ce prethodno upisane vrednosti ostati u promenljivama kojima pristupaju ostale forme.
+                                        Sve vrednosti ovde su resetovane na nulu zbog nepravilnog upisa, pa samim tim unos zabaguje. Ovako smo sve operacije provere prebacili na privremene promenljive, a unos vrednosti iz textboxova se vrsi tek kada smo apsolutno sigurni da je sve uneto kako valja.
+                                        Ako nesto nije uneto kako valja, resetovace se samo privremene promenljive (tj one sa donjim crtama u imenu), dok ce prethodno upisane vrednosti ostati u promenljivama kojima pristupaju ostale forme.
+                                        Isto ovo se moze desiti ako unesemo pogresne vrednosti na Forma_Centar_Tabela_2, i onda pokusamo da odradimo refresh sa ove forme, tako da sam i u njen kod dodao privremene promenljive. */
                     Racun();
-                    if (FormaCentarTabela1 == null /* && forma4 == null */)
-                        button1.Enabled = button2.Enabled = true;
+                    if (FormaCentarTabela1 == null && FormaCentarGrafik1 == null) button1.Enabled = button2.Enabled = true;
                     if (FormaCentarTabela1 != null) 
                     {
                         FormaCentarTabela1.IspisVrednosti();
                         if (FormaCentarTabela1.FormaCentarTabela2 != null && FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3 != null) FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3.Matematika();
                     }
-                    //if(forma4 != null) forma4.Azuriraj();
+                    if (FormaCentarGrafik1 != null) FormaCentarGrafik1.Racun();
                 }
-                else
-                {
-                    ResetVrednosti();
-                    MessageBox.Show(FormaHomeScreen.jezik[12]);
-                }
+                else MessageBox.Show(FormaHomeScreen.jezik[12]);
             }
-            else
-            {
-                ResetVrednosti();
-                MessageBox.Show(FormaHomeScreen.jezik[11]);
-            }
+            else MessageBox.Show(FormaHomeScreen.jezik[11]);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -456,6 +481,21 @@ namespace Proracun_vibracija
         {
             get { return button1.Enabled;  }
             set { button1.Enabled = value; }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormaCentarGrafik1 = new Forma_Centar_Grafik_1(this);
+            FormaCentarGrafik1.Owner = this;
+            FormaCentarGrafik1.Show();
+
+            button2.Enabled = false;
+        }
+
+        public Boolean button2Enabled
+        {
+            get { return button2.Enabled;  }
+            set { button2.Enabled = value; }
         }
     }
 }
