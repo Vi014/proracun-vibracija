@@ -200,7 +200,14 @@ namespace Proracun_vibracija
             konverzijaY = (Double)Y_Razdaljina_Piksel / Ymax;
 
             brPodeljakaX = Convert.ToInt32(Xmax / 100);
-            brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            if (Ymax >= 10)
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax / 10);
+            }
+            else
+            {
+                brPodeljakaY = Convert.ToInt32(Ymax); // ovaj kod je tu da u slucaju da je Ymax ispod 10 se ne desi divide by zero greska na liniji 213 - evkivalenta nije potrebna za Xmax jer je na Forma_Centar_Glavni 100 minimum za RPM
+            }
 
             podeljakX = Convert.ToInt32(X_Razdaljina_Piksel) / brPodeljakaX;
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
@@ -389,48 +396,61 @@ namespace Proracun_vibracija
 
         private void otvoriTekst()
         {
-            // if(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.FormaCentarTekst )
+            if(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarAgregatGlavni.FormaCentarGlavni);
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarAgregatGlavni.FormaCentarGlavni;
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Show();
+
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.EngineAccessoryVibrations);
+            }
+            else
+            {
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.EngineAccessoryVibrations);
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
         }
 
         private void button_D1_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D11, FormaCentarAgregatGlavni.D12, FormaCentarAgregatGlavni.D13))
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[88]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[89]);
         }
 
         private void button_D2_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D21, FormaCentarAgregatGlavni.D22, FormaCentarAgregatGlavni.D23))
-                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[90]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[91]);
         }
 
         private void button_D3_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D31, FormaCentarAgregatGlavni.D32, FormaCentarAgregatGlavni.D33))
-                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[92]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[93]);
         }
 
         private void button_D4_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D41, FormaCentarAgregatGlavni.D42, FormaCentarAgregatGlavni.D43))
-                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[94]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[95]);
         }
 
         private void button_D5_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D51, FormaCentarAgregatGlavni.D52, FormaCentarAgregatGlavni.D53))
-                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[96]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[97]);
         }
 
         private void button_D6_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D61, FormaCentarAgregatGlavni.D62, FormaCentarAgregatGlavni.D63))
-                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[98]);
+                otvoriTekst();
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[99]);
         }
 

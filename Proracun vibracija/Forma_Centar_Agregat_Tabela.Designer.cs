@@ -89,7 +89,7 @@
             this.button_D5.Text = "?";
             this.button_D5.UseVisualStyleBackColor = true;
             this.button_D5.Visible = false;
-            this.button_D5.Click += new System.EventHandler(this.button_D5_Click);
+            this.button_D5.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_D4
             // 
@@ -105,7 +105,7 @@
             this.button_D4.Text = "?";
             this.button_D4.UseVisualStyleBackColor = true;
             this.button_D4.Visible = false;
-            this.button_D4.Click += new System.EventHandler(this.button_D4_Click);
+            this.button_D4.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_D3
             // 
@@ -121,7 +121,7 @@
             this.button_D3.Text = "?";
             this.button_D3.UseVisualStyleBackColor = true;
             this.button_D3.Visible = false;
-            this.button_D3.Click += new System.EventHandler(this.button_D3_Click);
+            this.button_D3.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_D2
             // 
@@ -137,7 +137,7 @@
             this.button_D2.Text = "?";
             this.button_D2.UseVisualStyleBackColor = true;
             this.button_D2.Visible = false;
-            this.button_D2.Click += new System.EventHandler(this.button_D2_Click);
+            this.button_D2.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_D1
             // 
@@ -153,7 +153,7 @@
             this.button_D1.Text = "?";
             this.button_D1.UseVisualStyleBackColor = true;
             this.button_D1.Visible = false;
-            this.button_D1.Click += new System.EventHandler(this.button_D1_Click);
+            this.button_D1.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // button_D6
             // 
@@ -169,7 +169,7 @@
             this.button_D6.Text = "?";
             this.button_D6.UseVisualStyleBackColor = true;
             this.button_D6.Visible = false;
-            this.button_D6.Click += new System.EventHandler(this.button_D6_Click);
+            this.button_D6.Click += new System.EventHandler(this.otvoriTekst);
             // 
             // textBox_D53
             // 

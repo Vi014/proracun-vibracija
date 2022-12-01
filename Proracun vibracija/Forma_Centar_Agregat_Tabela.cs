@@ -472,38 +472,22 @@ namespace Proracun_vibracija
             #endregion
         }
 
-        #region dugmici sa znakom pitanja
-
-        private void button_D1_Click(object sender, EventArgs e)
+        private void otvoriTekst(object sender, EventArgs e)
         {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[79]);
-        }
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst == null)
+            {
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst = new Forma_Centar_Tekst(FormaCentarAgregatGlavni.FormaCentarGlavni);
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Owner = FormaCentarAgregatGlavni.FormaCentarGlavni;
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Show();
 
-        private void button_D2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[80]);
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.EngineAccessoryVibrations);
+            }
+            else
+            {
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.PanelScrollPos = new Point(0, FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.EngineAccessoryVibrations);
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.WindowState = FormWindowState.Normal;
+                FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Focus();
+            }
         }
-
-        private void button_D3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[81]);
-        }
-
-        private void button_D4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[82]);
-        }
-
-        private void button_D5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[83]);
-        }
-
-        private void button_D6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[84]);
-        }
-
-        #endregion
     }
 }

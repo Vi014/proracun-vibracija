@@ -13,7 +13,6 @@ namespace Proracun_vibracija
     {
         public Forma_TestVoznja    FormaTestVoznja;
         public Forma_Centar_Glavni FormaCentarGlavni;
-        public Forma_Centar_Tekst  FormaCentarTekst;
         public Forma_Desni_Glavni  FormaDesniGlavni;
         public Forma_Uvod          FormaUvod;
 
@@ -115,28 +114,28 @@ namespace Proracun_vibracija
                                 "Dodatnog agregata 1",
                                 "Dodatnog agregata 2",
                                 "Izmerene frekvencije",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D1_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D2_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D3_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click",
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D1_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D2_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D3_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click", // obrisati
 
                                 // Forma_Centar_Agregat_Grafik
                                 "PLACEHOLDERSTRING Forma_Centar_Agregat_Grafik.Text",
                                 "Iscrtaj ponovo",
                                 "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN", // obrisati
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN", // ne brisati ove za uslov ne ispunjen
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV NE ISPUNJEN",
                                 "D1",
                                 "D2",
@@ -474,7 +473,7 @@ namespace Proracun_vibracija
                 FormaCentarGlavni.PromenaJezika();
                 if (FormaCentarGlavni.FormaCentarTabela != null) FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
                 if (FormaCentarGlavni.FormaCentarGrafik != null) FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
-                if (FormaCentarTekst != null) FormaCentarTekst.PromenaJezika();
+                if (FormaCentarGlavni.FormaCentarTekst != null)  FormaCentarGlavni.FormaCentarTekst.PromenaJezika();
 
                 if (FormaCentarGlavni.FormaCentarAgregatGlavni != null)
                 {
@@ -982,8 +981,7 @@ namespace Proracun_vibracija
 
         private void Forma_HomeScreen_Load(object sender, EventArgs e)
         {
-            Forma_Centar_Tekst test = new Forma_Centar_Tekst(this);
-            test.Show();
+            
         }
     }
 }

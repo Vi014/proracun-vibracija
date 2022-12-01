@@ -15,6 +15,7 @@ namespace Proracun_vibracija
         public Forma_Centar_Tabela         FormaCentarTabela;
         public Forma_Centar_Grafik         FormaCentarGrafik;
         public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
+        public Forma_Centar_Tekst          FormaCentarTekst;
 
         public Forma_Centar_Glavni(Forma_HomeScreen konstruktor)
         {
@@ -36,6 +37,9 @@ namespace Proracun_vibracija
 
         private void Forma_Centar_Glavni_Load(object sender, EventArgs e)
         {
+            // FormaCentarTekst = new Forma_Centar_Tekst(this);
+            // FormaCentarTekst.Show();
+
             PromenaJezika();
             this.Location = new Point(FormaHomeScreen.Left + 20, FormaHomeScreen.Top + 20);
 
