@@ -305,6 +305,7 @@
             this.Controls.Add(this.label_RPM);
             this.Controls.Add(this.label_UnosPodataka);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Forma_Centar_Glavni";
             this.Text = "Vibracije motora";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Glavni_FormClosed);

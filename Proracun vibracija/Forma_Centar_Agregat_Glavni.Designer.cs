@@ -257,6 +257,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Racun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Forma_Centar_Agregat_Glavni";
             this.Text = "Unos podataka";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Agregat_Glavni_FormClosed);

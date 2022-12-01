@@ -106,6 +106,18 @@
     <Compile Include="Forma_Desni_Tabela.Designer.cs">
       <DependentUpon>Forma_Desni_Tabela.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forma_TestVoznja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_TestVoznja.Designer.cs">
+      <DependentUpon>Forma_TestVoznja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forma_Uvod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Uvod.Designer.cs">
+      <DependentUpon>Forma_Uvod.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forma_!HomeScreen.resx">
@@ -138,6 +150,12 @@
     <EmbeddedResource Include="Forma_Desni_Tabela.resx">
       <DependentUpon>Forma_Desni_Tabela.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forma_TestVoznja.resx">
+      <DependentUpon>Forma_TestVoznja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Uvod.resx">
+      <DependentUpon>Forma_Uvod.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -160,6 +178,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\febi RTM Engine Vibration Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\febi RTM Vibration Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllParts.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

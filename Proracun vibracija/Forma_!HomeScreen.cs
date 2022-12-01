@@ -11,8 +11,10 @@ namespace Proracun_vibracija
 {
     public partial class Forma_HomeScreen : Form
     {
+        public Forma_TestVoznja    FormaTestVoznja;
         public Forma_Centar_Glavni FormaCentarGlavni;
         public Forma_Desni_Glavni  FormaDesniGlavni;
+        public Forma_Uvod          FormaUvod;
 
         public Forma_HomeScreen()
         {
@@ -169,12 +171,12 @@ namespace Proracun_vibracija
                                 // Forma_Desni_Tabela
                                 "PLACEHOLDERSTRING Forma_Desni_Tabela.Text",
                                 "Brzina vozila",
-                                "Frekvencije točka",
+                                "Frekvencije točka 1",
                                 "Prvog reda",
                                 "Drugog reda",
                                 "Trećeg reda",
                                 "Četvrtog reda",
-                                "Frekvencije kardana",
+                                "Frekvencije kardana 1",
                                 "Prvog reda",
                                 "Drugog reda",
                                 "Trećeg reda",
@@ -224,15 +226,105 @@ namespace Proracun_vibracija
                                 "FK - frekvencija kardana prvog reda",
                                 "FK2 - frekvencija kardana drugog reda",
                                 "FK3 - frekvencija kardana trećeg reda",
-                                "FK4 - frekvencija kardana četvrtog reda"
+                                "FK4 - frekvencija kardana četvrtog reda",
+
+                                // jezik 2 elektrik bugalu
+
+                                // Forma_Desni_Glavni
+                                "Dimenzije pneumatika na drugoj osovini su različite",
+                                "Širina 2",
+                                "Visina 2",
+                                "Prečnik felne 2",
+                                "mm",
+                                "%",
+                                "Inča",
+
+                                // Forma_TestVoznja
+                                "PLACEHOLDERSTRING Forma_TestVoznja.Text",
+
+                                // Forma_Desni_Grafik
+                                "Dimenzije 1",
+                                "Dimenzije 2",
+                                "FT",
+                                "FT2",
+                                "FT3",
+                                "FT4",
+                                "FK",
+                                "FK2",
+                                "FK3",
+                                "FK4",
+
+                                // Forma_Desni_Tabela
+
+                                "Frekvencije točka 2",
+                                "Frekvencije kardana 2",
+                                
+                                // Forma_TestVoznja
+                                "Pre-Road Test inspection",
+                                "Road test",
+                                "Pre-Road Test inspection \r\nCheck the tires for: \n      - Inflation pressure \r\n      - Proper tire type \r\n      - Verify the tires are uniform in size and brand \r\n      - Abnormal tire wear and correct thread depth \r\nCheck the wheels for: \r\n      - Mud, ice and debris \r\n      - Deformed or bent \r\n      - Missing wheel weights \r\n      - Log nuts tightening torque \r\nCheck the vehicle for: \r\n      - Signs of damaged components \r\n      - Signs of collision damage \r\n      - Added components \r\nNotes: \r\n      - It is important to know which specific concern the customer has with their vehicle \r\n      - Don't be misled by the reported location of the noise or vibration, cause may be in another area of vehicle \r\n      - The vibrating component may only generate a small vibration, but this small vibration may cause a larger vibration or noise. \r\n      - It must be possible to operate the vehicle at the speed in which the condition occurs. \r\n      - Prepare measuring equipment.",
+                                "Back",
+                                "Road test \r\nIn order to determine engine speed, vehicle speed and frequency of the NVH concern, as well to establish is it a engine \r\nor vehicle speed related vibrations, perform the test drive: ",
+                                "Slow Acceleration Test",
+                                "Neutral Coast-Down Speed Test",
+                                "Downshift Speed Test",
+                                "Torque Converter Test",
+                                "Steering Test 1",
+                                "Steering Test 2",
+                                "Neutral Run-Up Test",
+                                "Engine Loaded Test",
+                                "Engine Accessory Test",
+                                "Back",
+                                "Slow Acceleration Test",
+                                "The first vehicle check to determine a related symptom of an NVH concern is the slow acceleration test. \r\nThis test is used to identify the noise or vibration if a road test with the customer was not possible. \r\nThe steps of the slow acceleration test are: \r\n      1. Slowly accelerate the vehicle to the speed in which the problem occurs. \r\n      2. Note the vehicle speed and the engine RPM. \r\n      3. If possible, determine the frequency of the noise or vibration. \r\n      4. Classify the noise or vibration.",
+                                "Back",
+                                "Neutral Coast-Down Speed Test",
+                                "The next vehicle check when performing the road test is the neutral coast-down speed test. \r\nThis test divides the possible causes of the noise or vibration into two categories: \r\n      - Vehicle speed-related \r\n      - Engine speed-related \r\nThe steps of the neutral coast-down speed test are: \r\n1. Drive the vehicle at a speed higher than the speed in which the noise or vibration was obvious in the slow acceleration test. \r\n2. Place the vehicle in Neutral and coast down through the speed where the concern occurs. \r\n3. Classify the NVH concern as either vehicle speed-related or engine speed-related. \r\n      - If the noise or vibration exists, then the concern is vehicle speed related. \r\n         This eliminats the engine and torque converter as possible causes. \r\n      - If the NVH concern did not occur during the neutral coast-down speed test, \r\n         perform a downshift speed test to confirm the concern as engine speed-related.",
+                                "Back",
+                                "Downshift Speed Test",
+                                "This vehicle check helps to confirm the NVH concern as engine speed-related. The steps of the downshift speed test are: \r\n1. Stop the vehicle and place the transmission in a lower gear. \r\n2. Drive the vehicle at the engine RPM in which the noise or vibration occurs. \r\n      - If the noise or vibration exists, then the concern is engine speed-related. \r\n         This eliminates tires, wheels, brakes, and suspension components. \r\n      - If necessary, repeat the test using other gears and Neutral to confirm the results.",
+                                "Back",
+                                "Torque Converter Test",
+                                "This vehicle check determines how the torque converter contributes to an engine speed-related condition. \r\nThe steps of the torque converter test are: \r\n1. Drive the vehicle at the speed in which the NVH concern exists. \r\n2. Operate the torque converter by taking it in and out of lock-up by lightly depressing the brake pedal, \r\n      while maintaining vehicle speed. \r\n3. Check for noise when the torque converter is not locked up.",
+                                "Back",
+                                "Steering Test 1",
+                                "These test determine if the wheel bearings and other suspension components are contributing to a speed-related condition. \r\nThe steps of the Steering Input Test 1 are:\r\n1. Drive the vehicle at the speed in which the NVH concern exists.\r\n2. Make wide sweeping turns in both directions. \r\nIf the concern goes away or gets worse, wheel bearings, hubs, Universal Joints (U-joints), drive axles, constant velocity joints \r\nand tire tread wear may be the components causing the concern. \r\nIf the noise or vibration exists, the concern is engine speed related.",
+                                "Back",
+                                "Steering Test 2",
+                                "Perform the Steering Input Test 2 if the NVH condition occurs when turning only. The steps of Steering Input Test 2 are: \r\n1. Drive the vehicle at a speed higher than the speed at which the noise or vibration occurs. \r\n2. Place the vehicle in Neutral and coast down through the speed where the NVH concern is obvious, \r\n      while making wide sweeping turns in both directions. \r\nIf the concern exists, check for worn wheel bearings, suspension bushings, \r\nconstant velocity joints and U-joints (contained in the axles of AWD applications). \r\nIf the vibration does not occur, stop the vehicle and engage the transmission/transaxle. \r\nAlternately accelerate and decelerate through the speed at which the NVH concern appears, \r\nwhile making wide sweeping turns in both directions. \r\nIf the concern returns, then the cause is dependent upon engine load. The probable causes are constant velocity joints or U-joints \r\n(contained in the axles of AWD applications) and loose or missing wheel nuts. \r\nIf the noise is a “clunking sound,” engine and transaxle mounts, suspension bushings and U-joints are probable causes.",
+                                "Back",
+                                "Neutral Run-Up Test",
+                                "Perform the Neutral Run-Up Test if the NVH concern is engine speed-related. \r\nUse the test as a follow-up to the downshift test or when the NVH concern occurs at idle. The steps are: \r\n1. Increase the engine RPM while in Park or Neutral. \r\n2. If necessary, make note of the RPM and frequency of the NVH concern.",
+                                "Back",
+                                "Engine Loaded Test",
+                                "Perform the Engine Loaded Test if the NVH concern is engine speed-related. \r\nThis test may help reproduce engine speed-related concerns not evident with the neutral run-up or neutral coast-down speed tests. \r\nThe engine loaded test also identifies noise and vibration sensitive to engine load or torque. \r\nThese NVH concerns often appear during heavy acceleration or when climbing a hill.",
+                                "Warning: Block the front and back wheels or injury to personnel may result. \r\nDo not exceed five seconds when performing the engine loaded test or damage to the transmission/transaxle may result.",
+                                "The steps of the Engine Loaded Test are: \r\n1. Block the front and back wheels.\r\n2. Apply the parking and service brakes. \r\n3. Put the transmission in Drive while keeping the brakes applied. \r\n4. Increase the engine rpm to the rpm at which the NVH concern occurred. If necessary, \r\n      make note of the RPM and frequency of the NVH concern. \r\n5. Return engine to idle. \r\n6. Put the transmission in Reverse while keeping the brakes applied. \r\n7. Increase the engine RPM to the RPM at which the NVH concern occurred. If necessary, \r\n      make note of the RPM and frequency of the NVH concern. \r\n      If the concern is definitely engine speed-related, \r\n      perform the Engine Accessory Test to narrow down the possible source of the concern.",
+                                "Immediately after engine loaded test, run in neutral for 3 minutes at a slightly elevated RPM to cool the transmission.",
+                                "Back",
+                                "Engine Accessory Test",
+                                "Perform the Engine Accessory Test if the NVH concern is engine speed-related. \r\nThis test helps locate faulty belts and accessories that are causing engine speed-related NVH concerns. \r\nThe steps are: \r\n1. Block the front and back wheels. \r\n2. Apply the parking and service brakes. \r\n3. Remove the accessory drive belt(s). \r\n4. Increase engine rpm to the rpm at which the NVH concern occurred. \r\n      - If the vibration occurs, the belts and accessories are not the source of the concern.\r\n      - If the belts and accessories are the source of the NVH concern, \r\n         continue to add or remove specific accessory belts to locate the concern",
+                                "Caution: With the accessory belt removed: \r\n      - Do not drive the vehicle\r\n      - Do not operate the engine for more than a few minutes or\r\n            • Water-cooled alternators can fail \r\n            • Engines can overheat",
+                                "Back",
+
+                                // Forma_HomeScreen
+                                "Uvod",
+
+                                // Forma_Uvod
+                                "PLACEHOLDERSTRING Forma_Uvod.Text"
                                 };
 
         private void PromenaJezika()
         {
-            this.Text = jezik[0];
-            dugmeLevo.Text = jezik[1];
-            dugmeCentar.Text = jezik[2];
-            dugmeDesno.Text = jezik[3];
+            this.Text         = jezik[0];
+            dugmeLevo.Text    = jezik[1];
+            dugmeCentar.Text  = jezik[2];
+            dugmeDesno.Text   = jezik[3];
+            dugmeDodatno.Text = jezik[250];
+
+            if (FormaUvod != null)       FormaUvod.PromenaJezika();
+
+            if (FormaTestVoznja != null) FormaTestVoznja.PromenaJezika();
 
             if (FormaCentarGlavni != null) 
             {
@@ -404,12 +496,12 @@ namespace Proracun_vibracija
             // Forma_Desni_Tabela
             jezik[128] = "PLACEHOLDERSTRING Forma_Desni_Tabela.Text";
             jezik[129] = "Brzina vozila";
-            jezik[130] = "Frekvencije točka";
+            jezik[130] = "Frekvencije točka 1";
             jezik[131] = "Prvog reda";
             jezik[132] = "Drugog reda";
             jezik[133] = "Trećeg reda";
             jezik[134] = "Četvrtog reda";
-            jezik[135] = "Frekvencije kardana";
+            jezik[135] = "Frekvencije kardana 1";
             jezik[136] = "Prvog reda";
             jezik[137] = "Drugog reda";
             jezik[138] = "Trećeg reda";
@@ -460,6 +552,43 @@ namespace Proracun_vibracija
             jezik[181] = "FK2 - frekvencija kardana drugog reda";
             jezik[182] = "FK3 - frekvencija kardana trećeg reda";
             jezik[183] = "FK4 - frekvencija kardana četvrtog reda";
+
+            // jezik 2 elektrik bugalu
+
+            // Forma_Desni_Glavni
+            jezik[184] = "Dimenzije pneumatika na drugoj osovini su različite";
+            jezik[185] = "Širina 2";
+            jezik[186] = "Visina 2";
+            jezik[187] = "Prečnik felne 2";
+            jezik[188] = "mm";
+            jezik[189] = "%";
+            jezik[190] = "Inča";
+
+            // Forma_TestVoznja
+            jezik[191] = "PLACEHOLDERSTRING Forma_TestVoznja.Text";
+
+            // Forma_Desni_Grafik
+            jezik[192] = "Dimenzije 1";
+            jezik[193] = "Dimenzije 2";
+            jezik[194] = "FT";
+            jezik[195] = "FT2";
+            jezik[196] = "FT3";
+            jezik[197] = "FT4";
+            jezik[198] = "FK";
+            jezik[199] = "FK2";
+            jezik[200] = "FK3";
+            jezik[201] = "FK4";
+
+            // Forma_Desni_Tabela
+            jezik[202] = "Frekvencije točka 2";
+            jezik[203] = "Frekvencije kardana 2";
+
+            // Forma_TestVoznja
+            jezik[204] = "Pre-Road Test inspection";
+            jezik[205] = "Road test";
+            jezik[206] = "Pre-Road Test inspection \r\nCheck the tires for: \n      - Inflation pressure \r\n      - Proper tire type \r\n      - Verify the tires are uniform in size and brand \r\n      - Abnormal tire wear and correct thread depth \r\nCheck the wheels for: \r\n      - Mud, ice and debris \r\n      - Deformed or bent \r\n      - Missing wheel weights \r\n      - Log nuts tightening torque \r\nCheck the vehicle for: \r\n      - Signs of damaged components \r\n      - Signs of collision damage \r\n      - Added components \r\nNotes: \r\n      - It is important to know which specific concern the customer has with their vehicle \r\n       - Don't be misled by the reported location of the noise or vibration, cause may be in another area of vehicle \r\n      - The vibrating component may only generate a small vibration, but this small vibration may cause a larger vibration or noise. \r\n      - It must be possible to operate the vehicle at the speed in which the condition occurs. \r\n      - Prepare measuring equipment.";
+            jezik[207] = "Back";
+            jezik[208] = "Road test \r\nIn order to determine engine speed, vehicle speed and frequency of the NVH concern, as well to establish is it a engine \r\nor vehicle speed related vibrations, perform the test drive: ";
 
             PromenaJezika();
         }
@@ -648,14 +777,23 @@ namespace Proracun_vibracija
 
         private void dugmeLevo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(jezik[4]);
+            FormaTestVoznja = new Forma_TestVoznja(this);
+            FormaTestVoznja.Owner = this;
+            FormaTestVoznja.Show();
+
+            dugmeLevo.Enabled = false;
+        }
+
+        public Boolean dugmeLevoEnabled
+        {
+            get { return dugmeLevo.Enabled;  }
+            set { dugmeLevo.Enabled = value; }
         }
 
         private void dugmeCentar_Click(object sender, EventArgs e)
         {
             FormaCentarGlavni = new Forma_Centar_Glavni(this);
             FormaCentarGlavni.Owner = this;
-
             FormaCentarGlavni.Show();
 
             dugmeCentar.Enabled = false;
@@ -680,6 +818,21 @@ namespace Proracun_vibracija
         {
             get { return dugmeDesno.Enabled;  }
             set { dugmeDesno.Enabled = value; }
+        }
+
+        private void dugmeDodatno_Click(object sender, EventArgs e)
+        {
+            FormaUvod = new Forma_Uvod(this);
+            FormaUvod.Owner = this;
+            FormaUvod.Show();
+
+            dugmeDodatno.Enabled = false;
+        }
+
+        public Boolean dugmeDodatnoEnabled
+        {
+            get { return dugmeDodatno.Enabled;  }
+            set { dugmeDodatno.Enabled = value; }
         }
     }
 }

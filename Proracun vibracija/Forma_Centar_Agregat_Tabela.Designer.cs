@@ -613,6 +613,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Forma_Centar_Agregat_Tabela";
             this.Text = "Proračun vibracija agregata";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Agregat_Tabela_FormClosed);

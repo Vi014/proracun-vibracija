@@ -594,6 +594,7 @@
             this.Controls.Add(this.label_RPM);
             this.Controls.Add(this.label_FrMotora2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Forma_Centar_Tabela";
             this.Text = "PLACEHOLDERSTRING Forma_Centar_Tabela_1.Text";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Tabela_1_FormClosed);

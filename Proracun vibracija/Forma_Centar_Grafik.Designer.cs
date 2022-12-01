@@ -245,6 +245,7 @@
             this.Controls.Add(this.checkBox_L1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Forma_Centar_Grafik";
             this.Text = "Vibracije motora";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Grafik_1_FormClosed);

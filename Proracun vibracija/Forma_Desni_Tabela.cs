@@ -34,6 +34,9 @@ namespace Proracun_vibracija
             label_FKx3.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[138];
             label_FKx4.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[139];
             label_IzmFrek.Text      = FormaDesniGlavni.FormaHomeScreen.jezik[140];
+
+            label_FT2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[202];
+            label_FK2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[203];
         }
 
         private void Forma_Desni_Tabela_Load(object sender, EventArgs e)
@@ -519,6 +522,516 @@ namespace Proracun_vibracija
                     //////////////////////////////////////////////////////////
                 }
                 //////////////////////////////////////////////////////////
+            }
+
+            #endregion
+
+            #region checkBox1Checked
+
+            if (FormaDesniGlavni.checkBox1Checked)
+            {
+                label_FT2.Enabled     = label_FT2.Visible =
+                    label_FK2.Enabled = label_FK2.Visible =
+
+                    textBox_FT2_1.Enabled   = textBox_FT2_1.Visible   =
+                    textBox_FT2_1x2.Enabled = textBox_FT2_1x2.Visible =
+                    textBox_FT2_1x3.Enabled = textBox_FT2_1x3.Visible =
+                    textBox_FT2_1x4.Enabled = textBox_FT2_1x4.Visible =
+                    textBox_FK2_1.Enabled   = textBox_FK2_1.Visible   =
+                    textBox_FK2_1x2.Enabled = textBox_FK2_1x2.Visible =
+                    textBox_FK2_1x3.Enabled = textBox_FK2_1x3.Visible =
+                    textBox_FK2_1x4.Enabled = textBox_FK2_1x4.Visible =
+
+                    textBox_FT2_2.Enabled   = textBox_FT2_2.Visible   =
+                    textBox_FT2_2x2.Enabled = textBox_FT2_2x2.Visible =
+                    textBox_FT2_2x3.Enabled = textBox_FT2_2x3.Visible =
+                    textBox_FT2_2x4.Enabled = textBox_FT2_2x4.Visible =
+                    textBox_FK2_2.Enabled   = textBox_FK2_2.Visible   =
+                    textBox_FK2_2x2.Enabled = textBox_FK2_2x2.Visible =
+                    textBox_FK2_2x3.Enabled = textBox_FK2_2x3.Visible =
+                    textBox_FK2_2x4.Enabled = textBox_FK2_2x4.Visible =
+
+                    textBox_FT2_3.Enabled   = textBox_FT2_3.Visible   =
+                    textBox_FT2_3x2.Enabled = textBox_FT2_3x2.Visible =
+                    textBox_FT2_3x3.Enabled = textBox_FT2_3x3.Visible =
+                    textBox_FT2_3x4.Enabled = textBox_FT2_3x4.Visible =
+                    textBox_FK2_3.Enabled   = textBox_FK2_3.Visible   =
+                    textBox_FK2_3x2.Enabled = textBox_FK2_3x2.Visible =
+                    textBox_FK2_3x3.Enabled = textBox_FK2_3x3.Visible =
+                    textBox_FK2_3x4.Enabled = textBox_FK2_3x4.Visible = true;
+
+                this.Size = new Size(820, 525);
+
+                button_FTx1.Location = new Point(771, 75);
+                button_FTx2.Location = new Point(771, 108);
+                button_FTx3.Location = new Point(771, 141);
+                button_FTx4.Location = new Point(771, 174);
+
+                button_FKx1.Location = new Point(771, 240);
+                button_FKx2.Location = new Point(771, 273);
+                button_FKx3.Location = new Point(771, 306);
+                button_FKx4.Location = new Point(771, 339);
+
+                #region v1unet
+
+                if (FormaDesniGlavni.v1unet)
+                {
+                    //////////////////////////////////////////////////////////
+                    textBox_V1.Text = FormaDesniGlavni.V1.ToString();
+                    if (FormaDesniGlavni.F11 != 0) textBox_F11.Text = FormaDesniGlavni.F11.ToString();
+                    if (FormaDesniGlavni.F12 != 0) textBox_F12.Text = FormaDesniGlavni.F12.ToString();
+                    if (FormaDesniGlavni.F13 != 0) textBox_F13.Text = FormaDesniGlavni.F13.ToString();
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_1.Text = FormaDesniGlavni.FT2_1.ToString();
+                    if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F11 + 1)) ||
+                        (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F12 + 1)) ||
+                        (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F13 + 1)))
+                    {
+                        button_FTx1.Visible = button_FTx1.Enabled = true;
+                        textBox_FT2_1.BackColor = textBox_FT2_1.BackColor;
+                        textBox_FT2_1.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_1.BackColor = textBox_FT2_1.BackColor;
+                        textBox_FT2_1.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_1x2.Text = FormaDesniGlavni.FT2_1x2.ToString();
+                    if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F11 + 1)) ||
+                        (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F12 + 1)) ||
+                        (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F13 + 1)))
+                    {
+                        button_FTx2.Visible = button_FTx2.Enabled = true;
+                        textBox_FT2_1x2.BackColor = textBox_FT2_1x2.BackColor;
+                        textBox_FT2_1x2.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_1x2.BackColor = textBox_FT2_1x2.BackColor;
+                        textBox_FT2_1x2.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_1x3.Text = FormaDesniGlavni.FT2_1x3.ToString();
+                    if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x3 <= (FormaDesniGlavni.F11 + 1)) ||
+                        (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x3 <= (FormaDesniGlavni.F12 + 1)) ||
+                        (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x3 <= (FormaDesniGlavni.F13 + 1)))
+                    {
+                        button_FTx3.Visible = button_FTx3.Enabled = true;
+                        textBox_FT2_1x3.BackColor = textBox_FT2_1x3.BackColor;
+                        textBox_FT2_1x3.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_1x3.BackColor = textBox_FT2_1x3.BackColor;
+                        textBox_FT2_1x3.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_1x4.Text = FormaDesniGlavni.FT2_1x4.ToString();
+                    if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F11 + 1)) ||
+                        (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F12 + 1)) ||
+                        (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F13 + 1)))
+                    {
+                        button_FTx4.Visible = button_FTx4.Enabled = true;
+                        textBox_FT2_1x4.BackColor = textBox_FT2_1x4.BackColor;
+                        textBox_FT2_1x4.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_1x4.BackColor = textBox_FT2_1x4.BackColor;
+                        textBox_FT2_1x4.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    if (FormaDesniGlavni.I != 0)
+                    {
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_1.Text = FormaDesniGlavni.FK2_1.ToString();
+                        if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F11 + 1)) ||
+                            (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F12 + 1)) ||
+                            (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F13 + 1)))
+                        {
+                            button_FKx1.Visible = button_FKx1.Enabled = true;
+                            textBox_FK2_1.BackColor = textBox_FK2_1.BackColor;
+                            textBox_FK2_1.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_1.BackColor = textBox_FK2_1.BackColor;
+                            textBox_FK2_1.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_1x2.Text = FormaDesniGlavni.FK2_1x2.ToString();
+                        if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F11 + 1)) ||
+                            (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F12 + 1)) ||
+                            (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F13 + 1)))
+                        {
+                            button_FKx2.Visible = button_FKx2.Enabled = true;
+                            textBox_FK2_1x2.BackColor = textBox_FK2_1x2.BackColor;
+                            textBox_FK2_1x2.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_1x2.BackColor = textBox_FK2_1x2.BackColor;
+                            textBox_FK2_1x2.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_1x3.Text = FormaDesniGlavni.FK2_1x3.ToString();
+                        if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F11 + 1)) ||
+                            (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F12 + 1)) ||
+                            (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F13 + 1)))
+                        {
+                            button_FKx3.Visible = button_FKx3.Enabled = true;
+                            textBox_FK2_1x3.BackColor = textBox_FK2_1x3.BackColor;
+                            textBox_FK2_1x3.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_1x3.BackColor = textBox_FK2_1x3.BackColor;
+                            textBox_FK2_1x3.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_1x4.Text = FormaDesniGlavni.FK2_1x4.ToString();
+                        if ((FormaDesniGlavni.F11 != 0 && FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F11 + 1)) ||
+                            (FormaDesniGlavni.F12 != 0 && FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F12 + 1)) ||
+                            (FormaDesniGlavni.F13 != 0 && FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F13 + 1)))
+                        {
+                            button_FKx4.Visible = button_FKx4.Enabled = true;
+                            textBox_FK2_1x4.BackColor = textBox_FK2_1x4.BackColor;
+                            textBox_FK2_1x4.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_1x4.BackColor = textBox_FK2_1x4.BackColor;
+                            textBox_FK2_1x4.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                    }
+                    //////////////////////////////////////////////////////////
+                }
+
+                #endregion
+
+                #region v2unet
+
+                if (FormaDesniGlavni.v2unet)
+                {
+                    //////////////////////////////////////////////////////////
+                    textBox_V2.Text = FormaDesniGlavni.V2.ToString();
+                    if (FormaDesniGlavni.F21 != 0) textBox_F21.Text = FormaDesniGlavni.F21.ToString();
+                    if (FormaDesniGlavni.F22 != 0) textBox_F22.Text = FormaDesniGlavni.F22.ToString();
+                    if (FormaDesniGlavni.F23 != 0) textBox_F23.Text = FormaDesniGlavni.F23.ToString();
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_2.Text = FormaDesniGlavni.FT2_2.ToString();
+                    if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F21 + 1)) ||
+                        (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F22 + 1)) ||
+                        (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F23 + 1)))
+                    {
+                        button_FTx1.Visible = button_FTx1.Enabled = true;
+                        textBox_FT2_2.BackColor = textBox_FT2_2.BackColor;
+                        textBox_FT2_2.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_2.BackColor = textBox_FT2_2.BackColor;
+                        textBox_FT2_2.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_2x2.Text = FormaDesniGlavni.FT2_2x2.ToString();
+                    if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F21 + 1)) ||
+                        (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F22 + 1)) ||
+                        (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F23 + 1)))
+                    {
+                        button_FTx2.Visible = button_FTx2.Enabled = true;
+                        textBox_FT2_2x2.BackColor = textBox_FT2_2x2.BackColor;
+                        textBox_FT2_2x2.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_2x2.BackColor = textBox_FT2_2x2.BackColor;
+                        textBox_FT2_2x2.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_2x3.Text = FormaDesniGlavni.FT2_2x3.ToString();
+                    if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F21 + 1)) ||
+                        (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F22 + 1)) ||
+                        (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F23 + 1)))
+                    {
+                        button_FTx3.Visible = button_FTx3.Enabled = true;
+                        textBox_FT2_2x3.BackColor = textBox_FT2_2x3.BackColor;
+                        textBox_FT2_2x3.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_2x3.BackColor = textBox_FT2_2x3.BackColor;
+                        textBox_FT2_2x3.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_2x4.Text = FormaDesniGlavni.FT2_2x4.ToString();
+                    if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F21 + 1)) ||
+                        (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F22 + 1)) ||
+                        (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F23 + 1)))
+                    {
+                        button_FTx4.Visible = button_FTx4.Enabled = true;
+                        textBox_FT2_2x4.BackColor = textBox_FT2_2x4.BackColor;
+                        textBox_FT2_2x4.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_2x4.BackColor = textBox_FT2_2x4.BackColor;
+                        textBox_FT2_2x4.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    if (FormaDesniGlavni.I != 0)
+                    {
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_2.Text = FormaDesniGlavni.FK2_2.ToString();
+                        if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F21 + 1)) ||
+                            (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F22 + 1)) ||
+                            (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F23 + 1)))
+                        {
+                            button_FKx1.Visible = button_FKx1.Enabled = true;
+                            textBox_FK2_2.BackColor = textBox_FK2_2.BackColor;
+                            textBox_FK2_2.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_2.BackColor = textBox_FK2_2.BackColor;
+                            textBox_FK2_2.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_2x2.Text = FormaDesniGlavni.FK2_2x2.ToString();
+                        if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F21 + 1)) ||
+                            (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F22 + 1)) ||
+                            (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F23 + 1)))
+                        {
+                            button_FKx2.Visible = button_FKx2.Enabled = true;
+                            textBox_FK2_2x2.BackColor = textBox_FK2_2x2.BackColor;
+                            textBox_FK2_2x2.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_2x2.BackColor = textBox_FK2_2x2.BackColor;
+                            textBox_FK2_2x2.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_2x3.Text = FormaDesniGlavni.FK2_2x3.ToString();
+                        if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F21 + 1)) ||
+                            (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F22 + 1)) ||
+                            (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F23 + 1)))
+                        {
+                            button_FKx3.Visible = button_FKx3.Enabled = true;
+                            textBox_FK2_2x3.BackColor = textBox_FK2_2x3.BackColor;
+                            textBox_FK2_2x3.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_2x3.BackColor = textBox_FK2_2x3.BackColor;
+                            textBox_FK2_2x3.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_2x4.Text = FormaDesniGlavni.FK2_2x4.ToString();
+                        if ((FormaDesniGlavni.F21 != 0 && FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F21 + 1)) ||
+                            (FormaDesniGlavni.F22 != 0 && FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F22 + 1)) ||
+                            (FormaDesniGlavni.F23 != 0 && FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F23 + 1)))
+                        {
+                            button_FKx4.Visible = button_FKx4.Enabled = true;
+                            textBox_FK2_2x4.BackColor = textBox_FK2_2x4.BackColor;
+                            textBox_FK2_2x4.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_2x4.BackColor = textBox_FK2_2x4.BackColor;
+                            textBox_FK2_2x4.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                    }
+                    //////////////////////////////////////////////////////////
+                }
+
+                #endregion
+
+                #region v3unet
+
+                if (FormaDesniGlavni.v3unet)
+                {
+                    //////////////////////////////////////////////////////////
+                    textBox_V3.Text = FormaDesniGlavni.V3.ToString();
+                    if (FormaDesniGlavni.F31 != 0) textBox_F31.Text = FormaDesniGlavni.F31.ToString();
+                    if (FormaDesniGlavni.F32 != 0) textBox_F32.Text = FormaDesniGlavni.F32.ToString();
+                    if (FormaDesniGlavni.F33 != 0) textBox_F33.Text = FormaDesniGlavni.F33.ToString();
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_3.Text = FormaDesniGlavni.FT2_3.ToString();
+                    if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F31 + 1)) ||
+                        (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F32 + 1)) ||
+                        (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F33 + 1)))
+                    {
+                        button_FTx1.Visible = button_FTx1.Enabled = true;
+                        textBox_FT2_3.BackColor = textBox_FT2_3.BackColor;
+                        textBox_FT2_3.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_3.BackColor = textBox_FT2_3.BackColor;
+                        textBox_FT2_3.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_3x2.Text = FormaDesniGlavni.FT2_3x2.ToString();
+                    if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F31 + 1)) ||
+                        (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F32 + 1)) ||
+                        (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F33 + 1)))
+                    {
+                        button_FTx2.Visible = button_FTx2.Enabled = true;
+                        textBox_FT2_3x2.BackColor = textBox_FT2_3x2.BackColor;
+                        textBox_FT2_3x2.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_3x2.BackColor = textBox_FT2_3x2.BackColor;
+                        textBox_FT2_3x2.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_3x3.Text = FormaDesniGlavni.FT2_3x3.ToString();
+                    if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F31 + 1)) ||
+                        (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F32 + 1)) ||
+                        (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F33 + 1)))
+                    {
+                        button_FTx3.Visible = button_FTx3.Enabled = true;
+                        textBox_FT2_3x3.BackColor = textBox_FT2_3x3.BackColor;
+                        textBox_FT2_3x3.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_3x3.BackColor = textBox_FT2_3x3.BackColor;
+                        textBox_FT2_3x3.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    textBox_FT2_3x4.Text = FormaDesniGlavni.FT2_3x4.ToString();
+                    if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F31 + 1)) ||
+                        (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F32 + 1)) ||
+                        (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F33 + 1)))
+                    {
+                        button_FTx4.Visible = button_FTx4.Enabled = true;
+                        textBox_FT2_3x4.BackColor = textBox_FT2_3x4.BackColor;
+                        textBox_FT2_3x4.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        textBox_FT2_3x4.BackColor = textBox_FT2_3x4.BackColor;
+                        textBox_FT2_3x4.ForeColor = Color.Gray;
+                    }
+                    //////////////////////////////////////////////////////////
+                    if (FormaDesniGlavni.I != 0)
+                    {
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_3.Text = FormaDesniGlavni.FK2_3.ToString();
+                        if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F31 + 1)) ||
+                            (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F32 + 1)) ||
+                            (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F33 + 1)))
+                        {
+                            button_FKx1.Visible = button_FKx1.Enabled = true;
+                            textBox_FK2_3.BackColor = textBox_FK2_3.BackColor;
+                            textBox_FK2_3.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_3.BackColor = textBox_FK2_3.BackColor;
+                            textBox_FK2_3.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_3x2.Text = FormaDesniGlavni.FK2_3x2.ToString();
+                        if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F31 + 1)) ||
+                            (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F32 + 1)) ||
+                            (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F33 + 1)))
+                        {
+                            button_FKx2.Visible = button_FKx2.Enabled = true;
+                            textBox_FK2_3x2.BackColor = textBox_FK2_3x2.BackColor;
+                            textBox_FK2_3x2.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_3x2.BackColor = textBox_FK2_3x2.BackColor;
+                            textBox_FK2_3x2.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_3x3.Text = FormaDesniGlavni.FK2_3x3.ToString();
+                        if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F31 + 1)) ||
+                            (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F32 + 1)) ||
+                            (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F33 + 1)))
+                        {
+                            button_FKx3.Visible = button_FKx3.Enabled = true;
+                            textBox_FK2_3x3.BackColor = textBox_FK2_3x3.BackColor;
+                            textBox_FK2_3x3.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_3x3.BackColor = textBox_FK2_3x3.BackColor;
+                            textBox_FK2_3x3.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                        textBox_FK2_3x4.Text = FormaDesniGlavni.FK2_3x4.ToString();
+                        if ((FormaDesniGlavni.F31 != 0 && FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F31 + 1)) ||
+                            (FormaDesniGlavni.F32 != 0 && FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F32 + 1)) ||
+                            (FormaDesniGlavni.F33 != 0 && FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F33 + 1)))
+                        {
+                            button_FKx4.Visible = button_FKx4.Enabled = true;
+                            textBox_FK2_3x4.BackColor = textBox_FK2_3x4.BackColor;
+                            textBox_FK2_3x4.ForeColor = Color.Red;
+                        }
+                        else
+                        {
+                            textBox_FK2_3x4.BackColor = textBox_FK2_3x4.BackColor;
+                            textBox_FK2_3x4.ForeColor = Color.Gray;
+                        }
+                        //////////////////////////////////////////////////////////
+                    }
+                    //////////////////////////////////////////////////////////
+                }
+
+                #endregion
+            }
+            else
+            {
+                label_FT2.Enabled     = label_FT2.Visible =
+                    label_FK2.Enabled = label_FK2.Visible =
+
+                    textBox_FT2_1.Enabled   = textBox_FT2_1.Visible   =
+                    textBox_FT2_1x2.Enabled = textBox_FT2_1x2.Visible =
+                    textBox_FT2_1x3.Enabled = textBox_FT2_1x3.Visible =
+                    textBox_FT2_1x4.Enabled = textBox_FT2_1x4.Visible =
+                    textBox_FK2_1.Enabled   = textBox_FK2_1.Visible   =
+                    textBox_FK2_1x2.Enabled = textBox_FK2_1x2.Visible =
+                    textBox_FK2_1x3.Enabled = textBox_FK2_1x3.Visible =
+                    textBox_FK2_1x4.Enabled = textBox_FK2_1x4.Visible =
+
+                    textBox_FT2_2.Enabled   = textBox_FT2_2.Visible   =
+                    textBox_FT2_2x2.Enabled = textBox_FT2_2x2.Visible =
+                    textBox_FT2_2x3.Enabled = textBox_FT2_2x3.Visible =
+                    textBox_FT2_2x4.Enabled = textBox_FT2_2x4.Visible =
+                    textBox_FK2_2.Enabled   = textBox_FK2_2.Visible   =
+                    textBox_FK2_2x2.Enabled = textBox_FK2_2x2.Visible =
+                    textBox_FK2_2x3.Enabled = textBox_FK2_2x3.Visible =
+                    textBox_FK2_2x4.Enabled = textBox_FK2_2x4.Visible =
+
+                    textBox_FT2_3.Enabled   = textBox_FT2_3.Visible   =
+                    textBox_FT2_3x2.Enabled = textBox_FT2_3x2.Visible =
+                    textBox_FT2_3x3.Enabled = textBox_FT2_3x3.Visible =
+                    textBox_FT2_3x4.Enabled = textBox_FT2_3x4.Visible =
+                    textBox_FK2_3.Enabled   = textBox_FK2_3.Visible   =
+                    textBox_FK2_3x2.Enabled = textBox_FK2_3x2.Visible =
+                    textBox_FK2_3x3.Enabled = textBox_FK2_3x3.Visible =
+                    textBox_FK2_3x4.Enabled = textBox_FK2_3x4.Visible = false;
+
+                this.Size = new Size(510, 525);
+
+                button_FTx1.Location = new Point(466, 75);
+                button_FTx2.Location = new Point(466, 108);
+                button_FTx3.Location = new Point(466, 141);
+                button_FTx4.Location = new Point(466, 174);
+
+                button_FKx1.Location = new Point(466, 240);
+                button_FKx2.Location = new Point(466, 273);
+                button_FKx3.Location = new Point(466, 306);
+                button_FKx4.Location = new Point(466, 339);
             }
 
             #endregion

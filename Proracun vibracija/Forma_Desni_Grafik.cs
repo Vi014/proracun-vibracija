@@ -16,18 +16,28 @@ namespace Proracun_vibracija
         Graphics g;
         Pen p = new Pen(Color.Black, 2);
 
-        Pen p_L1 = new Pen(Color.Blue, 2);
+        Pen p_L1 = new Pen(Color.Blue,          2);
         Pen p_L2 = new Pen(Color.DarkGoldenrod, 2);
-        Pen p_L3 = new Pen(Color.Green, 2);
-        Pen p_L4 = new Pen(Color.Orange, 2);
-        Pen p_L5 = new Pen(Color.Purple, 2);
-        Pen p_L6 = new Pen(Color.Black, 2);
-        Pen p_L7 = new Pen(Color.DodgerBlue, 2);
-        Pen p_L8 = new Pen(Color.DeepPink, 2);
+        Pen p_L3 = new Pen(Color.Green,         2);
+        Pen p_L4 = new Pen(Color.Orange,        2);
+        Pen p_L5 = new Pen(Color.Purple,        2);
+        Pen p_L6 = new Pen(Color.Black,         2);
+        Pen p_L7 = new Pen(Color.DodgerBlue,    2);
+        Pen p_L8 = new Pen(Color.DeepPink,      2);
 
-        Font font = new Font("Arial", 8);
+        Pen p_L21 = new Pen(Color.Navy,           2);
+        Pen p_L22 = new Pen(Color.SaddleBrown,    2);
+        Pen p_L23 = new Pen(Color.DarkOliveGreen, 2);
+        Pen p_L24 = new Pen(Color.Peru,           2);
+        Pen p_L25 = new Pen(Color.Red,            2);
+        Pen p_L26 = new Pen(Color.DarkGray,       2);
+        Pen p_L27 = new Pen(Color.SteelBlue,      2);
+        Pen p_L28 = new Pen(Color.Orchid,         2);
+
+        Font font    = new Font("Arial", 8);
+        Font fontX   = new Font("Arial", 8, FontStyle.Bold);
         Font osaFont = new Font("Arial", 10);
-        SolidBrush cetka = new SolidBrush(Color.Black);
+        SolidBrush cetka      = new SolidBrush(Color.Black);
         SolidBrush cetkaError = new SolidBrush(Color.Red);
 
         SolidBrush cetkaL1 = new SolidBrush(Color.Blue);
@@ -39,7 +49,7 @@ namespace Proracun_vibracija
         SolidBrush cetkaL7 = new SolidBrush(Color.DodgerBlue);
         SolidBrush cetkaL8 = new SolidBrush(Color.DeepPink);
 
-        Stack<Double> V_Stek = new Stack<Double>();
+        Stack<Double> V_Stek           = new Stack<Double>();
         Stack<Double> Frekvencije_Stek = new Stack<Double>();
         Double[] V_Niz, Frekvencije_Niz;
 
@@ -74,6 +84,18 @@ namespace Proracun_vibracija
             checkBox_L7.Text = FormaDesniGlavni.FormaHomeScreen.jezik[174];
             checkBox_L8.Text = FormaDesniGlavni.FormaHomeScreen.jezik[175];
 
+            label2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[192];
+            label3.Text = FormaDesniGlavni.FormaHomeScreen.jezik[193];
+
+            checkBox_L21.Text = FormaDesniGlavni.FormaHomeScreen.jezik[194];
+            checkBox_L22.Text = FormaDesniGlavni.FormaHomeScreen.jezik[195];
+            checkBox_L23.Text = FormaDesniGlavni.FormaHomeScreen.jezik[196];
+            checkBox_L24.Text = FormaDesniGlavni.FormaHomeScreen.jezik[197];
+            checkBox_L25.Text = FormaDesniGlavni.FormaHomeScreen.jezik[198];
+            checkBox_L26.Text = FormaDesniGlavni.FormaHomeScreen.jezik[199];
+            checkBox_L27.Text = FormaDesniGlavni.FormaHomeScreen.jezik[200];
+            checkBox_L28.Text = FormaDesniGlavni.FormaHomeScreen.jezik[201];
+
             IscrtajGrafik();
         }
 
@@ -105,13 +127,22 @@ namespace Proracun_vibracija
                 checkBox_L6.Enabled = button_FKx2.Enabled =
                 checkBox_L7.Enabled = button_FKx3.Enabled =
                 checkBox_L8.Enabled = button_FKx4.Enabled =
-                checkBox_L1.Checked = checkBox_L2.Checked = checkBox_L3.Checked = checkBox_L4.Checked = checkBox_L5.Checked = checkBox_L6.Checked = checkBox_L7.Checked = checkBox_L8.Checked = false;
+                checkBox_L1.Checked = checkBox_L2.Checked = checkBox_L3.Checked = checkBox_L4.Checked = checkBox_L5.Checked = checkBox_L6.Checked = checkBox_L7.Checked = checkBox_L8.Checked = 
+                checkBox_L21.Enabled = checkBox_L22.Enabled = checkBox_L23.Enabled = checkBox_L24.Enabled = checkBox_L25.Enabled = checkBox_L26.Enabled = checkBox_L27.Enabled = checkBox_L28.Enabled = 
+                checkBox_L21.Checked = checkBox_L22.Checked = checkBox_L23.Checked = checkBox_L24.Checked = checkBox_L25.Checked = checkBox_L26.Checked = checkBox_L27.Checked = checkBox_L28.Checked = 
+                false;
 
             if (FormaDesniGlavni.I != 0)
                 checkBox_L5.Enabled = button_FKx1.Enabled =
                 checkBox_L6.Enabled = button_FKx2.Enabled =
                 checkBox_L7.Enabled = button_FKx3.Enabled =
                 checkBox_L8.Enabled = button_FKx4.Enabled = true;
+
+            if (FormaDesniGlavni.checkBox1Checked)
+            {
+                checkBox_L21.Enabled = checkBox_L22.Enabled = checkBox_L23.Enabled = checkBox_L24.Enabled = true;
+                if (FormaDesniGlavni.I != 0) checkBox_L25.Enabled = checkBox_L26.Enabled = checkBox_L27.Enabled = checkBox_L28.Enabled = true;
+            }
 
             V_Stek.Clear();
             Frekvencije_Stek.Clear();
@@ -210,8 +241,8 @@ namespace Proracun_vibracija
             }
             #endregion
 
-            Xmax = V_Niz[V_Niz.Length - 1];
-            Ymax = Frekvencije_Niz[Frekvencije_Niz.Length - 1];
+            Xmax = V_Niz[V_Niz.Length - 1] + 10;
+            Ymax = Frekvencije_Niz[Frekvencije_Niz.Length - 1] + 20;
 
             X_Razdaljina_Piksel = panel1.Width - centarX;
             Y_Razdaljina_Piksel = centarY;
@@ -275,97 +306,173 @@ namespace Proracun_vibracija
 
             if (FormaDesniGlavni.v1unet)
             {
-                if (FormaDesniGlavni.F11 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F11 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F12 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F12 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F13 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F13 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F11 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F11 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F12 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F12 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F13 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V1 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F13 * konverzijaY) - 6));
             }
 
             if (FormaDesniGlavni.v2unet)
             {
-                if (FormaDesniGlavni.F21 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F21 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F22 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F22 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F23 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F23 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F21 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F21 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F22 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F22 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F23 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V2 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F23 * konverzijaY) - 6));
             }
 
             if (FormaDesniGlavni.v3unet)
             {
-                if (FormaDesniGlavni.F31 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F31 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F32 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F32 * konverzijaY) - 6));
-                if (FormaDesniGlavni.F33 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F33 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F31 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F31 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F32 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F32 * konverzijaY) - 6));
+                if (FormaDesniGlavni.F33 != 0) g.DrawString("X", fontX, cetkaError, (centarX + Convert.ToInt32(FormaDesniGlavni.V3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaDesniGlavni.F33 * konverzijaY) - 6));
             }
 
             #region checkboxovi
 
             if (checkBox_L1.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3;
 
                 g.DrawLine(p_L1, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L2.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x2;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x2;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x2;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x2;
 
                 g.DrawLine(p_L2, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L3.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x3;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x3;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x3;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x3;
 
                 g.DrawLine(p_L3, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L4.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x4;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x4;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x4;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT1x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT3x4;
 
                 g.DrawLine(p_L4, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L5.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3;
 
                 g.DrawLine(p_L5, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L6.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x2;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x2;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x2;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x2;
 
                 g.DrawLine(p_L6, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L7.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x3;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x3;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x3;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x3;
 
                 g.DrawLine(p_L7, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             if (checkBox_L8.Checked)
             {
-                if      (Xmax == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x4;
-                else if (Xmax == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x4;
-                else if (Xmax == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x4;
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK1x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK3x4;
 
                 g.DrawLine(p_L8, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            #endregion
+
+            #region checkboxovi 2 electric boogaloo
+
+            if (checkBox_L21.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT2_1;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2_2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT2_3;
+
+                g.DrawLine(p_L21, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L22.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT2_1x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2_2x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT2_3x2;
+
+                g.DrawLine(p_L22, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L23.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT2_1x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2_2x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT2_3x3;
+
+                g.DrawLine(p_L23, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L24.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FT2_1x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FT2_2x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FT2_3x4;
+
+                g.DrawLine(p_L24, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L25.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK2_1;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2_2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK2_3;
+
+                g.DrawLine(p_L25, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L26.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK2_1x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2_2x2;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK2_3x2;
+
+                g.DrawLine(p_L26, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L27.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK2_1x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2_2x3;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK2_3x3;
+
+                g.DrawLine(p_L27, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
+            }
+
+            if (checkBox_L28.Checked)
+            {
+                if      (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V1) y = FormaDesniGlavni.FK2_1x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V2) y = FormaDesniGlavni.FK2_2x4;
+                else if (V_Niz[V_Niz.Length - 1] == FormaDesniGlavni.V3) y = FormaDesniGlavni.FK2_3x4;
+
+                g.DrawLine(p_L28, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
 
             #endregion
@@ -390,7 +497,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F33 + 1) )))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[152]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[153]);
         }
@@ -407,7 +527,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[154]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[155]);
         }
@@ -424,7 +557,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[156]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[157]);
         }
@@ -441,7 +587,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[158]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[159]);
         }
@@ -458,7 +617,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[160]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[161]);
         }
@@ -475,7 +647,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[162]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[163]);
         }
@@ -492,7 +677,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[164]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[165]);
         }
@@ -509,7 +707,20 @@ namespace Proracun_vibracija
 
                     (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F31 + 1) )) ||
                                                  (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F33 + 1) )))) )
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F33 + 1)))))
+                ))
                  MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[166]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[167]);
         }

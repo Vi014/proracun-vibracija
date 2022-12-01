@@ -37,6 +37,14 @@ namespace Proracun_vibracija
             label_BrzinaVozila.Text        = FormaHomeScreen.jezik[123];
             label_Frekvencija.Text         = FormaHomeScreen.jezik[124];
             button_Racun.Text              = FormaHomeScreen.jezik[125];
+
+            checkBox1.Text = FormaHomeScreen.jezik[184];
+            label_Sirina2.Text = FormaHomeScreen.jezik[185];
+            label_Visina2.Text = FormaHomeScreen.jezik[186];
+            label_PrecnikFelne2.Text = FormaHomeScreen.jezik[187];
+            label_mm2.Text = FormaHomeScreen.jezik[188];
+            label_Posto2.Text = FormaHomeScreen.jezik[189];
+            label_Inches2.Text = FormaHomeScreen.jezik[190];
         }
 
         private void Forma_Desni_Glavni_Load(object sender, EventArgs e)
@@ -70,6 +78,24 @@ namespace Proracun_vibracija
         {
             FormaHomeScreen.FormaDesniGlavni  = null;
             FormaHomeScreen.dugmeDesnoEnabled = true;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox_W2.Enabled = textBox_H2.Enabled = textBox_R2.Enabled = true;
+                if (textBox_W2.Text == "") textBox_W2_Watermark();
+                if (textBox_H2.Text == "") textBox_H2_Watermark();
+                if (textBox_R2.Text == "") textBox_R2_Watermark();
+            }
+            else
+            {
+                textBox_W2.Enabled = textBox_H2.Enabled = textBox_R2.Enabled = false;
+                if (textBox_W2.Text == "W2") textBox_W2.Text = "";
+                if (textBox_H2.Text == "H2") textBox_H2.Text = "";
+                if (textBox_R2.Text == "R2") textBox_R2.Text = "";
+            }
         }
 
         #region text box sranja
@@ -134,6 +160,71 @@ namespace Proracun_vibracija
             this.textBox_R.Text = "R";
             textBox_R.ForeColor = Color.Gray;
         }
+
+
+
+        #region AAAAAAAA
+        private void textBox_W2_Enter(object sender, EventArgs e)
+        {
+            if (textBox_W2.ForeColor == Color.Black)
+                return;
+            textBox_W2.Text = "";
+            textBox_W2.ForeColor = Color.Black;
+        }
+
+        private void textBox_W2_Leave(object sender, EventArgs e)
+        {
+            if (textBox_W2.Text.Trim() == "") textBox_W2_Watermark();
+        }
+
+        private void textBox_W2_Watermark()
+        {
+            this.textBox_W2.Text = "W2";
+            textBox_W2.ForeColor = Color.Gray;
+        }
+
+
+
+        private void textBox_H2_Enter(object sender, EventArgs e)
+        {
+            if (textBox_H2.ForeColor == Color.Black)
+                return;
+            textBox_H2.Text = "";
+            textBox_H2.ForeColor = Color.Black;
+        }
+
+        private void textBox_H2_Leave(object sender, EventArgs e)
+        {
+            if (textBox_H2.Text.Trim() == "") textBox_H2_Watermark();
+        }
+
+        private void textBox_H2_Watermark()
+        {
+            this.textBox_H2.Text = "H2";
+            textBox_H2.ForeColor = Color.Gray;
+        }
+
+
+
+        private void textBox_R2_Enter(object sender, EventArgs e)
+        {
+            if (textBox_R2.ForeColor == Color.Black)
+                return;
+            textBox_R2.Text = "";
+            textBox_R2.ForeColor = Color.Black;
+        }
+
+        private void textBox_R2_Leave(object sender, EventArgs e)
+        {
+            if (textBox_R2.Text.Trim() == "") textBox_R2_Watermark();
+        }
+
+        private void textBox_R2_Watermark()
+        {
+            this.textBox_R2.Text = "R2";
+            textBox_R2.ForeColor = Color.Gray;
+        }
+        #endregion
 
 
 
@@ -416,6 +507,8 @@ namespace Proracun_vibracija
         public Boolean v1unet, v2unet, v3unet;
         Int32 _W, _H, _R;
         public Int32 W, H, R;
+        Int32 _W2, _H2, _R2;
+        public Int32 W2, H2, R2;
         Double _I,
                 _V1,  _V2,  _V3,
                 _F11, _F12, _F13,
@@ -435,11 +528,20 @@ namespace Proracun_vibracija
                         FK1x2, FK2x2, FK3x2,
                         FK1x3, FK2x3, FK3x3,
                         FK1x4, FK2x4, FK3x4;
+        public Double DT2,
+                        FT2_1, FT2_2, FT2_3,
+                        FT2_1x2, FT2_2x2, FT2_3x2,
+                        FT2_1x3, FT2_2x3, FT2_3x3,
+                        FT2_1x4, FT2_2x4, FT2_3x4,
+                        FK2_1, FK2_2, FK2_3,
+                        FK2_1x2, FK2_2x2, FK2_3x2,
+                        FK2_1x3, FK2_2x3, FK2_3x3,
+                        FK2_1x4, FK2_2x4, FK2_3x4;
 
         private void ResetVrednosti()
         {
             _v1unet = _v2unet = _v3unet = false;
-            _W = _H = _R = 0;
+            _W = _H = _R = _W2 = _H2 = _R2 = 0;
             _I = _V1 = _V2 = _V3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0;
         }
 
@@ -448,6 +550,13 @@ namespace Proracun_vibracija
             if (textBox_W.Text == "W") return false;
             if (textBox_H.Text == "H") return false;
             if (textBox_R.Text == "R") return false;
+
+            if (checkBox1.Checked)
+            {
+                if (textBox_W2.Text == "W2") return false;
+                if (textBox_H2.Text == "H2") return false;
+                if (textBox_R2.Text == "R2") return false;
+            }
 
             if (textBox_V1.Text != "V1" && (textBox_F11.Text != "F11" || textBox_F12.Text != "F12" || textBox_F13.Text != "F13")) _v1unet = true;
             if (textBox_V2.Text != "V2" && (textBox_F21.Text != "F21" || textBox_F22.Text != "F22" || textBox_F23.Text != "F23")) _v2unet = true;
@@ -465,6 +574,16 @@ namespace Proracun_vibracija
             if (_H <= 0) return false;
             if (!Int32.TryParse(textBox_R.Text, out _R)) return false;
             if (_R <= 0) return false;
+
+            if (checkBox1.Checked)
+            {
+                if (!Int32.TryParse(textBox_W2.Text, out _W2)) return false;
+                if (_W2 <= 0) return false;
+                if (!Int32.TryParse(textBox_H2.Text, out _H2)) return false;
+                if (_H2 <= 0) return false;
+                if (!Int32.TryParse(textBox_R2.Text, out _R2)) return false;
+                if (_R2 <= 0) return false;
+            }
 
             if (textBox_I.Text != "I")
             {
@@ -547,6 +666,9 @@ namespace Proracun_vibracija
             W = _W;
             H = _H;
             R = _R;
+            W2 = _W2;
+            H2 = _H2;
+            R2 = _R2;
             I = _I;
             V1 = _V1;
             V2 = _V2;
@@ -640,6 +762,86 @@ namespace Proracun_vibracija
                 FT3x3 = Math.Round(FT3x3, 1, MidpointRounding.AwayFromZero);
                 FT3x4 = Math.Round(FT3x4, 1, MidpointRounding.AwayFromZero);
             }
+
+            if (checkBox1.Checked)
+            {
+                DT2 = (((Double)2 * H2 * W2) / 2540) + R2;
+
+                if (v1unet)
+                {
+                    FT2_1   = (V1 / 8) * (((20800 / DT2) * 5) / 3600);
+                    FT2_1x2 = FT2_1 * 2;
+                    FT2_1x3 = FT2_1 * 3;
+                    FT2_1x4 = FT2_1 * 4;
+                    if (I != 0)
+                    {
+                        FK2_1   = FT2_1 * I;
+                        FK2_1x2 = FK2_1 * 2;
+                        FK2_1x3 = FK2_1 * 3;
+                        FK2_1x4 = FK2_1 * 4;
+
+                        FK2_1   = Math.Round(FK2_1,   1, MidpointRounding.AwayFromZero);
+                        FK2_1x2 = Math.Round(FK2_1x2, 1, MidpointRounding.AwayFromZero);
+                        FK2_1x3 = Math.Round(FK2_1x3, 1, MidpointRounding.AwayFromZero);
+                        FK2_1x4 = Math.Round(FK2_1x4, 1, MidpointRounding.AwayFromZero);
+                    }
+
+                    FT2_1   = Math.Round(FT2_1,   1, MidpointRounding.AwayFromZero);
+                    FT2_1x2 = Math.Round(FT2_1x2, 1, MidpointRounding.AwayFromZero);
+                    FT2_1x3 = Math.Round(FT2_1x3, 1, MidpointRounding.AwayFromZero);
+                    FT2_1x4 = Math.Round(FT2_1x4, 1, MidpointRounding.AwayFromZero);
+                }
+
+                if (v2unet)
+                {
+                    FT2_2   = (V2 / 8) * (((20800 / DT2) * 5) / 3600);
+                    FT2_2x2 = FT2_2 * 2;
+                    FT2_2x3 = FT2_2 * 3;
+                    FT2_2x4 = FT2_2 * 4;
+                    if (I != 0)
+                    {
+                        FK2_2   = FT2_2 * I;
+                        FK2_2x2 = FK2_2 * 2;
+                        FK2_2x3 = FK2_2 * 3;
+                        FK2_2x4 = FK2_2 * 4;
+
+                        FK2_2   = Math.Round(FK2_2,   1, MidpointRounding.AwayFromZero);
+                        FK2_2x2 = Math.Round(FK2_2x2, 1, MidpointRounding.AwayFromZero);
+                        FK2_2x3 = Math.Round(FK2_2x3, 1, MidpointRounding.AwayFromZero);
+                        FK2_2x4 = Math.Round(FK2_2x4, 1, MidpointRounding.AwayFromZero);
+                    }
+
+                    FT2_2   = Math.Round(FT2_2,   1, MidpointRounding.AwayFromZero);
+                    FT2_2x2 = Math.Round(FT2_2x2, 1, MidpointRounding.AwayFromZero);
+                    FT2_2x3 = Math.Round(FT2_2x3, 1, MidpointRounding.AwayFromZero);
+                    FT2_2x4 = Math.Round(FT2_2x4, 1, MidpointRounding.AwayFromZero);
+                }
+
+                if (v3unet)
+                {
+                    FT2_3   = (V3 / 8) * (((20800 / DT2) * 5) / 3600);
+                    FT2_3x2 = FT2_3 * 2;
+                    FT2_3x3 = FT2_3 * 3;
+                    FT2_3x4 = FT2_3 * 4;
+                    if (I != 0)
+                    {
+                        FK2_3   = FT2_3 * I;
+                        FK2_3x2 = FK2_3 * 2;
+                        FK2_3x3 = FK2_3 * 3;
+                        FK2_3x4 = FK2_3 * 4;
+
+                        FK2_3   = Math.Round(FK2_3,   1, MidpointRounding.AwayFromZero);
+                        FK2_3x2 = Math.Round(FK2_3x2, 1, MidpointRounding.AwayFromZero);
+                        FK2_3x3 = Math.Round(FK2_3x3, 1, MidpointRounding.AwayFromZero);
+                        FK2_3x4 = Math.Round(FK2_3x4, 1, MidpointRounding.AwayFromZero);
+                    }
+
+                    FT2_3   = Math.Round(FT2_3,   1, MidpointRounding.AwayFromZero);
+                    FT2_3x2 = Math.Round(FT2_3x2, 1, MidpointRounding.AwayFromZero);
+                    FT2_3x3 = Math.Round(FT2_3x3, 1, MidpointRounding.AwayFromZero);
+                    FT2_3x4 = Math.Round(FT2_3x4, 1, MidpointRounding.AwayFromZero);
+                }
+            }
         }
 
         #endregion
@@ -690,6 +892,12 @@ namespace Proracun_vibracija
         {
             get { return button_Grafik.Enabled;  }
             set { button_Grafik.Enabled = value; }
+        }
+
+        public Boolean checkBox1Checked
+        {
+            get { return checkBox1.Checked;  }
+            set { checkBox1.Checked = value; }
         }
     }
 }
