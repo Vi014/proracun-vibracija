@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
@@ -43,17 +37,12 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -72,14 +61,12 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -98,33 +85,53 @@
             this.label1 = new System.Windows.Forms.Label();
             this.zoomPicture = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.zoomablePictureBox13 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox12 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox11 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox10 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox9 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox8 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox7 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox6 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox5 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox4 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox3 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox1 = new Proracun_vibracija.ZoomablePictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.pictureBox13);
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.zoomablePictureBox13);
+            this.panel1.Controls.Add(this.zoomablePictureBox12);
+            this.panel1.Controls.Add(this.zoomablePictureBox11);
+            this.panel1.Controls.Add(this.zoomablePictureBox10);
+            this.panel1.Controls.Add(this.zoomablePictureBox9);
+            this.panel1.Controls.Add(this.zoomablePictureBox8);
+            this.panel1.Controls.Add(this.zoomablePictureBox7);
+            this.panel1.Controls.Add(this.zoomablePictureBox6);
+            this.panel1.Controls.Add(this.zoomablePictureBox5);
+            this.panel1.Controls.Add(this.zoomablePictureBox4);
+            this.panel1.Controls.Add(this.zoomablePictureBox3);
+            this.panel1.Controls.Add(this.zoomablePictureBox2);
+            this.panel1.Controls.Add(this.zoomablePictureBox1);
             this.panel1.Controls.Add(this.label45);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.label52);
@@ -133,17 +140,12 @@
             this.panel1.Controls.Add(this.label50);
             this.panel1.Controls.Add(this.label49);
             this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label46);
             this.panel1.Controls.Add(this.label37);
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.label41);
-            this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label48);
             this.panel1.Controls.Add(this.label39);
-            this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label43);
-            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label44);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label42);
@@ -162,14 +164,12 @@
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label53);
             this.panel1.Controls.Add(this.label31);
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label17);
@@ -190,72 +190,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1325, 703);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::Proracun_vibracija.Properties.Resources.uvod12;
-            this.pictureBox13.Location = new System.Drawing.Point(785, 4315);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 10;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Click += new System.EventHandler(this.zoom);
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::Proracun_vibracija.Properties.Resources.uvod11;
-            this.pictureBox12.Location = new System.Drawing.Point(529, 4315);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(250, 240);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 10;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Click += new System.EventHandler(this.zoom);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Proracun_vibracija.Properties.Resources.uvod10;
-            this.pictureBox11.Location = new System.Drawing.Point(273, 4315);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(250, 278);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.zoom);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Proracun_vibracija.Properties.Resources.uvod09;
-            this.pictureBox10.Location = new System.Drawing.Point(17, 4316);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(250, 243);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 10;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.zoom);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Proracun_vibracija.Properties.Resources.uvod08;
-            this.pictureBox9.Location = new System.Drawing.Point(17, 2841);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(399, 400);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.zoom);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Proracun_vibracija.Properties.Resources.uvod07;
-            this.pictureBox8.Location = new System.Drawing.Point(17, 2507);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(792, 250);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.zoom);
             // 
             // label45
             // 
@@ -337,17 +271,6 @@
             this.label40.TabIndex = 1;
             this.label40.Text = "label40 (regular: transList3_4)";
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Proracun_vibracija.Properties.Resources.uvod06;
-            this.pictureBox7.Location = new System.Drawing.Point(17, 2106);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(465, 265);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.zoom);
-            // 
             // label46
             // 
             this.label46.AutoSize = true;
@@ -368,17 +291,6 @@
             this.label37.TabIndex = 1;
             this.label37.Text = "label37 (regular: transList3_1)";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Proracun_vibracija.Properties.Resources.uvod05;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 1775);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(540, 180);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.zoom);
-            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -388,17 +300,6 @@
             this.label41.Size = new System.Drawing.Size(299, 25);
             this.label41.TabIndex = 1;
             this.label41.Text = "label41 (regular: transList4_1)";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Proracun_vibracija.Properties.Resources.uvod04;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 1339);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(551, 230);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.zoom);
             // 
             // label48
             // 
@@ -420,17 +321,6 @@
             this.label39.TabIndex = 1;
             this.label39.Text = "label39 (regular: transList3_3)";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Proracun_vibracija.Properties.Resources.uvod03;
-            this.pictureBox4.Location = new System.Drawing.Point(21, 960);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(575, 230);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.zoom);
-            // 
             // label43
             // 
             this.label43.AutoSize = true;
@@ -440,17 +330,6 @@
             this.label43.Size = new System.Drawing.Size(299, 25);
             this.label43.TabIndex = 1;
             this.label43.Text = "label43 (regular: transList4_3)";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Proracun_vibracija.Properties.Resources.uvod02;
-            this.pictureBox3.Location = new System.Drawing.Point(17, 584);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(430, 258);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.zoom);
             // 
             // label44
             // 
@@ -632,17 +511,6 @@
             this.label18.TabIndex = 1;
             this.label18.Text = "label18 (italic-mini: Figure A)";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Proracun_vibracija.Properties.Resources.uvod01;
-            this.pictureBox2.Location = new System.Drawing.Point(277, 288);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(301, 190);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.zoom);
-            // 
             // label53
             // 
             this.label53.AutoSize = true;
@@ -702,17 +570,6 @@
             this.label16.Size = new System.Drawing.Size(282, 25);
             this.label16.TabIndex = 1;
             this.label16.Text = "label16 (bold: Frequency)";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proracun_vibracija.Properties.Resources.uvod00;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 288);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 190);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.zoom);
             // 
             // label11
             // 
@@ -898,6 +755,149 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // zoomablePictureBox13
+            // 
+            this.zoomablePictureBox13.Image = global::Proracun_vibracija.Properties.Resources.uvod12;
+            this.zoomablePictureBox13.Location = new System.Drawing.Point(785, 4315);
+            this.zoomablePictureBox13.Name = "zoomablePictureBox13";
+            this.zoomablePictureBox13.Size = new System.Drawing.Size(250, 250);
+            this.zoomablePictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox13.TabIndex = 11;
+            this.zoomablePictureBox13.TabStop = false;
+            this.zoomablePictureBox13.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox12
+            // 
+            this.zoomablePictureBox12.Image = global::Proracun_vibracija.Properties.Resources.uvod11;
+            this.zoomablePictureBox12.Location = new System.Drawing.Point(529, 4315);
+            this.zoomablePictureBox12.Name = "zoomablePictureBox12";
+            this.zoomablePictureBox12.Size = new System.Drawing.Size(250, 240);
+            this.zoomablePictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox12.TabIndex = 11;
+            this.zoomablePictureBox12.TabStop = false;
+            this.zoomablePictureBox12.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox11
+            // 
+            this.zoomablePictureBox11.Image = global::Proracun_vibracija.Properties.Resources.uvod10;
+            this.zoomablePictureBox11.Location = new System.Drawing.Point(273, 4315);
+            this.zoomablePictureBox11.Name = "zoomablePictureBox11";
+            this.zoomablePictureBox11.Size = new System.Drawing.Size(250, 278);
+            this.zoomablePictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox11.TabIndex = 11;
+            this.zoomablePictureBox11.TabStop = false;
+            this.zoomablePictureBox11.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox10
+            // 
+            this.zoomablePictureBox10.Image = global::Proracun_vibracija.Properties.Resources.uvod09;
+            this.zoomablePictureBox10.Location = new System.Drawing.Point(17, 4315);
+            this.zoomablePictureBox10.Name = "zoomablePictureBox10";
+            this.zoomablePictureBox10.Size = new System.Drawing.Size(250, 243);
+            this.zoomablePictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox10.TabIndex = 11;
+            this.zoomablePictureBox10.TabStop = false;
+            this.zoomablePictureBox10.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox9
+            // 
+            this.zoomablePictureBox9.Image = global::Proracun_vibracija.Properties.Resources.uvod08;
+            this.zoomablePictureBox9.Location = new System.Drawing.Point(16, 2841);
+            this.zoomablePictureBox9.Name = "zoomablePictureBox9";
+            this.zoomablePictureBox9.Size = new System.Drawing.Size(399, 400);
+            this.zoomablePictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox9.TabIndex = 11;
+            this.zoomablePictureBox9.TabStop = false;
+            this.zoomablePictureBox9.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox8
+            // 
+            this.zoomablePictureBox8.Image = global::Proracun_vibracija.Properties.Resources.uvod07;
+            this.zoomablePictureBox8.Location = new System.Drawing.Point(16, 2507);
+            this.zoomablePictureBox8.Name = "zoomablePictureBox8";
+            this.zoomablePictureBox8.Size = new System.Drawing.Size(792, 250);
+            this.zoomablePictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox8.TabIndex = 11;
+            this.zoomablePictureBox8.TabStop = false;
+            this.zoomablePictureBox8.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox7
+            // 
+            this.zoomablePictureBox7.Image = global::Proracun_vibracija.Properties.Resources.uvod06;
+            this.zoomablePictureBox7.Location = new System.Drawing.Point(16, 2106);
+            this.zoomablePictureBox7.Name = "zoomablePictureBox7";
+            this.zoomablePictureBox7.Size = new System.Drawing.Size(465, 265);
+            this.zoomablePictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox7.TabIndex = 11;
+            this.zoomablePictureBox7.TabStop = false;
+            this.zoomablePictureBox7.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox6
+            // 
+            this.zoomablePictureBox6.Image = global::Proracun_vibracija.Properties.Resources.uvod05;
+            this.zoomablePictureBox6.Location = new System.Drawing.Point(17, 1775);
+            this.zoomablePictureBox6.Name = "zoomablePictureBox6";
+            this.zoomablePictureBox6.Size = new System.Drawing.Size(540, 180);
+            this.zoomablePictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox6.TabIndex = 11;
+            this.zoomablePictureBox6.TabStop = false;
+            this.zoomablePictureBox6.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox5
+            // 
+            this.zoomablePictureBox5.Image = global::Proracun_vibracija.Properties.Resources.uvod04;
+            this.zoomablePictureBox5.Location = new System.Drawing.Point(17, 1339);
+            this.zoomablePictureBox5.Name = "zoomablePictureBox5";
+            this.zoomablePictureBox5.Size = new System.Drawing.Size(551, 230);
+            this.zoomablePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox5.TabIndex = 11;
+            this.zoomablePictureBox5.TabStop = false;
+            this.zoomablePictureBox5.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox4
+            // 
+            this.zoomablePictureBox4.Image = global::Proracun_vibracija.Properties.Resources.uvod03;
+            this.zoomablePictureBox4.Location = new System.Drawing.Point(21, 960);
+            this.zoomablePictureBox4.Name = "zoomablePictureBox4";
+            this.zoomablePictureBox4.Size = new System.Drawing.Size(575, 230);
+            this.zoomablePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox4.TabIndex = 11;
+            this.zoomablePictureBox4.TabStop = false;
+            this.zoomablePictureBox4.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox3
+            // 
+            this.zoomablePictureBox3.Image = global::Proracun_vibracija.Properties.Resources.uvod02;
+            this.zoomablePictureBox3.Location = new System.Drawing.Point(21, 584);
+            this.zoomablePictureBox3.Name = "zoomablePictureBox3";
+            this.zoomablePictureBox3.Size = new System.Drawing.Size(430, 258);
+            this.zoomablePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox3.TabIndex = 11;
+            this.zoomablePictureBox3.TabStop = false;
+            this.zoomablePictureBox3.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox2
+            // 
+            this.zoomablePictureBox2.Image = global::Proracun_vibracija.Properties.Resources.uvod01;
+            this.zoomablePictureBox2.Location = new System.Drawing.Point(277, 288);
+            this.zoomablePictureBox2.Name = "zoomablePictureBox2";
+            this.zoomablePictureBox2.Size = new System.Drawing.Size(301, 190);
+            this.zoomablePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox2.TabIndex = 11;
+            this.zoomablePictureBox2.TabStop = false;
+            this.zoomablePictureBox2.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox1
+            // 
+            this.zoomablePictureBox1.Image = global::Proracun_vibracija.Properties.Resources.uvod00;
+            this.zoomablePictureBox1.Location = new System.Drawing.Point(21, 288);
+            this.zoomablePictureBox1.Name = "zoomablePictureBox1";
+            this.zoomablePictureBox1.Size = new System.Drawing.Size(250, 190);
+            this.zoomablePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox1.TabIndex = 11;
+            this.zoomablePictureBox1.TabStop = false;
+            this.zoomablePictureBox1.Click += new System.EventHandler(this.zoom);
+            // 
             // Forma_Uvod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -914,20 +914,20 @@
             this.Load += new System.EventHandler(this.Forma_Uvod_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -947,32 +947,23 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
@@ -999,10 +990,19 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Button button1;
+        private ZoomablePictureBox zoomablePictureBox1;
+        private ZoomablePictureBox zoomablePictureBox2;
+        private ZoomablePictureBox zoomablePictureBox3;
+        private ZoomablePictureBox zoomablePictureBox12;
+        private ZoomablePictureBox zoomablePictureBox11;
+        private ZoomablePictureBox zoomablePictureBox10;
+        private ZoomablePictureBox zoomablePictureBox9;
+        private ZoomablePictureBox zoomablePictureBox8;
+        private ZoomablePictureBox zoomablePictureBox7;
+        private ZoomablePictureBox zoomablePictureBox6;
+        private ZoomablePictureBox zoomablePictureBox5;
+        private ZoomablePictureBox zoomablePictureBox4;
+        private ZoomablePictureBox zoomablePictureBox13;
     }
 }

@@ -337,7 +337,8 @@ namespace Proracun_vibracija
         }
 
         #region dugmici sa znakom pitanja
-
+		// ovo bi smo mogli da ulepsamo koristeci funkcije
+		// tipa da u svaki if stavimo if(imeFunkcije(F11, F12) bla bla) i imeFunkcije je tipa Boolean
         private void button_D1_Click(object sender, EventArgs e)
         {
             if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D11 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D11 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||

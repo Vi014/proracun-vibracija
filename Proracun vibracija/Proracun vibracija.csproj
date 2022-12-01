@@ -120,6 +120,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZoomablePictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZoomablePictureBox.Designer.cs">
+      <DependentUpon>ZoomablePictureBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forma_!HomeScreen.resx">
       <DependentUpon>Forma_!HomeScreen.cs</DependentUpon>
     </EmbeddedResource>

@@ -71,10 +71,10 @@ namespace Proracun_vibracija
             label11.Location = new Point(label1.Location.X, label9.Bottom + 1);
             label11.Text = FormaHomeScreen.jezik[262];
 
-            pictureBox1.Location = new Point(label1.Location.X, label11.Bottom + 20);
-            pictureBox2.Location = new Point(pictureBox1.Right, pictureBox1.Location.Y);
+            zoomablePictureBox1.Location = new Point(label1.Location.X, label11.Bottom + 20);
+            zoomablePictureBox2.Location = new Point(zoomablePictureBox1.Right, zoomablePictureBox1.Location.Y);
 
-            label12.Location = new Point(label1.Location.X, pictureBox1.Bottom + 20);
+            label12.Location = new Point(label1.Location.X, zoomablePictureBox1.Bottom + 20);
             label12.Text = FormaHomeScreen.jezik[263];
 
             label13.Location = new Point(label1.Location.X, label12.Bottom + 20);
@@ -86,22 +86,22 @@ namespace Proracun_vibracija
             label15.Location = new Point(label1.Location.X, label14.Bottom + 20);
             label15.Text = FormaHomeScreen.jezik[266];
 
-            pictureBox3.Location = new Point(label1.Location.X, label15.Bottom);
+            zoomablePictureBox3.Location = new Point(label1.Location.X, label15.Bottom);
 
-            label16.Location = new Point(label1.Location.X, pictureBox3.Bottom + 20);
+            label16.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom + 20);
             label16.Text = FormaHomeScreen.jezik[267];
 
             label17.Location = new Point(label1.Location.X, label16.Location.Y + 20);
             label17.Text = FormaHomeScreen.jezik[268];
 
-            pictureBox4.Location = new Point(label1.Location.X, label17.Bottom + 20);
+            zoomablePictureBox4.Location = new Point(label1.Location.X, label17.Bottom + 20);
 
-            label18.Location = new Point(label1.Location.X, pictureBox4.Bottom);
+            label18.Location = new Point(label1.Location.X, zoomablePictureBox4.Bottom);
             label18.Text = FormaHomeScreen.jezik[269];
 
-            pictureBox5.Location = new Point(label1.Location.X, label18.Bottom + 20);
+            zoomablePictureBox5.Location = new Point(label1.Location.X, label18.Bottom + 20);
 
-            label19.Location = new Point(label1.Location.X, pictureBox5.Bottom);
+            label19.Location = new Point(label1.Location.X, zoomablePictureBox5.Bottom);
             label19.Text = FormaHomeScreen.jezik[270];
 
             label20.Location = new Point(label1.Location.X, label19.Bottom + 20);
@@ -113,14 +113,14 @@ namespace Proracun_vibracija
             label22.Location = new Point(label1.Location.X, label21.Bottom + 20);
             label22.Text = FormaHomeScreen.jezik[273];
 
-            pictureBox6.Location = new Point(label1.Location.X, label22.Bottom + 20);
+            zoomablePictureBox6.Location = new Point(label1.Location.X, label22.Bottom + 20);
 
-            label23.Location = new Point(label1.Location.X, pictureBox6.Bottom);
+            label23.Location = new Point(label1.Location.X, zoomablePictureBox6.Bottom);
             label23.Text = FormaHomeScreen.jezik[274];
 
-            pictureBox7.Location = new Point(label1.Location.X, label23.Bottom + 20);
+            zoomablePictureBox7.Location = new Point(label1.Location.X, label23.Bottom + 20);
 
-            label24.Location = new Point(label1.Location.X, pictureBox7.Bottom);
+            label24.Location = new Point(label1.Location.X, zoomablePictureBox7.Bottom);
             label24.Text = FormaHomeScreen.jezik[275];
 
             label25.Location = new Point(label1.Location.X, label24.Bottom + 20);
@@ -129,9 +129,9 @@ namespace Proracun_vibracija
             label26.Location = new Point(label1.Location.X, label25.Bottom + 20);
             label26.Text = FormaHomeScreen.jezik[277];
 
-            pictureBox8.Location = new Point(label1.Location.X, label26.Bottom + 20);
+            zoomablePictureBox8.Location = new Point(label1.Location.X, label26.Bottom + 20);
 
-            label27.Location = new Point(label1.Location.X, pictureBox8.Bottom);
+            label27.Location = new Point(label1.Location.X, zoomablePictureBox8.Bottom);
             label27.Text = FormaHomeScreen.jezik[278];
 
             label28.Location = new Point(label1.Location.X, label27.Bottom + 20);
@@ -140,9 +140,9 @@ namespace Proracun_vibracija
             label29.Location = new Point(label1.Location.X, label28.Bottom + 20);
             label29.Text = FormaHomeScreen.jezik[280];
 
-            pictureBox9.Location = new Point(label1.Location.X, label29.Bottom + 20);
+            zoomablePictureBox9.Location = new Point(label1.Location.X, label29.Bottom + 20);
 
-            label30.Location = new Point(label1.Location.X, pictureBox9.Bottom + 20);
+            label30.Location = new Point(label1.Location.X, zoomablePictureBox9.Bottom + 20);
             label30.Text = FormaHomeScreen.jezik[281];
 
 
@@ -229,10 +229,10 @@ namespace Proracun_vibracija
             label54.Location = new Point(label1.Location.X, label53.Bottom + 1);
             label54.Text = FormaHomeScreen.jezik[305];
 
-            pictureBox10.Location = new Point(label1.Location.X, label54.Bottom + 20);
-            pictureBox11.Location = new Point(pictureBox10.Right + 5, pictureBox10.Location.Y);
-            pictureBox12.Location = new Point(pictureBox11.Right + 5, pictureBox10.Location.Y);
-            pictureBox13.Location = new Point(pictureBox12.Right + 5, pictureBox10.Location.Y);
+            zoomablePictureBox10.Location = new Point(label1.Location.X, label54.Bottom + 20);
+            zoomablePictureBox11.Location = new Point(zoomablePictureBox10.Right + 5, zoomablePictureBox10.Location.Y);
+            zoomablePictureBox12.Location = new Point(zoomablePictureBox11.Right + 5, zoomablePictureBox10.Location.Y);
+            zoomablePictureBox13.Location = new Point(zoomablePictureBox12.Right + 5, zoomablePictureBox10.Location.Y);
 
             #endregion
         }
@@ -251,36 +251,7 @@ namespace Proracun_vibracija
 
         private void zoom(object sender, EventArgs e)
         {
-            Image slika = (sender as PictureBox).Image;
-
-            zoomPicture.Image = slika;
-            zoomPicture.Visible = button1.Visible = true;
-            panel1.Enabled = false;
-
-            Int32 panelH = panel1.Height,
-                    panelW = panel1.Width,
-                    slikaH = slika.Height,
-                    slikaW = slika.Width,
-                    centarX = panelW / 2 + panel1.Location.X,
-                    centarY = panelH / 2 + panel1.Location.Y;
-            Double ratioH = 0, ratioW = 0;
-
-            for (Double i = 0; slikaH * i <= panelH; i += 0.25) ratioH = i;
-            for (Double i = 0; slikaW * i <= panelW; i += 0.25) ratioW = i;
-
-            if (ratioH < ratioW)
-            {
-                zoomPicture.Height = Convert.ToInt32(slikaH * ratioH);
-                zoomPicture.Width  = Convert.ToInt32(slikaW * ratioH);
-            }
-            else
-            {
-                zoomPicture.Height = Convert.ToInt32(slikaH * ratioW);
-                zoomPicture.Width  = Convert.ToInt32(slikaW * ratioW);
-            }
-
-            zoomPicture.Location = new Point((centarX - zoomPicture.Width / 2), (centarY - zoomPicture.Height / 2));
-            button1.Location     = new Point(zoomPicture.Right, zoomPicture.Top);
+            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1);
         }
 
         private void button1_Click(object sender, EventArgs e)
