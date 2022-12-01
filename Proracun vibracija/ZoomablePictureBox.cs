@@ -33,7 +33,7 @@ namespace Proracun_vibracija
             Double ratioH = 0, ratioW = 0;
 
             for (Double i = 0; slikaH * i <= panelH; i += 0.25) ratioH = i;
-            for (Double i = 0; slikaW * i <= panelW; i += 0.25) ratioW = i;
+            for (Double i = 0; ((slikaW * i) + TargetButton.Width) <= panelW; i += 0.25) ratioW = i;
 
             if (ratioH < ratioW)
             {

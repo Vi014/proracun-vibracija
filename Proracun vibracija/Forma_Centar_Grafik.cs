@@ -12,7 +12,6 @@ namespace Proracun_vibracija
     public partial class Forma_Centar_Grafik : Form
     {
         public Forma_Centar_Glavni FormaCentarGlavni;
-        public Forma_Centar_Tekst  FormaCentarTekst;
 
         Graphics g;
         Pen p = new Pen(Color.Black, 2);

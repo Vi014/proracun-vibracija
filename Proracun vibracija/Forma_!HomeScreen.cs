@@ -13,6 +13,7 @@ namespace Proracun_vibracija
     {
         public Forma_TestVoznja    FormaTestVoznja;
         public Forma_Centar_Glavni FormaCentarGlavni;
+        public Forma_Centar_Tekst  FormaCentarTekst;
         public Forma_Desni_Glavni  FormaDesniGlavni;
         public Forma_Uvod          FormaUvod;
 
@@ -392,7 +393,62 @@ namespace Proracun_vibracija
                                 "Automobil 2", // 318
 
                                 // Forma_Centar_Tekst
-                                "PLACEHOLDERSTRING Forma_Centar_Tekst.Text" // 319
+                                "PLACEHOLDERSTRING Forma_Centar_Tekst.Text", // 319
+                                "Engine speed related vibrations",
+                                "Based on the frequency of the vibration and driving conditions, the noise or vibration can be isolated into three component groups: ",
+                                "      -",
+                                "Engine vibrations",
+                                "Engine firing frequency",
+                                "Engine accessory vibrations",
+                                "Engine vibrations",
+                                "First order",
+                                "A first-order engine imbalance is created when any component that rotates at crankshaft speed is out-of-balance or has excessive \r\nrunout.",
+                                "First order vibrations can be caused by: ",
+                                "      - flywheel out of balalnce or excessive runout",
+                                "      -",
+                                "Crankshaft pulley (Torsional vibration dampener)",
+                                "      - Cylinder to cylinder mass difference",
+                                "      -",
+                                "Torque converter",
+                                "      - Imbalanced crankshaft", // 336
+                                "Crankshaft pulley (Torsional vibration dampener)",
+                                "Out of balance or out of round TVD will transfer engine vibrations to the belt drive. Improper TVD (figure 1) will fail to dampen \r\ncrankshaft vibrations, which will be transferred to the belt drive.",
+                                "Figure 1a (TVD as specified)",
+                                "Figure 1b (Improper TVD)",
+                                "Torque converter",
+                                "The torque converter frrequency is the same as the engine frequency. The torque converter can be suspected as the cause of noise \r\nor vibration when an NVH concern is torque sensitive.",
+                                "Refer to torque converter test drive tips.",
+                                "Torque converter vibrations can be caused by:",
+                                "      -",
+                                "The movement of the fluid between the impeller, which is connected to the engine, and the turbine, which connects to the \r\ntransmission (in this case vibration will disappear as soon as the TCC is engaged).",
+                                "      - Clutch engagement",
+                                "      - Clutch release during downshift or coasting",
+                                "      - Torque converter imabalnce or incorrectly installed converter",
+                                "Second order",
+                                "Second order vibrations are caused either by two first order issues or but the up-and-down motion of the pistons. This reversal of \r\nmass and motion creates a natural vibration.",
+                                "On four cylinder engines, second order vibration is equal to",
+                                "engine firing frequency",
+                                "Third order",
+                                "On six cylinder engines, second order vibration is equal to",
+                                "engine firing frequency",
+                                "Fourth order",
+                                "On eight cylinder engines, second order vibration is equal to",
+                                "engine firing frequency",
+                                "Engine firing frequency",
+                                "Firing frequency refers to the force created by the engine each time cylinder fires. This is the natural vibration of the internal \r\ncombustion engine. Firing frequency is load dependent. Higher the engine load is, frequency is more prominent. If there is a problem \r\non the engine, which is affecting combustion process, this vibration will increase.",
+                                "Even that firing frequency is natural to ICE, it have to be isolated from the vehicle body.",
+                                "Firing frequency vibrations could be caused by:",
+                                "      -",
+                                "Engine mounts",
+                                "      -",
+                                "Exhaust hangers",
+                                "      - Engine problems, affecting combustion process",
+                                "Engine mounts",
+                                "The first compontents that isolate vibration from the engine to the passenger compartment are engine mounts. Any fault in the \r\nengine mounting system can lead directly to noise and vibration.",
+                                "Inspect engine mounts for cracks or damage to the insulator and the bracket (figure 2). Grounded, the engine mounted bracket \r\ncontacting the frame-mounted bracket, or strained engine mounts may not isolate engine vibrations.",
+                                "Engine mounts must be installed correctly and tighten with the specific torque. If the mounts are installed incorrectly or incorrect \r\nparts are used, they cannot absorb engine vibration. Pay attention on proper type of engine mount installed. (figure 3)",
+                                "Figure 2",
+                                "Figure 3"
                                 };
 
         private void PromenaJezika()
@@ -410,16 +466,9 @@ namespace Proracun_vibracija
             if (FormaCentarGlavni != null) 
             {
                 FormaCentarGlavni.PromenaJezika();
-                if (FormaCentarGlavni.FormaCentarTabela != null)
-                {
-                    FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
-                    if (FormaCentarGlavni.FormaCentarTabela.FormaCentarTekst != null) FormaCentarGlavni.FormaCentarTabela.FormaCentarTekst.PromenaJezika();
-                }
-                if (FormaCentarGlavni.FormaCentarGrafik != null)
-                {
-                    FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
-                    if (FormaCentarGlavni.FormaCentarGrafik.FormaCentarTekst != null) FormaCentarGlavni.FormaCentarGrafik.FormaCentarTekst.PromenaJezika();
-                }
+                if (FormaCentarGlavni.FormaCentarTabela != null) FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
+                if (FormaCentarGlavni.FormaCentarGrafik != null) FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
+                if (FormaCentarTekst != null) FormaCentarTekst.PromenaJezika();
 
                 if (FormaCentarGlavni.FormaCentarAgregatGlavni != null)
                 {
@@ -927,8 +976,8 @@ namespace Proracun_vibracija
 
         private void Forma_HomeScreen_Load(object sender, EventArgs e)
         {
-            // Forma_Centar_Tekst test = new Forma_Centar_Tekst(this);
-            // test.Show();
+            Forma_Centar_Tekst test = new Forma_Centar_Tekst(this);
+            test.Show();
         }
     }
 }

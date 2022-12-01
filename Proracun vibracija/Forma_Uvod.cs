@@ -37,6 +37,7 @@ namespace Proracun_vibracija
 
             #region dokument
 
+            label1.Location = new Point(16, 14);
             label1.Text = FormaHomeScreen.jezik[252];
 
             label2.Location = new Point(label1.Location.X, label1.Bottom + 20);
