@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Centar_Glavni : Form
     {
+#pragma warning disable IDE1006
+
         public Forma_HomeScreen            FormaHomeScreen;
         public Forma_Centar_Tabela         FormaCentarTabela;
         public Forma_Centar_Grafik         FormaCentarGrafik;
@@ -25,14 +27,14 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text                = FormaHomeScreen.jezik[5];
-            label_UnosPodataka.Text  = FormaHomeScreen.jezik[6];
-            label_Upozorenje.Text    = FormaHomeScreen.jezik[7];
-            label_RPM.Text           = FormaHomeScreen.jezik[8];
-            label_IzmFrek.Text       = FormaHomeScreen.jezik[9];
-            label_BrojCilindara.Text = FormaHomeScreen.jezik[10];
-            button_Racun.Text        = FormaHomeScreen.jezik[11];
-            button_Agregat.Text      = FormaHomeScreen.jezik[12];
+            this.Text                = FormaHomeScreen.Jezik[5];
+            label_UnosPodataka.Text  = FormaHomeScreen.Jezik[6];
+            label_Upozorenje.Text    = FormaHomeScreen.Jezik[7];
+            label_RPM.Text           = FormaHomeScreen.Jezik[8];
+            label_IzmFrek.Text       = FormaHomeScreen.Jezik[9];
+            label_BrojCilindara.Text = FormaHomeScreen.Jezik[10];
+            button_Racun.Text        = FormaHomeScreen.Jezik[11];
+            button_Agregat.Text      = FormaHomeScreen.Jezik[12];
         }
 
         private void Forma_Centar_Glavni_Load(object sender, EventArgs e)
@@ -61,16 +63,16 @@ namespace Proracun_vibracija
 
             comboBox_BrojCilindara.SelectedIndex = 0;
 
-            comboBox_Preset.Items.Add(FormaHomeScreen.jezik[316]);
-            comboBox_Preset.Items.Add(FormaHomeScreen.jezik[317]);
-            comboBox_Preset.Items.Add(FormaHomeScreen.jezik[318]);
+            comboBox_Preset.Items.Add(FormaHomeScreen.Jezik[316]);
+            comboBox_Preset.Items.Add(FormaHomeScreen.Jezik[317]);
+            comboBox_Preset.Items.Add(FormaHomeScreen.Jezik[318]);
             comboBox_Preset.SelectedIndex = 0;
         }
 
         private void Forma_Centar_Glavni_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaHomeScreen.FormaCentarGlavni  = null;
-            FormaHomeScreen.dugmeCentarEnabled = true;
+            FormaHomeScreen.DugmeCentarEnabled = true;
         }
 
         #region text box sranja
@@ -329,8 +331,8 @@ namespace Proracun_vibracija
 
         #region matematika
 
-        public Boolean rpm1unet, rpm2unet, rpm3unet;
-        public Int32 brojCilindara;
+        public Boolean RPM1Unet, RPM2Unet, RPM3Unet;
+        public Int32 BrojCilindara;
         public Double   RPM1, RPM2, RPM3,
                         F11, F12, F13,
                         F21, F22, F23,
@@ -357,7 +359,7 @@ namespace Proracun_vibracija
                         _F21, _F22, _F23,
                         _F31, _F32, _F33;
 
-        private void ResetVrednosti()
+        private void resetVrednosti()
         {
             errorProvider1.SetError(textBox_RPM1, "");
             errorProvider1.SetError(textBox_RPM2, "");
@@ -376,7 +378,7 @@ namespace Proracun_vibracija
             _RPM1 = _RPM2 = _RPM3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0; // Double cija je vrednost null zapravo ima vrednost 0 tako da je ovo OK.
         }
 
-        private Boolean Provera()
+        private Boolean provera()
         {
             if (textBox_RPM1.Text != "RPM1" && (textBox_F11.Text != "F11" || textBox_F12.Text != "F12" || textBox_F13.Text != "F13")) _rpm1unet = true;
             if (textBox_RPM2.Text != "RPM2" && (textBox_F21.Text != "F21" || textBox_F22.Text != "F22" || textBox_F23.Text != "F23")) _rpm2unet = true;
@@ -386,7 +388,7 @@ namespace Proracun_vibracija
             else return false;
         }
 
-        private Boolean Ucitavanje()
+        private Boolean ucitavanje()
         {
             _brojCilindara = Convert.ToInt32(comboBox_BrojCilindara.Text);
 
@@ -396,12 +398,12 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_RPM1.Text, out _RPM1))
                 {
-                    errorProvider1.SetError(textBox_RPM1, FormaHomeScreen.jezik[306]); // 100 i 8000
+                    errorProvider1.SetError(textBox_RPM1, FormaHomeScreen.Jezik[306]); // 100 i 8000
                     uspeh = false;
                 }
                 if (_RPM1 < 100 || _RPM1 > 8000)
                 {
-                    errorProvider1.SetError(textBox_RPM1, FormaHomeScreen.jezik[306]);
+                    errorProvider1.SetError(textBox_RPM1, FormaHomeScreen.Jezik[306]);
                     uspeh = false;
                 }
 
@@ -409,12 +411,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F11.Text, out _F11))
                     {
-                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.jezik[307]); // 1 i 500
+                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.Jezik[307]); // 1 i 500
                         uspeh = false;
                     }
                     if (_F11 <= 0 || _F11 > 500)
                     {
-                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -422,12 +424,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F12.Text, out _F12))
                     {
-                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F12 <= 0 || _F12 > 500)
                     {
-                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -435,12 +437,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F13.Text, out _F13))
                     {
-                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F13 <= 0 || _F13 > 500)
                     {
-                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -449,12 +451,12 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_RPM2.Text, out _RPM2))
                 {
-                    errorProvider1.SetError(textBox_RPM2, FormaHomeScreen.jezik[306]);
+                    errorProvider1.SetError(textBox_RPM2, FormaHomeScreen.Jezik[306]);
                     uspeh = false;
                 }
                 if (_RPM2 < 100 || _RPM2 > 8000)
                 {
-                    errorProvider1.SetError(textBox_RPM2, FormaHomeScreen.jezik[306]);
+                    errorProvider1.SetError(textBox_RPM2, FormaHomeScreen.Jezik[306]);
                     uspeh = false;
                 }
 
@@ -462,12 +464,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F21.Text, out _F21))
                     {
-                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F21 <= 0 || _F21 > 500)
                     {
-                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -475,12 +477,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F22.Text, out _F22))
                     {
-                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F22 <= 0 || _F22 > 500)
                     {
-                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -488,12 +490,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F23.Text, out _F23))
                     {
-                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F23 <= 0 || _F23 > 500)
                     {
-                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -502,12 +504,12 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_RPM3.Text, out _RPM3))
                 {
-                    errorProvider1.SetError(textBox_RPM3, FormaHomeScreen.jezik[306]);
+                    errorProvider1.SetError(textBox_RPM3, FormaHomeScreen.Jezik[306]);
                     uspeh = false;
                 }
                 if (_RPM3 < 100 || _RPM3 > 8000)
                 {
-                    errorProvider1.SetError(textBox_RPM3, FormaHomeScreen.jezik[306]);
+                    errorProvider1.SetError(textBox_RPM3, FormaHomeScreen.Jezik[306]);
                     uspeh = false;
                 }
 
@@ -515,12 +517,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F31.Text, out _F31))
                     {
-                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F31 <= 0 || _F31 > 500)
                     {
-                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -528,12 +530,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F32.Text, out _F32))
                     {
-                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F32 <= 0 || _F32 > 500)
                     {
-                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -541,12 +543,12 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F33.Text, out _F33))
                     {
-                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                     if (_F33 <= 0 || _F33 > 500)
                     {
-                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.jezik[307]);
+                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.Jezik[307]);
                         uspeh = false;
                     }
                 }
@@ -555,12 +557,12 @@ namespace Proracun_vibracija
             return uspeh;
         }
 
-        private void Konvertovanje()
+        private void konvertovanje()
         {
-            rpm1unet = _rpm1unet;
-            rpm2unet = _rpm2unet;
-            rpm3unet = _rpm3unet;
-            brojCilindara = _brojCilindara;
+            RPM1Unet = _rpm1unet;
+            RPM2Unet = _rpm2unet;
+            RPM3Unet = _rpm3unet;
+            BrojCilindara = _brojCilindara;
             RPM1 = _RPM1;
             RPM2 = _RPM2;
             RPM3 = _RPM3;
@@ -575,34 +577,34 @@ namespace Proracun_vibracija
             F33 = _F33;
         }
 
-        private void Racun()
+        private void racun()
         {
-            if (rpm1unet)
+            if (RPM1Unet)
             {
                 FM1  = Math.Round((RPM1 / 60),                 1, MidpointRounding.AwayFromZero);
                 FM12 = Math.Round((FM1 * 2),                   1, MidpointRounding.AwayFromZero);
                 FM13 = Math.Round((FM1 * 3),                   1, MidpointRounding.AwayFromZero);
                 FM14 = Math.Round((FM1 * 4),                   1, MidpointRounding.AwayFromZero);
                 FB1  = Math.Round((FM1 / 2),                   1, MidpointRounding.AwayFromZero);
-                FP1  = Math.Round((0.5 * FM1 * brojCilindara), 1, MidpointRounding.AwayFromZero);
+                FP1  = Math.Round((0.5 * FM1 * BrojCilindara), 1, MidpointRounding.AwayFromZero);
             }
-            if (rpm2unet)
+            if (RPM2Unet)
             {
                 FM2  = Math.Round((RPM2 / 60),                 1, MidpointRounding.AwayFromZero);
                 FM22 = Math.Round((FM2 * 2),                   1, MidpointRounding.AwayFromZero);
                 FM23 = Math.Round((FM2 * 3),                   1, MidpointRounding.AwayFromZero);
                 FM24 = Math.Round((FM2 * 4),                   1, MidpointRounding.AwayFromZero);
                 FB2  = Math.Round((FM2 / 2),                   1, MidpointRounding.AwayFromZero);
-                FP2  = Math.Round((0.5 * FM2 * brojCilindara), 1, MidpointRounding.AwayFromZero);
+                FP2  = Math.Round((0.5 * FM2 * BrojCilindara), 1, MidpointRounding.AwayFromZero);
             }
-            if (rpm3unet)
+            if (RPM3Unet)
             {
                 FM3  = Math.Round((RPM3 / 60),                 1, MidpointRounding.AwayFromZero);
                 FM32 = Math.Round((FM3 * 2),                   1, MidpointRounding.AwayFromZero);
                 FM33 = Math.Round((FM3 * 3),                   1, MidpointRounding.AwayFromZero);
                 FM34 = Math.Round((FM3 * 4),                   1, MidpointRounding.AwayFromZero);
                 FB3  = Math.Round((FM3 / 2),                   1, MidpointRounding.AwayFromZero);
-                FP3  = Math.Round((0.5 * FM3 * brojCilindara), 1, MidpointRounding.AwayFromZero);
+                FP3  = Math.Round((0.5 * FM3 * BrojCilindara), 1, MidpointRounding.AwayFromZero);
             }
         }
 
@@ -610,25 +612,25 @@ namespace Proracun_vibracija
 
         private void button_Racun_Click(object sender, EventArgs e)
         {
-            ResetVrednosti();
-            if (Provera())
+            resetVrednosti();
+            if (provera())
             {
-                if (Ucitavanje())
+                if (ucitavanje())
                 {
-                    Konvertovanje(); /* Ako se ispostavi da neke vrednosti nismo dobro uneli, izazvacemo reset vrednosti. Ovo samo po sebi nije problem, sem ako posle greske mi pokusamo da unesemo vrednosti u Forma_Centar_Tabela_2 i refreshujemo Forma_Centar_Tabela_3.
+                    konvertovanje(); /* Ako se ispostavi da neke vrednosti nismo dobro uneli, izazvacemo reset vrednosti. Ovo samo po sebi nije problem, sem ako posle greske mi pokusamo da unesemo vrednosti u Forma_Centar_Tabela_2 i refreshujemo Forma_Centar_Tabela_3.
                                         Ako nesto nije uneto kako valja, resetovace se samo privremene promenljive (tj one sa donjim crtama u imenu), dok ce prethodno upisane vrednosti ostati u promenljivama kojima pristupaju ostale forme.
                                         Sve vrednosti ovde su resetovane na nulu zbog nepravilnog upisa, pa samim tim unos zabaguje. Ovako smo sve operacije provere prebacili na privremene promenljive, a unos vrednosti iz textboxova se vrsi tek kada smo apsolutno sigurni da je sve uneto kako valja.
                                         Ako nesto nije uneto kako valja, resetovace se samo privremene promenljive (tj one sa donjim crtama u imenu), dok ce prethodno upisane vrednosti ostati u promenljivama kojima pristupaju ostale forme.
                                         Isto ovo se moze desiti ako unesemo pogresne vrednosti na Forma_Centar_Tabela_2, i onda pokusamo da odradimo refresh sa ove forme, tako da sam i u njen kod dodao privremene promenljive. */
-                    Racun();
+                    racun();
                     if (FormaCentarTabela == null && FormaCentarGrafik == null && FormaCentarAgregatGlavni == null) button_Tabela.Enabled = button_Grafik.Enabled = button_Agregat.Enabled = true;
                     if (FormaCentarTabela != null) FormaCentarTabela.IspisVrednosti();
                     if (FormaCentarGrafik != null) FormaCentarGrafik.Racun();
-                    if (FormaCentarAgregatGlavni != null && FormaCentarAgregatGlavni.aktivirano) FormaCentarAgregatGlavni.Racun(); // vidi komentar pred deklaracijom promenljive aktivarano u FormaCentarAgregatGlavni za objasnjenje njenog prisustva.
+                    if (FormaCentarAgregatGlavni != null && FormaCentarAgregatGlavni.Aktivirano) FormaCentarAgregatGlavni.Racun(); // vidi komentar pred deklaracijom promenljive aktivarano u FormaCentarAgregatGlavni za objasnjenje njenog prisustva.
                 }
-                else MessageBox.Show(FormaHomeScreen.jezik[14], FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show(FormaHomeScreen.Jezik[14], FormaHomeScreen.Jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show(FormaHomeScreen.jezik[13], FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show(FormaHomeScreen.Jezik[13], FormaHomeScreen.Jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button_Tabela_Click(object sender, EventArgs e)
@@ -640,7 +642,7 @@ namespace Proracun_vibracija
             button_Tabela.Enabled = false;
         }
 
-        public Boolean buttonTabelaEnabled
+        public Boolean ButtonTabelaEnabled
         {
             get { return button_Tabela.Enabled;  }
             set { button_Tabela.Enabled = value; }
@@ -655,7 +657,7 @@ namespace Proracun_vibracija
             button_Grafik.Enabled = false;
         }
 
-        public Boolean buttonGrafikEnabled
+        public Boolean ButtonGrafikEnabled
         {
             get { return button_Grafik.Enabled;  }
             set { button_Grafik.Enabled = value; }
@@ -670,10 +672,12 @@ namespace Proracun_vibracija
             button_Agregat.Enabled = false;
         }
 
-        public Boolean buttonAgregatEnabled
+        public Boolean ButtonAgregatEnabled
         {
             get { return button_Agregat.Enabled;  }
             set { button_Agregat.Enabled = value; }
         }
+
+#pragma warning restore IDE1006
     }
 }

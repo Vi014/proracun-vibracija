@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Centar_Grafik));
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox_L1 = new System.Windows.Forms.CheckBox();
             this.checkBox_L2 = new System.Windows.Forms.CheckBox();
@@ -63,7 +64,7 @@
             this.checkBox_L1.TabIndex = 0;
             this.checkBox_L1.Text = "FM";
             this.checkBox_L1.UseVisualStyleBackColor = true;
-            this.checkBox_L1.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L1.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L2
             // 
@@ -75,7 +76,7 @@
             this.checkBox_L2.TabIndex = 1;
             this.checkBox_L2.Text = "FM2";
             this.checkBox_L2.UseVisualStyleBackColor = true;
-            this.checkBox_L2.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L2.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L3
             // 
@@ -87,7 +88,7 @@
             this.checkBox_L3.TabIndex = 2;
             this.checkBox_L3.Text = "FM3";
             this.checkBox_L3.UseVisualStyleBackColor = true;
-            this.checkBox_L3.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L3.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L4
             // 
@@ -99,7 +100,7 @@
             this.checkBox_L4.TabIndex = 3;
             this.checkBox_L4.Text = "FM4";
             this.checkBox_L4.UseVisualStyleBackColor = true;
-            this.checkBox_L4.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L4.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L5
             // 
@@ -111,7 +112,7 @@
             this.checkBox_L5.TabIndex = 4;
             this.checkBox_L5.Text = "FB";
             this.checkBox_L5.UseVisualStyleBackColor = true;
-            this.checkBox_L5.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L5.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L6
             // 
@@ -123,7 +124,7 @@
             this.checkBox_L6.TabIndex = 5;
             this.checkBox_L6.Text = "FP";
             this.checkBox_L6.UseVisualStyleBackColor = true;
-            this.checkBox_L6.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L6.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // button_FP
             // 
@@ -217,7 +218,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Iscrtaj ponovo";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.button1.Click += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // label1
             // 
@@ -251,6 +252,7 @@
             this.Controls.Add(this.checkBox_L1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Centar_Grafik";
             this.Text = "Vibracije motora";

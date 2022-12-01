@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_TestVoznja));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
@@ -267,7 +268,7 @@
             this.label46.TabIndex = 46;
             this.label46.Text = "label46 (link: Back)";
             this.label46.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label46.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label46.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label42
             // 
@@ -280,7 +281,7 @@
             this.label42.TabIndex = 42;
             this.label42.Text = "label42 (link: Back)";
             this.label42.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label32
             // 
@@ -303,7 +304,7 @@
             this.label36.TabIndex = 36;
             this.label36.Text = "label36 (link: Back)";
             this.label36.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label28
             // 
@@ -326,7 +327,7 @@
             this.label33.TabIndex = 33;
             this.label33.Text = "label33 (link: Back)";
             this.label33.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label33.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label33.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label29
             // 
@@ -349,7 +350,7 @@
             this.label30.TabIndex = 30;
             this.label30.Text = "label30 (link: Back)";
             this.label30.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label30.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label30.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label25
             // 
@@ -462,7 +463,7 @@
             this.label14.TabIndex = 14;
             this.label14.Text = "label14 (link-bold: Engine Accessory Test)";
             this.label14.Click += new System.EventHandler(this.gotoEAtest);
-            this.label14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label13
             // 
@@ -475,7 +476,7 @@
             this.label13.TabIndex = 13;
             this.label13.Text = "label13 (link-bold: Engine Loaded Test)";
             this.label13.Click += new System.EventHandler(this.gotoELtest);
-            this.label13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label12
             // 
@@ -488,7 +489,7 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "label12 (link-bold: Neutral Run-Up Test)";
             this.label12.Click += new System.EventHandler(this.gotoNRUtest);
-            this.label12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label11
             // 
@@ -501,7 +502,7 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "label11 (link-bold: Steering Test 2)";
             this.label11.Click += new System.EventHandler(this.gotoST2);
-            this.label11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label10
             // 
@@ -514,7 +515,7 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "label10 (link-bold: Steering Test 1)";
             this.label10.Click += new System.EventHandler(this.gotoST1);
-            this.label10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label9
             // 
@@ -527,7 +528,7 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "label9 (link-bold: Torque Converter Test)";
             this.label9.Click += new System.EventHandler(this.gotoTCtest);
-            this.label9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label27
             // 
@@ -540,7 +541,7 @@
             this.label27.TabIndex = 27;
             this.label27.Text = "label27 (link: Back)";
             this.label27.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label27.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label27.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label8
             // 
@@ -553,7 +554,7 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "label8 (link-bold: Downshift Speed Test)";
             this.label8.Click += new System.EventHandler(this.gotoDStest);
-            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label24
             // 
@@ -566,7 +567,7 @@
             this.label24.TabIndex = 24;
             this.label24.Text = "label24 (link: Back)";
             this.label24.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label7
             // 
@@ -579,7 +580,7 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "label7 (link-bold: Neutral Coast-Down Speed Test)";
             this.label7.Click += new System.EventHandler(this.gotoNCDStest);
-            this.label7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label21
             // 
@@ -592,7 +593,7 @@
             this.label21.TabIndex = 21;
             this.label21.Text = "label21 (link: Back)";
             this.label21.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label6
             // 
@@ -605,7 +606,7 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "label6 (link-bold: Slow Acceleration Test)";
             this.label6.Click += new System.EventHandler(this.gotoSAtest);
-            this.label6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label18
             // 
@@ -618,7 +619,7 @@
             this.label18.TabIndex = 18;
             this.label18.Text = "label18 (link: Back)";
             this.label18.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label15
             // 
@@ -631,7 +632,7 @@
             this.label15.TabIndex = 15;
             this.label15.Text = "label15 (link: Back)";
             this.label15.Click += new System.EventHandler(this.gotoBeginning);
-            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label4
             // 
@@ -644,7 +645,7 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "label4 (link: Back)";
             this.label4.Click += new System.EventHandler(this.gotoBeginning);
-            this.label4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label2
             // 
@@ -657,7 +658,7 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "label2 (link: Road test)";
             this.label2.Click += new System.EventHandler(this.gotoRoadTest);
-            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label1
             // 
@@ -670,7 +671,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1 (link: Pre-road Test inspection)";
             this.label1.Click += new System.EventHandler(this.gotoPreRoadTestInspection);
-            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // Forma_TestVoznja
             // 
@@ -680,6 +681,7 @@
             this.ClientSize = new System.Drawing.Size(1340, 717);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_TestVoznja";
             this.Text = "PLACEHOLDERSTRING Forma_TestVoznja.Text";

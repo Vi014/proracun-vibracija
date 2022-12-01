@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Centar_Agregat_Tabela));
             this.button_D5 = new System.Windows.Forms.Button();
             this.button_D4 = new System.Windows.Forms.Button();
             this.button_D3 = new System.Windows.Forms.Button();
@@ -613,6 +614,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Centar_Agregat_Tabela";
             this.Text = "Proračun vibracija agregata";

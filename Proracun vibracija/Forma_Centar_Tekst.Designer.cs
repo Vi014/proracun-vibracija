@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Centar_Tekst));
             this.button1 = new System.Windows.Forms.Button();
             this.zoomPicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -353,7 +354,7 @@
             this.label18.TabIndex = 14;
             this.label18.Text = "label18 (link: list el 4)";
             this.label18.Click += new System.EventHandler(this.gotoTorqueConverter);
-            this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label42
             // 
@@ -367,7 +368,7 @@
             this.label42.TabIndex = 14;
             this.label42.Text = "label42 (link: fourth order engine firing frequency)";
             this.label42.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
-            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label42.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label39
             // 
@@ -381,7 +382,7 @@
             this.label39.TabIndex = 14;
             this.label39.Text = "label39 (link: third order engine firing frequency)";
             this.label39.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
-            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label50
             // 
@@ -395,7 +396,7 @@
             this.label50.TabIndex = 14;
             this.label50.Text = "label50 (link: engine firing frequency list el 2 text)";
             this.label50.Click += new System.EventHandler(this.gotoExhaustHangers);
-            this.label50.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label50.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label48
             // 
@@ -409,7 +410,7 @@
             this.label48.TabIndex = 14;
             this.label48.Text = "label48 (link: engine firing frequency list el 1 text)";
             this.label48.Click += new System.EventHandler(this.gotoEngineMounts);
-            this.label48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label48.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label36
             // 
@@ -423,7 +424,7 @@
             this.label36.TabIndex = 14;
             this.label36.Text = "label36 (link: second order engine firing frequency)";
             this.label36.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
-            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label15
             // 
@@ -436,7 +437,7 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "label15 (link: list el 2)";
             this.label15.Click += new System.EventHandler(this.gotoCrankshaftPulley);
-            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label8
             // 
@@ -449,7 +450,7 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "label8 (link: Engine accessory vibrations)";
             this.label8.Click += new System.EventHandler(this.gotoEngineAccessoryVibrations);
-            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label6
             // 
@@ -462,7 +463,7 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "label6 (link: Engine firing frequency)";
             this.label6.Click += new System.EventHandler(this.gotoEngineFiringFrequency);
-            this.label6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label17
             // 
@@ -925,7 +926,7 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "label4 (link: Engine vibrations)";
             this.label4.Click += new System.EventHandler(this.gotoEngineVibrations);
-            this.label4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label3
             // 
@@ -978,6 +979,7 @@
             this.Controls.Add(this.zoomPicture);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Centar_Tekst";
             this.Text = "PLACEHOLDERSTRING Forma_Centar_Tekst.Text";

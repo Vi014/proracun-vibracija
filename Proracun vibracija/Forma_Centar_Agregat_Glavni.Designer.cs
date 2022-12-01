@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Centar_Agregat_Glavni));
             this.textBox_D1 = new System.Windows.Forms.TextBox();
             this.textBox_DR = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -264,6 +265,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Racun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Centar_Agregat_Glavni";
             this.Text = "Unos podataka";

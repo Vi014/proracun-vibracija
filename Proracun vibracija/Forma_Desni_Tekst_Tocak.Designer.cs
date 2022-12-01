@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Desni_Tekst_Tocak));
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label67 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
@@ -42,6 +44,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
             this.zoomablePictureBox1 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox9 = new Proracun_vibracija.ZoomablePictureBox();
             this.zoomablePictureBox8 = new Proracun_vibracija.ZoomablePictureBox();
             this.zoomablePictureBox7 = new Proracun_vibracija.ZoomablePictureBox();
             this.zoomablePictureBox6 = new Proracun_vibracija.ZoomablePictureBox();
@@ -93,6 +96,8 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -101,6 +106,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -110,14 +116,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.zoomPicture = new System.Windows.Forms.PictureBox();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.zoomablePictureBox9 = new Proracun_vibracija.ZoomablePictureBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).BeginInit();
@@ -125,7 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -243,6 +244,16 @@
             this.label67.TabIndex = 46;
             this.label67.Text = "label67 (bold-italic: radial force variation desc 2-1)";
             // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(17, 5901);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(204, 20);
+            this.label73.TabIndex = 24;
+            this.label73.Text = "label73 (italic-mini: Figure 9)";
+            // 
             // label69
             // 
             this.label69.AutoSize = true;
@@ -274,7 +285,7 @@
             this.label70.TabIndex = 22;
             this.label70.Text = "label70 (link: back)";
             this.label70.Click += new System.EventHandler(this.gotoBeginning);
-            this.label70.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label70.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label61
             // 
@@ -358,6 +369,17 @@
             this.zoomablePictureBox1.TabStop = false;
             this.zoomablePictureBox1.Click += new System.EventHandler(this.zoom);
             // 
+            // zoomablePictureBox9
+            // 
+            this.zoomablePictureBox9.Image = global::Proracun_vibracija.Properties.Resources.wheel08;
+            this.zoomablePictureBox9.Location = new System.Drawing.Point(21, 5524);
+            this.zoomablePictureBox9.Name = "zoomablePictureBox9";
+            this.zoomablePictureBox9.Size = new System.Drawing.Size(600, 374);
+            this.zoomablePictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox9.TabIndex = 23;
+            this.zoomablePictureBox9.TabStop = false;
+            this.zoomablePictureBox9.Click += new System.EventHandler(this.zoom);
+            // 
             // zoomablePictureBox8
             // 
             this.zoomablePictureBox8.Image = global::Proracun_vibracija.Properties.Resources.wheel07;
@@ -435,7 +457,7 @@
             this.label62.TabIndex = 22;
             this.label62.Text = "label62 (link: back)";
             this.label62.Click += new System.EventHandler(this.gotoBeginning);
-            this.label62.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label62.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label55
             // 
@@ -448,7 +470,7 @@
             this.label55.TabIndex = 22;
             this.label55.Text = "label55 (link: back)";
             this.label55.Click += new System.EventHandler(this.gotoBeginning);
-            this.label55.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label55.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label47
             // 
@@ -461,7 +483,7 @@
             this.label47.TabIndex = 22;
             this.label47.Text = "label47 (link: back)";
             this.label47.Click += new System.EventHandler(this.gotoBeginning);
-            this.label47.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label47.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label39
             // 
@@ -474,7 +496,7 @@
             this.label39.TabIndex = 22;
             this.label39.Text = "label39 (link: back)";
             this.label39.Click += new System.EventHandler(this.gotoBeginning);
-            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label32
             // 
@@ -487,7 +509,7 @@
             this.label32.TabIndex = 22;
             this.label32.Text = "label32 (link: back)";
             this.label32.Click += new System.EventHandler(this.gotoBeginning);
-            this.label32.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label32.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label21
             // 
@@ -500,7 +522,7 @@
             this.label21.TabIndex = 22;
             this.label21.Text = "label21 (link: el 8 text)";
             this.label21.Click += new System.EventHandler(this.gotoBentAxleShaft);
-            this.label21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label19
             // 
@@ -513,7 +535,7 @@
             this.label19.TabIndex = 22;
             this.label19.Text = "label19 (link: el 7 text)";
             this.label19.Click += new System.EventHandler(this.gotoRadialForceVariation);
-            this.label19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label17
             // 
@@ -526,7 +548,7 @@
             this.label17.TabIndex = 22;
             this.label17.Text = "label17 (link: el 6 text)";
             this.label17.Click += new System.EventHandler(this.gotoHubBrakeDiscRunout);
-            this.label17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label15
             // 
@@ -539,7 +561,7 @@
             this.label15.TabIndex = 22;
             this.label15.Text = "label15 (link: el 5 text)";
             this.label15.Click += new System.EventHandler(this.gotoLateralWheelRunout);
-            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label13
             // 
@@ -552,7 +574,7 @@
             this.label13.TabIndex = 22;
             this.label13.Text = "label13 (link: el 4 text)";
             this.label13.Click += new System.EventHandler(this.gotoRadialWheelRunout);
-            this.label13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label11
             // 
@@ -565,7 +587,7 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "label11 (link: el 3 text)";
             this.label11.Click += new System.EventHandler(this.gotoLateralWheelAndTireAssemblyRunout);
-            this.label11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label9
             // 
@@ -578,7 +600,7 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "label9 (link: el 2 text)";
             this.label9.Click += new System.EventHandler(this.gotoRadialWheelAndTireAssemblyRunout);
-            this.label9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label23
             // 
@@ -910,6 +932,26 @@
             this.label68.TabIndex = 20;
             this.label68.Text = "label68 (standard: radial force variation desc 2-2)";
             // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(16, 5921);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(428, 25);
+            this.label74.TabIndex = 20;
+            this.label74.Text = "label74 (standard: bent axle shaft desc 2-1)";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(16, 5496);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(428, 25);
+            this.label72.TabIndex = 20;
+            this.label72.Text = "label72 (standard: bent axle shaft desc 1-1)";
+            // 
             // label64
             // 
             this.label64.AutoSize = true;
@@ -989,6 +1031,16 @@
             this.label2.Size = new System.Drawing.Size(228, 25);
             this.label2.TabIndex = 20;
             this.label2.Text = "label2 (standard: intro)";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(16, 5471);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(336, 25);
+            this.label71.TabIndex = 17;
+            this.label71.Text = "label71 (bold: Bent axle shaft) ";
             // 
             // label63
             // 
@@ -1083,57 +1135,6 @@
             this.zoomPicture.TabStop = false;
             this.zoomPicture.Visible = false;
             // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(16, 5471);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(336, 25);
-            this.label71.TabIndex = 17;
-            this.label71.Text = "label71 (bold: Bent axle shaft) ";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(16, 5496);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(428, 25);
-            this.label72.TabIndex = 20;
-            this.label72.Text = "label72 (standard: bent axle shaft desc 1-1)";
-            // 
-            // zoomablePictureBox9
-            // 
-            this.zoomablePictureBox9.Image = global::Proracun_vibracija.Properties.Resources.wheel08;
-            this.zoomablePictureBox9.Location = new System.Drawing.Point(21, 5524);
-            this.zoomablePictureBox9.Name = "zoomablePictureBox9";
-            this.zoomablePictureBox9.Size = new System.Drawing.Size(600, 374);
-            this.zoomablePictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox9.TabIndex = 23;
-            this.zoomablePictureBox9.TabStop = false;
-            this.zoomablePictureBox9.Click += new System.EventHandler(this.zoom);
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(17, 5901);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(204, 20);
-            this.label73.TabIndex = 24;
-            this.label73.Text = "label73 (italic-mini: Figure 9)";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(16, 5921);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(428, 25);
-            this.label74.TabIndex = 20;
-            this.label74.Text = "label74 (standard: bent axle shaft desc 2-1)";
-            // 
             // Forma_Desni_Tekst_Tocak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1144,6 +1145,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Tekst_Tocak";
             this.Text = "PLACEHOLDERSTRING Forma_Desni_Tekst_Tocak.Text";
@@ -1153,6 +1155,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).EndInit();
@@ -1160,7 +1163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }

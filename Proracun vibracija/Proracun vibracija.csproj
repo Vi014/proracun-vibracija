@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>big_icon_19.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -146,6 +149,7 @@
     </Compile>
     <EmbeddedResource Include="Forma_!HomeScreen.resx">
       <DependentUpon>Forma_!HomeScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forma_Centar_!Glavni.resx">
       <DependentUpon>Forma_Centar_!Glavni.cs</DependentUpon>
@@ -190,7 +194,7 @@
       <DependentUpon>Forma_Uvod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -337,6 +341,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wheel08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="big_icon_19.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

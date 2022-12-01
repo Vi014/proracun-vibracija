@@ -11,6 +11,7 @@ namespace Proracun_vibracija
 {
     public partial class Forma_HomeScreen : Form
     {
+#pragma warning disable IDE1006 // dobijam upozorenje ako koristim PascalCasing za public promenljive i camelCasing za private promenljive, a ne ako uradim suprotno???
         public Forma_TestVoznja    FormaTestVoznja;
         public Forma_Centar_Glavni FormaCentarGlavni;
         public Forma_Desni_Glavni  FormaDesniGlavni;
@@ -23,7 +24,7 @@ namespace Proracun_vibracija
 
         #region Jezik
 
-        public String[] jezik = {
+        public String[] Jezik = {
                                 // Forma_HomeScreen
                                 "Proračun vibracija",
                                 "Saveti za test vožnju",
@@ -587,13 +588,13 @@ namespace Proracun_vibracija
                                 "If the measured values are not within vehicle manufacturer specifications, replace the shaft."
                                 };
 
-        private void PromenaJezika()
+        private void promenaJezika()
         {
-            this.Text         = jezik[0];
-            dugmeLevo.Text    = jezik[1];
-            dugmeCentar.Text  = jezik[2];
-            dugmeDesno.Text   = jezik[3];
-            dugmeDodatno.Text = jezik[250];
+            this.Text         = Jezik[0];
+            dugmeLevo.Text    = Jezik[1];
+            dugmeCentar.Text  = Jezik[2];
+            dugmeDesno.Text   = Jezik[3];
+            dugmeDodatno.Text = Jezik[250];
 
             if (FormaUvod != null)       FormaUvod.PromenaJezika();
 
@@ -619,6 +620,7 @@ namespace Proracun_vibracija
                 FormaDesniGlavni.PromenaJezika();
                 if (FormaDesniGlavni.FormaDesniTabela != null) FormaDesniGlavni.FormaDesniTabela.PromenaJezika();
                 if (FormaDesniGlavni.FormaDesniGrafik != null) FormaDesniGlavni.FormaDesniGrafik.PromenaJezika();
+                if (FormaDesniGlavni.FormaDesniTekstTocak     != null) FormaDesniGlavni.FormaDesniTekstTocak.PromenaJezika();
                 if (FormaDesniGlavni.FormaDesniTekstDriveline != null) FormaDesniGlavni.FormaDesniTekstDriveline.PromenaJezika();
             }
         }
@@ -626,422 +628,422 @@ namespace Proracun_vibracija
         private void jezikDugme_Srpski_Click(object sender, EventArgs e)
         {
             // Forma_HomeScreen
-            jezik[0]   = "Proračun vibracija";
-            jezik[1]   = "Saveti za test vožnju";
-            jezik[2]   = "Motor";
-            jezik[3]   = "Auto";
-            jezik[4]   = "PLACEHOLDERSTRING Form1.dugmeLevo_Click";
+            Jezik[0]   = "Proračun vibracija";
+            Jezik[1]   = "Saveti za test vožnju";
+            Jezik[2]   = "Motor";
+            Jezik[3]   = "Auto";
+            Jezik[4]   = "PLACEHOLDERSTRING Form1.dugmeLevo_Click";
 
             // Forma_Centar_Glavni
-            jezik[5]   = "Vibracije motora";
-            jezik[6]   = "Unos podataka";
-            jezik[7]   = "Decimale se označavaju tačkom, ne zarezom.";
-            jezik[8]   = "RPM";
-            jezik[9]   = "Izmerena frekvencija";
-            jezik[10]  = "Broj cilindara";
-            jezik[11]  = "Potvrdi podatke";
-            jezik[12]  = "Vibracije agregata";
-            jezik[13]  = "Greška, nedovoljan broj polja popunjen.";
-            jezik[14]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
+            Jezik[5]   = "Vibracije motora";
+            Jezik[6]   = "Unos podataka";
+            Jezik[7]   = "Decimale se označavaju tačkom, ne zarezom.";
+            Jezik[8]   = "RPM";
+            Jezik[9]   = "Izmerena frekvencija";
+            Jezik[10]  = "Broj cilindara";
+            Jezik[11]  = "Potvrdi podatke";
+            Jezik[12]  = "Vibracije agregata";
+            Jezik[13]  = "Greška, nedovoljan broj polja popunjen.";
+            Jezik[14]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
 
             // Forma_Centar_Tabela
-            jezik[15]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.Text";
-            jezik[16]  = "RPM";
-            jezik[17]  = "Frekvencija motora";
-            jezik[18]  = "Frekvencija motora drugog reda";
-            jezik[19]  = "Frekvencija motora trećeg reda";
-            jezik[20]  = "Frekvencija motora četvrtog reda";
-            jezik[21]  = "Frekvencija bregaste";
-            jezik[22]  = "Frekvencija paljenja";
-            jezik[23]  = "Izmerene frekvencije";
-            jezik[24]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM_Click";
-            jezik[25]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM2_Click";
-            jezik[26]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM3_Click";
-            jezik[27]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM4_Click";
-            jezik[28]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FB_Click";
-            jezik[29]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FP_Click";
+            Jezik[15]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.Text";
+            Jezik[16]  = "RPM";
+            Jezik[17]  = "Frekvencija motora";
+            Jezik[18]  = "Frekvencija motora drugog reda";
+            Jezik[19]  = "Frekvencija motora trećeg reda";
+            Jezik[20]  = "Frekvencija motora četvrtog reda";
+            Jezik[21]  = "Frekvencija bregaste";
+            Jezik[22]  = "Frekvencija paljenja";
+            Jezik[23]  = "Izmerene frekvencije";
+            Jezik[24]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM_Click";
+            Jezik[25]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM2_Click";
+            Jezik[26]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM3_Click";
+            Jezik[27]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM4_Click";
+            Jezik[28]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FB_Click";
+            Jezik[29]  = "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FP_Click";
 
             // Forma_Centar_Grafik
-            jezik[30]  = "Vibracije motora";
-            jezik[31]  = "Iscrtaj ponovo";
-            jezik[32]  = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
-            jezik[33]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV ISPUNJEN";
-            jezik[34]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV NE ISPUNJEN";
-            jezik[35]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV ISPUNJEN";
-            jezik[36]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV NE ISPUNJEN";
-            jezik[37]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV ISPUNJEN";
-            jezik[38]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV NE ISPUNJEN";
-            jezik[39]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV ISPUNJEN";
-            jezik[40]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV NE ISPUNJEN";
-            jezik[41]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV ISPUNJEN";
-            jezik[42]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV NE ISPUNJEN";
-            jezik[43]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV ISPUNJEN";
-            jezik[44]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV NE ISPUNJEN";
-            jezik[45]  = "FM";
-            jezik[46]  = "FM2";
-            jezik[47]  = "FM3";
-            jezik[48]  = "FM4";
-            jezik[49]  = "FB";
-            jezik[50]  = "FP";
-            jezik[51]  = "FM - frekvencija motora";
-            jezik[52]  = "FM2 - frekvencija motora drugog reda";
-            jezik[53]  = "FM3 - frekvencija motora trećeg reda";
-            jezik[54]  = "FM4 - frekvencija motora četvrtog reda";
-            jezik[55]  = "FB - frekvencija bregaste";
-            jezik[56]  = "FP - frekvencija paljenja";
+            Jezik[30]  = "Vibracije motora";
+            Jezik[31]  = "Iscrtaj ponovo";
+            Jezik[32]  = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            Jezik[33]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV ISPUNJEN";
+            Jezik[34]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM_Click USLOV NE ISPUNJEN";
+            Jezik[35]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV ISPUNJEN";
+            Jezik[36]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM2_Click USLOV NE ISPUNJEN";
+            Jezik[37]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV ISPUNJEN";
+            Jezik[38]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM3_Click USLOV NE ISPUNJEN";
+            Jezik[39]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV ISPUNJEN";
+            Jezik[40]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FM4_Click USLOV NE ISPUNJEN";
+            Jezik[41]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV ISPUNJEN";
+            Jezik[42]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FB_Click USLOV NE ISPUNJEN";
+            Jezik[43]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV ISPUNJEN";
+            Jezik[44]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_FP_Click USLOV NE ISPUNJEN";
+            Jezik[45]  = "FM";
+            Jezik[46]  = "FM2";
+            Jezik[47]  = "FM3";
+            Jezik[48]  = "FM4";
+            Jezik[49]  = "FB";
+            Jezik[50]  = "FP";
+            Jezik[51]  = "FM - frekvencija motora";
+            Jezik[52]  = "FM2 - frekvencija motora drugog reda";
+            Jezik[53]  = "FM3 - frekvencija motora trećeg reda";
+            Jezik[54]  = "FM4 - frekvencija motora četvrtog reda";
+            Jezik[55]  = "FB - frekvencija bregaste";
+            Jezik[56]  = "FP - frekvencija paljenja";
 
             // Forma_Centar_Agregat_Glavni
-            jezik[57]  = "Unos podataka";
-            jezik[58]  = "Decimale se označavaju tačkom, ne zarezom.";
-            jezik[59]  = "Prečnik remenice radilice";
-            jezik[60]  = "Prečnik remenice alternatora";
-            jezik[61]  = "Prečnik remenice kompresora klime";
-            jezik[62]  = "Prečnik remenice servo volana";
-            jezik[63]  = "Prečnik remenice pumpe za vodu";
-            jezik[64]  = "Prečnik remenice dodatnog agregata 1";
-            jezik[65]  = "Prečnik remenice dodatnog agregata 2";
-            jezik[66]  = "Potvrdi podatke"; // nekada je pisalo "izracunaj" ali ja sam promenio cisto da bude u skladu sa onim sto pise na FormaCentarGlavni
-            jezik[67]  = "Greška, nedovoljno polja popunjeno.";
-            jezik[68]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
+            Jezik[57]  = "Unos podataka";
+            Jezik[58]  = "Decimale se označavaju tačkom, ne zarezom.";
+            Jezik[59]  = "Prečnik remenice radilice";
+            Jezik[60]  = "Prečnik remenice alternatora";
+            Jezik[61]  = "Prečnik remenice kompresora klime";
+            Jezik[62]  = "Prečnik remenice servo volana";
+            Jezik[63]  = "Prečnik remenice pumpe za vodu";
+            Jezik[64]  = "Prečnik remenice dodatnog agregata 1";
+            Jezik[65]  = "Prečnik remenice dodatnog agregata 2";
+            Jezik[66]  = "Potvrdi podatke"; // nekada je pisalo "izracunaj" ali ja sam promenio cisto da bude u skladu sa onim sto pise na FormaCentarGlavni
+            Jezik[67]  = "Greška, nedovoljno polja popunjeno.";
+            Jezik[68]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
 
             // Forma_Centar_Agregat_Tabela
-            jezik[69]  = "Proračun vibracija agregata";
-            jezik[70]  = "RPM";
-            jezik[71]  = "Frekvencija: ";
-            jezik[72]  = "Alternatora";
-            jezik[73]  = "Kompresora klime";
-            jezik[74]  = "Servo volana";
-            jezik[75]  = "Pumpe za vodu";
-            jezik[76]  = "Dodatnog agregata 1";
-            jezik[77]  = "Dodatnog agregata 2";
-            jezik[78]  = "Izmerene frekvencije";
-            jezik[79]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D1_Click";
-            jezik[80]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D2_Click";
-            jezik[81]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D3_Click";
-            jezik[82]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click";
-            jezik[83]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click";
-            jezik[84]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click";
+            Jezik[69]  = "Proračun vibracija agregata";
+            Jezik[70]  = "RPM";
+            Jezik[71]  = "Frekvencija: ";
+            Jezik[72]  = "Alternatora";
+            Jezik[73]  = "Kompresora klime";
+            Jezik[74]  = "Servo volana";
+            Jezik[75]  = "Pumpe za vodu";
+            Jezik[76]  = "Dodatnog agregata 1";
+            Jezik[77]  = "Dodatnog agregata 2";
+            Jezik[78]  = "Izmerene frekvencije";
+            Jezik[79]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D1_Click";
+            Jezik[80]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D2_Click";
+            Jezik[81]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D3_Click";
+            Jezik[82]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click";
+            Jezik[83]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click";
+            Jezik[84]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click";
 
             // Forma_Centar_Agregat_Grafik
-            jezik[85]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Grafik.Text";
-            jezik[86]  = "Iscrtaj ponovo";
-            jezik[87]  = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
-            jezik[88]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN";
-            jezik[89]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN";
-            jezik[90]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN";
-            jezik[91]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN";
-            jezik[92]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN";
-            jezik[93]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV NE ISPUNJEN";
-            jezik[94]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN";
-            jezik[95]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV NE ISPUNJEN";
-            jezik[96]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN";
-            jezik[97]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV NE ISPUNJEN";
-            jezik[98]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN";
-            jezik[99]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV NE ISPUNJEN";
-            jezik[100] = "D1";
-            jezik[101] = "D2";
-            jezik[102] = "D3";
-            jezik[103] = "D4";
-            jezik[104] = "D5";
-            jezik[105] = "D6";
-            jezik[106] = "D1 - frekvencija alternatora";
-            jezik[107] = "D2 - frekvencija kompresora klime";
-            jezik[108] = "D3 - frekvencija servo volana";
-            jezik[109] = "D4 - frekvencija pumpe za vodu";
-            jezik[110] = "D5 - frekvencija dodatnog agregata 1";
-            jezik[111] = "D6 - frekvencija dodatnog agregata 2";
+            Jezik[85]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Grafik.Text";
+            Jezik[86]  = "Iscrtaj ponovo";
+            Jezik[87]  = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            Jezik[88]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN";
+            Jezik[89]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN";
+            Jezik[90]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN";
+            Jezik[91]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN";
+            Jezik[92]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN";
+            Jezik[93]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV NE ISPUNJEN";
+            Jezik[94]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN";
+            Jezik[95]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV NE ISPUNJEN";
+            Jezik[96]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN";
+            Jezik[97]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV NE ISPUNJEN";
+            Jezik[98]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN";
+            Jezik[99]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV NE ISPUNJEN";
+            Jezik[100] = "D1";
+            Jezik[101] = "D2";
+            Jezik[102] = "D3";
+            Jezik[103] = "D4";
+            Jezik[104] = "D5";
+            Jezik[105] = "D6";
+            Jezik[106] = "D1 - frekvencija alternatora";
+            Jezik[107] = "D2 - frekvencija kompresora klime";
+            Jezik[108] = "D3 - frekvencija servo volana";
+            Jezik[109] = "D4 - frekvencija pumpe za vodu";
+            Jezik[110] = "D5 - frekvencija dodatnog agregata 1";
+            Jezik[111] = "D6 - frekvencija dodatnog agregata 2";
 
             // Forma_Desni_Glavni
-            jezik[112] = "Vibracije vozila";
-            jezik[113] = "Decimale se označavaju tačkom, ne zarezom.";
-            jezik[114] = "Dimenzije pneumatika";
-            jezik[115] = "Širina";
-            jezik[116] = "Visina";
-            jezik[117] = "Prečnik felne";
-            jezik[118] = "Prenosni odnos diferencijala";
-            jezik[119] = "mm";
-            jezik[120] = "%";
-            jezik[121] = "Inča";
-            jezik[122] = "Izmerene vrednosti";
-            jezik[123] = "Brzina vozila (km/h)";
-            jezik[124] = "Frekvencija";
-            jezik[125] = "Potvrdi podatke";
-            jezik[126] = "Greška, nedovoljno polja popunjeno.";
-            jezik[127] = "Greška, u nekom od polja je uneta nevažeća vrednost.";
+            Jezik[112] = "Vibracije vozila";
+            Jezik[113] = "Decimale se označavaju tačkom, ne zarezom.";
+            Jezik[114] = "Dimenzije pneumatika";
+            Jezik[115] = "Širina";
+            Jezik[116] = "Visina";
+            Jezik[117] = "Prečnik felne";
+            Jezik[118] = "Prenosni odnos diferencijala";
+            Jezik[119] = "mm";
+            Jezik[120] = "%";
+            Jezik[121] = "Inča";
+            Jezik[122] = "Izmerene vrednosti";
+            Jezik[123] = "Brzina vozila (km/h)";
+            Jezik[124] = "Frekvencija";
+            Jezik[125] = "Potvrdi podatke";
+            Jezik[126] = "Greška, nedovoljno polja popunjeno.";
+            Jezik[127] = "Greška, u nekom od polja je uneta nevažeća vrednost.";
 
             // Forma_Desni_Tabela
-            jezik[128] = "PLACEHOLDERSTRING Forma_Desni_Tabela.Text";
-            jezik[129] = "Brzina vozila";
-            jezik[130] = "Frekvencije točka 1";
-            jezik[131] = "Prvog reda";
-            jezik[132] = "Drugog reda";
-            jezik[133] = "Trećeg reda";
-            jezik[134] = "Četvrtog reda";
-            jezik[135] = "Frekvencije kardana 1";
-            jezik[136] = "Prvog reda";
-            jezik[137] = "Drugog reda";
-            jezik[138] = "Trećeg reda";
-            jezik[139] = "Četvrtog reda";
-            jezik[140] = "Izmerene frekvencije";
-            jezik[141] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()";
-            jezik[142] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()";
-            jezik[143] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()";
-            jezik[144] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()";
-            jezik[145] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()";
-            jezik[146] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()";
-            jezik[147] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()";
-            jezik[148] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()";
+            Jezik[128] = "PLACEHOLDERSTRING Forma_Desni_Tabela.Text";
+            Jezik[129] = "Brzina vozila";
+            Jezik[130] = "Frekvencije točka 1";
+            Jezik[131] = "Prvog reda";
+            Jezik[132] = "Drugog reda";
+            Jezik[133] = "Trećeg reda";
+            Jezik[134] = "Četvrtog reda";
+            Jezik[135] = "Frekvencije kardana 1";
+            Jezik[136] = "Prvog reda";
+            Jezik[137] = "Drugog reda";
+            Jezik[138] = "Trećeg reda";
+            Jezik[139] = "Četvrtog reda";
+            Jezik[140] = "Izmerene frekvencije";
+            Jezik[141] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()";
+            Jezik[142] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()";
+            Jezik[143] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()";
+            Jezik[144] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()";
+            Jezik[145] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()";
+            Jezik[146] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()";
+            Jezik[147] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()";
+            Jezik[148] = "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()";
 
             // Forma_Desni_Grafik
-            jezik[149] = "PLACEHOLDERSTRING Forma_Desni_Grafik.Text";
-            jezik[150] = "Iscrtaj ponovo";
-            jezik[151] = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
-            jezik[152] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN";
-            jezik[153] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN";
-            jezik[154] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN";
-            jezik[155] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV NE ISPUNJEN";
-            jezik[156] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN";
-            jezik[157] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV NE ISPUNJEN";
-            jezik[158] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN";
-            jezik[159] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV NE ISPUNJEN";
-            jezik[160] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN";
-            jezik[161] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV NE ISPUNJEN";
-            jezik[162] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN";
-            jezik[163] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV NE ISPUNJEN";
-            jezik[164] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN";
-            jezik[165] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV NE ISPUNJEN";
-            jezik[166] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN";
-            jezik[167] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV NE ISPUNJEN";
-            jezik[168] = "FT";
-            jezik[169] = "FT2";
-            jezik[170] = "FT3";
-            jezik[171] = "FT4";
-            jezik[172] = "FK";
-            jezik[173] = "FK2";
-            jezik[174] = "FK3";
-            jezik[175] = "FK4";
-            jezik[176] = "FT - frekvencija točka prvog reda";
-            jezik[177] = "FT2 - frekvencija točka drugog reda";
-            jezik[178] = "FT3 - frekvencija točka trećeg reda";
-            jezik[179] = "FT4 - frekvencija točka četvrtog reda";
-            jezik[180] = "FK - frekvencija kardana prvog reda";
-            jezik[181] = "FK2 - frekvencija kardana drugog reda";
-            jezik[182] = "FK3 - frekvencija kardana trećeg reda";
-            jezik[183] = "FK4 - frekvencija kardana četvrtog reda";
+            Jezik[149] = "PLACEHOLDERSTRING Forma_Desni_Grafik.Text";
+            Jezik[150] = "Iscrtaj ponovo";
+            Jezik[151] = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            Jezik[152] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN";
+            Jezik[153] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN";
+            Jezik[154] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN";
+            Jezik[155] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV NE ISPUNJEN";
+            Jezik[156] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN";
+            Jezik[157] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV NE ISPUNJEN";
+            Jezik[158] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN";
+            Jezik[159] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV NE ISPUNJEN";
+            Jezik[160] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN";
+            Jezik[161] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV NE ISPUNJEN";
+            Jezik[162] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN";
+            Jezik[163] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV NE ISPUNJEN";
+            Jezik[164] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN";
+            Jezik[165] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV NE ISPUNJEN";
+            Jezik[166] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN";
+            Jezik[167] = "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV NE ISPUNJEN";
+            Jezik[168] = "FT";
+            Jezik[169] = "FT2";
+            Jezik[170] = "FT3";
+            Jezik[171] = "FT4";
+            Jezik[172] = "FK";
+            Jezik[173] = "FK2";
+            Jezik[174] = "FK3";
+            Jezik[175] = "FK4";
+            Jezik[176] = "FT - frekvencija točka prvog reda";
+            Jezik[177] = "FT2 - frekvencija točka drugog reda";
+            Jezik[178] = "FT3 - frekvencija točka trećeg reda";
+            Jezik[179] = "FT4 - frekvencija točka četvrtog reda";
+            Jezik[180] = "FK - frekvencija kardana prvog reda";
+            Jezik[181] = "FK2 - frekvencija kardana drugog reda";
+            Jezik[182] = "FK3 - frekvencija kardana trećeg reda";
+            Jezik[183] = "FK4 - frekvencija kardana četvrtog reda";
 
             // jezik 2 elektrik bugalu
 
             // Forma_Desni_Glavni
-            jezik[184] = "Dimenzije pneumatika na drugoj osovini su različite";
-            jezik[185] = "Širina 2";
-            jezik[186] = "Visina 2";
-            jezik[187] = "Prečnik felne 2";
-            jezik[188] = "mm";
-            jezik[189] = "%";
-            jezik[190] = "Inča";
+            Jezik[184] = "Dimenzije pneumatika na drugoj osovini su različite";
+            Jezik[185] = "Širina 2";
+            Jezik[186] = "Visina 2";
+            Jezik[187] = "Prečnik felne 2";
+            Jezik[188] = "mm";
+            Jezik[189] = "%";
+            Jezik[190] = "Inča";
 
             // Forma_TestVoznja
-            jezik[191] = "PLACEHOLDERSTRING Forma_TestVoznja.Text";
+            Jezik[191] = "PLACEHOLDERSTRING Forma_TestVoznja.Text";
 
             // Forma_Desni_Grafik
-            jezik[192] = "Dimenzije 1";
-            jezik[193] = "Dimenzije 2";
-            jezik[194] = "FT";
-            jezik[195] = "FT2";
-            jezik[196] = "FT3";
-            jezik[197] = "FT4";
-            jezik[198] = "FK";
-            jezik[199] = "FK2";
-            jezik[200] = "FK3";
-            jezik[201] = "FK4";
+            Jezik[192] = "Dimenzije 1";
+            Jezik[193] = "Dimenzije 2";
+            Jezik[194] = "FT";
+            Jezik[195] = "FT2";
+            Jezik[196] = "FT3";
+            Jezik[197] = "FT4";
+            Jezik[198] = "FK";
+            Jezik[199] = "FK2";
+            Jezik[200] = "FK3";
+            Jezik[201] = "FK4";
 
             // Forma_Desni_Tabela
-            jezik[202] = "Frekvencije točka 2";
-            jezik[203] = "Frekvencije kardana 2";
+            Jezik[202] = "Frekvencije točka 2";
+            Jezik[203] = "Frekvencije kardana 2";
 
             // Forma_TestVoznja
-            jezik[204] = "Pre-Road Test inspection";
-            jezik[205] = "Road test";
-            jezik[206] = "Pre-Road Test inspection \r\nCheck the tires for: \n      - Inflation pressure \r\n      - Proper tire type \r\n      - Verify the tires are uniform in size and brand \r\n      - Abnormal tire wear and correct thread depth \r\nCheck the wheels for: \r\n      - Mud, ice and debris \r\n      - Deformed or bent \r\n      - Missing wheel weights \r\n      - Log nuts tightening torque \r\nCheck the vehicle for: \r\n      - Signs of damaged components \r\n      - Signs of collision damage \r\n      - Added components \r\nNotes: \r\n      - It is important to know which specific concern the customer has with their vehicle \r\n       - Don't be misled by the reported location of the noise or vibration, cause may be in another area of vehicle \r\n      - The vibrating component may only generate a small vibration, but this small vibration may cause a larger vibration or noise. \r\n      - It must be possible to operate the vehicle at the speed in which the condition occurs. \r\n      - Prepare measuring equipment.";
-            jezik[207] = "Back";
-            jezik[208] = "Road test \r\nIn order to determine engine speed, vehicle speed and frequency of the NVH concern, as well to establish is it a engine \r\nor vehicle speed related vibrations, perform the test drive: ";
+            Jezik[204] = "Pre-Road Test inspection";
+            Jezik[205] = "Road test";
+            Jezik[206] = "Pre-Road Test inspection \r\nCheck the tires for: \n      - Inflation pressure \r\n      - Proper tire type \r\n      - Verify the tires are uniform in size and brand \r\n      - Abnormal tire wear and correct thread depth \r\nCheck the wheels for: \r\n      - Mud, ice and debris \r\n      - Deformed or bent \r\n      - Missing wheel weights \r\n      - Log nuts tightening torque \r\nCheck the vehicle for: \r\n      - Signs of damaged components \r\n      - Signs of collision damage \r\n      - Added components \r\nNotes: \r\n      - It is important to know which specific concern the customer has with their vehicle \r\n       - Don't be misled by the reported location of the noise or vibration, cause may be in another area of vehicle \r\n      - The vibrating component may only generate a small vibration, but this small vibration may cause a larger vibration or noise. \r\n      - It must be possible to operate the vehicle at the speed in which the condition occurs. \r\n      - Prepare measuring equipment.";
+            Jezik[207] = "Back";
+            Jezik[208] = "Road test \r\nIn order to determine engine speed, vehicle speed and frequency of the NVH concern, as well to establish is it a engine \r\nor vehicle speed related vibrations, perform the test drive: ";
 
-            PromenaJezika();
+            promenaJezika();
         }
         
         private void jezikDugme_Engleski_Click(object sender, EventArgs e)
         {
-            for (Int32 i = 0; i < jezik.Length; i++) jezik[i] = "P ID " + i.ToString();
+            for (Int32 i = 0; i < Jezik.Length; i++) Jezik[i] = "P ID " + i.ToString();
             /*
             // Forma_HomeScreen
-            jezik[0]   = "Vibration calculator";
-            jezik[1]   = "Test drive tips";
-            jezik[2]   = "Engine";
-            jezik[3]   = "Vehicle";
-            jezik[4]   = "P ID 4";
+            Jezik[0]   = "Vibration calculator";
+            Jezik[1]   = "Test drive tips";
+            Jezik[2]   = "Engine";
+            Jezik[3]   = "Vehicle";
+            Jezik[4]   = "P ID 4";
 
             // Forma_Centar_Glavni
-            jezik[5]   = "Engine vibrations";  // zasto nije "Engine-related vibrations"?
-            jezik[6]   = "P ID 6";
-            jezik[7]   = "P ID 7";
-            jezik[8]   = "P ID 8";
-            jezik[9]   = "P ID 9";
-            jezik[10]  = "P ID 10";
-            jezik[11]  = "P ID 11";
-            jezik[12]  = "P ID 12";
-            jezik[13]  = "P ID 13";
-            jezik[14]  = "P ID 14";
+            Jezik[5]   = "Engine vibrations";  // zasto nije "Engine-related vibrations"?
+            Jezik[6]   = "P ID 6";
+            Jezik[7]   = "P ID 7";
+            Jezik[8]   = "P ID 8";
+            Jezik[9]   = "P ID 9";
+            Jezik[10]  = "P ID 10";
+            Jezik[11]  = "P ID 11";
+            Jezik[12]  = "P ID 12";
+            Jezik[13]  = "P ID 13";
+            Jezik[14]  = "P ID 14";
 
             // Forma_Centar_Tabela
-            jezik[15]  = "P ID 15";
-            jezik[16]  = "P ID 16";
-            jezik[17]  = "P ID 17";
-            jezik[18]  = "P ID 18";
-            jezik[19]  = "P ID 19";
-            jezik[20]  = "P ID 20";
-            jezik[21]  = "P ID 21";
-            jezik[22]  = "P ID 22";
-            jezik[23]  = "P ID 23";
-            jezik[24]  = "P ID 24";
-            jezik[25]  = "P ID 25";
-            jezik[26]  = "P ID 26";
-            jezik[27]  = "P ID 27";
-            jezik[28]  = "P ID 28";
-            jezik[29]  = "P ID 29";
+            Jezik[15]  = "P ID 15";
+            Jezik[16]  = "P ID 16";
+            Jezik[17]  = "P ID 17";
+            Jezik[18]  = "P ID 18";
+            Jezik[19]  = "P ID 19";
+            Jezik[20]  = "P ID 20";
+            Jezik[21]  = "P ID 21";
+            Jezik[22]  = "P ID 22";
+            Jezik[23]  = "P ID 23";
+            Jezik[24]  = "P ID 24";
+            Jezik[25]  = "P ID 25";
+            Jezik[26]  = "P ID 26";
+            Jezik[27]  = "P ID 27";
+            Jezik[28]  = "P ID 28";
+            Jezik[29]  = "P ID 29";
 
             // Forma_Centar_Grafik
-            jezik[30]  = "Engine-related vibrations";
-            jezik[31]  = "P ID 31";
-            jezik[32]  = "P ID 32";
-            jezik[33]  = "P ID 33";
-            jezik[34]  = "P ID 34";
-            jezik[35]  = "P ID 35";
-            jezik[36]  = "P ID 36";
-            jezik[37]  = "P ID 37";
-            jezik[38]  = "P ID 38";
-            jezik[39]  = "P ID 39";
-            jezik[40]  = "P ID 40";
-            jezik[41]  = "P ID 41";
-            jezik[42]  = "P ID 42";
-            jezik[43]  = "P ID 43";
-            jezik[44]  = "P ID 44";
-            jezik[45]  = "P ID 45";
-            jezik[46]  = "P ID 46";
-            jezik[47]  = "P ID 47";
-            jezik[48]  = "P ID 48";
-            jezik[49]  = "P ID 49";
-            jezik[50]  = "P ID 50";
-            jezik[51]  = "P ID 51";
-            jezik[52]  = "P ID 52";
-            jezik[53]  = "P ID 53";
-            jezik[54]  = "P ID 54";
-            jezik[55]  = "P ID 55";
-            jezik[56]  = "P ID 56";
+            Jezik[30]  = "Engine-related vibrations";
+            Jezik[31]  = "P ID 31";
+            Jezik[32]  = "P ID 32";
+            Jezik[33]  = "P ID 33";
+            Jezik[34]  = "P ID 34";
+            Jezik[35]  = "P ID 35";
+            Jezik[36]  = "P ID 36";
+            Jezik[37]  = "P ID 37";
+            Jezik[38]  = "P ID 38";
+            Jezik[39]  = "P ID 39";
+            Jezik[40]  = "P ID 40";
+            Jezik[41]  = "P ID 41";
+            Jezik[42]  = "P ID 42";
+            Jezik[43]  = "P ID 43";
+            Jezik[44]  = "P ID 44";
+            Jezik[45]  = "P ID 45";
+            Jezik[46]  = "P ID 46";
+            Jezik[47]  = "P ID 47";
+            Jezik[48]  = "P ID 48";
+            Jezik[49]  = "P ID 49";
+            Jezik[50]  = "P ID 50";
+            Jezik[51]  = "P ID 51";
+            Jezik[52]  = "P ID 52";
+            Jezik[53]  = "P ID 53";
+            Jezik[54]  = "P ID 54";
+            Jezik[55]  = "P ID 55";
+            Jezik[56]  = "P ID 56";
 
             // Forma_Centar_Agregat_Glavni
-            jezik[57]  = "P ID 57";
-            jezik[58]  = "P ID 58";
-            jezik[59]  = "P ID 59";
-            jezik[60]  = "P ID 60";
-            jezik[61]  = "P ID 61";
-            jezik[62]  = "P ID 62";
-            jezik[63]  = "P ID 63";
-            jezik[64]  = "P ID 64";
-            jezik[65]  = "P ID 65";
-            jezik[66]  = "P ID 66";
-            jezik[67]  = "P ID 67";
-            jezik[68]  = "P ID 68";
+            Jezik[57]  = "P ID 57";
+            Jezik[58]  = "P ID 58";
+            Jezik[59]  = "P ID 59";
+            Jezik[60]  = "P ID 60";
+            Jezik[61]  = "P ID 61";
+            Jezik[62]  = "P ID 62";
+            Jezik[63]  = "P ID 63";
+            Jezik[64]  = "P ID 64";
+            Jezik[65]  = "P ID 65";
+            Jezik[66]  = "P ID 66";
+            Jezik[67]  = "P ID 67";
+            Jezik[68]  = "P ID 68";
 
             // Forma_Centar_Agregat_Tabela
-            jezik[69]  = "P ID 69";
-            jezik[70]  = "P ID 70";
-            jezik[71]  = "P ID 71";
-            jezik[72]  = "P ID 72";
-            jezik[73]  = "P ID 73";
-            jezik[74]  = "P ID 74";
-            jezik[75]  = "P ID 75";
-            jezik[76]  = "P ID 76";
-            jezik[77]  = "P ID 77";
-            jezik[78]  = "P ID 78";
-            jezik[79]  = "P ID 79";
-            jezik[80]  = "P ID 80";
-            jezik[81]  = "P ID 81";
-            jezik[82]  = "P ID 82";
-            jezik[83]  = "P ID 83";
-            jezik[84]  = "P ID 84";
+            Jezik[69]  = "P ID 69";
+            Jezik[70]  = "P ID 70";
+            Jezik[71]  = "P ID 71";
+            Jezik[72]  = "P ID 72";
+            Jezik[73]  = "P ID 73";
+            Jezik[74]  = "P ID 74";
+            Jezik[75]  = "P ID 75";
+            Jezik[76]  = "P ID 76";
+            Jezik[77]  = "P ID 77";
+            Jezik[78]  = "P ID 78";
+            Jezik[79]  = "P ID 79";
+            Jezik[80]  = "P ID 80";
+            Jezik[81]  = "P ID 81";
+            Jezik[82]  = "P ID 82";
+            Jezik[83]  = "P ID 83";
+            Jezik[84]  = "P ID 84";
 
             // Forma_Centar_Agregat_Grafik
-            jezik[85]  = "P ID 85";
-            jezik[86]  = "P ID 86";
-            jezik[87]  = "P ID 87";
-            jezik[88]  = "P ID 88";
-            jezik[89]  = "P ID 89";
-            jezik[90]  = "P ID 90";
-            jezik[91]  = "P ID 91";
-            jezik[92]  = "P ID 92";
-            jezik[93]  = "P ID 93";
-            jezik[94]  = "P ID 94";
-            jezik[95]  = "P ID 95";
-            jezik[96]  = "P ID 96";
-            jezik[97]  = "P ID 97";
-            jezik[98]  = "P ID 98";
-            jezik[99]  = "P ID 99";
-            jezik[100] = "P ID 100";
-            jezik[101] = "P ID 101";
-            jezik[102] = "P ID 102";
-            jezik[103] = "P ID 103";
-            jezik[104] = "P ID 104";
-            jezik[105] = "P ID 105";
-            jezik[106] = "P ID 106";
-            jezik[107] = "P ID 107";
-            jezik[108] = "P ID 108";
-            jezik[109] = "P ID 109";
-            jezik[110] = "P ID 110";
-            jezik[111] = "P ID 111";
+            Jezik[85]  = "P ID 85";
+            Jezik[86]  = "P ID 86";
+            Jezik[87]  = "P ID 87";
+            Jezik[88]  = "P ID 88";
+            Jezik[89]  = "P ID 89";
+            Jezik[90]  = "P ID 90";
+            Jezik[91]  = "P ID 91";
+            Jezik[92]  = "P ID 92";
+            Jezik[93]  = "P ID 93";
+            Jezik[94]  = "P ID 94";
+            Jezik[95]  = "P ID 95";
+            Jezik[96]  = "P ID 96";
+            Jezik[97]  = "P ID 97";
+            Jezik[98]  = "P ID 98";
+            Jezik[99]  = "P ID 99";
+            Jezik[100] = "P ID 100";
+            Jezik[101] = "P ID 101";
+            Jezik[102] = "P ID 102";
+            Jezik[103] = "P ID 103";
+            Jezik[104] = "P ID 104";
+            Jezik[105] = "P ID 105";
+            Jezik[106] = "P ID 106";
+            Jezik[107] = "P ID 107";
+            Jezik[108] = "P ID 108";
+            Jezik[109] = "P ID 109";
+            Jezik[110] = "P ID 110";
+            Jezik[111] = "P ID 111";
 
             // Forma_Desni_Glavni
-            jezik[112] = "P ID 112";
-            jezik[113] = "P ID 113";
-            jezik[114] = "P ID 114";
-            jezik[115] = "P ID 115";
-            jezik[116] = "P ID 116";
-            jezik[117] = "P ID 117";
-            jezik[118] = "P ID 118";
-            jezik[119] = "P ID 119";
-            jezik[120] = "P ID 120";
-            jezik[121] = "P ID 121";
-            jezik[122] = "P ID 122";
-            jezik[123] = "P ID 123";
-            jezik[124] = "P ID 124";
-            jezik[125] = "P ID 125";
-            jezik[126] = "P ID 126";
-            jezik[127] = "P ID 127";
+            Jezik[112] = "P ID 112";
+            Jezik[113] = "P ID 113";
+            Jezik[114] = "P ID 114";
+            Jezik[115] = "P ID 115";
+            Jezik[116] = "P ID 116";
+            Jezik[117] = "P ID 117";
+            Jezik[118] = "P ID 118";
+            Jezik[119] = "P ID 119";
+            Jezik[120] = "P ID 120";
+            Jezik[121] = "P ID 121";
+            Jezik[122] = "P ID 122";
+            Jezik[123] = "P ID 123";
+            Jezik[124] = "P ID 124";
+            Jezik[125] = "P ID 125";
+            Jezik[126] = "P ID 126";
+            Jezik[127] = "P ID 127";
 
             // Forma_Desni_Tabela
-            jezik[128] = "P ID 128";
-            jezik[129] = "P ID 129";
-            jezik[130] = "P ID 130";
-            jezik[131] = "P ID 131";
-            jezik[132] = "P ID 132";
-            jezik[133] = "P ID 133";
-            jezik[134] = "P ID 134";
-            jezik[135] = "P ID 135";
-            jezik[136] = "P ID 136";
-            jezik[137] = "P ID 137";
-            jezik[138] = "P ID 138";
-            jezik[139] = "P ID 139";
-            jezik[140] = "P ID 140";
-            jezik[141] = "P ID 141";
-            jezik[142] = "P ID 142";
-            jezik[143] = "P ID 143";
-            jezik[144] = "P ID 144";
-            jezik[145] = "P ID 145";
-            jezik[146] = "P ID 146";
-            jezik[147] = "P ID 147";
-            jezik[148] = "P ID 148";
-            jezik[149] = "P ID 149"; */
+            Jezik[128] = "P ID 128";
+            Jezik[129] = "P ID 129";
+            Jezik[130] = "P ID 130";
+            Jezik[131] = "P ID 131";
+            Jezik[132] = "P ID 132";
+            Jezik[133] = "P ID 133";
+            Jezik[134] = "P ID 134";
+            Jezik[135] = "P ID 135";
+            Jezik[136] = "P ID 136";
+            Jezik[137] = "P ID 137";
+            Jezik[138] = "P ID 138";
+            Jezik[139] = "P ID 139";
+            Jezik[140] = "P ID 140";
+            Jezik[141] = "P ID 141";
+            Jezik[142] = "P ID 142";
+            Jezik[143] = "P ID 143";
+            Jezik[144] = "P ID 144";
+            Jezik[145] = "P ID 145";
+            Jezik[146] = "P ID 146";
+            Jezik[147] = "P ID 147";
+            Jezik[148] = "P ID 148";
+            Jezik[149] = "P ID 149"; */
 
-            PromenaJezika();
+            promenaJezika();
         }
 
         private void jezikDugme_Nemacki_Click(object sender, EventArgs e)
@@ -1060,7 +1062,7 @@ namespace Proracun_vibracija
             dugmeLevo.Enabled = false;
         }
 
-        public Boolean dugmeLevoEnabled
+        public Boolean DugmeLevoEnabled
         {
             get { return dugmeLevo.Enabled;  }
             set { dugmeLevo.Enabled = value; }
@@ -1075,7 +1077,7 @@ namespace Proracun_vibracija
             dugmeCentar.Enabled = false;
         }
 
-        public Boolean dugmeCentarEnabled
+        public Boolean DugmeCentarEnabled
         {
             get { return dugmeCentar.Enabled;  }
             set { dugmeCentar.Enabled = value; }
@@ -1090,7 +1092,7 @@ namespace Proracun_vibracija
             dugmeDesno.Enabled = false;
         }
 
-        public Boolean dugmeDesnoEnabled
+        public Boolean DugmeDesnoEnabled
         {
             get { return dugmeDesno.Enabled;  }
             set { dugmeDesno.Enabled = value; }
@@ -1105,7 +1107,7 @@ namespace Proracun_vibracija
             dugmeDodatno.Enabled = false;
         }
 
-        public Boolean dugmeDodatnoEnabled
+        public Boolean DugmeDodatnoEnabled
         {
             get { return dugmeDodatno.Enabled;  }
             set { dugmeDodatno.Enabled = value; }
@@ -1115,5 +1117,7 @@ namespace Proracun_vibracija
         {
             
         }
+
+#pragma warning restore IDE1006
     }
 }

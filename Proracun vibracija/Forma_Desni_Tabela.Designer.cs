@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Desni_Tabela));
             this.button_FTx4 = new System.Windows.Forms.Button();
             this.button_FTx3 = new System.Windows.Forms.Button();
             this.button_FTx2 = new System.Windows.Forms.Button();
@@ -1077,6 +1078,7 @@
             this.Controls.Add(this.label_FT);
             this.Controls.Add(this.label_BrzinaVozila);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Tabela";
             this.Text = "PLACEHOLDERSTRING Forma_Desni_Tabela.Text";

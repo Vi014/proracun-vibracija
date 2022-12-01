@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Desni_Grafik));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button_FKx2 = new System.Windows.Forms.Button();
@@ -77,7 +78,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Iscrtaj ponovo";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.button1.Click += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // button_FKx2
             // 
@@ -173,7 +174,7 @@
             this.checkBox_L6.TabIndex = 5;
             this.checkBox_L6.Text = "FK2";
             this.checkBox_L6.UseVisualStyleBackColor = true;
-            this.checkBox_L6.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L6.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L5
             // 
@@ -185,7 +186,7 @@
             this.checkBox_L5.TabIndex = 4;
             this.checkBox_L5.Text = "FK";
             this.checkBox_L5.UseVisualStyleBackColor = true;
-            this.checkBox_L5.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L5.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L4
             // 
@@ -197,7 +198,7 @@
             this.checkBox_L4.TabIndex = 3;
             this.checkBox_L4.Text = "FT4";
             this.checkBox_L4.UseVisualStyleBackColor = true;
-            this.checkBox_L4.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L4.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L3
             // 
@@ -209,7 +210,7 @@
             this.checkBox_L3.TabIndex = 2;
             this.checkBox_L3.Text = "FT3";
             this.checkBox_L3.UseVisualStyleBackColor = true;
-            this.checkBox_L3.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L3.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L2
             // 
@@ -221,7 +222,7 @@
             this.checkBox_L2.TabIndex = 1;
             this.checkBox_L2.Text = "FT2";
             this.checkBox_L2.UseVisualStyleBackColor = true;
-            this.checkBox_L2.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L2.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L1
             // 
@@ -233,7 +234,7 @@
             this.checkBox_L1.TabIndex = 0;
             this.checkBox_L1.Text = "FT";
             this.checkBox_L1.UseVisualStyleBackColor = true;
-            this.checkBox_L1.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L1.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // panel1
             // 
@@ -253,7 +254,7 @@
             this.checkBox_L7.TabIndex = 6;
             this.checkBox_L7.Text = "FK3";
             this.checkBox_L7.UseVisualStyleBackColor = true;
-            this.checkBox_L7.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L7.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // button_FKx3
             // 
@@ -279,7 +280,7 @@
             this.checkBox_L8.TabIndex = 7;
             this.checkBox_L8.Text = "FK4";
             this.checkBox_L8.UseVisualStyleBackColor = true;
-            this.checkBox_L8.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L8.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // button_FKx4
             // 
@@ -324,7 +325,7 @@
             this.checkBox_L21.TabIndex = 0;
             this.checkBox_L21.Text = "FT";
             this.checkBox_L21.UseVisualStyleBackColor = true;
-            this.checkBox_L21.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L21.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L22
             // 
@@ -337,7 +338,7 @@
             this.checkBox_L22.TabIndex = 1;
             this.checkBox_L22.Text = "FT2";
             this.checkBox_L22.UseVisualStyleBackColor = true;
-            this.checkBox_L22.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L22.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L23
             // 
@@ -350,7 +351,7 @@
             this.checkBox_L23.TabIndex = 2;
             this.checkBox_L23.Text = "FT3";
             this.checkBox_L23.UseVisualStyleBackColor = true;
-            this.checkBox_L23.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L23.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L24
             // 
@@ -363,7 +364,7 @@
             this.checkBox_L24.TabIndex = 3;
             this.checkBox_L24.Text = "FT4";
             this.checkBox_L24.UseVisualStyleBackColor = true;
-            this.checkBox_L24.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L24.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L25
             // 
@@ -376,7 +377,7 @@
             this.checkBox_L25.TabIndex = 4;
             this.checkBox_L25.Text = "FK";
             this.checkBox_L25.UseVisualStyleBackColor = true;
-            this.checkBox_L25.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L25.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L26
             // 
@@ -389,7 +390,7 @@
             this.checkBox_L26.TabIndex = 5;
             this.checkBox_L26.Text = "FK2";
             this.checkBox_L26.UseVisualStyleBackColor = true;
-            this.checkBox_L26.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L26.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L27
             // 
@@ -402,7 +403,7 @@
             this.checkBox_L27.TabIndex = 6;
             this.checkBox_L27.Text = "FK3";
             this.checkBox_L27.UseVisualStyleBackColor = true;
-            this.checkBox_L27.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L27.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // checkBox_L28
             // 
@@ -415,7 +416,7 @@
             this.checkBox_L28.TabIndex = 7;
             this.checkBox_L28.Text = "FK4";
             this.checkBox_L28.UseVisualStyleBackColor = true;
-            this.checkBox_L28.CheckedChanged += new System.EventHandler(this.PozoviIscrtajGrafik);
+            this.checkBox_L28.CheckedChanged += new System.EventHandler(this.pozoviIscrtajGrafik);
             // 
             // Forma_Desni_Grafik
             // 
@@ -452,6 +453,7 @@
             this.Controls.Add(this.checkBox_L21);
             this.Controls.Add(this.checkBox_L1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Grafik";
             this.Text = "PLACEHOLDERSTRING Forma_Desni_Grafik.Text";

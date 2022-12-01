@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Desni_Tekst_Driveline));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -333,7 +334,7 @@
             this.label51.TabIndex = 15;
             this.label51.Text = "label51 (link: back)";
             this.label51.Click += new System.EventHandler(this.gotoBeginning);
-            this.label51.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label51.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label28
             // 
@@ -346,7 +347,7 @@
             this.label28.TabIndex = 15;
             this.label28.Text = "label28 (link: back)";
             this.label28.Click += new System.EventHandler(this.gotoBeginning);
-            this.label28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label15
             // 
@@ -369,7 +370,7 @@
             this.label24.TabIndex = 15;
             this.label24.Text = "label24 (link: back)";
             this.label24.Click += new System.EventHandler(this.gotoBeginning);
-            this.label24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label20
             // 
@@ -382,7 +383,7 @@
             this.label20.TabIndex = 15;
             this.label20.Text = "label20 (link: back)";
             this.label20.Click += new System.EventHandler(this.gotoBeginning);
-            this.label20.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label20.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label14
             // 
@@ -395,7 +396,7 @@
             this.label14.TabIndex = 15;
             this.label14.Text = "label14 (link: el 4 text)";
             this.label14.Click += new System.EventHandler(this.gotoDrivelineOperatingAngles);
-            this.label14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label12
             // 
@@ -408,7 +409,7 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "label12 (link: el 3 text)";
             this.label12.Click += new System.EventHandler(this.gotoPinionAndRingGearPitchLine);
-            this.label12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label10
             // 
@@ -421,7 +422,7 @@
             this.label10.TabIndex = 15;
             this.label10.Text = "label10 (link: el 2 text)";
             this.label10.Click += new System.EventHandler(this.gotoMissingBalanceWeights);
-            this.label10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label37
             // 
@@ -634,7 +635,7 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "label8 (link: el 1 text)";
             this.label8.Click += new System.EventHandler(this.gotoDriveshaftRunout);
-            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            this.label8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.cursorHand);
             // 
             // label22
             // 
@@ -811,6 +812,7 @@
             this.Controls.Add(this.zoomPicture);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Tekst_Driveline";
             this.Text = "PLACEHODLERSTRING Forma_Desni_Tekst_Driveline.Text";

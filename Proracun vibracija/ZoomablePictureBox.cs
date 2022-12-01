@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class ZoomablePictureBox : PictureBox
     {
+#pragma warning disable IDE1006
+
         public ZoomablePictureBox()
         {
             InitializeComponent();
@@ -18,6 +20,7 @@ namespace Proracun_vibracija
 
         public void Zoom(PictureBox TargetPictureBox, Button TargetButton, Panel TargetPanel, Form TargetForm)
         {
+
             TargetForm.ActiveControl = this;
 
             TargetPictureBox.Image   = Image;
@@ -49,5 +52,7 @@ namespace Proracun_vibracija
             TargetPictureBox.Location = new Point((centarX - (TargetPictureBox.Width / 2)), (centarY - TargetPictureBox.Height / 2));
             TargetButton.Location     = new Point(TargetPictureBox.Right, TargetPictureBox.Top);
         }
+
+#pragma warning restore IDE1006
     }
 }

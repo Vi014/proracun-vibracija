@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Desni_Glavni));
             this.label_Upozorenje = new System.Windows.Forms.Label();
             this.label_DimenzijePneumatika = new System.Windows.Forms.Label();
             this.label_Sirina = new System.Windows.Forms.Label();
@@ -532,6 +533,7 @@
             this.Controls.Add(this.label_IzmereneVrednosti);
             this.Controls.Add(this.label_DimenzijePneumatika);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Glavni";
             this.Text = "PLACEHOLDERSTRING Forma_Desni_Glavni.Text";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Forma_Centar_Glavni));
             this.label_UnosPodataka = new System.Windows.Forms.Label();
             this.label_RPM = new System.Windows.Forms.Label();
             this.textBox_RPM1 = new System.Windows.Forms.TextBox();
@@ -323,6 +324,7 @@
             this.Controls.Add(this.label_RPM);
             this.Controls.Add(this.label_UnosPodataka);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Forma_Centar_Glavni";
             this.Text = "Vibracije motora";

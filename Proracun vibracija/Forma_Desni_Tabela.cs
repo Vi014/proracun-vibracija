@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Desni_Tabela : Form
     {
+#pragma warning disable IDE1006
+
         public Forma_Desni_Glavni FormaDesniGlavni;
 
         public Forma_Desni_Tabela(Forma_Desni_Glavni konstruktor)
@@ -21,22 +23,22 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text               = FormaDesniGlavni.FormaHomeScreen.jezik[128];
-            label_BrzinaVozila.Text = FormaDesniGlavni.FormaHomeScreen.jezik[129];
-            label_FT.Text           = FormaDesniGlavni.FormaHomeScreen.jezik[130];
-            label_FTx1.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[131];
-            label_FTx2.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[132];
-            label_FTx3.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[133];
-            label_FTx4.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[134];
-            label_FK.Text           = FormaDesniGlavni.FormaHomeScreen.jezik[135];
-            label_FKx1.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[136];
-            label_FKx2.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[137];
-            label_FKx3.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[138];
-            label_FKx4.Text         = FormaDesniGlavni.FormaHomeScreen.jezik[139];
-            label_IzmFrek.Text      = FormaDesniGlavni.FormaHomeScreen.jezik[140];
+            this.Text               = FormaDesniGlavni.FormaHomeScreen.Jezik[128];
+            label_BrzinaVozila.Text = FormaDesniGlavni.FormaHomeScreen.Jezik[129];
+            label_FT.Text           = FormaDesniGlavni.FormaHomeScreen.Jezik[130];
+            label_FTx1.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[131];
+            label_FTx2.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[132];
+            label_FTx3.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[133];
+            label_FTx4.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[134];
+            label_FK.Text           = FormaDesniGlavni.FormaHomeScreen.Jezik[135];
+            label_FKx1.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[136];
+            label_FKx2.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[137];
+            label_FKx3.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[138];
+            label_FKx4.Text         = FormaDesniGlavni.FormaHomeScreen.Jezik[139];
+            label_IzmFrek.Text      = FormaDesniGlavni.FormaHomeScreen.Jezik[140];
 
-            label_FT2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[202];
-            label_FK2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[203];
+            label_FT2.Text = FormaDesniGlavni.FormaHomeScreen.Jezik[202];
+            label_FK2.Text = FormaDesniGlavni.FormaHomeScreen.Jezik[203];
         }
 
         private void Forma_Desni_Tabela_Load(object sender, EventArgs e)
@@ -82,7 +84,7 @@ namespace Proracun_vibracija
         private void Forma_Desni_Tabela_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaDesniGlavni.FormaDesniTabela    = null;
-            FormaDesniGlavni.buttonTabelaEnabled = true;
+            FormaDesniGlavni.ButtonTabelaEnabled = true;
         }
 
         public void IspisVrednosti()
@@ -111,7 +113,7 @@ namespace Proracun_vibracija
 
             #region v1unet
 
-            if (FormaDesniGlavni.v1unet)
+            if (FormaDesniGlavni.V1Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_V1.Text = FormaDesniGlavni.V1.ToString();
@@ -250,7 +252,7 @@ namespace Proracun_vibracija
 
             #region v2unet
 
-            if (FormaDesniGlavni.v2unet)
+            if (FormaDesniGlavni.V2Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_V2.Text = FormaDesniGlavni.V2.ToString();
@@ -389,7 +391,7 @@ namespace Proracun_vibracija
 
             #region v3unet
 
-            if (FormaDesniGlavni.v3unet)
+            if (FormaDesniGlavni.V3Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_V3.Text = FormaDesniGlavni.V3.ToString();
@@ -574,7 +576,7 @@ namespace Proracun_vibracija
 
                 #region v1unet
 
-                if (FormaDesniGlavni.v1unet)
+                if (FormaDesniGlavni.V1Unet)
                 {
                     //////////////////////////////////////////////////////////
                     textBox_V1.Text = FormaDesniGlavni.V1.ToString();
@@ -713,7 +715,7 @@ namespace Proracun_vibracija
 
                 #region v2unet
 
-                if (FormaDesniGlavni.v2unet)
+                if (FormaDesniGlavni.V2Unet)
                 {
                     //////////////////////////////////////////////////////////
                     textBox_V2.Text = FormaDesniGlavni.V2.ToString();
@@ -852,7 +854,7 @@ namespace Proracun_vibracija
 
                 #region v3unet
 
-                if (FormaDesniGlavni.v3unet)
+                if (FormaDesniGlavni.V3Unet)
                 {
                     //////////////////////////////////////////////////////////
                     textBox_V3.Text = FormaDesniGlavni.V3.ToString();
@@ -1068,5 +1070,7 @@ namespace Proracun_vibracija
                 FormaDesniGlavni.FormaDesniTekstDriveline.Focus();
             }
         }
+
+#pragma warning restore IDE1006
     }
 }

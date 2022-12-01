@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Centar_Agregat_Grafik : Form
     {
+#pragma warning disable IDE1006
+
         public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
 
         Graphics g;
@@ -59,17 +61,17 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text        = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[85];
-            button1.Text     = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[86];
-            label1.Text      = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[87];
-            checkBox_L1.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[100];
-            checkBox_L2.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[101];
-            checkBox_L3.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[102];
-            checkBox_L4.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[103];
-            checkBox_L5.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[104];
-            checkBox_L6.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[105];
+            this.Text        = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[85];
+            button1.Text     = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[86];
+            label1.Text      = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[87];
+            checkBox_L1.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[100];
+            checkBox_L2.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[101];
+            checkBox_L3.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[102];
+            checkBox_L4.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[103];
+            checkBox_L5.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[104];
+            checkBox_L6.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[105];
 
-            IscrtajGrafik();
+            iscrtajGrafik();
         }
 
         private void Forma_Centar_Agregat_Grafik_Load(object sender, EventArgs e)
@@ -85,7 +87,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Agregat_Grafik_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaCentarAgregatGlavni.FormaCentarAgregatGrafik = null;
-            FormaCentarAgregatGlavni.buttonGrafikEnabled      = true;
+            FormaCentarAgregatGlavni.ButtonGrafikEnabled      = true;
         }
 
         private void Forma_Centar_Agregat_Grafik_Shown(object sender, EventArgs e)
@@ -114,7 +116,7 @@ namespace Proracun_vibracija
             RPM_Stek.Clear();
             Frekvencije_Stek.Clear();
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1Unet)
             {
                 RPM_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1);
                 if (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.F11);
@@ -128,7 +130,7 @@ namespace Proracun_vibracija
                 if (FormaCentarAgregatGlavni.D5 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.D51);
                 if (FormaCentarAgregatGlavni.D6 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.D61);
             }
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2Unet)
             {
                 RPM_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2);
                 if (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.F21);
@@ -142,7 +144,7 @@ namespace Proracun_vibracija
                 if (FormaCentarAgregatGlavni.D5 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.D52);
                 if (FormaCentarAgregatGlavni.D6 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.D62);
             }
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3Unet)
             {
                 RPM_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3);
                 if (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0) Frekvencije_Stek.Push(FormaCentarAgregatGlavni.FormaCentarGlavni.F31);
@@ -213,7 +215,7 @@ namespace Proracun_vibracija
             podeljakX = Convert.ToInt32(X_Razdaljina_Piksel) / brPodeljakaX;
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
 
-            IscrtajGrafik();
+            iscrtajGrafik();
 
             #region boje na dugmicima sa znakom pitanja
 
@@ -250,17 +252,17 @@ namespace Proracun_vibracija
             #endregion
         }
 
-        private void IscrtajGrafik()
+        private void iscrtajGrafik()
         {
             g.Clear(Color.White);
             // g.DrawImage(Properties.Resources.placeholder, panel1.Width / 2 - Properties.Resources.placeholder.Width / 2, panel1.Height / 2 - Properties.Resources.placeholder.Height / 2);
 
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[106], osaFont, cetkaL1, centarX + 30, 0);
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[107], osaFont, cetkaL2, centarX + 30, 15);
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[108], osaFont, cetkaL3, centarX + 30, 30);
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[109], osaFont, cetkaL4, centarX + 30, 45);
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[110], osaFont, cetkaL5, centarX + 30, 60);
-            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[111], osaFont, cetkaL6, centarX + 30, 75);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[106], osaFont, cetkaL1, centarX + 30, 0);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[107], osaFont, cetkaL2, centarX + 30, 15);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[108], osaFont, cetkaL3, centarX + 30, 30);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[109], osaFont, cetkaL4, centarX + 30, 45);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[110], osaFont, cetkaL5, centarX + 30, 60);
+            g.DrawString(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[111], osaFont, cetkaL6, centarX + 30, 75);
 
             g.DrawLine(p, 0, centarY, panel1.Width, centarY);  // iscrtaj x-osu
             g.DrawLine(p, centarX, 0, centarX, panel1.Height); // iscrtaj y-osu
@@ -296,25 +298,25 @@ namespace Proracun_vibracija
                 j += yOdeljak;
             }
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1Unet)
             {
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F11 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F12 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F13 * konverzijaY) - 16));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F11 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F12 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F13 * konverzijaY) - 12));
             }
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2Unet)
             {
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F21 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F22 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F23 * konverzijaY) - 16));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F21 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F22 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F23 * konverzijaY) - 12));
             }
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3Unet)
             {
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F31 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F32 * konverzijaY) - 16));
-                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 18), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F33 * konverzijaY) - 16));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F31 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F32 * konverzijaY) - 12));
+                if (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0) g.DrawString("●", fontX, cetkaError, (centarX + Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3 * konverzijaX) - 9), (centarY - Convert.ToInt32(FormaCentarAgregatGlavni.FormaCentarGlavni.F33 * konverzijaY) - 12));
             }
 
             #region checkboxovi
@@ -376,24 +378,24 @@ namespace Proracun_vibracija
             #endregion
         }
 
-        private void PozoviIscrtajGrafik(object sender, EventArgs e)
+        private void pozoviIscrtajGrafik(object sender, EventArgs e)
         {
-            IscrtajGrafik();
+            iscrtajGrafik();
         }
 
         #region dugmici sa znakom pitanja
 		
         private Boolean provera(Double arg1, Double arg2, Double arg3)
         {
-            return ((FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1))) ||
+            return ((FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1Unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1))))) ||
 
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1))) ||
+                    (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2Unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1))))) ||
 
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1))) ||
+                    (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3Unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1))) ||
                                                                              (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1))))));
         }
@@ -420,44 +422,46 @@ namespace Proracun_vibracija
         {
             if (provera(FormaCentarAgregatGlavni.D11, FormaCentarAgregatGlavni.D12, FormaCentarAgregatGlavni.D13))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[89]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[89]);
         }
 
         private void button_D2_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D21, FormaCentarAgregatGlavni.D22, FormaCentarAgregatGlavni.D23))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[91]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[91]);
         }
 
         private void button_D3_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D31, FormaCentarAgregatGlavni.D32, FormaCentarAgregatGlavni.D33))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[93]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[93]);
         }
 
         private void button_D4_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D41, FormaCentarAgregatGlavni.D42, FormaCentarAgregatGlavni.D43))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[95]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[95]);
         }
 
         private void button_D5_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D51, FormaCentarAgregatGlavni.D52, FormaCentarAgregatGlavni.D53))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[97]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[97]);
         }
 
         private void button_D6_Click(object sender, EventArgs e)
         {
             if (provera(FormaCentarAgregatGlavni.D61, FormaCentarAgregatGlavni.D62, FormaCentarAgregatGlavni.D63))
                 otvoriTekst();
-            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[99]);
+            else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[99]);
         }
 
         #endregion
+
+#pragma warning restore IDE1006
     }
 }

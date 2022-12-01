@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_TestVoznja : Form
     {
+#pragma warning disable IDE1006
+
         Forma_HomeScreen FormaHomeScreen;
 
         public Forma_TestVoznja(Forma_HomeScreen konstruktor)
@@ -23,148 +25,148 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text = FormaHomeScreen.jezik[191];
+            this.Text = FormaHomeScreen.Jezik[191];
 
             #region dokument
 
-            label1.Text = FormaHomeScreen.jezik[204];
+            label1.Text = FormaHomeScreen.Jezik[204];
 
             label2.Location = new Point(label1.Location.X, label1.Bottom + 20);
-            label2.Text = FormaHomeScreen.jezik[205];
+            label2.Text = FormaHomeScreen.Jezik[205];
 
             label3.Location = new Point(label1.Location.X, label2.Bottom + 20);
-            label3.Text = FormaHomeScreen.jezik[206];
+            label3.Text = FormaHomeScreen.Jezik[206];
 
             label4.Location = new Point(label1.Location.X, label3.Bottom + 20);
-            label4.Text = FormaHomeScreen.jezik[207];
+            label4.Text = FormaHomeScreen.Jezik[207];
 
             label5.Location = new Point(label1.Location.X, label4.Bottom + 20);
-            label5.Text = FormaHomeScreen.jezik[208];
+            label5.Text = FormaHomeScreen.Jezik[208];
 
             label6.Location = new Point(label1.Location.X, label5.Bottom + 20);
-            label6.Text = FormaHomeScreen.jezik[209];
+            label6.Text = FormaHomeScreen.Jezik[209];
 
             label7.Location = new Point(label1.Location.X, label6.Bottom + 20);
-            label7.Text = FormaHomeScreen.jezik[210];
+            label7.Text = FormaHomeScreen.Jezik[210];
 
             label8.Location = new Point(label1.Location.X, label7.Bottom + 20);
-            label8.Text = FormaHomeScreen.jezik[211];
+            label8.Text = FormaHomeScreen.Jezik[211];
 
             label9.Location = new Point(label1.Location.X, label8.Bottom + 20);
-            label9.Text = FormaHomeScreen.jezik[212];
+            label9.Text = FormaHomeScreen.Jezik[212];
 
             label10.Location = new Point(label1.Location.X, label9.Bottom + 20);
-            label10.Text = FormaHomeScreen.jezik[213];
+            label10.Text = FormaHomeScreen.Jezik[213];
 
             label11.Location = new Point(label1.Location.X, label10.Bottom + 20);
-            label11.Text = FormaHomeScreen.jezik[214];
+            label11.Text = FormaHomeScreen.Jezik[214];
 
             label12.Location = new Point(label1.Location.X, label11.Bottom + 20);
-            label12.Text = FormaHomeScreen.jezik[215];
+            label12.Text = FormaHomeScreen.Jezik[215];
 
             label13.Location = new Point(label1.Location.X, label12.Bottom + 20);
-            label13.Text = FormaHomeScreen.jezik[216];
+            label13.Text = FormaHomeScreen.Jezik[216];
 
             label14.Location = new Point(label1.Location.X, label13.Bottom + 20);
-            label14.Text = FormaHomeScreen.jezik[217];
+            label14.Text = FormaHomeScreen.Jezik[217];
 
             label15.Location = new Point(label1.Location.X, label14.Bottom + 20);
-            label15.Text = FormaHomeScreen.jezik[218];
+            label15.Text = FormaHomeScreen.Jezik[218];
 
             label16.Location = new Point(label1.Location.X, label15.Bottom + 20);
-            label16.Text = FormaHomeScreen.jezik[219];
+            label16.Text = FormaHomeScreen.Jezik[219];
 
             label17.Location = new Point(label1.Location.X, label16.Bottom + 20);
-            label17.Text = FormaHomeScreen.jezik[220];
+            label17.Text = FormaHomeScreen.Jezik[220];
 
             label18.Location = new Point(label1.Location.X, label17.Bottom + 20);
-            label18.Text = FormaHomeScreen.jezik[221];
+            label18.Text = FormaHomeScreen.Jezik[221];
 
             label19.Location = new Point(label1.Location.X, label18.Bottom + 20);
-            label19.Text = FormaHomeScreen.jezik[222];
+            label19.Text = FormaHomeScreen.Jezik[222];
 
             label20.Location = new Point(label1.Location.X, label19.Bottom + 20);
-            label20.Text = FormaHomeScreen.jezik[223];
+            label20.Text = FormaHomeScreen.Jezik[223];
 
             label21.Location = new Point(label1.Location.X, label20.Bottom + 20);
-            label21.Text = FormaHomeScreen.jezik[224];
+            label21.Text = FormaHomeScreen.Jezik[224];
 
             label22.Location = new Point(label1.Location.X, label21.Bottom + 20);
-            label22.Text = FormaHomeScreen.jezik[225];
+            label22.Text = FormaHomeScreen.Jezik[225];
 
             label23.Location = new Point(label1.Location.X, label22.Bottom + 20);
-            label23.Text = FormaHomeScreen.jezik[226];
+            label23.Text = FormaHomeScreen.Jezik[226];
 
             label24.Location = new Point(label1.Location.X, label23.Bottom + 20);
-            label24.Text = FormaHomeScreen.jezik[227];
+            label24.Text = FormaHomeScreen.Jezik[227];
 
             label25.Location = new Point(label1.Location.X, label24.Bottom + 20);
-            label25.Text = FormaHomeScreen.jezik[228];
+            label25.Text = FormaHomeScreen.Jezik[228];
 
             label26.Location = new Point(label1.Location.X, label25.Bottom + 20);
-            label26.Text = FormaHomeScreen.jezik[229];
+            label26.Text = FormaHomeScreen.Jezik[229];
 
             label27.Location = new Point(label1.Location.X, label26.Bottom + 20);
-            label27.Text = FormaHomeScreen.jezik[230];
+            label27.Text = FormaHomeScreen.Jezik[230];
             
             label28.Location = new Point(label1.Location.X, label27.Bottom + 20);
-            label28.Text = FormaHomeScreen.jezik[231];
+            label28.Text = FormaHomeScreen.Jezik[231];
 
             label29.Location = new Point(label1.Location.X, label28.Bottom + 20);
-            label29.Text = FormaHomeScreen.jezik[232];
+            label29.Text = FormaHomeScreen.Jezik[232];
 
             label30.Location = new Point(label1.Location.X, label29.Bottom + 20);
-            label30.Text = FormaHomeScreen.jezik[233];
+            label30.Text = FormaHomeScreen.Jezik[233];
 
             label31.Location = new Point(label1.Location.X, label30.Bottom + 20);
-            label31.Text = FormaHomeScreen.jezik[234];
+            label31.Text = FormaHomeScreen.Jezik[234];
 
             label32.Location = new Point(label1.Location.X, label31.Bottom + 20);
-            label32.Text = FormaHomeScreen.jezik[235];
+            label32.Text = FormaHomeScreen.Jezik[235];
 
             label33.Location = new Point(label1.Location.X, label32.Bottom + 20);
-            label33.Text = FormaHomeScreen.jezik[236];
+            label33.Text = FormaHomeScreen.Jezik[236];
 
             label34.Location = new Point(label1.Location.X, label33.Bottom + 20);
-            label34.Text = FormaHomeScreen.jezik[237];
+            label34.Text = FormaHomeScreen.Jezik[237];
 
             label35.Location = new Point(label1.Location.X, label34.Bottom + 20);
-            label35.Text = FormaHomeScreen.jezik[238];
+            label35.Text = FormaHomeScreen.Jezik[238];
 
             label36.Location = new Point(label1.Location.X, label35.Bottom + 20);
-            label36.Text = FormaHomeScreen.jezik[239];
+            label36.Text = FormaHomeScreen.Jezik[239];
 
             label37.Location = new Point(label1.Location.X, label36.Bottom + 20);
-            label37.Text = FormaHomeScreen.jezik[240];
+            label37.Text = FormaHomeScreen.Jezik[240];
 
             label38.Location = new Point(label1.Location.X, label37.Bottom + 20);
-            label38.Text = FormaHomeScreen.jezik[241];
+            label38.Text = FormaHomeScreen.Jezik[241];
 
             label39.Location = new Point(label1.Location.X, label38.Bottom + 20);
-            label39.Text = FormaHomeScreen.jezik[242];
+            label39.Text = FormaHomeScreen.Jezik[242];
 
             label40.Location = new Point(label1.Location.X, label39.Bottom + 20);
-            label40.Text = FormaHomeScreen.jezik[243];
+            label40.Text = FormaHomeScreen.Jezik[243];
 
             label41.Location = new Point(label1.Location.X, label40.Bottom + 20);
-            label41.Text = FormaHomeScreen.jezik[244];
+            label41.Text = FormaHomeScreen.Jezik[244];
 
             label42.Location = new Point(label1.Location.X, label41.Bottom + 20);
-            label42.Text = FormaHomeScreen.jezik[245];
+            label42.Text = FormaHomeScreen.Jezik[245];
 
             label43.Location = new Point(label1.Location.X, label42.Bottom + 20);
-            label43.Text = FormaHomeScreen.jezik[246];
+            label43.Text = FormaHomeScreen.Jezik[246];
 
             label44.Location = new Point(label1.Location.X, label43.Bottom + 20);
-            label44.Text = FormaHomeScreen.jezik[247];
+            label44.Text = FormaHomeScreen.Jezik[247];
 
             label45.Location = new Point(label1.Location.X, label44.Bottom + 20);
-            label45.Text = FormaHomeScreen.jezik[248];
+            label45.Text = FormaHomeScreen.Jezik[248];
 
             label46.Location = new Point(label1.Location.X, label45.Bottom + 20);
-            label46.Text = FormaHomeScreen.jezik[249];
+            label46.Text = FormaHomeScreen.Jezik[249];
 
-            button1.Text = FormaHomeScreen.jezik[315];
+            button1.Text = FormaHomeScreen.Jezik[315];
             button1.Location = new Point(button1.Location.X, label46.Location.Y - (button1.Height - label46.Height) - 5);
 
             #endregion
@@ -191,12 +193,12 @@ namespace Proracun_vibracija
         private void Forma_TestVoznja_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaHomeScreen.FormaTestVoznja  = null;
-            FormaHomeScreen.dugmeLevoEnabled = true;
+            FormaHomeScreen.DugmeLevoEnabled = true;
         }
 
-        private void CursorHand(object sender, MouseEventArgs e) // ovo je za MouseMove na labelima koju sluze kao linkovi, da bi se mis pretvorio u onaj kursor sa pokazujucom rukom kao u browserima
+        private void cursorHand(object sender, MouseEventArgs e)
         {
-            Cursor.Current = Cursors.Hand;
+            Cursor.Current = Cursors.Hand; // ovo je za MouseMove na labelima koju sluze kao linkovi, da bi se mis pretvorio u onaj kursor sa pokazujucom rukom kao u browserima
         }
 
         private void gotoPreRoadTestInspection(object sender, EventArgs e)
@@ -258,5 +260,7 @@ namespace Proracun_vibracija
         {
             panel1.AutoScrollPosition = new Point(0, EAtest);
         }
+
+#pragma warning restore IDE1006
     }
 }

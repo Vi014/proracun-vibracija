@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Centar_Agregat_Tabela : Form
     {
+#pragma warning disable IDE1006
+
         public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
 
         public Forma_Centar_Agregat_Tabela(Forma_Centar_Agregat_Glavni konstruktor)
@@ -21,16 +23,16 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text   = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[69];
-            label1.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[70];
-            label2.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[71];
-            label3.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[72];
-            label4.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[73];
-            label5.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[74];
-            label6.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[75];
-            label7.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[76];
-            label8.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[77];
-            label9.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[78];
+            this.Text   = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[69];
+            label1.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[70];
+            label2.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[71];
+            label3.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[72];
+            label4.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[73];
+            label5.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[74];
+            label6.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[75];
+            label7.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[76];
+            label8.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[77];
+            label9.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.Jezik[78];
         }
 
         private void Forma_Centar_Agregat_Tabela_Load(object sender, EventArgs e)
@@ -76,7 +78,7 @@ namespace Proracun_vibracija
         private void Forma_Centar_Agregat_Tabela_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaCentarAgregatGlavni.FormaCentarAgregatTabela = null;
-            FormaCentarAgregatGlavni.buttonTabelaEnabled      = true;
+            FormaCentarAgregatGlavni.ButtonTabelaEnabled      = true;
         }
 
         public void IspisVrednosti()
@@ -101,7 +103,7 @@ namespace Proracun_vibracija
                 button_D6.Visible = button_D6.Enabled = false;
 
             #region rpm1unet
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_RPM1.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.RPM1.ToString();
@@ -229,7 +231,7 @@ namespace Proracun_vibracija
 
             #region rpm2unet
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_RPM2.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.RPM2.ToString();
@@ -351,7 +353,7 @@ namespace Proracun_vibracija
 
             #region rpm3unet
 
-            if (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet)
+            if (FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3Unet)
             {
                 //////////////////////////////////////////////////////////
                 textBox_RPM3.Text = FormaCentarAgregatGlavni.FormaCentarGlavni.RPM3.ToString();
@@ -489,5 +491,7 @@ namespace Proracun_vibracija
                 FormaCentarAgregatGlavni.FormaCentarGlavni.FormaCentarTekst.Focus();
             }
         }
+
+#pragma warning restore IDE1006
     }
 }

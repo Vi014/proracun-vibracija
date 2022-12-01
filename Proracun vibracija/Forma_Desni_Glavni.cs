@@ -11,6 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Desni_Glavni : Form
     {
+#pragma warning disable IDE1006
+
         public Forma_HomeScreen   FormaHomeScreen;
         public Forma_Desni_Tabela FormaDesniTabela;
         public Forma_Desni_Grafik FormaDesniGrafik;
@@ -25,28 +27,28 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text                      = FormaHomeScreen.jezik[112];
-            label_Upozorenje.Text          = FormaHomeScreen.jezik[113];
-            label_DimenzijePneumatika.Text = FormaHomeScreen.jezik[114];
-            label_Sirina.Text              = FormaHomeScreen.jezik[115];
-            label_Visina.Text              = FormaHomeScreen.jezik[116];
-            label_PrecnikFelne.Text        = FormaHomeScreen.jezik[117];
-            label_POD.Text                 = FormaHomeScreen.jezik[118];
-            label_mm.Text                  = FormaHomeScreen.jezik[119];
-            label_Posto.Text               = FormaHomeScreen.jezik[120];
-            label_Inches.Text              = FormaHomeScreen.jezik[121];
-            label_IzmereneVrednosti.Text   = FormaHomeScreen.jezik[122];
-            label_BrzinaVozila.Text        = FormaHomeScreen.jezik[123];
-            label_Frekvencija.Text         = FormaHomeScreen.jezik[124];
-            button_Racun.Text              = FormaHomeScreen.jezik[125];
+            this.Text                      = FormaHomeScreen.Jezik[112];
+            label_Upozorenje.Text          = FormaHomeScreen.Jezik[113];
+            label_DimenzijePneumatika.Text = FormaHomeScreen.Jezik[114];
+            label_Sirina.Text              = FormaHomeScreen.Jezik[115];
+            label_Visina.Text              = FormaHomeScreen.Jezik[116];
+            label_PrecnikFelne.Text        = FormaHomeScreen.Jezik[117];
+            label_POD.Text                 = FormaHomeScreen.Jezik[118];
+            label_mm.Text                  = FormaHomeScreen.Jezik[119];
+            label_Posto.Text               = FormaHomeScreen.Jezik[120];
+            label_Inches.Text              = FormaHomeScreen.Jezik[121];
+            label_IzmereneVrednosti.Text   = FormaHomeScreen.Jezik[122];
+            label_BrzinaVozila.Text        = FormaHomeScreen.Jezik[123];
+            label_Frekvencija.Text         = FormaHomeScreen.Jezik[124];
+            button_Racun.Text              = FormaHomeScreen.Jezik[125];
 
-            checkBox1.Text = FormaHomeScreen.jezik[184];
-            label_Sirina2.Text = FormaHomeScreen.jezik[185];
-            label_Visina2.Text = FormaHomeScreen.jezik[186];
-            label_PrecnikFelne2.Text = FormaHomeScreen.jezik[187];
-            label_mm2.Text = FormaHomeScreen.jezik[188];
-            label_Posto2.Text = FormaHomeScreen.jezik[189];
-            label_Inches2.Text = FormaHomeScreen.jezik[190];
+            checkBox1.Text = FormaHomeScreen.Jezik[184];
+            label_Sirina2.Text = FormaHomeScreen.Jezik[185];
+            label_Visina2.Text = FormaHomeScreen.Jezik[186];
+            label_PrecnikFelne2.Text = FormaHomeScreen.Jezik[187];
+            label_mm2.Text = FormaHomeScreen.Jezik[188];
+            label_Posto2.Text = FormaHomeScreen.Jezik[189];
+            label_Inches2.Text = FormaHomeScreen.Jezik[190];
         }
 
         private void Forma_Desni_Glavni_Load(object sender, EventArgs e)
@@ -92,7 +94,7 @@ namespace Proracun_vibracija
         private void Forma_Desni_Glavni_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormaHomeScreen.FormaDesniGlavni  = null;
-            FormaHomeScreen.dugmeDesnoEnabled = true;
+            FormaHomeScreen.DugmeDesnoEnabled = true;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -529,7 +531,7 @@ namespace Proracun_vibracija
         #region matematika
 
         Boolean _v1unet, _v2unet, _v3unet;
-        public Boolean v1unet, v2unet, v3unet;
+        public Boolean V1Unet, V2Unet, V3Unet;
         Int32 _W, _H, _R;
         public Int32 W, H, R;
         Int32 _W2, _H2, _R2;
@@ -564,7 +566,7 @@ namespace Proracun_vibracija
                         FK2_1x3, FK2_2x3, FK2_3x3,
                         FK2_1x4, FK2_2x4, FK2_3x4;
 
-        private void ResetVrednosti()
+        private void resetVrednosti()
         {
             errorProvider1.SetError(textBox_W, "");
             errorProvider1.SetError(textBox_H, "");
@@ -598,7 +600,7 @@ namespace Proracun_vibracija
             _I = _V1 = _V2 = _V3 = _F11 = _F12 = _F13 = _F21 = _F22 = _F23 = _F31 = _F32 = _F33 = 0;
         }
 
-        private Boolean Provera()
+        private Boolean provera()
         {
             if (textBox_W.Text == "W") return false;
             if (textBox_H.Text == "H") return false;
@@ -619,27 +621,27 @@ namespace Proracun_vibracija
             else return false;
         }
 
-        private Boolean Ucitavanje()
+        private Boolean ucitavanje()
         {
             Boolean uspeh = true;
 
             if (!Int32.TryParse(textBox_W.Text, out _W) || _W <= 0)
             {
-                errorProvider1.SetError(textBox_W, FormaHomeScreen.jezik[309]);
+                errorProvider1.SetError(textBox_W, FormaHomeScreen.Jezik[309]);
                 if(label_mm.Location.X - textBox_W.Location.X == 60) label_mm.Location = new Point(label_mm.Location.X + 8, label_mm.Location.Y);
                 uspeh = false;
             }
 
             if (!Int32.TryParse(textBox_H.Text, out _H) || _H <= 0)
             {
-                errorProvider1.SetError(textBox_H, FormaHomeScreen.jezik[309]);
+                errorProvider1.SetError(textBox_H, FormaHomeScreen.Jezik[309]);
                 if (label_Posto.Location.X - textBox_H.Location.X == 60) label_Posto.Location = new Point(label_Posto.Location.X + 8, label_Posto.Location.Y);
                 uspeh = false;
             }
 
             if (!Int32.TryParse(textBox_R.Text, out _R) || _R <= 0)
             {
-                errorProvider1.SetError(textBox_R, FormaHomeScreen.jezik[309]);
+                errorProvider1.SetError(textBox_R, FormaHomeScreen.Jezik[309]);
                 if (label_Inches.Location.X - textBox_R.Location.X == 60) label_Inches.Location = new Point(label_Inches.Location.X + 8, label_Inches.Location.Y);
                 uspeh = false;
             }
@@ -648,21 +650,21 @@ namespace Proracun_vibracija
             {
                 if (!Int32.TryParse(textBox_W2.Text, out _W2) || _W2 <= 0)
                 {
-                    errorProvider1.SetError(textBox_W2, FormaHomeScreen.jezik[309]);
+                    errorProvider1.SetError(textBox_W2, FormaHomeScreen.Jezik[309]);
                     if (label_mm2.Location.X - textBox_W2.Location.X == 60) label_mm2.Location = new Point(label_mm2.Location.X + 8, label_mm2.Location.Y);
                     uspeh = false;
                 }
 
                 if (!Int32.TryParse(textBox_H2.Text, out _H2) || _H2 <= 0)
                 {
-                    errorProvider1.SetError(textBox_H2, FormaHomeScreen.jezik[309]);
+                    errorProvider1.SetError(textBox_H2, FormaHomeScreen.Jezik[309]);
                     if (label_Posto2.Location.X - textBox_H2.Location.X == 60) label_Posto2.Location = new Point(label_Posto2.Location.X + 8, label_Posto2.Location.Y);
                     uspeh = false;
                 }
 
                 if (!Int32.TryParse(textBox_R2.Text, out _R2) || _R2 <= 0)
                 {
-                    errorProvider1.SetError(textBox_R2, FormaHomeScreen.jezik[309]);
+                    errorProvider1.SetError(textBox_R2, FormaHomeScreen.Jezik[309]);
                     if (label_Inches2.Location.X - textBox_R2.Location.X == 60) label_Inches2.Location = new Point(label_Inches2.Location.X + 8, label_Inches2.Location.Y);
                     uspeh = false;
                 }
@@ -672,7 +674,7 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_I.Text, out _I) || _I <= 0)
                 {
-                    errorProvider1.SetError(textBox_I, FormaHomeScreen.jezik[309]);
+                    errorProvider1.SetError(textBox_I, FormaHomeScreen.Jezik[309]);
                     uspeh = false;
                 }
             }
@@ -681,7 +683,7 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_V1.Text, out _V1) || _V1 < 5 || _V1 > 200)
                 {
-                    errorProvider1.SetError(textBox_V1, FormaHomeScreen.jezik[310]);
+                    errorProvider1.SetError(textBox_V1, FormaHomeScreen.Jezik[310]);
                     uspeh = false;
                 }
 
@@ -689,7 +691,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F11.Text, out _F11) || _F11 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F11, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -697,7 +699,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F12.Text, out _F12) || _F12 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F12, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -705,7 +707,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F13.Text, out _F13) || _F13 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F13, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -714,7 +716,7 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_V2.Text, out _V2) || _V2 < 5 || _V2 > 200)
                 {
-                    errorProvider1.SetError(textBox_V2, FormaHomeScreen.jezik[310]);
+                    errorProvider1.SetError(textBox_V2, FormaHomeScreen.Jezik[310]);
                     uspeh = false;
                 }
 
@@ -722,7 +724,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F21.Text, out _F21) || _F21 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F21, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -730,7 +732,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F22.Text, out _F22) || _F22 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F22, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -738,7 +740,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F23.Text, out _F23) || _F23 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F23, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -747,7 +749,7 @@ namespace Proracun_vibracija
             {
                 if (!Double.TryParse(textBox_V3.Text, out _V3) || _V3 < 5 || _V3 > 200)
                 {
-                    errorProvider1.SetError(textBox_V3, FormaHomeScreen.jezik[310]);
+                    errorProvider1.SetError(textBox_V3, FormaHomeScreen.Jezik[310]);
                     uspeh = false;
                 }
 
@@ -755,7 +757,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F31.Text, out _F31) || _F31 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F31, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -763,7 +765,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F32.Text, out _F32) || _F32 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F32, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -771,7 +773,7 @@ namespace Proracun_vibracija
                 {
                     if (!Double.TryParse(textBox_F33.Text, out _F33) || _F33 <= 0)
                     {
-                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.jezik[309]);
+                        errorProvider1.SetError(textBox_F33, FormaHomeScreen.Jezik[309]);
                         uspeh = false;
                     }
                 }
@@ -780,11 +782,11 @@ namespace Proracun_vibracija
             return uspeh;
         }
 
-        private void Konvertovanje()
+        private void konvertovanje()
         {
-            v1unet = _v1unet;
-            v2unet = _v2unet;
-            v3unet = _v3unet;
+            V1Unet = _v1unet;
+            V2Unet = _v2unet;
+            V3Unet = _v3unet;
             W = _W;
             H = _H;
             R = _R;
@@ -806,11 +808,11 @@ namespace Proracun_vibracija
             F33 = _F33;
         }
 
-        private void Racun()
+        private void racun()
         {
             DT = (((Double)2 * H * W) / 2540) + R;
 
-            if (v1unet)
+            if (V1Unet)
             {
                 FT1   = (V1 / 8) * (((20800 / DT) * 5) / 3600);
                 FT1x2 = FT1 * 2;
@@ -835,7 +837,7 @@ namespace Proracun_vibracija
                 FT1x4 = Math.Round(FT1x4, 1, MidpointRounding.AwayFromZero);
             }
 
-            if (v2unet)
+            if (V2Unet)
             {
                 FT2   = (V2 / 8) * (((20800 / DT) * 5) / 3600);
                 FT2x2 = FT2 * 2;
@@ -860,7 +862,7 @@ namespace Proracun_vibracija
                 FT2x4 = Math.Round(FT2x4, 1, MidpointRounding.AwayFromZero);
             }
 
-            if (v3unet)
+            if (V3Unet)
             {
                 FT3   = (V3 / 8) * (((20800 / DT) * 5) / 3600);
                 FT3x2 = FT3 * 2;
@@ -889,7 +891,7 @@ namespace Proracun_vibracija
             {
                 DT2 = (((Double)2 * H2 * W2) / 2540) + R2;
 
-                if (v1unet)
+                if (V1Unet)
                 {
                     FT2_1   = (V1 / 8) * (((20800 / DT2) * 5) / 3600);
                     FT2_1x2 = FT2_1 * 2;
@@ -914,7 +916,7 @@ namespace Proracun_vibracija
                     FT2_1x4 = Math.Round(FT2_1x4, 1, MidpointRounding.AwayFromZero);
                 }
 
-                if (v2unet)
+                if (V2Unet)
                 {
                     FT2_2   = (V2 / 8) * (((20800 / DT2) * 5) / 3600);
                     FT2_2x2 = FT2_2 * 2;
@@ -939,7 +941,7 @@ namespace Proracun_vibracija
                     FT2_2x4 = Math.Round(FT2_2x4, 1, MidpointRounding.AwayFromZero);
                 }
 
-                if (v3unet)
+                if (V3Unet)
                 {
                     FT2_3   = (V3 / 8) * (((20800 / DT2) * 5) / 3600);
                     FT2_3x2 = FT2_3 * 2;
@@ -970,20 +972,20 @@ namespace Proracun_vibracija
 
         private void button_Racun_Click(object sender, EventArgs e)
         {
-            ResetVrednosti();
-            if (Provera())
+            resetVrednosti();
+            if (provera())
             {
-                if (Ucitavanje())
+                if (ucitavanje())
                 {
-                    Konvertovanje();
-                    Racun();
+                    konvertovanje();
+                    racun();
                     if (FormaDesniTabela == null && FormaDesniGrafik == null) button_Tabela.Enabled = button_Grafik.Enabled = true;
                     if (FormaDesniTabela != null) FormaDesniTabela.IspisVrednosti();
                     if (FormaDesniGrafik != null) FormaDesniGrafik.Racun();
                 }
-                else MessageBox.Show(FormaHomeScreen.jezik[127], FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show(FormaHomeScreen.Jezik[127], FormaHomeScreen.Jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show(FormaHomeScreen.jezik[126], FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show(FormaHomeScreen.Jezik[126], FormaHomeScreen.Jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button_Tabela_Click(object sender, EventArgs e)
@@ -995,7 +997,7 @@ namespace Proracun_vibracija
             button_Tabela.Enabled = false;
         }
 
-        public Boolean buttonTabelaEnabled
+        public Boolean ButtonTabelaEnabled
         {
             get { return button_Tabela.Enabled;  }
             set { button_Tabela.Enabled = value; }
@@ -1010,16 +1012,18 @@ namespace Proracun_vibracija
             button_Grafik.Enabled = false;
         }
 
-        public Boolean buttonGrafikEnabled
+        public Boolean ButtonGrafikEnabled
         {
             get { return button_Grafik.Enabled;  }
             set { button_Grafik.Enabled = value; }
         }
-        
-        /* public Boolean checkBox1Checked
+
+        /* public Boolean CheckBox1Checked
         {
             get { return checkBox1.Checked;  }
             set { checkBox1.Checked = value; }
         } */
+
+#pragma warning restore IDE1006
     }
 }
