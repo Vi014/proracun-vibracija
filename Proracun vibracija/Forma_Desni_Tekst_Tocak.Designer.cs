@@ -30,8 +30,28 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
             this.zoomablePictureBox1 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox8 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox7 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox6 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox5 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox4 = new Proracun_vibracija.ZoomablePictureBox();
+            this.zoomablePictureBox3 = new Proracun_vibracija.ZoomablePictureBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -58,22 +78,54 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.zoomPicture = new System.Windows.Forms.PictureBox();
-            this.zoomablePictureBox2 = new Proracun_vibracija.ZoomablePictureBox();
-            this.label36 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.zoomablePictureBox9 = new Proracun_vibracija.ZoomablePictureBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -92,10 +144,30 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label67);
+            this.panel1.Controls.Add(this.label73);
+            this.panel1.Controls.Add(this.label69);
+            this.panel1.Controls.Add(this.label66);
+            this.panel1.Controls.Add(this.label70);
+            this.panel1.Controls.Add(this.label61);
+            this.panel1.Controls.Add(this.label60);
+            this.panel1.Controls.Add(this.label51);
+            this.panel1.Controls.Add(this.label43);
             this.panel1.Controls.Add(this.label36);
             this.panel1.Controls.Add(this.label28);
             this.panel1.Controls.Add(this.zoomablePictureBox2);
             this.panel1.Controls.Add(this.zoomablePictureBox1);
+            this.panel1.Controls.Add(this.zoomablePictureBox9);
+            this.panel1.Controls.Add(this.zoomablePictureBox8);
+            this.panel1.Controls.Add(this.zoomablePictureBox7);
+            this.panel1.Controls.Add(this.zoomablePictureBox6);
+            this.panel1.Controls.Add(this.zoomablePictureBox5);
+            this.panel1.Controls.Add(this.zoomablePictureBox4);
+            this.panel1.Controls.Add(this.zoomablePictureBox3);
+            this.panel1.Controls.Add(this.label62);
+            this.panel1.Controls.Add(this.label55);
+            this.panel1.Controls.Add(this.label47);
+            this.panel1.Controls.Add(this.label39);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.label21);
             this.panel1.Controls.Add(this.label19);
@@ -122,11 +194,36 @@
             this.panel1.Controls.Add(this.label30);
             this.panel1.Controls.Add(this.label29);
             this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.label46);
+            this.panel1.Controls.Add(this.label45);
+            this.panel1.Controls.Add(this.label50);
+            this.panel1.Controls.Add(this.label42);
+            this.panel1.Controls.Add(this.label38);
             this.panel1.Controls.Add(this.label35);
             this.panel1.Controls.Add(this.label26);
+            this.panel1.Controls.Add(this.label44);
+            this.panel1.Controls.Add(this.label54);
+            this.panel1.Controls.Add(this.label53);
+            this.panel1.Controls.Add(this.label52);
+            this.panel1.Controls.Add(this.label59);
+            this.panel1.Controls.Add(this.label58);
+            this.panel1.Controls.Add(this.label65);
+            this.panel1.Controls.Add(this.label68);
+            this.panel1.Controls.Add(this.label74);
+            this.panel1.Controls.Add(this.label72);
+            this.panel1.Controls.Add(this.label64);
+            this.panel1.Controls.Add(this.label57);
+            this.panel1.Controls.Add(this.label49);
+            this.panel1.Controls.Add(this.label41);
+            this.panel1.Controls.Add(this.label37);
             this.panel1.Controls.Add(this.label34);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label71);
+            this.panel1.Controls.Add(this.label63);
+            this.panel1.Controls.Add(this.label56);
+            this.panel1.Controls.Add(this.label48);
+            this.panel1.Controls.Add(this.label40);
             this.panel1.Controls.Add(this.label33);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label1);
@@ -135,6 +232,99 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1316, 693);
             this.panel1.TabIndex = 10;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(16, 4996);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(544, 25);
+            this.label67.TabIndex = 46;
+            this.label67.Text = "label67 (bold-italic: radial force variation desc 2-1)";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(17, 5426);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(204, 20);
+            this.label69.TabIndex = 24;
+            this.label69.Text = "label69 (italic-mini: Figure 8)";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(17, 4976);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(204, 20);
+            this.label66.TabIndex = 24;
+            this.label66.Text = "label66 (italic-mini: Figure 7)";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.Blue;
+            this.label70.Location = new System.Drawing.Point(16, 5446);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(193, 25);
+            this.label70.TabIndex = 22;
+            this.label70.Text = "label70 (link: back)";
+            this.label70.Click += new System.EventHandler(this.gotoBeginning);
+            this.label70.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(17, 4350);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(204, 20);
+            this.label61.TabIndex = 24;
+            this.label61.Text = "label61 (italic-mini: Figure 6)";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(17, 3875);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(204, 20);
+            this.label60.TabIndex = 24;
+            this.label60.Text = "label60 (italic-mini: Figure 5)";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(17, 3199);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(204, 20);
+            this.label51.TabIndex = 24;
+            this.label51.Text = "label51 (italic-mini: Figure 4)";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(17, 2649);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(204, 20);
+            this.label43.TabIndex = 24;
+            this.label43.Text = "label43 (italic-mini: Figure 3)";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(17, 1889);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(204, 20);
+            this.label36.TabIndex = 24;
+            this.label36.Text = "label36 (italic-mini: Figure 2)";
             // 
             // label28
             // 
@@ -145,6 +335,17 @@
             this.label28.Size = new System.Drawing.Size(204, 20);
             this.label28.TabIndex = 24;
             this.label28.Text = "label28 (italic-mini: Figure 1)";
+            // 
+            // zoomablePictureBox2
+            // 
+            this.zoomablePictureBox2.Image = global::Proracun_vibracija.Properties.Resources.wheel01;
+            this.zoomablePictureBox2.Location = new System.Drawing.Point(21, 1299);
+            this.zoomablePictureBox2.Name = "zoomablePictureBox2";
+            this.zoomablePictureBox2.Size = new System.Drawing.Size(600, 587);
+            this.zoomablePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox2.TabIndex = 23;
+            this.zoomablePictureBox2.TabStop = false;
+            this.zoomablePictureBox2.Click += new System.EventHandler(this.zoom);
             // 
             // zoomablePictureBox1
             // 
@@ -157,6 +358,124 @@
             this.zoomablePictureBox1.TabStop = false;
             this.zoomablePictureBox1.Click += new System.EventHandler(this.zoom);
             // 
+            // zoomablePictureBox8
+            // 
+            this.zoomablePictureBox8.Image = global::Proracun_vibracija.Properties.Resources.wheel07;
+            this.zoomablePictureBox8.Location = new System.Drawing.Point(21, 5049);
+            this.zoomablePictureBox8.Name = "zoomablePictureBox8";
+            this.zoomablePictureBox8.Size = new System.Drawing.Size(600, 374);
+            this.zoomablePictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox8.TabIndex = 23;
+            this.zoomablePictureBox8.TabStop = false;
+            this.zoomablePictureBox8.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox7
+            // 
+            this.zoomablePictureBox7.Image = global::Proracun_vibracija.Properties.Resources.wheel06;
+            this.zoomablePictureBox7.Location = new System.Drawing.Point(21, 4473);
+            this.zoomablePictureBox7.Name = "zoomablePictureBox7";
+            this.zoomablePictureBox7.Size = new System.Drawing.Size(500, 500);
+            this.zoomablePictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox7.TabIndex = 23;
+            this.zoomablePictureBox7.TabStop = false;
+            this.zoomablePictureBox7.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox6
+            // 
+            this.zoomablePictureBox6.Image = global::Proracun_vibracija.Properties.Resources.wheel05;
+            this.zoomablePictureBox6.Location = new System.Drawing.Point(21, 3898);
+            this.zoomablePictureBox6.Name = "zoomablePictureBox6";
+            this.zoomablePictureBox6.Size = new System.Drawing.Size(600, 449);
+            this.zoomablePictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox6.TabIndex = 23;
+            this.zoomablePictureBox6.TabStop = false;
+            this.zoomablePictureBox6.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox5
+            // 
+            this.zoomablePictureBox5.Image = global::Proracun_vibracija.Properties.Resources.wheel04;
+            this.zoomablePictureBox5.Location = new System.Drawing.Point(21, 3422);
+            this.zoomablePictureBox5.Name = "zoomablePictureBox5";
+            this.zoomablePictureBox5.Size = new System.Drawing.Size(600, 450);
+            this.zoomablePictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox5.TabIndex = 23;
+            this.zoomablePictureBox5.TabStop = false;
+            this.zoomablePictureBox5.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox4
+            // 
+            this.zoomablePictureBox4.Image = global::Proracun_vibracija.Properties.Resources.wheel03;
+            this.zoomablePictureBox4.Location = new System.Drawing.Point(21, 2851);
+            this.zoomablePictureBox4.Name = "zoomablePictureBox4";
+            this.zoomablePictureBox4.Size = new System.Drawing.Size(600, 345);
+            this.zoomablePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox4.TabIndex = 23;
+            this.zoomablePictureBox4.TabStop = false;
+            this.zoomablePictureBox4.Click += new System.EventHandler(this.zoom);
+            // 
+            // zoomablePictureBox3
+            // 
+            this.zoomablePictureBox3.Image = global::Proracun_vibracija.Properties.Resources.wheel02;
+            this.zoomablePictureBox3.Location = new System.Drawing.Point(21, 2062);
+            this.zoomablePictureBox3.Name = "zoomablePictureBox3";
+            this.zoomablePictureBox3.Size = new System.Drawing.Size(600, 584);
+            this.zoomablePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox3.TabIndex = 23;
+            this.zoomablePictureBox3.TabStop = false;
+            this.zoomablePictureBox3.Click += new System.EventHandler(this.zoom);
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.Blue;
+            this.label62.Location = new System.Drawing.Point(16, 4370);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(193, 25);
+            this.label62.TabIndex = 22;
+            this.label62.Text = "label62 (link: back)";
+            this.label62.Click += new System.EventHandler(this.gotoBeginning);
+            this.label62.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.Blue;
+            this.label55.Location = new System.Drawing.Point(16, 3294);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(193, 25);
+            this.label55.TabIndex = 22;
+            this.label55.Text = "label55 (link: back)";
+            this.label55.Click += new System.EventHandler(this.gotoBeginning);
+            this.label55.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Blue;
+            this.label47.Location = new System.Drawing.Point(16, 2744);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(193, 25);
+            this.label47.TabIndex = 22;
+            this.label47.Text = "label47 (link: back)";
+            this.label47.Click += new System.EventHandler(this.gotoBeginning);
+            this.label47.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Blue;
+            this.label39.Location = new System.Drawing.Point(16, 1959);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(193, 25);
+            this.label39.TabIndex = 22;
+            this.label39.Text = "label39 (link: back)";
+            this.label39.Click += new System.EventHandler(this.gotoBeginning);
+            this.label39.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -167,6 +486,7 @@
             this.label32.Size = new System.Drawing.Size(193, 25);
             this.label32.TabIndex = 22;
             this.label32.Text = "label32 (link: back)";
+            this.label32.Click += new System.EventHandler(this.gotoBeginning);
             this.label32.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label21
@@ -179,6 +499,7 @@
             this.label21.Size = new System.Drawing.Size(223, 25);
             this.label21.TabIndex = 22;
             this.label21.Text = "label21 (link: el 8 text)";
+            this.label21.Click += new System.EventHandler(this.gotoBentAxleShaft);
             this.label21.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label19
@@ -191,6 +512,7 @@
             this.label19.Size = new System.Drawing.Size(223, 25);
             this.label19.TabIndex = 22;
             this.label19.Text = "label19 (link: el 7 text)";
+            this.label19.Click += new System.EventHandler(this.gotoRadialForceVariation);
             this.label19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label17
@@ -203,6 +525,7 @@
             this.label17.Size = new System.Drawing.Size(223, 25);
             this.label17.TabIndex = 22;
             this.label17.Text = "label17 (link: el 6 text)";
+            this.label17.Click += new System.EventHandler(this.gotoHubBrakeDiscRunout);
             this.label17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label15
@@ -215,6 +538,7 @@
             this.label15.Size = new System.Drawing.Size(223, 25);
             this.label15.TabIndex = 22;
             this.label15.Text = "label15 (link: el 5 text)";
+            this.label15.Click += new System.EventHandler(this.gotoLateralWheelRunout);
             this.label15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label13
@@ -227,6 +551,7 @@
             this.label13.Size = new System.Drawing.Size(223, 25);
             this.label13.TabIndex = 22;
             this.label13.Text = "label13 (link: el 4 text)";
+            this.label13.Click += new System.EventHandler(this.gotoRadialWheelRunout);
             this.label13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label11
@@ -239,6 +564,7 @@
             this.label11.Size = new System.Drawing.Size(223, 25);
             this.label11.TabIndex = 22;
             this.label11.Text = "label11 (link: el 3 text)";
+            this.label11.Click += new System.EventHandler(this.gotoLateralWheelAndTireAssemblyRunout);
             this.label11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label9
@@ -251,6 +577,7 @@
             this.label9.Size = new System.Drawing.Size(211, 25);
             this.label9.TabIndex = 22;
             this.label9.Text = "label9 (link: el 2 text)";
+            this.label9.Click += new System.EventHandler(this.gotoRadialWheelAndTireAssemblyRunout);
             this.label9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label23
@@ -399,9 +726,9 @@
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(16, 1171);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(402, 25);
+            this.label31.Size = new System.Drawing.Size(644, 25);
             this.label31.TabIndex = 20;
-            this.label31.Text = "label31 (standard: radial wheel desc 2-3)";
+            this.label31.Text = "label31 (standard: radial wheel and tire assembly runout desc 2-3)";
             // 
             // label30
             // 
@@ -409,9 +736,9 @@
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(16, 1146);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(402, 25);
+            this.label30.Size = new System.Drawing.Size(644, 25);
             this.label30.TabIndex = 20;
-            this.label30.Text = "label30 (standard: radial wheel desc 2-2)";
+            this.label30.Text = "label30 (standard: radial wheel and tire assembly runout desc 2-2)";
             // 
             // label29
             // 
@@ -419,9 +746,9 @@
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(16, 1121);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(402, 25);
+            this.label29.Size = new System.Drawing.Size(644, 25);
             this.label29.TabIndex = 20;
-            this.label29.Text = "label29 (standard: radial wheel desc 2-1)";
+            this.label29.Text = "label29 (standard: radial wheel and tire assembly runout desc 2-1)";
             // 
             // label27
             // 
@@ -429,9 +756,59 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(16, 664);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(402, 25);
+            this.label27.Size = new System.Drawing.Size(644, 25);
             this.label27.TabIndex = 20;
-            this.label27.Text = "label27 (standard: radial wheel desc 1-3)";
+            this.label27.Text = "label27 (standard: radial wheel and tire assembly runout desc 1-3)";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(16, 2719);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(469, 25);
+            this.label46.TabIndex = 20;
+            this.label46.Text = "label46 (standard: radial wheel runout desc 2-3)";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(16, 2694);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(469, 25);
+            this.label45.TabIndex = 20;
+            this.label45.Text = "label45 (standard: radial wheel runout desc 2-2)";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(16, 2823);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(475, 25);
+            this.label50.TabIndex = 20;
+            this.label50.Text = "label50 (standard: lateral wheel runout desc 1-2)";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(16, 2034);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(469, 25);
+            this.label42.TabIndex = 20;
+            this.label42.Text = "label42 (standard: radial wheel runout desc 1-2)";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(16, 1934);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(650, 25);
+            this.label38.TabIndex = 20;
+            this.label38.Text = "label38 (standard: lateral wheel and tire assembly runout desc 2-2)";
             // 
             // label35
             // 
@@ -439,9 +816,9 @@
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(16, 1271);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(408, 25);
+            this.label35.Size = new System.Drawing.Size(650, 25);
             this.label35.TabIndex = 20;
-            this.label35.Text = "label35 (standard: lateral wheel desc 1-2)";
+            this.label35.Text = "label35 (standard: lateral wheel and tire assembly runout desc 1-2)";
             // 
             // label26
             // 
@@ -449,9 +826,139 @@
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.Location = new System.Drawing.Point(16, 639);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(402, 25);
+            this.label26.Size = new System.Drawing.Size(644, 25);
             this.label26.TabIndex = 20;
-            this.label26.Text = "label26 (standard: radial wheel desc 1-2)";
+            this.label26.Text = "label26 (standard: radial wheel and tire assembly runout desc 1-2)";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(16, 2669);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(469, 25);
+            this.label44.TabIndex = 20;
+            this.label44.Text = "label44 (standard: radial wheel runout desc 2-1)";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(16, 3269);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(475, 25);
+            this.label54.TabIndex = 20;
+            this.label54.Text = "label54 (standard: lateral wheel runout desc 2-3)";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(16, 3244);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(475, 25);
+            this.label53.TabIndex = 20;
+            this.label53.Text = "label53 (standard: lateral wheel runout desc 2-2)";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(16, 3219);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(475, 25);
+            this.label52.TabIndex = 20;
+            this.label52.Text = "label52 (standard: lateral wheel runout desc 2-1)";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(16, 3394);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(495, 25);
+            this.label59.TabIndex = 20;
+            this.label59.Text = "label59 (standard: hub/brake disc runout desc 1-3)";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(16, 3369);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(495, 25);
+            this.label58.TabIndex = 20;
+            this.label58.Text = "label58 (standard: hub/brake disc runout desc 1-2)";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(16, 4445);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(482, 25);
+            this.label65.TabIndex = 20;
+            this.label65.Text = "label65 (standard: radial force variation desc 1-2)";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(16, 5021);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(482, 25);
+            this.label68.TabIndex = 20;
+            this.label68.Text = "label68 (standard: radial force variation desc 2-2)";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(16, 4420);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(482, 25);
+            this.label64.TabIndex = 20;
+            this.label64.Text = "label64 (standard: radial force variation desc 1-1)";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(16, 3344);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(495, 25);
+            this.label57.TabIndex = 20;
+            this.label57.Text = "label57 (standard: hub/brake disc runout desc 1-1)";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(16, 2798);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(475, 25);
+            this.label49.TabIndex = 20;
+            this.label49.Text = "label49 (standard: lateral wheel runout desc 1-1)";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(16, 2009);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(469, 25);
+            this.label41.TabIndex = 20;
+            this.label41.Text = "label41 (standard: radial wheel runout desc 1-1)";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(16, 1909);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(650, 25);
+            this.label37.TabIndex = 20;
+            this.label37.Text = "label37 (standard: lateral wheel and tire assembly runout desc 2-1)";
             // 
             // label34
             // 
@@ -459,9 +966,9 @@
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(16, 1246);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(408, 25);
+            this.label34.Size = new System.Drawing.Size(650, 25);
             this.label34.TabIndex = 20;
-            this.label34.Text = "label34 (standard: lateral wheel desc 1-1)";
+            this.label34.Text = "label34 (standard: lateral wheel and tire assembly runout desc 1-1)";
             // 
             // label25
             // 
@@ -469,9 +976,9 @@
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(16, 614);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(402, 25);
+            this.label25.Size = new System.Drawing.Size(644, 25);
             this.label25.TabIndex = 20;
-            this.label25.Text = "label25 (standard: radial wheel desc 1-1)";
+            this.label25.Text = "label25 (standard: radial wheel and tire assembly runout desc 1-1)";
             // 
             // label2
             // 
@@ -482,6 +989,46 @@
             this.label2.Size = new System.Drawing.Size(228, 25);
             this.label2.TabIndex = 20;
             this.label2.Text = "label2 (standard: intro)";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(16, 4395);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(403, 25);
+            this.label63.TabIndex = 17;
+            this.label63.Text = "label63 (bold: Radial force variation) ";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(16, 3319);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(412, 25);
+            this.label56.TabIndex = 17;
+            this.label56.Text = "label56 (bold: Hub/Brake disc runout) ";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(16, 2773);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(393, 25);
+            this.label48.TabIndex = 17;
+            this.label48.Text = "label48 (bold: Lateral wheel runout) ";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(16, 1984);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(387, 25);
+            this.label40.TabIndex = 17;
+            this.label40.Text = "label40 (bold: Radial wheel runout) ";
             // 
             // label33
             // 
@@ -536,26 +1083,56 @@
             this.zoomPicture.TabStop = false;
             this.zoomPicture.Visible = false;
             // 
-            // zoomablePictureBox2
+            // label71
             // 
-            this.zoomablePictureBox2.Image = global::Proracun_vibracija.Properties.Resources.wheel01;
-            this.zoomablePictureBox2.Location = new System.Drawing.Point(21, 1299);
-            this.zoomablePictureBox2.Name = "zoomablePictureBox2";
-            this.zoomablePictureBox2.Size = new System.Drawing.Size(600, 587);
-            this.zoomablePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.zoomablePictureBox2.TabIndex = 23;
-            this.zoomablePictureBox2.TabStop = false;
-            this.zoomablePictureBox2.Click += new System.EventHandler(this.zoom);
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(16, 5471);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(336, 25);
+            this.label71.TabIndex = 17;
+            this.label71.Text = "label71 (bold: Bent axle shaft) ";
             // 
-            // label36
+            // label72
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(17, 1889);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(204, 20);
-            this.label36.TabIndex = 24;
-            this.label36.Text = "label36 (italic-mini: Figure 2)";
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(16, 5496);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(428, 25);
+            this.label72.TabIndex = 20;
+            this.label72.Text = "label72 (standard: bent axle shaft desc 1-1)";
+            // 
+            // zoomablePictureBox9
+            // 
+            this.zoomablePictureBox9.Image = global::Proracun_vibracija.Properties.Resources.wheel08;
+            this.zoomablePictureBox9.Location = new System.Drawing.Point(21, 5524);
+            this.zoomablePictureBox9.Name = "zoomablePictureBox9";
+            this.zoomablePictureBox9.Size = new System.Drawing.Size(600, 374);
+            this.zoomablePictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.zoomablePictureBox9.TabIndex = 23;
+            this.zoomablePictureBox9.TabStop = false;
+            this.zoomablePictureBox9.Click += new System.EventHandler(this.zoom);
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(17, 5901);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(204, 20);
+            this.label73.TabIndex = 24;
+            this.label73.Text = "label73 (italic-mini: Figure 9)";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(16, 5921);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(428, 25);
+            this.label74.TabIndex = 20;
+            this.label74.Text = "label74 (standard: bent axle shaft desc 2-1)";
             // 
             // Forma_Desni_Tekst_Tocak
             // 
@@ -574,9 +1151,16 @@
             this.Load += new System.EventHandler(this.Forma_Desni_Tekst_Tocak_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomablePictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -625,5 +1209,50 @@
         private System.Windows.Forms.Label label33;
         private ZoomablePictureBox zoomablePictureBox2;
         private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label43;
+        private ZoomablePictureBox zoomablePictureBox3;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label51;
+        private ZoomablePictureBox zoomablePictureBox4;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private ZoomablePictureBox zoomablePictureBox6;
+        private ZoomablePictureBox zoomablePictureBox5;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label66;
+        private ZoomablePictureBox zoomablePictureBox7;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private ZoomablePictureBox zoomablePictureBox8;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label73;
+        private ZoomablePictureBox zoomablePictureBox9;
+        private System.Windows.Forms.Label label74;
     }
 }

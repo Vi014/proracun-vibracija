@@ -19,7 +19,7 @@ namespace Proracun_vibracija
             FormaDesniGlavni = konstruktor;
         }
 
-        public Int32 DriveshaftRunout, MissingBalnaceWeights, PinionAndRingGearPitchLine, DrivelineOperatingAngles, TopOfList;
+        public Int32 DriveshaftRunout, MissingBalnaceWeights, PinionAndRingGearPitchLine, DrivelineOperatingAngles;
 
         public void PromenaJezika()
         {
@@ -201,7 +201,6 @@ namespace Proracun_vibracija
 
             #endregion
 
-            TopOfList                  = label6.Location.Y  - 5;
             DriveshaftRunout           = label15.Location.Y - 5;
             MissingBalnaceWeights      = label21.Location.Y - 5;
             PinionAndRingGearPitchLine = label25.Location.Y - 5;
@@ -238,11 +237,6 @@ namespace Proracun_vibracija
         private void gotoBeginning(object sender, EventArgs e)
         {
             panel1.AutoScrollPosition = new Point(0, 0);
-        }
-
-        private void gotoTopOfList(object sender, EventArgs e)
-        {
-            panel1.AutoScrollPosition = new Point(0, TopOfList);
         }
 
         private void gotoDriveshaftRunout(object sender, EventArgs e)

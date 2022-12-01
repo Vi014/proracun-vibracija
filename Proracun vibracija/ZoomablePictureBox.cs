@@ -33,7 +33,7 @@ namespace Proracun_vibracija
             Double ratioH = 0, ratioW = 0;
 
             for (Double i = 0; slikaH * i <= panelH; i += 0.01) ratioH = i;
-            for (Double i = 0; ((slikaW * i) + TargetButton.Width) <= panelW; i += 0.01) ratioW = i;
+            for (Double i = 0; ((slikaW * i) + TargetButton.Width) <= panelW - TargetButton.Width; i += 0.01) ratioW = i;
 
             if (ratioH < ratioW)
             {
@@ -46,7 +46,7 @@ namespace Proracun_vibracija
                 TargetPictureBox.Width  = Convert.ToInt32(slikaW * ratioW);
             }
 
-            TargetPictureBox.Location = new Point((centarX - TargetPictureBox.Width / 2), (centarY - TargetPictureBox.Height / 2));
+            TargetPictureBox.Location = new Point((centarX - (TargetPictureBox.Width / 2)), (centarY - TargetPictureBox.Height / 2));
             TargetButton.Location     = new Point(TargetPictureBox.Right, TargetPictureBox.Top);
         }
     }

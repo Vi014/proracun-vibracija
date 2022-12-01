@@ -332,7 +332,7 @@
             this.label51.Size = new System.Drawing.Size(193, 25);
             this.label51.TabIndex = 15;
             this.label51.Text = "label51 (link: back)";
-            this.label51.Click += new System.EventHandler(this.gotoTopOfList);
+            this.label51.Click += new System.EventHandler(this.gotoBeginning);
             this.label51.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label28
@@ -345,7 +345,7 @@
             this.label28.Size = new System.Drawing.Size(193, 25);
             this.label28.TabIndex = 15;
             this.label28.Text = "label28 (link: back)";
-            this.label28.Click += new System.EventHandler(this.gotoTopOfList);
+            this.label28.Click += new System.EventHandler(this.gotoBeginning);
             this.label28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label15
@@ -368,7 +368,7 @@
             this.label24.Size = new System.Drawing.Size(193, 25);
             this.label24.TabIndex = 15;
             this.label24.Text = "label24 (link: back)";
-            this.label24.Click += new System.EventHandler(this.gotoTopOfList);
+            this.label24.Click += new System.EventHandler(this.gotoBeginning);
             this.label24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label20
@@ -381,7 +381,7 @@
             this.label20.Size = new System.Drawing.Size(193, 25);
             this.label20.TabIndex = 15;
             this.label20.Text = "label20 (link: back)";
-            this.label20.Click += new System.EventHandler(this.gotoTopOfList);
+            this.label20.Click += new System.EventHandler(this.gotoBeginning);
             this.label20.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CursorHand);
             // 
             // label14

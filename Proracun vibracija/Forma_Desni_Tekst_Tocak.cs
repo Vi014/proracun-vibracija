@@ -19,7 +19,7 @@ namespace Proracun_vibracija
             FormaDesniGlavni = konstruktor;
         }
 
-        // int32-ovi koji sluze za linkove idu ovde
+        public Int32 RadialWheelAndTireAssemblyRunout, LateralWheelAndTireAssemblyRunout, RadialWheelRunout, LateralWheelRunout, HubBrakeDiscRunout, RadialForceVariation, BentAxleShaft;
 
         public void PromenaJezika()
         {
@@ -152,7 +152,146 @@ namespace Proracun_vibracija
             label36.Location = new Point(label1.Location.X, zoomablePictureBox2.Bottom);
             label36.Text = FormaDesniGlavni.FormaHomeScreen.jezik[470];
 
+            label37.Location = new Point(label1.Location.X, label36.Bottom + 20);
+            label37.Text = FormaDesniGlavni.FormaHomeScreen.jezik[471];
+
+            label38.Location = new Point(label1.Location.X, label37.Bottom + 20);
+            label38.Text = FormaDesniGlavni.FormaHomeScreen.jezik[472];
+
+            label39.Location = new Point(label1.Location.X, label38.Bottom + 20);
+            label39.Text = FormaDesniGlavni.FormaHomeScreen.jezik[473];
+
+            label40.Location = new Point(label1.Location.X, label39.Bottom + 20);
+            label40.Text = FormaDesniGlavni.FormaHomeScreen.jezik[474];
+
+            label41.Location = new Point(label1.Location.X, label40.Bottom + 20);
+            label41.Text = FormaDesniGlavni.FormaHomeScreen.jezik[475];
+
+            label42.Location = new Point(label1.Location.X, label41.Bottom + 20);
+            label42.Text = FormaDesniGlavni.FormaHomeScreen.jezik[476];
+
+            zoomablePictureBox3.Location = new Point(label1.Location.X, label42.Bottom + 20);
+
+            label43.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom);
+            label43.Text = FormaDesniGlavni.FormaHomeScreen.jezik[477];
+
+            label44.Location = new Point(label1.Location.X, label43.Bottom + 20);
+            label44.Text = FormaDesniGlavni.FormaHomeScreen.jezik[478];
+
+            label45.Location = new Point(label1.Location.X, label44.Bottom + 20);
+            label45.Text = FormaDesniGlavni.FormaHomeScreen.jezik[479];
+
+            label46.Location = new Point(label1.Location.X, label45.Bottom + 20);
+            label46.Text = FormaDesniGlavni.FormaHomeScreen.jezik[480];
+
+            label47.Location = new Point(label1.Location.X, label46.Bottom + 20);
+            label47.Text = FormaDesniGlavni.FormaHomeScreen.jezik[481];
+
+            label48.Location = new Point(label1.Location.X, label47.Bottom + 20);
+            label48.Text = FormaDesniGlavni.FormaHomeScreen.jezik[482];
+
+            label49.Location = new Point(label1.Location.X, label48.Bottom + 20);
+            label49.Text = FormaDesniGlavni.FormaHomeScreen.jezik[483];
+
+            label50.Location = new Point(label1.Location.X, label49.Bottom + 20);
+            label50.Text = FormaDesniGlavni.FormaHomeScreen.jezik[484];
+
+            zoomablePictureBox4.Location = new Point(label1.Location.X, label50.Bottom + 20);
+
+            label51.Location = new Point(label1.Location.X, zoomablePictureBox4.Bottom);
+            label51.Text = FormaDesniGlavni.FormaHomeScreen.jezik[485];
+
+            label52.Location = new Point(label1.Location.X, label51.Bottom + 20);
+            label52.Text = FormaDesniGlavni.FormaHomeScreen.jezik[486];
+
+            label53.Location = new Point(label1.Location.X, label52.Bottom + 20);
+            label53.Text = FormaDesniGlavni.FormaHomeScreen.jezik[487];
+
+            label54.Location = new Point(label1.Location.X, label53.Bottom + 20);
+            label54.Text = FormaDesniGlavni.FormaHomeScreen.jezik[488];
+
+            label55.Location = new Point(label1.Location.X, label54.Bottom + 20);
+            label55.Text = FormaDesniGlavni.FormaHomeScreen.jezik[489];
+
+            label56.Location = new Point(label1.Location.X, label55.Bottom + 20);
+            label56.Text = FormaDesniGlavni.FormaHomeScreen.jezik[490];
+
+            label57.Location = new Point(label1.Location.X, label56.Bottom + 20);
+            label57.Text = FormaDesniGlavni.FormaHomeScreen.jezik[491];
+
+            label58.Location = new Point(label1.Location.X, label57.Bottom + 20);
+            label58.Text = FormaDesniGlavni.FormaHomeScreen.jezik[492];
+
+            label59.Location = new Point(label1.Location.X, label58.Bottom + 20);
+            label59.Text = FormaDesniGlavni.FormaHomeScreen.jezik[493];
+
+            zoomablePictureBox5.Location = new Point(label1.Location.X, label59.Bottom + 20);
+
+            label60.Location = new Point(label1.Location.X, zoomablePictureBox5.Bottom);
+            label60.Text = FormaDesniGlavni.FormaHomeScreen.jezik[494];
+
+            zoomablePictureBox6.Location = new Point(label1.Location.X, label60.Bottom + 20);
+
+            label61.Location = new Point(label1.Location.X, zoomablePictureBox6.Bottom);
+            label61.Text = FormaDesniGlavni.FormaHomeScreen.jezik[495];
+
+            label62.Location = new Point(label1.Location.X, label61.Bottom + 20);
+            label62.Text = FormaDesniGlavni.FormaHomeScreen.jezik[496];
+
+            label63.Location = new Point(label1.Location.X, label62.Bottom + 20);
+            label63.Text = FormaDesniGlavni.FormaHomeScreen.jezik[497];
+
+            label64.Location = new Point(label1.Location.X, label63.Bottom + 20);
+            label64.Text = FormaDesniGlavni.FormaHomeScreen.jezik[498];
+
+            label65.Location = new Point(label1.Location.X, label64.Bottom + 20);
+            label65.Text = FormaDesniGlavni.FormaHomeScreen.jezik[499];
+
+            zoomablePictureBox7.Location = new Point(label1.Location.X, label65.Bottom + 20);
+
+            label66.Location = new Point(label1.Location.X, zoomablePictureBox7.Bottom);
+            label66.Text = FormaDesniGlavni.FormaHomeScreen.jezik[500];
+
+            label67.Location = new Point(label1.Location.X, label66.Bottom + 20);
+            label67.Text = FormaDesniGlavni.FormaHomeScreen.jezik[501];
+
+            label68.Location = new Point(label1.Location.X, label67.Bottom + 20);
+            label68.Text = FormaDesniGlavni.FormaHomeScreen.jezik[502];
+
+            zoomablePictureBox8.Location = new Point(label1.Location.X, label68.Bottom + 20);
+
+            label69.Location = new Point(label1.Location.X, zoomablePictureBox8.Bottom);
+            label69.Text = FormaDesniGlavni.FormaHomeScreen.jezik[503];
+
+            label70.Location = new Point(label1.Location.X, label69.Bottom + 20);
+            label70.Text = FormaDesniGlavni.FormaHomeScreen.jezik[504];
+
+            label71.Location = new Point(label1.Location.X, label70.Bottom + 20);
+            label71.Text = FormaDesniGlavni.FormaHomeScreen.jezik[505];
+
+            label72.Location = new Point(label1.Location.X, label71.Bottom + 20);
+            label72.Text = FormaDesniGlavni.FormaHomeScreen.jezik[506];
+
+            zoomablePictureBox9.Location = new Point(label1.Location.X, label72.Bottom + 20);
+
+            label73.Location = new Point(label1.Location.X, zoomablePictureBox9.Bottom);
+            label73.Text = FormaDesniGlavni.FormaHomeScreen.jezik[507];
+
+            label74.Location = new Point(label1.Location.X, label73.Bottom + 20);
+            label74.Text = FormaDesniGlavni.FormaHomeScreen.jezik[508];
+
+            button2.Text = FormaDesniGlavni.FormaHomeScreen.jezik[314];
+            button2.Location = new Point(button2.Location.X, label74.Location.Y - (button2.Height - label74.Height) - 5);
+
             #endregion
+
+            RadialWheelAndTireAssemblyRunout  = label24.Location.Y - 5;
+            LateralWheelAndTireAssemblyRunout = label33.Location.Y - 5;
+            RadialWheelRunout                 = label40.Location.Y - 5;
+            LateralWheelRunout                = label48.Location.Y - 5;
+            HubBrakeDiscRunout                = label56.Location.Y - 5;
+            RadialForceVariation              = label63.Location.Y - 5;
+            BentAxleShaft                     = label71.Location.Y - 5;
         }
 
         private void Forma_Desni_Tekst_Tocak_Load(object sender, EventArgs e)
@@ -185,6 +324,41 @@ namespace Proracun_vibracija
         private void gotoBeginning(object sender, EventArgs e)
         {
             panel1.AutoScrollPosition = new Point(0, 0);
+        }
+        
+        private void gotoRadialWheelAndTireAssemblyRunout(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, RadialWheelAndTireAssemblyRunout);
+        }
+
+        private void gotoLateralWheelAndTireAssemblyRunout(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, LateralWheelAndTireAssemblyRunout);
+        }
+
+        private void gotoRadialWheelRunout(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, RadialWheelRunout);
+        }
+
+        private void gotoLateralWheelRunout(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, LateralWheelRunout);
+        }
+
+        private void gotoHubBrakeDiscRunout(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, HubBrakeDiscRunout);
+        }
+
+        private void gotoRadialForceVariation(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, RadialForceVariation);
+        }
+
+        private void gotoBentAxleShaft(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, BentAxleShaft);
         }
 
         public Point PanelScrollPos

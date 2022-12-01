@@ -53,11 +53,11 @@ namespace Proracun_vibracija
         {
             /* FormaDesniTekstDriveline = new Forma_Desni_Tekst_Driveline(this);
             FormaDesniTekstDriveline.Owner = this;
-            FormaDesniTekstDriveline.Show(); */
+            FormaDesniTekstDriveline.Show();
             //
             FormaDesniTekstTocak = new Forma_Desni_Tekst_Tocak(this);
             FormaDesniTekstTocak.Owner = this;
-            FormaDesniTekstTocak.Show();
+            FormaDesniTekstTocak.Show(); */
 
             PromenaJezika();
             this.Location = new Point(FormaHomeScreen.Left + 20, FormaHomeScreen.Top + 20);
