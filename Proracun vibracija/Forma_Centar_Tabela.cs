@@ -9,12 +9,11 @@ using System.Windows.Forms;
 
 namespace Proracun_vibracija
 {
-    public partial class Forma_Centar_Tabela_1 : Form
+    public partial class Forma_Centar_Tabela : Form
     {
-        public Forma_Centar_Glavni   FormaCentarGlavni;
-        public Forma_Centar_Tabela_2 FormaCentarTabela2;
+        public Forma_Centar_Glavni FormaCentarGlavni;
 
-        public Forma_Centar_Tabela_1(Forma_Centar_Glavni konstruktor)
+        public Forma_Centar_Tabela(Forma_Centar_Glavni konstruktor)
         {
             InitializeComponent();
             FormaCentarGlavni = konstruktor;
@@ -22,16 +21,15 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text             = FormaCentarGlavni.FormaHomeScreen.jezik[14];
-            label_RPM.Text        = FormaCentarGlavni.FormaHomeScreen.jezik[15];
-            label_FrMotora.Text   = FormaCentarGlavni.FormaHomeScreen.jezik[16];
-            label_FrMotora2.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[17];
-            label_FrMotora3.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[18];
-            label_FrMotora4.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[19];
-            label_FrBregaste.Text = FormaCentarGlavni.FormaHomeScreen.jezik[20];
-            label_FrPaljenja.Text = FormaCentarGlavni.FormaHomeScreen.jezik[21];
-            label_IzmFrek.Text    = FormaCentarGlavni.FormaHomeScreen.jezik[22];
-            button1.Text          = FormaCentarGlavni.FormaHomeScreen.jezik[23];
+            this.Text             = FormaCentarGlavni.FormaHomeScreen.jezik[15];
+            label_RPM.Text        = FormaCentarGlavni.FormaHomeScreen.jezik[16];
+            label_FrMotora.Text   = FormaCentarGlavni.FormaHomeScreen.jezik[17];
+            label_FrMotora2.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[18];
+            label_FrMotora3.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[19];
+            label_FrMotora4.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[20];
+            label_FrBregaste.Text = FormaCentarGlavni.FormaHomeScreen.jezik[21];
+            label_FrPaljenja.Text = FormaCentarGlavni.FormaHomeScreen.jezik[22];
+            label_IzmFrek.Text    = FormaCentarGlavni.FormaHomeScreen.jezik[23];
         }
 
         private void Forma_Centar_Tabela_1_Load(object sender, EventArgs e)
@@ -76,8 +74,8 @@ namespace Proracun_vibracija
 
         private void Forma_Centar_Tabela_1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormaCentarGlavni.FormaCentarTabela1 = null;
-            FormaCentarGlavni.button1Enabled = true;
+            FormaCentarGlavni.FormaCentarTabela = null;
+            FormaCentarGlavni.buttonTabelaEnabled = true;
         }
 
         public void IspisVrednosti()
@@ -446,20 +444,5 @@ namespace Proracun_vibracija
         }
 
         #endregion
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormaCentarTabela2 = new Forma_Centar_Tabela_2(this);
-            FormaCentarTabela2.Owner = this;
-            FormaCentarTabela2.Show();
-
-            button1.Enabled = false;
-        }
-
-        public Boolean button1Enabled
-        {
-            get { return button1.Enabled; }
-            set { button1.Enabled = value; }
-        }
     }
 }

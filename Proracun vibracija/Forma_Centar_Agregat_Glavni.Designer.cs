@@ -1,6 +1,6 @@
 ﻿namespace Proracun_vibracija
 {
-    partial class Forma_Centar_Tabela_2
+    partial class Forma_Centar_Agregat_Glavni
     {
         /// <summary>
         /// Required designer variable.
@@ -42,13 +42,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox_D6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Racun = new System.Windows.Forms.Button();
+            this.button_Grafik = new System.Windows.Forms.Button();
+            this.button_Tabela = new System.Windows.Forms.Button();
+            this.label_Upozorenje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox_D1
             // 
             this.textBox_D1.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D1.Location = new System.Drawing.Point(333, 47);
+            this.textBox_D1.Location = new System.Drawing.Point(328, 78);
             this.textBox_D1.Name = "textBox_D1";
             this.textBox_D1.Size = new System.Drawing.Size(54, 20);
             this.textBox_D1.TabIndex = 1;
@@ -58,7 +61,7 @@
             // textBox_DR
             // 
             this.textBox_DR.ForeColor = System.Drawing.Color.Black;
-            this.textBox_DR.Location = new System.Drawing.Point(333, 9);
+            this.textBox_DR.Location = new System.Drawing.Point(328, 40);
             this.textBox_DR.Name = "textBox_DR";
             this.textBox_DR.Size = new System.Drawing.Size(54, 20);
             this.textBox_DR.TabIndex = 0;
@@ -69,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 47);
+            this.label2.Location = new System.Drawing.Point(7, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 20);
             this.label2.TabIndex = 8;
@@ -79,7 +82,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(7, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 20);
             this.label1.TabIndex = 7;
@@ -89,7 +92,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 85);
+            this.label3.Location = new System.Drawing.Point(7, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(258, 20);
             this.label3.TabIndex = 8;
@@ -98,7 +101,7 @@
             // textBox_D2
             // 
             this.textBox_D2.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D2.Location = new System.Drawing.Point(333, 85);
+            this.textBox_D2.Location = new System.Drawing.Point(328, 116);
             this.textBox_D2.Name = "textBox_D2";
             this.textBox_D2.Size = new System.Drawing.Size(54, 20);
             this.textBox_D2.TabIndex = 2;
@@ -109,7 +112,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 123);
+            this.label4.Location = new System.Drawing.Point(7, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(222, 20);
             this.label4.TabIndex = 8;
@@ -118,7 +121,7 @@
             // textBox_D3
             // 
             this.textBox_D3.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D3.Location = new System.Drawing.Point(333, 123);
+            this.textBox_D3.Location = new System.Drawing.Point(328, 154);
             this.textBox_D3.Name = "textBox_D3";
             this.textBox_D3.Size = new System.Drawing.Size(54, 20);
             this.textBox_D3.TabIndex = 3;
@@ -128,7 +131,7 @@
             // textBox_D4
             // 
             this.textBox_D4.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D4.Location = new System.Drawing.Point(333, 161);
+            this.textBox_D4.Location = new System.Drawing.Point(328, 192);
             this.textBox_D4.Name = "textBox_D4";
             this.textBox_D4.Size = new System.Drawing.Size(54, 20);
             this.textBox_D4.TabIndex = 4;
@@ -139,7 +142,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 199);
+            this.label6.Location = new System.Drawing.Point(7, 230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(283, 20);
             this.label6.TabIndex = 8;
@@ -148,7 +151,7 @@
             // textBox_D5
             // 
             this.textBox_D5.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D5.Location = new System.Drawing.Point(333, 199);
+            this.textBox_D5.Location = new System.Drawing.Point(328, 230);
             this.textBox_D5.Name = "textBox_D5";
             this.textBox_D5.Size = new System.Drawing.Size(54, 20);
             this.textBox_D5.TabIndex = 5;
@@ -159,7 +162,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 161);
+            this.label5.Location = new System.Drawing.Point(7, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 20);
             this.label5.TabIndex = 8;
@@ -169,7 +172,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 237);
+            this.label7.Location = new System.Drawing.Point(7, 268);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(283, 20);
             this.label7.TabIndex = 8;
@@ -178,29 +181,65 @@
             // textBox_D6
             // 
             this.textBox_D6.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D6.Location = new System.Drawing.Point(333, 237);
+            this.textBox_D6.Location = new System.Drawing.Point(328, 268);
             this.textBox_D6.Name = "textBox_D6";
             this.textBox_D6.Size = new System.Drawing.Size(54, 20);
             this.textBox_D6.TabIndex = 6;
             this.textBox_D6.Enter += new System.EventHandler(this.textBox_D6_Enter);
             this.textBox_D6.Leave += new System.EventHandler(this.textBox_D6_Leave);
             // 
-            // button1
+            // button_Racun
             // 
-            this.button1.Location = new System.Drawing.Point(273, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Izračunaj";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_Racun.Location = new System.Drawing.Point(254, 306);
+            this.button_Racun.Name = "button_Racun";
+            this.button_Racun.Size = new System.Drawing.Size(128, 23);
+            this.button_Racun.TabIndex = 7;
+            this.button_Racun.Text = "Izvrši račun";
+            this.button_Racun.UseVisualStyleBackColor = true;
+            this.button_Racun.Click += new System.EventHandler(this.button_Racun_Click);
             // 
-            // Forma_Centar_Tabela_2
+            // button_Grafik
+            // 
+            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Grafik.Enabled = false;
+            this.button_Grafik.Location = new System.Drawing.Point(328, 335);
+            this.button_Grafik.Name = "button_Grafik";
+            this.button_Grafik.Size = new System.Drawing.Size(54, 23);
+            this.button_Grafik.TabIndex = 17;
+            this.button_Grafik.UseVisualStyleBackColor = true;
+            // 
+            // button_Tabela
+            // 
+            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Tabela.Enabled = false;
+            this.button_Tabela.Location = new System.Drawing.Point(254, 335);
+            this.button_Tabela.Name = "button_Tabela";
+            this.button_Tabela.Size = new System.Drawing.Size(54, 23);
+            this.button_Tabela.TabIndex = 16;
+            this.button_Tabela.UseVisualStyleBackColor = true;
+            this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
+            // 
+            // label_Upozorenje
+            // 
+            this.label_Upozorenje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Upozorenje.ForeColor = System.Drawing.Color.Red;
+            this.label_Upozorenje.Location = new System.Drawing.Point(7, 9);
+            this.label_Upozorenje.Name = "label_Upozorenje";
+            this.label_Upozorenje.Size = new System.Drawing.Size(375, 18);
+            this.label_Upozorenje.TabIndex = 18;
+            this.label_Upozorenje.Text = "Decimale se označavaju tačkom, ne zarezom.";
+            // 
+            // Forma_Centar_Agregat_Glavni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(395, 307);
+            this.ClientSize = new System.Drawing.Size(390, 367);
+            this.Controls.Add(this.label_Upozorenje);
+            this.Controls.Add(this.button_Grafik);
+            this.Controls.Add(this.button_Tabela);
             this.Controls.Add(this.textBox_D6);
             this.Controls.Add(this.textBox_D5);
             this.Controls.Add(this.textBox_D4);
@@ -215,12 +254,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_Racun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Forma_Centar_Tabela_2";
+            this.Name = "Forma_Centar_Agregat_Glavni";
             this.Text = "Unos podataka";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Tabela_2_FormClosed);
-            this.Load += new System.EventHandler(this.Forma_Centar_Tabela_2_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Agregat_Glavni_FormClosed);
+            this.Load += new System.EventHandler(this.Forma_Centar_Agregat_Glavni_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,6 +281,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox_D6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_Racun;
+        private System.Windows.Forms.Button button_Grafik;
+        private System.Windows.Forms.Button button_Tabela;
+        private System.Windows.Forms.Label label_Upozorenje;
     }
 }

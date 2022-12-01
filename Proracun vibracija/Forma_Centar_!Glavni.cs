@@ -11,9 +11,10 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Centar_Glavni : Form
     {
-        public Forma_HomeScreen      FormaHomeScreen;
-        public Forma_Centar_Tabela_1 FormaCentarTabela1;
-        public Forma_Centar_Grafik_1 FormaCentarGrafik1;
+        public Forma_HomeScreen            FormaHomeScreen;
+        public Forma_Centar_Tabela         FormaCentarTabela;
+        public Forma_Centar_Grafik         FormaCentarGrafik;
+        public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
 
         public Forma_Centar_Glavni(Forma_HomeScreen konstruktor)
         {
@@ -25,11 +26,12 @@ namespace Proracun_vibracija
         {
             this.Text                = FormaHomeScreen.jezik[5];
             label_UnosPodataka.Text  = FormaHomeScreen.jezik[6];
-            label_RPM.Text           = FormaHomeScreen.jezik[7];
-            label_IzmFrek.Text       = FormaHomeScreen.jezik[8];
-            label_BrojCilindara.Text = FormaHomeScreen.jezik[9];
-            button3.Text             = FormaHomeScreen.jezik[10];
-            label_Upozorenje.Text    = FormaHomeScreen.jezik[13];
+            label_Upozorenje.Text    = FormaHomeScreen.jezik[7];
+            label_RPM.Text           = FormaHomeScreen.jezik[8];
+            label_IzmFrek.Text       = FormaHomeScreen.jezik[9];
+            label_BrojCilindara.Text = FormaHomeScreen.jezik[10];
+            button_Racun.Text        = FormaHomeScreen.jezik[11];
+            button_Agregat.Text      = FormaHomeScreen.jezik[12];
         }
 
         private void Forma_Centar_Glavni_Load(object sender, EventArgs e)
@@ -509,7 +511,7 @@ namespace Proracun_vibracija
 
         #endregion
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button_Racun_Click(object sender, EventArgs e)
         {
             ResetVrednosti();
             if (Provera())
@@ -522,47 +524,59 @@ namespace Proracun_vibracija
                                         Ako nesto nije uneto kako valja, resetovace se samo privremene promenljive (tj one sa donjim crtama u imenu), dok ce prethodno upisane vrednosti ostati u promenljivama kojima pristupaju ostale forme.
                                         Isto ovo se moze desiti ako unesemo pogresne vrednosti na Forma_Centar_Tabela_2, i onda pokusamo da odradimo refresh sa ove forme, tako da sam i u njen kod dodao privremene promenljive. */
                     Racun();
-                    if (FormaCentarTabela1 == null && FormaCentarGrafik1 == null) button1.Enabled = button2.Enabled = true;
-                    if (FormaCentarTabela1 != null) 
-                    {
-                        FormaCentarTabela1.IspisVrednosti();
-                        if (FormaCentarTabela1.FormaCentarTabela2 != null && FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3 != null) FormaCentarTabela1.FormaCentarTabela2.FormaCentarTabela3.Matematika();
-                    }
-                    if (FormaCentarGrafik1 != null) FormaCentarGrafik1.Racun();
+                    if (FormaCentarTabela == null && FormaCentarGrafik == null && FormaCentarAgregatGlavni == null) button_Tabela.Enabled = button_Grafik.Enabled = button_Agregat.Enabled = true;
+                    if (FormaCentarTabela != null) FormaCentarTabela.IspisVrednosti();
+                    if (FormaCentarGrafik != null) FormaCentarGrafik.Racun();
+                    if (FormaCentarAgregatGlavni != null && FormaCentarAgregatGlavni.aktivirano) FormaCentarAgregatGlavni.Racun(); // vidi komentar pred deklaracijom promenljive aktivarano u FormaCentarAgregatGlavni za objasnjenje njenog prisustva.
                 }
-                else MessageBox.Show(FormaHomeScreen.jezik[12]);
+                else MessageBox.Show(FormaHomeScreen.jezik[14]);
             }
-            else MessageBox.Show(FormaHomeScreen.jezik[11]);
+            else MessageBox.Show(FormaHomeScreen.jezik[13]);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_Tabela_Click(object sender, EventArgs e)
         {
-            FormaCentarTabela1 = new Forma_Centar_Tabela_1(this);
-            FormaCentarTabela1.Owner = this;
-            FormaCentarTabela1.Show();
+            FormaCentarTabela = new Forma_Centar_Tabela(this);
+            FormaCentarTabela.Owner = this;
+            FormaCentarTabela.Show();
 
-            button1.Enabled = false;
+            button_Tabela.Enabled = false;
         }
 
-        public Boolean button1Enabled
+        public Boolean buttonTabelaEnabled
         {
-            get { return button1.Enabled;  }
-            set { button1.Enabled = value; }
+            get { return button_Tabela.Enabled;  }
+            set { button_Tabela.Enabled = value; }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button_Grafik_Click(object sender, EventArgs e)
         {
-            FormaCentarGrafik1 = new Forma_Centar_Grafik_1(this);
-            FormaCentarGrafik1.Owner = this;
-            FormaCentarGrafik1.Show();
+            FormaCentarGrafik = new Forma_Centar_Grafik(this);
+            FormaCentarGrafik.Owner = this;
+            FormaCentarGrafik.Show();
 
-            button2.Enabled = false;
+            button_Grafik.Enabled = false;
         }
 
-        public Boolean button2Enabled
+        public Boolean buttonGrafikEnabled
         {
-            get { return button2.Enabled;  }
-            set { button2.Enabled = value; }
+            get { return button_Grafik.Enabled;  }
+            set { button_Grafik.Enabled = value; }
+        }
+
+        private void button_Agregat_Click(object sender, EventArgs e)
+        {
+            FormaCentarAgregatGlavni = new Forma_Centar_Agregat_Glavni(this);
+            FormaCentarAgregatGlavni.Owner = this;
+            FormaCentarAgregatGlavni.Show();
+
+            button_Agregat.Enabled = false;
+        }
+
+        public Boolean buttonAgregatEnabled
+        {
+            get { return button_Agregat.Enabled;  }
+            set { button_Agregat.Enabled = value; }
         }
     }
 }

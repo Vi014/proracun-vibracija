@@ -1,6 +1,6 @@
 ﻿namespace Proracun_vibracija
 {
-    partial class Forma_Centar_Tabela_3
+    partial class Forma_Centar_Agregat_Tabela
     {
         /// <summary>
         /// Required designer variable.
@@ -561,7 +561,7 @@
             this.label9.TabIndex = 81;
             this.label9.Text = "Izmerene frekvencije";
             // 
-            // Forma_Centar_Tabela_3
+            // Forma_Centar_Agregat_Tabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -613,10 +613,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Forma_Centar_Tabela_3";
+            this.Name = "Forma_Centar_Agregat_Tabela";
             this.Text = "Proračun vibracija agregata";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Tabela_3_FormClosed);
-            this.Load += new System.EventHandler(this.Forma_Centar_Tabela_3_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Agregat_Tabela_FormClosed);
+            this.Load += new System.EventHandler(this.Forma_Centar_Agregat_Tabela_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

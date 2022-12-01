@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Proracun_vibracija
 {
-    public partial class Forma_Centar_Grafik_1 : Form
+    public partial class Forma_Centar_Grafik : Form
     {
         Forma_Centar_Glavni FormaCentarGlavni;
 
@@ -50,7 +50,7 @@ namespace Proracun_vibracija
 
         Double y;
 
-        public Forma_Centar_Grafik_1(Forma_Centar_Glavni konstruktor)
+        public Forma_Centar_Grafik(Forma_Centar_Glavni konstruktor)
         {
             InitializeComponent();
             FormaCentarGlavni = konstruktor;
@@ -58,21 +58,21 @@ namespace Proracun_vibracija
 
         public void PromenaJezika()
         {
-            this.Text    = FormaCentarGlavni.FormaHomeScreen.jezik[57];
-            button1.Text = FormaCentarGlavni.FormaHomeScreen.jezik[58];
-            button2.Text = FormaCentarGlavni.FormaHomeScreen.jezik[59];
-            label1.Text  = FormaCentarGlavni.FormaHomeScreen.jezik[60];
-            checkBox_L1.Text = FormaCentarGlavni.FormaHomeScreen.jezik[73];
-            checkBox_L2.Text = FormaCentarGlavni.FormaHomeScreen.jezik[74];
-            checkBox_L3.Text = FormaCentarGlavni.FormaHomeScreen.jezik[75];
-            checkBox_L4.Text = FormaCentarGlavni.FormaHomeScreen.jezik[76];
-            checkBox_L5.Text = FormaCentarGlavni.FormaHomeScreen.jezik[77];
-            checkBox_L6.Text = FormaCentarGlavni.FormaHomeScreen.jezik[78];
+            this.Text        = FormaCentarGlavni.FormaHomeScreen.jezik[30];
+            button1.Text     = FormaCentarGlavni.FormaHomeScreen.jezik[31];
+            label1.Text      = FormaCentarGlavni.FormaHomeScreen.jezik[32];
+            checkBox_L1.Text = FormaCentarGlavni.FormaHomeScreen.jezik[45];
+            checkBox_L2.Text = FormaCentarGlavni.FormaHomeScreen.jezik[46];
+            checkBox_L3.Text = FormaCentarGlavni.FormaHomeScreen.jezik[47];
+            checkBox_L4.Text = FormaCentarGlavni.FormaHomeScreen.jezik[48];
+            checkBox_L5.Text = FormaCentarGlavni.FormaHomeScreen.jezik[49];
+            checkBox_L6.Text = FormaCentarGlavni.FormaHomeScreen.jezik[50];
+
+            IscrtajGrafik();
         }
 
         private void Forma_Centar_Grafik_1_Load(object sender, EventArgs e)
         {
-            PromenaJezika();
             this.Location = new Point(0, 0);
 
             g = panel1.CreateGraphics();
@@ -83,13 +83,14 @@ namespace Proracun_vibracija
 
         private void Forma_Centar_Grafik_1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            FormaCentarGlavni.FormaCentarGrafik1 = null;
-            FormaCentarGlavni.button2Enabled     = true;
+            FormaCentarGlavni.FormaCentarGrafik   = null;
+            FormaCentarGlavni.buttonGrafikEnabled = true;
         }
 
         private void Forma_Centar_Grafik_1_Shown(object sender, EventArgs e)
         {
             Racun();
+            PromenaJezika();
         }
 
         public void Racun()
@@ -191,14 +192,14 @@ namespace Proracun_vibracija
         private void IscrtajGrafik()
         {
             g.Clear(Color.White);
-            g.DrawImage(Properties.Resources.placeholder, panel1.Width / 2, panel1.Height / 2);
+            g.DrawImage(Properties.Resources.placeholder, panel1.Width / 2 - Properties.Resources.placeholder.Width / 2, panel1.Height / 2 - Properties.Resources.placeholder.Height / 2);
 
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[79], osaFont, cetkaL1, centarX + 30, 0);
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[80], osaFont, cetkaL2, centarX + 30, 15);
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[81], osaFont, cetkaL3, centarX + 30, 30);
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[82], osaFont, cetkaL4, centarX + 30, 45);
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[83], osaFont, cetkaL5, centarX + 30, 60);
-            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[84], osaFont, cetkaL6, centarX + 30, 75);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[51], osaFont, cetkaL1, centarX + 30, 0);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[52], osaFont, cetkaL2, centarX + 30, 15);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[53], osaFont, cetkaL3, centarX + 30, 30);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[54], osaFont, cetkaL4, centarX + 30, 45);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[55], osaFont, cetkaL5, centarX + 30, 60);
+            g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[56], osaFont, cetkaL6, centarX + 30, 75);
 
             g.DrawLine(p, 0, centarY, panel1.Width, centarY);  // iscrtaj x-osu
             g.DrawLine(p, centarX, 0, centarX, panel1.Height); // iscrtaj y-osu
@@ -345,8 +346,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[61]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[62]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[33]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[34]);
         }
 
         private void button_FM2_Click(object sender, EventArgs e)
@@ -380,8 +381,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[63]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[64]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[35]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[36]);
         }
 
         private void button_FM3_Click(object sender, EventArgs e)
@@ -415,8 +416,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[65]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[66]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[37]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[38]);
         }
 
         private void button_FM4_Click(object sender, EventArgs e)
@@ -450,8 +451,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[67]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[68]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[39]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[40]);
         }
 
         private void button_FB_Click(object sender, EventArgs e)
@@ -485,8 +486,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[69]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[70]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[41]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[42]);
         }
 
         private void button_FP_Click(object sender, EventArgs e)
@@ -520,8 +521,8 @@ namespace Proracun_vibracija
                                                     (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F33 + 1)) ||
                                                                                     (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F33 + 1)))))))
-                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[71]);
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[72]);
+                 MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[43]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[44]);
         }
     }
 }

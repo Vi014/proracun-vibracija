@@ -44,11 +44,12 @@
             this.textBox_F23 = new System.Windows.Forms.TextBox();
             this.textBox_F33 = new System.Windows.Forms.TextBox();
             this.label_BrojCilindara = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_Tabela = new System.Windows.Forms.Button();
+            this.button_Grafik = new System.Windows.Forms.Button();
+            this.button_Racun = new System.Windows.Forms.Button();
             this.comboBox_BrojCilindara = new System.Windows.Forms.ComboBox();
             this.label_Upozorenje = new System.Windows.Forms.Label();
+            this.button_Agregat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_UnosPodataka
@@ -199,39 +200,39 @@
             this.label_BrojCilindara.TabIndex = 0;
             this.label_BrojCilindara.Text = "Broj cilindara";
             // 
-            // button1
+            // button_Tabela
             // 
-            this.button1.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(214, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 23);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Tabela.Enabled = false;
+            this.button_Tabela.Location = new System.Drawing.Point(214, 228);
+            this.button_Tabela.Name = "button_Tabela";
+            this.button_Tabela.Size = new System.Drawing.Size(54, 23);
+            this.button_Tabela.TabIndex = 14;
+            this.button_Tabela.UseVisualStyleBackColor = true;
+            this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
             // 
-            // button2
+            // button_Grafik
             // 
-            this.button2.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(288, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(54, 23);
-            this.button2.TabIndex = 15;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Grafik.Enabled = false;
+            this.button_Grafik.Location = new System.Drawing.Point(288, 228);
+            this.button_Grafik.Name = "button_Grafik";
+            this.button_Grafik.Size = new System.Drawing.Size(54, 23);
+            this.button_Grafik.TabIndex = 15;
+            this.button_Grafik.UseVisualStyleBackColor = true;
+            this.button_Grafik.Click += new System.EventHandler(this.button_Grafik_Click);
             // 
-            // button3
+            // button_Racun
             // 
-            this.button3.Location = new System.Drawing.Point(214, 199);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Izvrši racun";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button_Racun.Location = new System.Drawing.Point(214, 199);
+            this.button_Racun.Name = "button_Racun";
+            this.button_Racun.Size = new System.Drawing.Size(128, 23);
+            this.button_Racun.TabIndex = 13;
+            this.button_Racun.Text = "Izvrši racun";
+            this.button_Racun.UseVisualStyleBackColor = true;
+            this.button_Racun.Click += new System.EventHandler(this.button_Racun_Click);
             // 
             // comboBox_BrojCilindara
             // 
@@ -257,23 +258,36 @@
             // 
             // label_Upozorenje
             // 
+            this.label_Upozorenje.ForeColor = System.Drawing.Color.Red;
             this.label_Upozorenje.Location = new System.Drawing.Point(28, 32);
             this.label_Upozorenje.Name = "label_Upozorenje";
             this.label_Upozorenje.Size = new System.Drawing.Size(315, 18);
             this.label_Upozorenje.TabIndex = 16;
             this.label_Upozorenje.Text = "Decimale se označavaju tačkom, ne zarezom.";
             // 
+            // button_Agregat
+            // 
+            this.button_Agregat.Enabled = false;
+            this.button_Agregat.Location = new System.Drawing.Point(214, 257);
+            this.button_Agregat.Name = "button_Agregat";
+            this.button_Agregat.Size = new System.Drawing.Size(128, 23);
+            this.button_Agregat.TabIndex = 13;
+            this.button_Agregat.Text = "Vibracije agregata";
+            this.button_Agregat.UseVisualStyleBackColor = true;
+            this.button_Agregat.Click += new System.EventHandler(this.button_Agregat_Click);
+            // 
             // Forma_Centar_Glavni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(355, 257);
+            this.ClientSize = new System.Drawing.Size(355, 292);
             this.Controls.Add(this.label_Upozorenje);
             this.Controls.Add(this.comboBox_BrojCilindara);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button_Agregat);
+            this.Controls.Add(this.button_Racun);
+            this.Controls.Add(this.button_Grafik);
+            this.Controls.Add(this.button_Tabela);
             this.Controls.Add(this.textBox_F33);
             this.Controls.Add(this.textBox_F32);
             this.Controls.Add(this.textBox_F31);
@@ -318,10 +332,11 @@
         private System.Windows.Forms.TextBox textBox_F23;
         private System.Windows.Forms.TextBox textBox_F33;
         private System.Windows.Forms.Label label_BrojCilindara;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_Tabela;
+        private System.Windows.Forms.Button button_Grafik;
+        private System.Windows.Forms.Button button_Racun;
         private System.Windows.Forms.ComboBox comboBox_BrojCilindara;
         private System.Windows.Forms.Label label_Upozorenje;
+        private System.Windows.Forms.Button button_Agregat;
     }
 }
