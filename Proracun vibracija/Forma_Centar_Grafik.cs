@@ -317,210 +317,102 @@ namespace Proracun_vibracija
 
         private void button_FM_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F23 + 1)))))) ||
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F23 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM1 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM2 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FM3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM3 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[33]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[34]);
         }
 
         private void button_FM2_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F23 + 1)))))) ||
-                                                                                    
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM12 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM12 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FM22 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM22 <= (FormaCentarGlavni.F23 + 1) )))) ||
+
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FM32 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM32 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[35]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[36]);
         }
 
         private void button_FM3_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F23 + 1)))))) ||
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F23 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM13 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM13 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM23 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM23 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FM33 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM33 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[37]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[38]);
         }
 
         private void button_FM4_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F23 + 1)))))) ||
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F23 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FM14 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM14 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM24 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM24 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FM34 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FM34 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[39]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[40]);
         }
 
         private void button_FB_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F23 + 1)))))) ||
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F23 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FB1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB1 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB2 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FB3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FB3 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[41]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[42]);
         }
 
         private void button_FP_Click(object sender, EventArgs e)
         {
-            if     ((FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F11 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F11 + 1)))) ||
-                                                    (FormaCentarGlavni.F12 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F12 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F12 + 1)))) ||
-                                                    (FormaCentarGlavni.F13 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F13 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F13 + 1)))))) ||
+            if    ( (FormaCentarGlavni.rpm1unet && ((FormaCentarGlavni.F11 != 0 && (FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F11 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F11 + 1) )) ||
+                                                    (FormaCentarGlavni.F12 != 0 && (FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F12 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F12 + 1) )) ||
+                                                    (FormaCentarGlavni.F13 != 0 && (FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F13 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F13 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F21 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F21 + 1)))) ||
-                                                    (FormaCentarGlavni.F22 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F22 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F22 + 1)))) ||
-                                                    (FormaCentarGlavni.F23 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F23 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F23 + 1)))))) ||
+                    (FormaCentarGlavni.rpm2unet && ((FormaCentarGlavni.F21 != 0 && (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F21 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F21 + 1) )) ||
+                                                    (FormaCentarGlavni.F22 != 0 && (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F22 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F22 + 1) )) ||
+                                                    (FormaCentarGlavni.F23 != 0 && (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F23 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F23 + 1) )))) ||
 
-                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F31 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F31 + 1)))) ||
-                                                    (FormaCentarGlavni.F32 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F32 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F32 + 1)))) ||
-                                                    (FormaCentarGlavni.F33 != 0 && ((FormaCentarGlavni.FP1 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP1 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP2 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP2 <= (FormaCentarGlavni.F33 + 1)) ||
-                                                                                    (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F33 + 1)))))))
+                    (FormaCentarGlavni.rpm3unet && ((FormaCentarGlavni.F31 != 0 && (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F31 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F31 + 1) )) ||
+                                                    (FormaCentarGlavni.F32 != 0 && (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F32 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F32 + 1) )) ||
+                                                    (FormaCentarGlavni.F33 != 0 && (FormaCentarGlavni.FP3 >= (FormaCentarGlavni.F33 - 1) && FormaCentarGlavni.FP3 <= (FormaCentarGlavni.F33 + 1) )))) )
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[43]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[44]);
         }
