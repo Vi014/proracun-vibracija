@@ -66,7 +66,7 @@
             this.label1.Size = new System.Drawing.Size(78, 275);
             this.label1.TabIndex = 18;
             this.label1.Text = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornj" +
-                "im i levim ivicama ekrana i pritisnite dugme:";
+    "im i levim ivicama ekrana i pritisnite dugme:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // button1
@@ -81,9 +81,10 @@
             // 
             // button_FKx2
             // 
-            this.button_FKx2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FKx2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FKx2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FKx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FKx2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FKx2.ForeColor = System.Drawing.Color.Black;
             this.button_FKx2.Location = new System.Drawing.Point(1315, 167);
             this.button_FKx2.Name = "button_FKx2";
             this.button_FKx2.Size = new System.Drawing.Size(20, 20);
@@ -94,9 +95,10 @@
             // 
             // button_FKx1
             // 
-            this.button_FKx1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FKx1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FKx1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FKx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FKx1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FKx1.ForeColor = System.Drawing.Color.Black;
             this.button_FKx1.Location = new System.Drawing.Point(1315, 141);
             this.button_FKx1.Name = "button_FKx1";
             this.button_FKx1.Size = new System.Drawing.Size(20, 20);
@@ -107,9 +109,10 @@
             // 
             // button_FTx4
             // 
-            this.button_FTx4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FTx4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FTx4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FTx4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FTx4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FTx4.ForeColor = System.Drawing.Color.Black;
             this.button_FTx4.Location = new System.Drawing.Point(1315, 115);
             this.button_FTx4.Name = "button_FTx4";
             this.button_FTx4.Size = new System.Drawing.Size(20, 20);
@@ -120,9 +123,10 @@
             // 
             // button_FTx3
             // 
-            this.button_FTx3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FTx3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FTx3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FTx3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FTx3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FTx3.ForeColor = System.Drawing.Color.Black;
             this.button_FTx3.Location = new System.Drawing.Point(1315, 89);
             this.button_FTx3.Name = "button_FTx3";
             this.button_FTx3.Size = new System.Drawing.Size(20, 20);
@@ -133,9 +137,10 @@
             // 
             // button_FTx2
             // 
-            this.button_FTx2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FTx2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FTx2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FTx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FTx2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FTx2.ForeColor = System.Drawing.Color.Black;
             this.button_FTx2.Location = new System.Drawing.Point(1315, 63);
             this.button_FTx2.Name = "button_FTx2";
             this.button_FTx2.Size = new System.Drawing.Size(20, 20);
@@ -146,9 +151,10 @@
             // 
             // button_FTx1
             // 
-            this.button_FTx1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FTx1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FTx1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FTx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FTx1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FTx1.ForeColor = System.Drawing.Color.Black;
             this.button_FTx1.Location = new System.Drawing.Point(1315, 37);
             this.button_FTx1.Name = "button_FTx1";
             this.button_FTx1.Size = new System.Drawing.Size(20, 20);
@@ -251,9 +257,10 @@
             // 
             // button_FKx3
             // 
-            this.button_FKx3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FKx3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FKx3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FKx3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FKx3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FKx3.ForeColor = System.Drawing.Color.Black;
             this.button_FKx3.Location = new System.Drawing.Point(1315, 193);
             this.button_FKx3.Name = "button_FKx3";
             this.button_FKx3.Size = new System.Drawing.Size(20, 20);
@@ -276,9 +283,10 @@
             // 
             // button_FKx4
             // 
-            this.button_FKx4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_FKx4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_FKx4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_FKx4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_FKx4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button_FKx4.ForeColor = System.Drawing.Color.Black;
             this.button_FKx4.Location = new System.Drawing.Point(1315, 219);
             this.button_FKx4.Name = "button_FKx4";
             this.button_FKx4.Size = new System.Drawing.Size(20, 20);

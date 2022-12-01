@@ -52,7 +52,7 @@
             this.label1.Size = new System.Drawing.Size(78, 352);
             this.label1.TabIndex = 14;
             this.label1.Text = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornj" +
-                "im i levim ivicama ekrana i pritisnite dugme:";
+    "im i levim ivicama ekrana i pritisnite dugme:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // button1
@@ -67,7 +67,8 @@
             // 
             // button_D6
             // 
-            this.button_D6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D6.Location = new System.Drawing.Point(1315, 142);
@@ -80,7 +81,8 @@
             // 
             // button_D5
             // 
-            this.button_D5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D5.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D5.Location = new System.Drawing.Point(1315, 116);
@@ -93,7 +95,8 @@
             // 
             // button_D4
             // 
-            this.button_D4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D4.Location = new System.Drawing.Point(1315, 90);
@@ -106,7 +109,8 @@
             // 
             // button_D3
             // 
-            this.button_D3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D3.Location = new System.Drawing.Point(1315, 64);
@@ -119,7 +123,8 @@
             // 
             // button_D2
             // 
-            this.button_D2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D2.Location = new System.Drawing.Point(1315, 38);
@@ -132,7 +137,8 @@
             // 
             // button_D1
             // 
-            this.button_D1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button_D1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button_D1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_D1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_D1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button_D1.Location = new System.Drawing.Point(1315, 12);

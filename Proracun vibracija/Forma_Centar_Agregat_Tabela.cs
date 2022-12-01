@@ -12,6 +12,7 @@ namespace Proracun_vibracija
     public partial class Forma_Centar_Agregat_Tabela : Form
     {
         public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
+        public Forma_Centar_Tekst FormaCentarTekst;
 
         public Forma_Centar_Agregat_Tabela(Forma_Centar_Agregat_Glavni konstruktor)
         {

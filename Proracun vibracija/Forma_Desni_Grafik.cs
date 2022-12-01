@@ -257,6 +257,50 @@ namespace Proracun_vibracija
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
 
             IscrtajGrafik();
+
+            #region boje na dugmicima sa znakom pitanja
+
+            if (provera(FormaDesniGlavni.FT1, FormaDesniGlavni.FT2, FormaDesniGlavni.FT3, FormaDesniGlavni.FT2_1, FormaDesniGlavni.FT2_2, FormaDesniGlavni.FT2_3))
+                button_FTx1.ForeColor = button_FTx1.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FTx1.ForeColor = button_FTx1.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FT1x2, FormaDesniGlavni.FT2x2, FormaDesniGlavni.FT3x2, FormaDesniGlavni.FT2_1x2, FormaDesniGlavni.FT2_2x2, FormaDesniGlavni.FT2_3x2))
+                button_FTx2.ForeColor = button_FTx2.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FTx2.ForeColor = button_FTx2.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FT1x3, FormaDesniGlavni.FT2x3, FormaDesniGlavni.FT3x3, FormaDesniGlavni.FT2_1x3, FormaDesniGlavni.FT2_2x3, FormaDesniGlavni.FT2_3x3))
+                button_FTx3.ForeColor = button_FTx3.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FTx3.ForeColor = button_FTx3.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FT1x4, FormaDesniGlavni.FT2x4, FormaDesniGlavni.FT3x4, FormaDesniGlavni.FT2_1x4, FormaDesniGlavni.FT2_2x4, FormaDesniGlavni.FT2_3x4))
+                button_FTx4.ForeColor = button_FTx4.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FTx4.ForeColor = button_FTx4.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FK1, FormaDesniGlavni.FK2, FormaDesniGlavni.FK3, FormaDesniGlavni.FK2_1, FormaDesniGlavni.FK2_2, FormaDesniGlavni.FK2_3))
+                button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FKx1.ForeColor = button_FKx1.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FK1x2, FormaDesniGlavni.FK2x2, FormaDesniGlavni.FK3x2, FormaDesniGlavni.FK2_1x2, FormaDesniGlavni.FK2_2x2, FormaDesniGlavni.FK2_3x2))
+                button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FKx2.ForeColor = button_FKx2.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FK1x3, FormaDesniGlavni.FK2x3, FormaDesniGlavni.FK3x3, FormaDesniGlavni.FK2_1x3, FormaDesniGlavni.FK2_2x3, FormaDesniGlavni.FK2_3x3))
+                button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FKx3.ForeColor = button_FKx3.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaDesniGlavni.FK1x4, FormaDesniGlavni.FK2x4, FormaDesniGlavni.FK3x4, FormaDesniGlavni.FK2_1x4, FormaDesniGlavni.FK2_2x4, FormaDesniGlavni.FK2_3x4))
+                button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_FKx4.ForeColor = button_FKx4.FlatAppearance.BorderColor = Color.Black;
+
+            #endregion
         }
 
         private void IscrtajGrafik()
@@ -485,243 +529,87 @@ namespace Proracun_vibracija
 
         #region dugmici sa znakom pitanja
 
+        private Boolean provera(Double arg1, Double arg2, Double arg3, Double arg1alt, Double arg2alt, Double arg3alt)
+        {
+            return ((FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (arg1 >= (FormaDesniGlavni.F11 - 1) && arg1 <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (arg1 >= (FormaDesniGlavni.F12 - 1) && arg1 <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (arg1 >= (FormaDesniGlavni.F13 - 1) && arg1 <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (arg2 >= (FormaDesniGlavni.F21 - 1) && arg2 <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (arg2 >= (FormaDesniGlavni.F22 - 1) && arg2 <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (arg2 >= (FormaDesniGlavni.F23 - 1) && arg2 <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (arg3 >= (FormaDesniGlavni.F31 - 1) && arg3 <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (arg3 >= (FormaDesniGlavni.F32 - 1) && arg3 <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (arg3 >= (FormaDesniGlavni.F33 - 1) && arg3 <= (FormaDesniGlavni.F33 + 1))))) ||
+                (FormaDesniGlavni.checkBox1Checked &&
+                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (arg1alt >= (FormaDesniGlavni.F11 - 1) && arg1alt <= (FormaDesniGlavni.F11 + 1))) ||
+                                                 (FormaDesniGlavni.F12 != 0 && (arg1alt >= (FormaDesniGlavni.F12 - 1) && arg1alt <= (FormaDesniGlavni.F12 + 1))) ||
+                                                 (FormaDesniGlavni.F13 != 0 && (arg1alt >= (FormaDesniGlavni.F13 - 1) && arg1alt <= (FormaDesniGlavni.F13 + 1))))) ||
+
+                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (arg2alt >= (FormaDesniGlavni.F21 - 1) && arg2alt <= (FormaDesniGlavni.F21 + 1))) ||
+                                                 (FormaDesniGlavni.F22 != 0 && (arg2alt >= (FormaDesniGlavni.F22 - 1) && arg2alt <= (FormaDesniGlavni.F22 + 1))) ||
+                                                 (FormaDesniGlavni.F23 != 0 && (arg2alt >= (FormaDesniGlavni.F23 - 1) && arg2alt <= (FormaDesniGlavni.F23 + 1))))) ||
+
+                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (arg3alt >= (FormaDesniGlavni.F31 - 1) && arg3alt <= (FormaDesniGlavni.F31 + 1))) ||
+                                                 (FormaDesniGlavni.F32 != 0 && (arg3alt >= (FormaDesniGlavni.F32 - 1) && arg3alt <= (FormaDesniGlavni.F32 + 1))) ||
+                                                 (FormaDesniGlavni.F33 != 0 && (arg3alt >= (FormaDesniGlavni.F33 - 1) && arg3alt <= (FormaDesniGlavni.F33 + 1)))))
+                ));
+        }
+
         private void button_FTx1_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT1 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT1 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT1 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3 <= (FormaDesniGlavni.F33 + 1) )))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[152]);
+            if (provera(FormaDesniGlavni.FT1, FormaDesniGlavni.FT2, FormaDesniGlavni.FT3, FormaDesniGlavni.FT2_1, FormaDesniGlavni.FT2_2, FormaDesniGlavni.FT2_3))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[152]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[153]);
         }
 
         private void button_FTx2_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT1x2 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT1x2 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT1x2 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2x2 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2x2 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2x2 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x2 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x2 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x2 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x2 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[154]);
+            if (provera(FormaDesniGlavni.FT1x2, FormaDesniGlavni.FT2x2, FormaDesniGlavni.FT3x2, FormaDesniGlavni.FT2_1x2, FormaDesniGlavni.FT2_2x2, FormaDesniGlavni.FT2_3x2))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[154]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[155]);
         }
 
         private void button_FTx3_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT1x3 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT1x3 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT1x3 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2x3 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2x3 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2x3 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x3 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x3 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x3 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[156]);
+            if (provera(FormaDesniGlavni.FT1x3, FormaDesniGlavni.FT2x3, FormaDesniGlavni.FT3x3, FormaDesniGlavni.FT2_1x3, FormaDesniGlavni.FT2_2x3, FormaDesniGlavni.FT2_3x3))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[156]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[157]);
         }
 
         private void button_FTx4_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT1x4 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT1x4 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT1x4 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2x4 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2x4 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2x4 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT3x4 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FT2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FT2_1x4 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FT2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FT2_2x4 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FT2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FT2_3x4 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[158]);
+            if (provera(FormaDesniGlavni.FT1x4, FormaDesniGlavni.FT2x4, FormaDesniGlavni.FT3x4, FormaDesniGlavni.FT2_1x4, FormaDesniGlavni.FT2_2x4, FormaDesniGlavni.FT2_3x4))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[158]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[159]);
         }
 
         private void button_FKx1_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK1 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK1 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK1 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[160]);
+            if (provera(FormaDesniGlavni.FK1, FormaDesniGlavni.FK2, FormaDesniGlavni.FK3, FormaDesniGlavni.FK2_1, FormaDesniGlavni.FK2_2, FormaDesniGlavni.FK2_3))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[160]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[161]);
         }
 
         private void button_FKx2_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK1x2 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK1x2 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK1x2 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2x2 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2x2 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2x2 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x2 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x2 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x2 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x2 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x2 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x2 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x2 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[162]);
+            if (provera(FormaDesniGlavni.FK1x2, FormaDesniGlavni.FK2x2, FormaDesniGlavni.FK3x2, FormaDesniGlavni.FK2_1x2, FormaDesniGlavni.FK2_2x2, FormaDesniGlavni.FK2_3x2))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[162]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[163]);
         }
 
         private void button_FKx3_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK1x3 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK1x3 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK1x3 <= (FormaDesniGlavni.F13 + 1) )))) ||
-                                                  
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2x3 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2x3 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2x3 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x3 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x3 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x3 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x3 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x3 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x3 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x3 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[164]);
+            if (provera(FormaDesniGlavni.FK1x3, FormaDesniGlavni.FK2x3, FormaDesniGlavni.FK3x3, FormaDesniGlavni.FK2_1x3, FormaDesniGlavni.FK2_2x3, FormaDesniGlavni.FK2_3x3))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[164]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[165]);
         }
 
         private void button_FKx4_Click(object sender, EventArgs e)
         {
-            if    ( (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK1x4 <= (FormaDesniGlavni.F11 + 1) )) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK1x4 <= (FormaDesniGlavni.F12 + 1) )) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK1x4 <= (FormaDesniGlavni.F13 + 1) )))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2x4 <= (FormaDesniGlavni.F21 + 1) )) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2x4 <= (FormaDesniGlavni.F22 + 1) )) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2x4 <= (FormaDesniGlavni.F23 + 1) )))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F31 + 1) )) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F32 + 1) )) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK3x4 <= (FormaDesniGlavni.F33 + 1))))) ||
-                (FormaDesniGlavni.checkBox1Checked &&
-                    (FormaDesniGlavni.v1unet && ((FormaDesniGlavni.F11 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F11 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F11 + 1))) ||
-                                                 (FormaDesniGlavni.F12 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F12 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F12 + 1))) ||
-                                                 (FormaDesniGlavni.F13 != 0 && (FormaDesniGlavni.FK2_1x4 >= (FormaDesniGlavni.F13 - 1) && FormaDesniGlavni.FK2_1x4 <= (FormaDesniGlavni.F13 + 1))))) ||
-
-                    (FormaDesniGlavni.v2unet && ((FormaDesniGlavni.F21 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F21 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F21 + 1))) ||
-                                                 (FormaDesniGlavni.F22 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F22 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F22 + 1))) ||
-                                                 (FormaDesniGlavni.F23 != 0 && (FormaDesniGlavni.FK2_2x4 >= (FormaDesniGlavni.F23 - 1) && FormaDesniGlavni.FK2_2x4 <= (FormaDesniGlavni.F23 + 1))))) ||
-
-                    (FormaDesniGlavni.v3unet && ((FormaDesniGlavni.F31 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F31 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F31 + 1))) ||
-                                                 (FormaDesniGlavni.F32 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F32 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F32 + 1))) ||
-                                                 (FormaDesniGlavni.F33 != 0 && (FormaDesniGlavni.FK2_3x4 >= (FormaDesniGlavni.F33 - 1) && FormaDesniGlavni.FK2_3x4 <= (FormaDesniGlavni.F33 + 1)))))
-                ))
-                 MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[166]);
+            if (provera(FormaDesniGlavni.FK1x4, FormaDesniGlavni.FK2x4, FormaDesniGlavni.FK3x4, FormaDesniGlavni.FK2_1x4, FormaDesniGlavni.FK2_2x4, FormaDesniGlavni.FK2_3x4))
+                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[166]);
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[167]);
         }
 

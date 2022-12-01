@@ -34,16 +34,18 @@
             this.dugmeLevo = new System.Windows.Forms.Button();
             this.dugmeCentar = new System.Windows.Forms.Button();
             this.dugmeDesno = new System.Windows.Forms.Button();
+            this.dugmeDodatno = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dugmeDodatno = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,6 +109,26 @@
             this.dugmeDesno.UseVisualStyleBackColor = true;
             this.dugmeDesno.Click += new System.EventHandler(this.dugmeDesno_Click);
             // 
+            // dugmeDodatno
+            // 
+            this.dugmeDodatno.Location = new System.Drawing.Point(40, 484);
+            this.dugmeDodatno.Name = "dugmeDodatno";
+            this.dugmeDodatno.Size = new System.Drawing.Size(135, 23);
+            this.dugmeDodatno.TabIndex = 3;
+            this.dugmeDodatno.Text = "Uvod";
+            this.dugmeDodatno.UseVisualStyleBackColor = true;
+            this.dugmeDodatno.Click += new System.EventHandler(this.dugmeDodatno_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Proracun_vibracija.Properties.Resources.bg;
+            this.pictureBox6.Location = new System.Drawing.Point(344, 12);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(381, 40);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 7;
+            this.pictureBox6.TabStop = false;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Proracun_vibracija.Properties.Resources.febi_RTM_Vibration_Red;
@@ -127,26 +149,6 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Proracun_vibracija.Properties.Resources.test_drive_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(217, 343);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 135);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dugmeDodatno
-            // 
-            this.dugmeDodatno.Location = new System.Drawing.Point(40, 484);
-            this.dugmeDodatno.Name = "dugmeDodatno";
-            this.dugmeDodatno.Size = new System.Drawing.Size(135, 23);
-            this.dugmeDodatno.TabIndex = 3;
-            this.dugmeDodatno.Text = "Uvod";
-            this.dugmeDodatno.UseVisualStyleBackColor = true;
-            this.dugmeDodatno.Click += new System.EventHandler(this.dugmeDodatno_Click);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Proracun_vibracija.Properties.Resources.terms;
@@ -156,6 +158,16 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Proracun_vibracija.Properties.Resources.test_drive_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(217, 343);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(135, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -174,6 +186,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 529);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
@@ -190,10 +203,12 @@
             this.MaximizeBox = false;
             this.Name = "Forma_HomeScreen";
             this.Text = "Proračun vibracija";
+            this.Load += new System.EventHandler(this.Forma_HomeScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
@@ -213,6 +228,7 @@
         private System.Windows.Forms.Button dugmeDodatno;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
 

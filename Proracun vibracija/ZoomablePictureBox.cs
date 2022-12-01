@@ -16,8 +16,10 @@ namespace Proracun_vibracija
             InitializeComponent();
         }
 
-        public void Zoom(PictureBox TargetPictureBox, Button TargetButton, Panel TargetPanel)
+        public void Zoom(PictureBox TargetPictureBox, Button TargetButton, Panel TargetPanel, Form TargetForm)
         {
+            TargetForm.ActiveControl = this;
+
             TargetPictureBox.Image   = Image;
             TargetPictureBox.Visible = TargetButton.Visible = true;
             TargetPanel.Enabled = false;

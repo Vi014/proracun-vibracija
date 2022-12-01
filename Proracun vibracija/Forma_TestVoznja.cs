@@ -164,6 +164,9 @@ namespace Proracun_vibracija
             label46.Location = new Point(label1.Location.X, label45.Bottom + 20);
             label46.Text = FormaHomeScreen.jezik[249];
 
+            button1.Text = FormaHomeScreen.jezik[315];
+            button1.Location = new Point(button1.Location.X, label46.Location.Y - (button1.Height - label46.Height) - 5);
+
             #endregion
 
             PreRoadTestInspection = label3.Location.Y  - 5;

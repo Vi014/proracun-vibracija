@@ -29,7 +29,7 @@ namespace Proracun_vibracija
                                 "Saveti za test vožnju",
                                 "Motor",
                                 "Auto",
-                                "PLACEHOLDERSTRING Forma_HomeScreen.dugmeLevo_Click",
+                                "PLACEHOLDERSTRING Forma_HomeScreen.dugmeLevo_Click", // obrisati
 
                                 // Forma_Centar_Glavni
                                 "Vibracije motora",
@@ -38,10 +38,10 @@ namespace Proracun_vibracija
                                 "RPM",
                                 "Izmerena frekvencija",
                                 "Broj cilindara",
-                                "Izvrši račun",
+                                "Potvrdi podatke",
                                 "Vibracije agregata",
-                                "Greška, nedovoljan broj polja popunjen.",
-                                "Greška, u nekom od polja je uneta nevažeća vrednost.",
+                                "Nedovoljan broj polja popunjen. Neophodno je popuniti barem jedno od polja za RPM i uneti barem jednu frekvenciju za to polje.",
+                                "U nekom od polja je uneta nevažeća vrednost.",
 
                                 // Forma_Centar_Tabela
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela.Text",
@@ -99,9 +99,9 @@ namespace Proracun_vibracija
                                 "Prečnik remenice pumpe za vodu",
                                 "Prečnik remenice dodatnog agregata 1",
                                 "Prečnik remenice dodatnog agregata 2",
-                                "Izvrši račun",
-                                "Greška, nedovoljno polja popunjeno.",
-                                "Greška, u nekom od polja je uneta nevažeća vrednost.",
+                                "Potvrdi podatke",
+                                "Nedovoljno polja popunjeno. Neophodno je popuniti barem polje za prečnik remenice radilice i još jedno polje.",
+                                "U nekom od polja je uneta nevažeća vrednost.",
 
                                 // Forma_Centar_Agregat_Tabela
                                 "Proračun vibracija agregata",
@@ -164,9 +164,9 @@ namespace Proracun_vibracija
                                 "Izmerene vrednosti",
                                 "Brzina vozila (km/h)",
                                 "Frekvencija",
-                                "Izvrši racun",
-                                "Greška, nedovoljno polja popunjeno.",
-                                "Greška, u nekom od polja je uneta nevažeća vrednost.",
+                                "Potvrdi podatke",
+                                "Nedovoljno polja popunjeno. Neophodno je popuniti barem polja za širinu, visinu i prečnik felne (kao i ista za drugu osovinu u slučaju da su dimenzije za nju različite), i uneti barem jednu brzinu i frekvenciju za tu brzinu.",
+                                "U nekom od polja je uneta nevažeća vrednost.",
 
                                 // Forma_Desni_Tabela
                                 "PLACEHOLDERSTRING Forma_Desni_Tabela.Text",
@@ -364,7 +364,35 @@ namespace Proracun_vibracija
                                 "For example: \r\n      - Vibrating force is engine \r\n      - Resonating system is exhaust \r\n      - Transmission system is contact of the exhaust and body \r\n      - Vibrating element is the body panel",
                                 "By repairing elastic contact between exhaust and body, NVH problem will be resolved.",
                                 "Measuring the frequency",
-                                "In order to find the source of vehicle vibrations it is necessary to measure the vibrating frequency and engine/vehicle speed \r\nat which that vibration frequency occurs. There are many tools as shown in the figures below."
+                                "In order to find the source of vehicle vibrations it is necessary to measure the vibrating frequency and engine/vehicle speed \r\nat which that vibration frequency occurs. There are many tools as shown in the figures below.",
+
+                                // Forma_Centar_!Glavni
+                                "U ovo polje mora biti unet broj između 100 i 8000.", // 306
+                                "U ovo polje mora biti unet broj između 1 i 500.", // 307
+                                // Forma_Centar_Agregat_Glavni
+                                "U ovo polje mora biti unet pozitivan broj.", // 308
+                                // Forma_Desni_Glavni
+                                "U ovo polje mora biti unet pozitivan broj.", // 309
+                                "U ovo polje mora biti unet broj između 5 i 200.", // 310
+
+                                // uopste korisceno
+                                "Greška", // 311
+                                "Informacije", // 312
+                                "Upozorenje", // 313
+
+                                // Forma_Uvod
+                                "Return to top", // 314
+
+                                // Forma_TestVoznja
+                                "Return to top", // 315
+
+                                // Forma_Centar_!Glavni
+                                "No preset", // 316
+                                "Automobil 1", // 317
+                                "Automobil 2", // 318
+
+                                // Forma_Centar_Tekst
+                                "PLACEHOLDERSTRING Forma_Centar_Tekst.Text" // 319
                                 };
 
         private void PromenaJezika()
@@ -382,8 +410,17 @@ namespace Proracun_vibracija
             if (FormaCentarGlavni != null) 
             {
                 FormaCentarGlavni.PromenaJezika();
-                if (FormaCentarGlavni.FormaCentarTabela != null) FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
-                if (FormaCentarGlavni.FormaCentarGrafik != null) FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
+                if (FormaCentarGlavni.FormaCentarTabela != null)
+                {
+                    FormaCentarGlavni.FormaCentarTabela.PromenaJezika();
+                    if (FormaCentarGlavni.FormaCentarTabela.FormaCentarTekst != null) FormaCentarGlavni.FormaCentarTabela.FormaCentarTekst.PromenaJezika();
+                }
+                if (FormaCentarGlavni.FormaCentarGrafik != null)
+                {
+                    FormaCentarGlavni.FormaCentarGrafik.PromenaJezika();
+                    if (FormaCentarGlavni.FormaCentarGrafik.FormaCentarTekst != null) FormaCentarGlavni.FormaCentarGrafik.FormaCentarTekst.PromenaJezika();
+                }
+
                 if (FormaCentarGlavni.FormaCentarAgregatGlavni != null)
                 {
                     FormaCentarGlavni.FormaCentarAgregatGlavni.PromenaJezika();
@@ -416,7 +453,7 @@ namespace Proracun_vibracija
             jezik[8]   = "RPM";
             jezik[9]   = "Izmerena frekvencija";
             jezik[10]  = "Broj cilindara";
-            jezik[11]  = "Izvrši račun";
+            jezik[11]  = "Potvrdi podatke";
             jezik[12]  = "Vibracije agregata";
             jezik[13]  = "Greška, nedovoljan broj polja popunjen.";
             jezik[14]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
@@ -477,7 +514,7 @@ namespace Proracun_vibracija
             jezik[63]  = "Prečnik remenice pumpe za vodu";
             jezik[64]  = "Prečnik remenice dodatnog agregata 1";
             jezik[65]  = "Prečnik remenice dodatnog agregata 2";
-            jezik[66]  = "Izvrši račun"; // nekada je pisalo "izracunaj" ali ja sam promenio cisto da bude u skladu sa onim sto pise na FormaCentarGlavni
+            jezik[66]  = "Potvrdi podatke"; // nekada je pisalo "izracunaj" ali ja sam promenio cisto da bude u skladu sa onim sto pise na FormaCentarGlavni
             jezik[67]  = "Greška, nedovoljno polja popunjeno.";
             jezik[68]  = "Greška, u nekom od polja je uneta nevažeća vrednost.";
 
@@ -542,7 +579,7 @@ namespace Proracun_vibracija
             jezik[122] = "Izmerene vrednosti";
             jezik[123] = "Brzina vozila (km/h)";
             jezik[124] = "Frekvencija";
-            jezik[125] = "Izvrši racun";
+            jezik[125] = "Potvrdi podatke";
             jezik[126] = "Greška, nedovoljno polja popunjeno.";
             jezik[127] = "Greška, u nekom od polja je uneta nevažeća vrednost.";
 
@@ -645,7 +682,7 @@ namespace Proracun_vibracija
 
             PromenaJezika();
         }
-
+        
         private void jezikDugme_Engleski_Click(object sender, EventArgs e)
         {
             for (Int32 i = 0; i < jezik.Length; i++) jezik[i] = "P ID " + i.ToString();
@@ -823,7 +860,7 @@ namespace Proracun_vibracija
 
         private void jezikDugme_Nemacki_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("German language support hasn't been added yet.");
+            MessageBox.Show("German language support hasn't been added yet.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         #endregion
@@ -886,6 +923,12 @@ namespace Proracun_vibracija
         {
             get { return dugmeDodatno.Enabled;  }
             set { dugmeDodatno.Enabled = value; }
+        }
+
+        private void Forma_HomeScreen_Load(object sender, EventArgs e)
+        {
+            // Forma_Centar_Tekst test = new Forma_Centar_Tekst(this);
+            // test.Show();
         }
     }
 }

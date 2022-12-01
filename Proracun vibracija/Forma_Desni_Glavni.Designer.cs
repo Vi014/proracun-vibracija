@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label_Upozorenje = new System.Windows.Forms.Label();
             this.label_DimenzijePneumatika = new System.Windows.Forms.Label();
             this.label_Sirina = new System.Windows.Forms.Label();
@@ -57,8 +58,6 @@
             this.textBox_F23 = new System.Windows.Forms.TextBox();
             this.textBox_F33 = new System.Windows.Forms.TextBox();
             this.button_Racun = new System.Windows.Forms.Button();
-            this.button_Grafik = new System.Windows.Forms.Button();
-            this.button_Tabela = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label_mm2 = new System.Windows.Forms.Label();
             this.label_Posto2 = new System.Windows.Forms.Label();
@@ -69,6 +68,10 @@
             this.label_PrecnikFelne2 = new System.Windows.Forms.Label();
             this.textBox_H2 = new System.Windows.Forms.TextBox();
             this.textBox_R2 = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button_Grafik = new System.Windows.Forms.Button();
+            this.button_Tabela = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Upozorenje
@@ -284,7 +287,7 @@
             // 
             // textBox_F12
             // 
-            this.textBox_F12.Location = new System.Drawing.Point(297, 237);
+            this.textBox_F12.Location = new System.Drawing.Point(311, 237);
             this.textBox_F12.Name = "textBox_F12";
             this.textBox_F12.Size = new System.Drawing.Size(54, 20);
             this.textBox_F12.TabIndex = 9;
@@ -293,7 +296,7 @@
             // 
             // textBox_F22
             // 
-            this.textBox_F22.Location = new System.Drawing.Point(297, 263);
+            this.textBox_F22.Location = new System.Drawing.Point(311, 263);
             this.textBox_F22.Name = "textBox_F22";
             this.textBox_F22.Size = new System.Drawing.Size(54, 20);
             this.textBox_F22.TabIndex = 13;
@@ -302,7 +305,7 @@
             // 
             // textBox_F32
             // 
-            this.textBox_F32.Location = new System.Drawing.Point(297, 289);
+            this.textBox_F32.Location = new System.Drawing.Point(311, 289);
             this.textBox_F32.Name = "textBox_F32";
             this.textBox_F32.Size = new System.Drawing.Size(54, 20);
             this.textBox_F32.TabIndex = 17;
@@ -311,7 +314,7 @@
             // 
             // textBox_F13
             // 
-            this.textBox_F13.Location = new System.Drawing.Point(357, 237);
+            this.textBox_F13.Location = new System.Drawing.Point(385, 237);
             this.textBox_F13.Name = "textBox_F13";
             this.textBox_F13.Size = new System.Drawing.Size(54, 20);
             this.textBox_F13.TabIndex = 10;
@@ -320,7 +323,7 @@
             // 
             // textBox_F23
             // 
-            this.textBox_F23.Location = new System.Drawing.Point(357, 263);
+            this.textBox_F23.Location = new System.Drawing.Point(385, 263);
             this.textBox_F23.Name = "textBox_F23";
             this.textBox_F23.Size = new System.Drawing.Size(54, 20);
             this.textBox_F23.TabIndex = 14;
@@ -329,7 +332,7 @@
             // 
             // textBox_F33
             // 
-            this.textBox_F33.Location = new System.Drawing.Point(357, 289);
+            this.textBox_F33.Location = new System.Drawing.Point(385, 289);
             this.textBox_F33.Name = "textBox_F33";
             this.textBox_F33.Size = new System.Drawing.Size(54, 20);
             this.textBox_F33.TabIndex = 18;
@@ -338,37 +341,13 @@
             // 
             // button_Racun
             // 
-            this.button_Racun.Location = new System.Drawing.Point(471, 150);
+            this.button_Racun.Location = new System.Drawing.Point(482, 150);
             this.button_Racun.Name = "button_Racun";
             this.button_Racun.Size = new System.Drawing.Size(151, 84);
             this.button_Racun.TabIndex = 19;
-            this.button_Racun.Text = "Izvrši racun";
+            this.button_Racun.Text = "Potvrdi podatke";
             this.button_Racun.UseVisualStyleBackColor = true;
             this.button_Racun.Click += new System.EventHandler(this.button_Racun_Click);
-            // 
-            // button_Grafik
-            // 
-            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.graph;
-            this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Grafik.Enabled = false;
-            this.button_Grafik.Location = new System.Drawing.Point(553, 240);
-            this.button_Grafik.Name = "button_Grafik";
-            this.button_Grafik.Size = new System.Drawing.Size(69, 69);
-            this.button_Grafik.TabIndex = 21;
-            this.button_Grafik.UseVisualStyleBackColor = true;
-            this.button_Grafik.Click += new System.EventHandler(this.button_Grafik_Click);
-            // 
-            // button_Tabela
-            // 
-            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.tabela;
-            this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button_Tabela.Enabled = false;
-            this.button_Tabela.Location = new System.Drawing.Point(471, 240);
-            this.button_Tabela.Name = "button_Tabela";
-            this.button_Tabela.Size = new System.Drawing.Size(69, 69);
-            this.button_Tabela.TabIndex = 20;
-            this.button_Tabela.UseVisualStyleBackColor = true;
-            this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
             // 
             // checkBox1
             // 
@@ -390,6 +369,7 @@
             this.label_mm2.Size = new System.Drawing.Size(35, 20);
             this.label_mm2.TabIndex = 22;
             this.label_mm2.Text = "mm";
+            this.label_mm2.Visible = false;
             // 
             // label_Posto2
             // 
@@ -400,6 +380,7 @@
             this.label_Posto2.Size = new System.Drawing.Size(23, 20);
             this.label_Posto2.TabIndex = 22;
             this.label_Posto2.Text = "%";
+            this.label_Posto2.Visible = false;
             // 
             // label_Inches2
             // 
@@ -410,6 +391,7 @@
             this.label_Inches2.Size = new System.Drawing.Size(40, 20);
             this.label_Inches2.TabIndex = 22;
             this.label_Inches2.Text = "Inča";
+            this.label_Inches2.Visible = false;
             // 
             // label_Sirina2
             // 
@@ -420,6 +402,7 @@
             this.label_Sirina2.TabIndex = 22;
             this.label_Sirina2.Text = "Širina 2";
             this.label_Sirina2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_Sirina2.Visible = false;
             // 
             // label_Visina2
             // 
@@ -430,14 +413,15 @@
             this.label_Visina2.TabIndex = 22;
             this.label_Visina2.Text = "Visina 2";
             this.label_Visina2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_Visina2.Visible = false;
             // 
             // textBox_W2
             // 
-            this.textBox_W2.Enabled = false;
             this.textBox_W2.Location = new System.Drawing.Point(522, 44);
             this.textBox_W2.Name = "textBox_W2";
             this.textBox_W2.Size = new System.Drawing.Size(54, 20);
             this.textBox_W2.TabIndex = 3;
+            this.textBox_W2.Visible = false;
             this.textBox_W2.Enter += new System.EventHandler(this.textBox_W2_Enter);
             this.textBox_W2.Leave += new System.EventHandler(this.textBox_W2_Leave);
             // 
@@ -450,33 +434,62 @@
             this.label_PrecnikFelne2.TabIndex = 22;
             this.label_PrecnikFelne2.Text = "Prečnik felne 2";
             this.label_PrecnikFelne2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_PrecnikFelne2.Visible = false;
             // 
             // textBox_H2
             // 
-            this.textBox_H2.Enabled = false;
             this.textBox_H2.Location = new System.Drawing.Point(522, 70);
             this.textBox_H2.Name = "textBox_H2";
             this.textBox_H2.Size = new System.Drawing.Size(54, 20);
             this.textBox_H2.TabIndex = 4;
+            this.textBox_H2.Visible = false;
             this.textBox_H2.Enter += new System.EventHandler(this.textBox_H2_Enter);
             this.textBox_H2.Leave += new System.EventHandler(this.textBox_H2_Leave);
             // 
             // textBox_R2
             // 
-            this.textBox_R2.Enabled = false;
             this.textBox_R2.Location = new System.Drawing.Point(522, 96);
             this.textBox_R2.Name = "textBox_R2";
             this.textBox_R2.Size = new System.Drawing.Size(54, 20);
             this.textBox_R2.TabIndex = 5;
+            this.textBox_R2.Visible = false;
             this.textBox_R2.Enter += new System.EventHandler(this.textBox_R2_Enter);
             this.textBox_R2.Leave += new System.EventHandler(this.textBox_R2_Leave);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // button_Grafik
+            // 
+            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.graph;
+            this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Grafik.Enabled = false;
+            this.button_Grafik.Location = new System.Drawing.Point(564, 240);
+            this.button_Grafik.Name = "button_Grafik";
+            this.button_Grafik.Size = new System.Drawing.Size(69, 69);
+            this.button_Grafik.TabIndex = 21;
+            this.button_Grafik.UseVisualStyleBackColor = true;
+            this.button_Grafik.Click += new System.EventHandler(this.button_Grafik_Click);
+            // 
+            // button_Tabela
+            // 
+            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.tabela;
+            this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button_Tabela.Enabled = false;
+            this.button_Tabela.Location = new System.Drawing.Point(482, 240);
+            this.button_Tabela.Name = "button_Tabela";
+            this.button_Tabela.Size = new System.Drawing.Size(69, 69);
+            this.button_Tabela.TabIndex = 20;
+            this.button_Tabela.UseVisualStyleBackColor = true;
+            this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
             // 
             // Forma_Desni_Glavni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(635, 317);
+            this.ClientSize = new System.Drawing.Size(645, 317);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button_Racun);
             this.Controls.Add(this.button_Grafik);
@@ -521,9 +534,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Forma_Desni_Glavni";
-            this.Text = "Vibracije vozila";
+            this.Text = "~";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Desni_Glavni_FormClosed);
             this.Load += new System.EventHandler(this.Forma_Desni_Glavni_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -572,5 +586,6 @@
         private System.Windows.Forms.Label label_PrecnikFelne2;
         private System.Windows.Forms.TextBox textBox_H2;
         private System.Windows.Forms.TextBox textBox_R2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

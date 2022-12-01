@@ -65,3 +65,24 @@ D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibr
 D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.csproj.CoreCompileInputs.cache
 D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.exe
 D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.pdb
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\bin\Debug\Proracun vibracija.exe
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\bin\Debug\Proracun vibracija.pdb
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.csprojAssemblyReference.cache
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_HomeScreen.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Glavni.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Agregat_Grafik.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Grafik.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Tabela.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Agregat_Glavni.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Agregat_Tabela.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Desni_Glavni.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Desni_Grafik.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Desni_Tabela.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_TestVoznja.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Uvod.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Properties.Resources.resources
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.csproj.GenerateResource.cache
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.csproj.CoreCompileInputs.cache
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.exe
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun vibracija.pdb
+D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Tekst.resources

@@ -11,7 +11,8 @@ namespace Proracun_vibracija
 {
     public partial class Forma_Centar_Agregat_Grafik : Form
     {
-        Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
+        public Forma_Centar_Agregat_Glavni FormaCentarAgregatGlavni;
+        public Forma_Centar_Tekst FormaCentarTekst;
 
         Graphics g;
         Pen p = new Pen(Color.Black, 2);
@@ -206,6 +207,40 @@ namespace Proracun_vibracija
             podeljakY = Convert.ToInt32(Y_Razdaljina_Piksel) / brPodeljakaY;
 
             IscrtajGrafik();
+
+            #region boje na dugmicima sa znakom pitanja
+
+            if (provera(FormaCentarAgregatGlavni.D11, FormaCentarAgregatGlavni.D12, FormaCentarAgregatGlavni.D13))
+                button_D1.ForeColor = button_D1.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D1.ForeColor = button_D1.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaCentarAgregatGlavni.D21, FormaCentarAgregatGlavni.D22, FormaCentarAgregatGlavni.D23))
+                button_D2.ForeColor = button_D2.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D2.ForeColor = button_D2.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaCentarAgregatGlavni.D31, FormaCentarAgregatGlavni.D32, FormaCentarAgregatGlavni.D33))
+                button_D3.ForeColor = button_D3.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D3.ForeColor = button_D3.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaCentarAgregatGlavni.D41, FormaCentarAgregatGlavni.D42, FormaCentarAgregatGlavni.D43))
+                button_D4.ForeColor = button_D4.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D4.ForeColor = button_D4.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaCentarAgregatGlavni.D51, FormaCentarAgregatGlavni.D52, FormaCentarAgregatGlavni.D53))
+                button_D5.ForeColor = button_D5.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D5.ForeColor = button_D5.FlatAppearance.BorderColor = Color.Black;
+
+            if (provera(FormaCentarAgregatGlavni.D61, FormaCentarAgregatGlavni.D62, FormaCentarAgregatGlavni.D63))
+                button_D6.ForeColor = button_D6.FlatAppearance.BorderColor = Color.Red;
+            else
+                button_D6.ForeColor = button_D6.FlatAppearance.BorderColor = Color.Black;
+
+            #endregion
         }
 
         private void IscrtajGrafik()
@@ -337,107 +372,61 @@ namespace Proracun_vibracija
         }
 
         #region dugmici sa znakom pitanja
-		// ovo bi smo mogli da ulepsamo koristeci funkcije
-		// tipa da u svaki if stavimo if(imeFunkcije(F11, F12) bla bla) i imeFunkcije je tipa Boolean
+		
+        private Boolean provera(Double arg1, Double arg2, Double arg3)
+        {
+            return ((FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (arg1 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && arg1 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1))))) ||
+
+                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (arg2 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && arg2 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1))))) ||
+
+                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1))) ||
+                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (arg3 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && arg3 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1))))));
+        }
+
         private void button_D1_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D11 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D11 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D11 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D11 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D11 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D11 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D12 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D12 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D12 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D12 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D12 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D12 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D13 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D13 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D13 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D13 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D13 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D13 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
+            if (provera(FormaCentarAgregatGlavni.D11, FormaCentarAgregatGlavni.D12, FormaCentarAgregatGlavni.D13))
                  MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[88]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[89]);
         }
 
         private void button_D2_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D21 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D21 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D21 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D21 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D21 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D21 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D22 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D22 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D22 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D22 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D22 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D22 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D23 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D23 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D23 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D23 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D23 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D23 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[90]);
+            if (provera(FormaCentarAgregatGlavni.D21, FormaCentarAgregatGlavni.D22, FormaCentarAgregatGlavni.D23))
+                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[90]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[91]);
         }
 
         private void button_D3_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D31 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D31 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D31 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D31 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D31 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D31 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D32 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D32 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D32 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D32 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D32 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D32 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D33 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D33 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D33 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D33 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D33 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D33 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[92]);
+            if (provera(FormaCentarAgregatGlavni.D31, FormaCentarAgregatGlavni.D32, FormaCentarAgregatGlavni.D33))
+                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[92]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[93]);
         }
 
         private void button_D4_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D41 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D41 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D41 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D41 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D41 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D41 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D42 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D42 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D42 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D42 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D42 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D42 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D43 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D43 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D43 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D43 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D43 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D43 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[94]);
+            if (provera(FormaCentarAgregatGlavni.D41, FormaCentarAgregatGlavni.D42, FormaCentarAgregatGlavni.D43))
+                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[94]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[95]);
         }
 
         private void button_D5_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D51 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D51 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D51 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D51 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D51 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D51 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D52 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D52 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D52 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D52 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D52 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D52 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D53 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D53 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D53 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D53 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D53 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D53 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[96]);
+            if (provera(FormaCentarAgregatGlavni.D51, FormaCentarAgregatGlavni.D52, FormaCentarAgregatGlavni.D53))
+                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[96]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[97]);
         }
 
         private void button_D6_Click(object sender, EventArgs e)
         {
-            if    ( (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm1unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F11 != 0 && (FormaCentarAgregatGlavni.D61 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 - 1) && FormaCentarAgregatGlavni.D61 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F11 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 != 0 && (FormaCentarAgregatGlavni.D61 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 - 1) && FormaCentarAgregatGlavni.D61 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F12 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 != 0 && (FormaCentarAgregatGlavni.D61 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 - 1) && FormaCentarAgregatGlavni.D61 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F13 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm2unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F21 != 0 && (FormaCentarAgregatGlavni.D62 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 - 1) && FormaCentarAgregatGlavni.D62 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F21 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 != 0 && (FormaCentarAgregatGlavni.D62 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 - 1) && FormaCentarAgregatGlavni.D62 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F22 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 != 0 && (FormaCentarAgregatGlavni.D62 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 - 1) && FormaCentarAgregatGlavni.D62 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F23 + 1) )))) ||
-
-                    (FormaCentarAgregatGlavni.FormaCentarGlavni.rpm3unet && ((FormaCentarAgregatGlavni.FormaCentarGlavni.F31 != 0 && (FormaCentarAgregatGlavni.D63 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 - 1) && FormaCentarAgregatGlavni.D63 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F31 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 != 0 && (FormaCentarAgregatGlavni.D63 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 - 1) && FormaCentarAgregatGlavni.D63 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F32 + 1) )) ||
-                                                                             (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 != 0 && (FormaCentarAgregatGlavni.D63 >= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 - 1) && FormaCentarAgregatGlavni.D63 <= (FormaCentarAgregatGlavni.FormaCentarGlavni.F33 + 1) )))) )
-                 MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[98]);
+            if (provera(FormaCentarAgregatGlavni.D61, FormaCentarAgregatGlavni.D62, FormaCentarAgregatGlavni.D63))
+                MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[98]);
             else MessageBox.Show(FormaCentarAgregatGlavni.FormaCentarGlavni.FormaHomeScreen.jezik[99]);
         }
 

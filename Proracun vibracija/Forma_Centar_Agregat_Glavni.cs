@@ -40,13 +40,7 @@ namespace Proracun_vibracija
             PromenaJezika();
             this.Location = new Point(FormaCentarGlavni.Left + 20, FormaCentarGlavni.Top + 20);
 
-            textBox_DR_Watermark();
-            textBox_D1_Watermark();
-            textBox_D2_Watermark();
-            textBox_D3_Watermark();
-            textBox_D4_Watermark();
-            textBox_D5_Watermark();
-            textBox_D6_Watermark();
+            PresetUnos();
         }
 
         private void Forma_Centar_Agregat_Glavni_FormClosed(object sender, FormClosedEventArgs e)
@@ -208,71 +202,129 @@ namespace Proracun_vibracija
 
         public Double DR, D1, D2, D3, D4, D5, D6;
         Double _DR, _D1, _D2, _D3, _D4, _D5, _D6;
+
         public Double D11, D21, D31, D41, D51, D61,
                       D12, D22, D32, D42, D52, D62,
                       D13, D23, D33, D43, D53, D63;
 
         private Boolean Ucitavanje()
         {
+            Boolean uspeh = true;
             //////////////////////////////////////////////////////////
-            if (!Double.TryParse(textBox_DR.Text, out _DR)) return false;
-            if (_DR <= 0) return false;
+            if (!Double.TryParse(textBox_DR.Text, out _DR))
+            {
+                errorProvider1.SetError(textBox_DR, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                uspeh = false;
+            }
+            if (_DR <= 0)
+            {
+                errorProvider1.SetError(textBox_DR, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                uspeh = false;
+            }
             //////////////////////////////////////////////////////////
             if (textBox_D1.Text != "D1")
             {
                 if (Double.TryParse(textBox_D1.Text, out _D1))
                 {
-                    if (_D1 <= 0) return false;
+                    if (_D1 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D1, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D1, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
             if (textBox_D2.Text != "D2")
             {
                 if (Double.TryParse(textBox_D2.Text, out _D2))
                 {
-                    if (_D2 <= 0) return false;
+                    if (_D2 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D2, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D2, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
             if (textBox_D3.Text != "D3")
             {
                 if (Double.TryParse(textBox_D3.Text, out _D3))
                 {
-                    if (_D3 <= 0) return false;
+                    if (_D3 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D3, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D3, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
             if (textBox_D4.Text != "D4")
             {
                 if (Double.TryParse(textBox_D4.Text, out _D4))
                 {
-                    if (_D4 <= 0) return false;
+                    if (_D4 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D4, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D4, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
             if (textBox_D5.Text != "D5")
             {
                 if (Double.TryParse(textBox_D5.Text, out _D5))
                 {
-                    if (_D5 <= 0) return false;
+                    if (_D5 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D5, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D5, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
             if (textBox_D6.Text != "D6")
             {
                 if (Double.TryParse(textBox_D6.Text, out _D6))
                 {
-                    if (_D6 <= 0) return false;
+                    if (_D6 <= 0)
+                    {
+                        errorProvider1.SetError(textBox_D6, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                        uspeh = false;
+                    }
                 }
-                else return false;
+                else
+                {
+                    errorProvider1.SetError(textBox_D6, FormaCentarGlavni.FormaHomeScreen.jezik[308]);
+                    uspeh = false;
+                }
             }
             //////////////////////////////////////////////////////////
-            return true;
+            return uspeh;
             //////////////////////////////////////////////////////////
         }
 
@@ -397,6 +449,8 @@ namespace Proracun_vibracija
             }
             #endregion
 
+            aktivirano = true;
+            button_Tabela.Enabled = button_Grafik.Enabled = true;
             if (FormaCentarAgregatTabela != null) FormaCentarAgregatTabela.IspisVrednosti();
             if (FormaCentarAgregatGrafik != null) FormaCentarAgregatGrafik.Racun();
         }
@@ -416,18 +470,26 @@ namespace Proracun_vibracija
         private void button_Racun_Click(object sender, EventArgs e)
         {
             _DR = _D1 = _D2 = _D3 = _D4 = _D5 = _D6 = 0;
+            errorProvider1.SetError(textBox_DR, "");
+            errorProvider1.SetError(textBox_D1, "");
+            errorProvider1.SetError(textBox_D2, "");
+            errorProvider1.SetError(textBox_D3, "");
+            errorProvider1.SetError(textBox_D4, "");
+            errorProvider1.SetError(textBox_D5, "");
+            errorProvider1.SetError(textBox_D6, "");
+
             if (textBox_DR.Text != "DR" && (textBox_D1.Text != "D1" || textBox_D2.Text != "D2" || textBox_D3.Text != "D3" || textBox_D4.Text != "D4" || textBox_D5.Text != "D5" || textBox_D6.Text != "D6"))
             {
                 if (Ucitavanje())
                 {
                     Konvertovanje();
                     Racun();
-                    if (!aktivirano) aktivirano = true;
-                    if (FormaCentarAgregatTabela == null && FormaCentarAgregatGrafik == null) button_Tabela.Enabled = button_Grafik.Enabled = true;
+                    // if (!aktivirano) aktivirano = true; // prebaceno u Racun()
+                    // if (FormaCentarAgregatTabela == null && FormaCentarAgregatGrafik == null) button_Tabela.Enabled = button_Grafik.Enabled = true; // prebaceno u Racun()
                 }
-                else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[68]);
+                else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[68], FormaCentarGlavni.FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[67]);
+            else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[67], FormaCentarGlavni.FormaHomeScreen.jezik[311], MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void button_Tabela_Click(object sender, EventArgs e)
@@ -458,6 +520,74 @@ namespace Proracun_vibracija
         {
             get { return button_Grafik.Enabled;  }
             set { button_Grafik.Enabled = value; }
+        }
+
+        public void PresetUnos()
+        {
+            switch (FormaCentarGlavni.ComboBoxPresetSelectedIndex)
+            {
+                case 0:
+                    {
+                        textBox_DR_Watermark();
+                        textBox_D1_Watermark();
+                        textBox_D2_Watermark();
+                        textBox_D3_Watermark();
+                        textBox_D4_Watermark();
+                        textBox_D5_Watermark();
+                        textBox_D6_Watermark();
+
+                        break;
+                    }
+                case 1:
+                    {
+                        DR = 10;
+                        D1 = 10;
+                        D2 = 10;
+                        D3 = 10;
+                        D4 = 10;
+                        D5 = 10;
+                        D6 = 10;
+
+                        textBox_DR.Text = "10";
+                        textBox_D1.Text = "10";
+                        textBox_D2.Text = "10";
+                        textBox_D3.Text = "10";
+                        textBox_D4.Text = "10";
+                        textBox_D5.Text = "10";
+                        textBox_D6.Text = "10";
+
+                        textBox_DR.ForeColor = textBox_D1.ForeColor = textBox_D2.ForeColor = textBox_D3.ForeColor = textBox_D4.ForeColor = textBox_D5.ForeColor = textBox_D6.ForeColor = Color.Black;
+                        Racun();
+                        // button_Tabela.Enabled = button_Grafik.Enabled = true; // prebaceno u Racun()
+
+                        break;
+                    }
+                case 2:
+                    {
+                        DR = 15;
+                        D1 = 7;
+                        D2 = 7;
+                        D3 = 7;
+                        D4 = 7;
+                        D5 = 7;
+                        D6 = 7;
+
+                        textBox_DR.Text = "15";
+                        textBox_D1.Text = "7";
+                        textBox_D2.Text = "7";
+                        textBox_D3.Text = "7";
+                        textBox_D4.Text = "7";
+                        textBox_D5.Text = "7";
+                        textBox_D6.Text = "7";
+
+                        textBox_DR.ForeColor = textBox_D1.ForeColor = textBox_D2.ForeColor = textBox_D3.ForeColor = textBox_D4.ForeColor = textBox_D5.ForeColor = textBox_D6.ForeColor = Color.Black;
+                        Racun();
+                        // button_Tabela.Enabled = button_Grafik.Enabled = true; // prebaceno u Racun()
+
+                        break;
+                    }
+                default: break;
+            }
         }
     }
 }

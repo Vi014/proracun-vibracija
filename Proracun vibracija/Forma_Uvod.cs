@@ -19,8 +19,6 @@ namespace Proracun_vibracija
             FormaHomeScreen = konstruktor;
         }
 
-        // Int32 h;
-
         public void PromenaJezika() // za vertikalne razmake izmedju dva labela, bottom + 20 za veliki razmak (razmak izmedju dva razlicita paragrafa) ili bottom + 1 za mali razmak (razmak izmedju dve razlicite linije u jednom paragrafu)
         {
             this.Text = FormaHomeScreen.jezik[251];
@@ -234,6 +232,9 @@ namespace Proracun_vibracija
             zoomablePictureBox12.Location = new Point(zoomablePictureBox11.Right + 5, zoomablePictureBox10.Location.Y);
             zoomablePictureBox13.Location = new Point(zoomablePictureBox12.Right + 5, zoomablePictureBox10.Location.Y);
 
+            button2.Text = FormaHomeScreen.jezik[314];
+            button2.Location = new Point(button2.Location.X, zoomablePictureBox13.Location.Y + (zoomablePictureBox11.Height - button2.Height) - 5);
+
             #endregion
         }
 
@@ -251,13 +252,18 @@ namespace Proracun_vibracija
 
         private void zoom(object sender, EventArgs e)
         {
-            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1);
+            (sender as ZoomablePictureBox).Zoom(zoomPicture, button1, panel1, this);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             zoomPicture.Visible = button1.Visible = false;
             panel1.Enabled = true;
+        }
+
+        private void gotoTop(object sender, EventArgs e)
+        {
+            panel1.AutoScrollPosition = new Point(0, 0);
         }
     }
 }
