@@ -29,7 +29,7 @@ namespace Proracun_vibracija
 
             label1.Text = FormaHomeScreen.jezik[204];
 
-            label2.Location = new Point(label2.Location.X, label1.Bottom + 20);
+            label2.Location = new Point(label1.Location.X, label1.Bottom + 20);
             label2.Text = FormaHomeScreen.jezik[205];
 
             label3.Location = new Point(label1.Location.X, label2.Bottom + 20);
@@ -191,7 +191,7 @@ namespace Proracun_vibracija
             FormaHomeScreen.dugmeLevoEnabled = true;
         }
 
-        private void CursorHand(object sender, MouseEventArgs e)
+        private void CursorHand(object sender, MouseEventArgs e) // ovo je za MouseMove na labelima koju sluze kao linkovi, da bi se mis pretvorio u onaj kursor sa pokazujucom rukom kao u browserima
         {
             Cursor.Current = Cursors.Hand;
         }

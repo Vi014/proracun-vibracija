@@ -188,6 +188,57 @@
   <ItemGroup>
     <None Include="Resources\AllParts.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test drive icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uvod12.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

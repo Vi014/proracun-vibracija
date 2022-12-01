@@ -202,7 +202,7 @@
             // 
             // button_Tabela
             // 
-            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.tabela;
             this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Tabela.Enabled = false;
             this.button_Tabela.Location = new System.Drawing.Point(214, 228);
@@ -214,7 +214,7 @@
             // 
             // button_Grafik
             // 
-            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.placeholder;
+            this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.graph;
             this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Grafik.Enabled = false;
             this.button_Grafik.Location = new System.Drawing.Point(288, 228);
