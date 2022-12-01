@@ -1037,48 +1037,36 @@ namespace Proracun_vibracija
             #endregion
         }
 
-        #region dugmici sa znakom pitanja
-
-        private void button_FTx1_Click(object sender, EventArgs e)
+        private void otvoriTekstTocak(object sender, EventArgs e)
         {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[141]);
+            if (FormaDesniGlavni.FormaDesniTekstTocak == null)
+            {
+                FormaDesniGlavni.FormaDesniTekstTocak = new Forma_Desni_Tekst_Tocak(FormaDesniGlavni);
+                FormaDesniGlavni.FormaDesniTekstTocak.Owner = FormaDesniGlavni;
+                FormaDesniGlavni.FormaDesniTekstTocak.Show();
+            }
+            else
+            {
+                FormaDesniGlavni.FormaDesniTekstTocak.PanelScrollPos = new Point(0, 0);
+                FormaDesniGlavni.FormaDesniTekstTocak.WindowState = FormWindowState.Normal;
+                FormaDesniGlavni.FormaDesniTekstTocak.Focus();
+            }
         }
 
-        private void button_FTx2_Click(object sender, EventArgs e)
+        private void otvoriTekstDriveline(object sender, EventArgs e)
         {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[142]);
+            if (FormaDesniGlavni.FormaDesniTekstDriveline == null)
+            {
+                FormaDesniGlavni.FormaDesniTekstDriveline = new Forma_Desni_Tekst_Driveline(FormaDesniGlavni);
+                FormaDesniGlavni.FormaDesniTekstDriveline.Owner = FormaDesniGlavni;
+                FormaDesniGlavni.FormaDesniTekstDriveline.Show();
+            }
+            else
+            {
+                FormaDesniGlavni.FormaDesniTekstDriveline.PanelScrollPos = new Point(0, 0);
+                FormaDesniGlavni.FormaDesniTekstDriveline.WindowState = FormWindowState.Normal;
+                FormaDesniGlavni.FormaDesniTekstDriveline.Focus();
+            }
         }
-
-        private void button_FTx3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[143]);
-        }
-
-        private void button_FTx4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[144]);
-        }
-
-        private void button_FKx1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[145]);
-        }
-
-        private void button_FKx2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[146]);
-        }
-
-        private void button_FKx3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[147]);
-        }
-
-        private void button_FKx4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[148]);
-        }
-
-        #endregion
     }
 }

@@ -15,6 +15,7 @@ namespace Proracun_vibracija
         public Forma_Desni_Tabela FormaDesniTabela;
         public Forma_Desni_Grafik FormaDesniGrafik;
         public Forma_Desni_Tekst_Driveline FormaDesniTekstDriveline;
+        public Forma_Desni_Tekst_Tocak     FormaDesniTekstTocak;
 
         public Forma_Desni_Glavni(Forma_HomeScreen konstruktor)
         {
@@ -50,9 +51,13 @@ namespace Proracun_vibracija
 
         private void Forma_Desni_Glavni_Load(object sender, EventArgs e)
         {
-            FormaDesniTekstDriveline = new Forma_Desni_Tekst_Driveline(this);
+            /* FormaDesniTekstDriveline = new Forma_Desni_Tekst_Driveline(this);
             FormaDesniTekstDriveline.Owner = this;
-            FormaDesniTekstDriveline.Show();
+            FormaDesniTekstDriveline.Show(); */
+            //
+            FormaDesniTekstTocak = new Forma_Desni_Tekst_Tocak(this);
+            FormaDesniTekstTocak.Owner = this;
+            FormaDesniTekstTocak.Show();
 
             PromenaJezika();
             this.Location = new Point(FormaHomeScreen.Left + 20, FormaHomeScreen.Top + 20);

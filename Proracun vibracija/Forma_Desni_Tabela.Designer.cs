@@ -126,7 +126,7 @@
             this.button_FTx4.Text = "?";
             this.button_FTx4.UseVisualStyleBackColor = true;
             this.button_FTx4.Visible = false;
-            this.button_FTx4.Click += new System.EventHandler(this.button_FTx4_Click);
+            this.button_FTx4.Click += new System.EventHandler(this.otvoriTekstTocak);
             // 
             // button_FTx3
             // 
@@ -142,7 +142,7 @@
             this.button_FTx3.Text = "?";
             this.button_FTx3.UseVisualStyleBackColor = true;
             this.button_FTx3.Visible = false;
-            this.button_FTx3.Click += new System.EventHandler(this.button_FTx3_Click);
+            this.button_FTx3.Click += new System.EventHandler(this.otvoriTekstTocak);
             // 
             // button_FTx2
             // 
@@ -158,7 +158,7 @@
             this.button_FTx2.Text = "?";
             this.button_FTx2.UseVisualStyleBackColor = true;
             this.button_FTx2.Visible = false;
-            this.button_FTx2.Click += new System.EventHandler(this.button_FTx2_Click);
+            this.button_FTx2.Click += new System.EventHandler(this.otvoriTekstTocak);
             // 
             // button_FTx1
             // 
@@ -174,7 +174,7 @@
             this.button_FTx1.Text = "?";
             this.button_FTx1.UseVisualStyleBackColor = true;
             this.button_FTx1.Visible = false;
-            this.button_FTx1.Click += new System.EventHandler(this.button_FTx1_Click);
+            this.button_FTx1.Click += new System.EventHandler(this.otvoriTekstTocak);
             // 
             // textBox_FT3x4
             // 
@@ -578,7 +578,7 @@
             this.button_FKx1.Text = "?";
             this.button_FKx1.UseVisualStyleBackColor = true;
             this.button_FKx1.Visible = false;
-            this.button_FKx1.Click += new System.EventHandler(this.button_FKx1_Click);
+            this.button_FKx1.Click += new System.EventHandler(this.otvoriTekstDriveline);
             // 
             // button_FKx2
             // 
@@ -594,7 +594,7 @@
             this.button_FKx2.Text = "?";
             this.button_FKx2.UseVisualStyleBackColor = true;
             this.button_FKx2.Visible = false;
-            this.button_FKx2.Click += new System.EventHandler(this.button_FKx2_Click);
+            this.button_FKx2.Click += new System.EventHandler(this.otvoriTekstDriveline);
             // 
             // button_FKx3
             // 
@@ -610,7 +610,7 @@
             this.button_FKx3.Text = "?";
             this.button_FKx3.UseVisualStyleBackColor = true;
             this.button_FKx3.Visible = false;
-            this.button_FKx3.Click += new System.EventHandler(this.button_FKx3_Click);
+            this.button_FKx3.Click += new System.EventHandler(this.otvoriTekstDriveline);
             // 
             // button_FKx4
             // 
@@ -626,7 +626,7 @@
             this.button_FKx4.Text = "?";
             this.button_FKx4.UseVisualStyleBackColor = true;
             this.button_FKx4.Visible = false;
-            this.button_FKx4.Click += new System.EventHandler(this.button_FKx4_Click);
+            this.button_FKx4.Click += new System.EventHandler(this.otvoriTekstDriveline);
             // 
             // textBox_F33
             // 

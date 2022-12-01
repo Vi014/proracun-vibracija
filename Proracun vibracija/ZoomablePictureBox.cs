@@ -32,8 +32,8 @@ namespace Proracun_vibracija
                     centarY = panelH / 2 + TargetPanel.Location.Y;
             Double ratioH = 0, ratioW = 0;
 
-            for (Double i = 0; slikaH * i <= panelH; i += 0.25) ratioH = i;
-            for (Double i = 0; ((slikaW * i) + TargetButton.Width) <= panelW; i += 0.25) ratioW = i;
+            for (Double i = 0; slikaH * i <= panelH; i += 0.01) ratioH = i;
+            for (Double i = 0; ((slikaW * i) + TargetButton.Width) <= panelW; i += 0.01) ratioW = i;
 
             if (ratioH < ratioW)
             {

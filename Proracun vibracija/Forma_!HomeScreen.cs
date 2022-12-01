@@ -52,7 +52,7 @@ namespace Proracun_vibracija
                                 "Frekvencija motora četvrtog reda",
                                 "Frekvencija bregaste",
                                 "Frekvencija paljenja",
-                                "Izmerene frekvencije",                               
+                                "Izmerene frekvencije",
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM_Click", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM2_Click", // obrisati
                                 "PLACEHOLDERSTRING Forma_Centar_Tabela.button_FM3_Click", // obrisati
@@ -182,34 +182,34 @@ namespace Proracun_vibracija
                                 "Trećeg reda",
                                 "Četvrtog reda",
                                 "Izmerene frekvencije",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()",
-                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()",
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx1_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx2_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx3_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FTx4_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx1_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx2_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx3_Click()", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Tabela.button_FKx4_Click()", // obrisati
 
                                 // Forma_Desni_Grafik
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik.Text",
                                 "Iscrtaj ponovo",
                                 "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV ISPUNJEN", // obrisati
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx1_Click USLOV NE ISPUNJEN", // ne brisati ove za uslov ne ispunjen, one se idalje koriste
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx2_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx3_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FTx4_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx1_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx2_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx3_Click USLOV NE ISPUNJEN",
-                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV ISPUNJEN", // obrisati
                                 "PLACEHOLDERSTRING Forma_Desni_Grafik_button_FKx4_Click USLOV NE ISPUNJEN",
                                 "FT",
                                 "FT2",
@@ -470,7 +470,83 @@ namespace Proracun_vibracija
                                 "      -",
                                 "Pinion and ring gear pitch line",
                                 "      -",
-                                "Driveline operating angles"
+                                "Driveline operating angles",
+                                "Driveshaft runout",
+                                "Place the dial indicator at a 90 degree angle from the drive shaft and measure the runout at the ends of the drive shaft (figure 1), as \r\nwell as in the middle of the shaft (figure 2).",
+                                "Figure 1",
+                                "Figure 2",
+                                "PLACEHOLDERSTRING If the measured values are not within vehicle manufacturer specifications (typically 0.5 mm at the ends and \r\n0.6 mm at the middle), preplace (typo? replace?) the driveshaft.",
+                                "Back",
+                                "Missing balance weights",
+                                "Visually check for missing driveshaft balance weights (figure 3).",
+                                "Figure 3",
+                                "Back",
+                                "Pinion and ring gear pitch line",
+                                "If the contact between pinion and ring gear is uneven (there is an excessive pitch line runout), ring gear speed will vary and cause \r\nthe drive line vibrations. \r\nRemove the axle cover, and with the aid of special paint, check for correct contact patter between ring and pinion gear (figure 4).",
+                                "Figure 4",
+                                "Back",
+                                "Driveline operating angles",
+                                "The operating angle of a universal joint is the difference between the angles formed when two shafts intersect. \r\nIn a one-piece propeller shaft system, there are two operating angles present: the front and the rear.",
+                                "The front operating angle is formed by the angle of the propeller shaft and the angle of the transmission output shaft (figure 5).",
+                                "Figure 5",
+                                "The rear operating angle is formed by the angle of the propeller shaft and the angle of the rear axle pinion.",
+                                "To check driveline alignment, raise and support the vehicle at the axles as level as possible. \r\nAllow the wheels and propeller shaft to turn.",
+                                "Record the angle A (figure 6). \r\nRotate the shaft until the transmission yoke bearing is facing downward. \r\nPlace the inclinometer on the yoke bearing parallel to the shaft and record the measurement A.",
+                                "Record the angle B (figure 6). \r\nRotate the shaft until the pinion yoke bearing is facing downward. \r\nPlace the inclinometer on the yoke bearing parallel to the shaft and record the measurement B.",
+                                "Record the angle C (figure 6). \r\nRotate the shaft for 90 degrees until the propeller shaft yoke bearing is facing downward. \r\nPlace the inclinometer on the yoke bearing parallel to the shaft and record the measurement C. Angle C can be measured on both \r\nends, as well as on the shaft itself.",
+                                "Figure 6",
+                                "Front angle is equal to Angle C - Angle A \r\nRear angle is equal to Angle C - Angle B",
+                                "      -",
+                                "Both front and rear angles must be within vehicle manufacturers specifications",
+                                "      -",
+                                "The front and rear angles need to be within one degree of each other (Typical value - check manufacturer specifications)",
+                                "      -",
+                                "Operating angles should be less than 3 degrees (Typical value - check manufacturer specifications)",
+                                "      -",
+                                "PLACEHOLDERSTRING (typo) The rear angle has to bigger than the front",
+                                "      -",
+                                "Neither angle can be zero",
+                                "If the driveline is a two piece system additional angle have to be measured. \r\nInput angle of the transmission, transfer shaft angle, drive shaft angle and output angle of the pinion.",
+                                "Back",
+
+                                // Forma_Desni_Tekst_Tocak
+                                "PLACEHOLDERSTRING Forma_Desni_Tekst_Tocak.Text", // 434
+                                "Wheel frequency",
+                                "Wheel first odrer frequency is related to vibration caused by wheel or anything which is rotating at the same speed as wheel.",
+                                "Some of the causes could be: \r\n      - Wheel and tire imbalance \r\n      - Condition of the wheels and tires \r\n      - Foreign debris in wheel \r\n      - A wheel or tire that is out of round \r\n      - Uniformity \r\n      - Tire dimensions \r\n      - Conicity \r\n      - Radial force variation \r\n      - Brake rotor or brake drum imbalance \r\n      - Constant velocity (CV) shaft \r\n      - Excessive hub runout \r\n      - Axle shaft problems",
+                                "Higher order wheel frequency indicates several independent first order issues or problem with: \r\n      - Joint of wheel and driveshaft \r\n      - Non uniform tires on vehicle \r\n      - Radial force variation",
+                                "Check the following:",
+                                "      -",
+                                "Balance the tire/wheel",
+                                "      -",
+                                "Radial wheel and tire assembly runout",
+                                "      -",
+                                "Lateral wheel and tire assembly runout",
+                                "      -",
+                                "Radial wheel runout",
+                                "      -",
+                                "Lateral wheel runout",
+                                "      -",
+                                "Hub/Brake disc runout",
+                                "      -",
+                                "Radial force variation",
+                                "      -",
+                                "Bent axle shaft",
+                                "      -",
+                                "Joint of wheel and axle shaft",
+                                "Radial wheel and tire assembly runout",
+                                "Radial runout can be measured on the vehicle (hub, wheel and tire total runout).",
+                                "Raise the vehicle, apply masking tape on tire circumference (figure 1), and check the runout with dial gauge. Measured value should \r\nbe compared to vehicle manufacturer data (typically maximum is 0.8 to 1 mm).",
+                                "Radial runout can also be measured off the vehicle. In this case hub is ruled out.",
+                                "Figure 1",
+                                "If the measured value is above specifications, problem could be in tire, wheel, or hub.",
+                                "Proceed with radial runout measurements",
+                                "If the measured value is below specifications, proceed with lateral runout measurements.",
+                                "Back",
+                                "Lateral wheel and tire assembly runout",
+                                "Measure the lateral runout with the dial gauge positioned on the flat surface of tire sidewall (figure 2).",
+                                "Measured value should be compared to vehicle manufacturer data (typically maximum is 0.8 to 1.2 mm).",
+                                "Figure 2"
                                 };
 
         private void PromenaJezika()

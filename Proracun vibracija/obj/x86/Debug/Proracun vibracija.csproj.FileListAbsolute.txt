@@ -88,3 +88,4 @@ D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun v
 D:\Nikola\Dropbox\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Tekst.resources
 D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Centar_Tekst.resources
 D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Desni_Tekst_Driveline.resources
+D:\Nikola\Documents\Visual Studio 2019\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Debug\Proracun_vibracija.Forma_Desni_Tekst_Tocak.resources

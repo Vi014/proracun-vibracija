@@ -37,6 +37,8 @@ namespace Proracun_vibracija
 
             #region dokument
 
+            // italic-mini labeli su oni labeli koji stoje ispod slika i ciji je tekst "Figure [broj]"
+
             label1.Location = new Point(16, 14);
             label1.Text = FormaHomeScreen.jezik[252];
 
@@ -73,7 +75,7 @@ namespace Proracun_vibracija
             zoomablePictureBox1.Location = new Point(label1.Location.X, label11.Bottom + 20);
             zoomablePictureBox2.Location = new Point(zoomablePictureBox1.Right, zoomablePictureBox1.Location.Y);
 
-            label12.Location = new Point(label1.Location.X, zoomablePictureBox1.Bottom + 20);
+            label12.Location = new Point(label1.Location.X, zoomablePictureBox1.Bottom + 20); // nije italic-mini
             label12.Text = FormaHomeScreen.jezik[263];
 
             label13.Location = new Point(label1.Location.X, label12.Bottom + 20);
@@ -87,7 +89,7 @@ namespace Proracun_vibracija
 
             zoomablePictureBox3.Location = new Point(label1.Location.X, label15.Bottom);
 
-            label16.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom + 20);
+            label16.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom + 20); // nije italic-mini
             label16.Text = FormaHomeScreen.jezik[267];
 
             label17.Location = new Point(label1.Location.X, label16.Location.Y + 20);
@@ -141,7 +143,7 @@ namespace Proracun_vibracija
 
             zoomablePictureBox9.Location = new Point(label1.Location.X, label29.Bottom + 20);
 
-            label30.Location = new Point(label1.Location.X, zoomablePictureBox9.Bottom + 20);
+            label30.Location = new Point(label1.Location.X, zoomablePictureBox9.Bottom + 20); // nije italic-mini
             label30.Text = FormaHomeScreen.jezik[281];
 
 

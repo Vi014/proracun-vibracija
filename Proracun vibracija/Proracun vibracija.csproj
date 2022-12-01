@@ -118,6 +118,12 @@
     <Compile Include="Forma_Desni_Tekst_Driveline.Designer.cs">
       <DependentUpon>Forma_Desni_Tekst_Driveline.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forma_Desni_Tekst_Tocak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forma_Desni_Tekst_Tocak.Designer.cs">
+      <DependentUpon>Forma_Desni_Tekst_Tocak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forma_TestVoznja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forma_Desni_Tekst_Driveline.resx">
       <DependentUpon>Forma_Desni_Tekst_Driveline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forma_Desni_Tekst_Tocak.resx">
+      <DependentUpon>Forma_Desni_Tekst_Tocak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forma_TestVoznja.resx">
       <DependentUpon>Forma_TestVoznja.cs</DependentUpon>
@@ -283,6 +292,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\centar05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driveline05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel08.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

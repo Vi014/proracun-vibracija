@@ -92,12 +92,12 @@ namespace Proracun_vibracija
 
             zoomablePictureBox1.Location = new Point(label1.Location.X, label21.Bottom + 20);
 
-            label22.Location = new Point(label1.Location.X, zoomablePictureBox1.Bottom + 20);
+            label22.Location = new Point(label1.Location.X, zoomablePictureBox1.Bottom);
             label22.Text = FormaCentarGlavni.FormaHomeScreen.jezik[339];
 
             zoomablePictureBox2.Location = new Point(label1.Location.X, label22.Bottom + 20);
 
-            label23.Location = new Point(label1.Location.X, zoomablePictureBox2.Bottom + 20);
+            label23.Location = new Point(label1.Location.X, zoomablePictureBox2.Bottom);
             label23.Text = FormaCentarGlavni.FormaHomeScreen.jezik[340];
 
             label24.Location = new Point(label1.Location.X, label23.Bottom + 20);
@@ -198,13 +198,13 @@ namespace Proracun_vibracija
 
             zoomablePictureBox3.Location = new Point(label1.Location.X, label55.Bottom + 20);
 
-            label56.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom + 20);
+            label56.Location = new Point(label1.Location.X, zoomablePictureBox3.Bottom);
             label56.Text = FormaCentarGlavni.FormaHomeScreen.jezik[373];
 
             zoomablePictureBox4.Location = new Point(label1.Location.X, label56.Bottom + 20);
             zoomablePictureBox5.Location = new Point(zoomablePictureBox4.Right + 5, zoomablePictureBox4.Location.Y);
 
-            label57.Location = new Point(label1.Location.X, zoomablePictureBox4.Bottom + 20);
+            label57.Location = new Point(label1.Location.X, zoomablePictureBox4.Bottom);
             label57.Text = FormaCentarGlavni.FormaHomeScreen.jezik[374];
 
             label58.Location = new Point(label1.Location.X, label57.Bottom + 20);
@@ -218,7 +218,7 @@ namespace Proracun_vibracija
 
             zoomablePictureBox6.Location = new Point(label1.Location.X, label60.Bottom + 20);
 
-            label61.Location = new Point(label1.Location.X, zoomablePictureBox6.Bottom + 20);
+            label61.Location = new Point(label1.Location.X, zoomablePictureBox6.Bottom);
             label61.Text = FormaCentarGlavni.FormaHomeScreen.jezik[378];
 
             label62.Location = new Point(label1.Location.X, label61.Bottom + 20);

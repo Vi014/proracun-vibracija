@@ -574,57 +574,89 @@ namespace Proracun_vibracija
         private void button_FTx1_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FT1, FormaDesniGlavni.FT2, FormaDesniGlavni.FT3, FormaDesniGlavni.FT2_1, FormaDesniGlavni.FT2_2, FormaDesniGlavni.FT2_3))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[152]);
+                otvoriTekstTocak();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[153]);
         }
 
         private void button_FTx2_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FT1x2, FormaDesniGlavni.FT2x2, FormaDesniGlavni.FT3x2, FormaDesniGlavni.FT2_1x2, FormaDesniGlavni.FT2_2x2, FormaDesniGlavni.FT2_3x2))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[154]);
+                otvoriTekstTocak();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[155]);
         }
 
         private void button_FTx3_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FT1x3, FormaDesniGlavni.FT2x3, FormaDesniGlavni.FT3x3, FormaDesniGlavni.FT2_1x3, FormaDesniGlavni.FT2_2x3, FormaDesniGlavni.FT2_3x3))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[156]);
+                otvoriTekstTocak();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[157]);
         }
 
         private void button_FTx4_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FT1x4, FormaDesniGlavni.FT2x4, FormaDesniGlavni.FT3x4, FormaDesniGlavni.FT2_1x4, FormaDesniGlavni.FT2_2x4, FormaDesniGlavni.FT2_3x4))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[158]);
+                otvoriTekstTocak();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[159]);
         }
 
         private void button_FKx1_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FK1, FormaDesniGlavni.FK2, FormaDesniGlavni.FK3, FormaDesniGlavni.FK2_1, FormaDesniGlavni.FK2_2, FormaDesniGlavni.FK2_3))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[160]);
+                otvoriTekstDriveline();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[161]);
         }
 
         private void button_FKx2_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FK1x2, FormaDesniGlavni.FK2x2, FormaDesniGlavni.FK3x2, FormaDesniGlavni.FK2_1x2, FormaDesniGlavni.FK2_2x2, FormaDesniGlavni.FK2_3x2))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[162]);
+                otvoriTekstDriveline();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[163]);
         }
 
         private void button_FKx3_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FK1x3, FormaDesniGlavni.FK2x3, FormaDesniGlavni.FK3x3, FormaDesniGlavni.FK2_1x3, FormaDesniGlavni.FK2_2x3, FormaDesniGlavni.FK2_3x3))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[164]);
+                otvoriTekstDriveline();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[165]);
         }
 
         private void button_FKx4_Click(object sender, EventArgs e)
         {
             if (provera(FormaDesniGlavni.FK1x4, FormaDesniGlavni.FK2x4, FormaDesniGlavni.FK3x4, FormaDesniGlavni.FK2_1x4, FormaDesniGlavni.FK2_2x4, FormaDesniGlavni.FK2_3x4))
-                MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[166]);
+                otvoriTekstDriveline();
             else MessageBox.Show(FormaDesniGlavni.FormaHomeScreen.jezik[167]);
+        }
+
+        private void otvoriTekstTocak()
+        {
+            if (FormaDesniGlavni.FormaDesniTekstTocak == null)
+            {
+                FormaDesniGlavni.FormaDesniTekstTocak = new Forma_Desni_Tekst_Tocak(FormaDesniGlavni);
+                FormaDesniGlavni.FormaDesniTekstTocak.Owner = FormaDesniGlavni;
+                FormaDesniGlavni.FormaDesniTekstTocak.Show();
+            }
+            else
+            {
+                FormaDesniGlavni.FormaDesniTekstTocak.PanelScrollPos = new Point(0, 0);
+                FormaDesniGlavni.FormaDesniTekstTocak.WindowState = FormWindowState.Normal;
+                FormaDesniGlavni.FormaDesniTekstTocak.Focus();
+            }
+        }
+
+        private void otvoriTekstDriveline()
+        {
+            if(FormaDesniGlavni.FormaDesniTekstDriveline == null)
+            {
+                FormaDesniGlavni.FormaDesniTekstDriveline = new Forma_Desni_Tekst_Driveline(FormaDesniGlavni);
+                FormaDesniGlavni.FormaDesniTekstDriveline.Owner = FormaDesniGlavni;
+                FormaDesniGlavni.FormaDesniTekstDriveline.Show();
+            }
+            else
+            {
+                FormaDesniGlavni.FormaDesniTekstDriveline.PanelScrollPos = new Point(0, 0);
+                FormaDesniGlavni.FormaDesniTekstDriveline.WindowState = FormWindowState.Normal;
+                FormaDesniGlavni.FormaDesniTekstDriveline.Focus();
+            }
         }
 
         #endregion
