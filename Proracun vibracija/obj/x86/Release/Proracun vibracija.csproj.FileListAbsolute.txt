@@ -11,3 +11,4 @@ D:\Nikola\Documents\Visual Studio 2010\Projects\Proracun vibracija\Proracun vibr
 D:\Nikola\Documents\Visual Studio 2010\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Release\Proracun_vibracija.Forma_Centar_Agregat_Glavni.resources
 D:\Nikola\Documents\Visual Studio 2010\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Release\Proracun_vibracija.Forma_Centar_Agregat_Tabela.resources
 D:\Nikola\Documents\Visual Studio 2010\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Release\Proracun vibracija.csprojResolveAssemblyReference.cache
+D:\Nikola\Documents\Visual Studio 2010\Projects\Proracun vibracija\Proracun vibracija\obj\x86\Release\Proracun_vibracija.Forma_Centar_Agregat_Grafik.resources

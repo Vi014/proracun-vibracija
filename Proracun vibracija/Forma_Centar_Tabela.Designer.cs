@@ -81,7 +81,7 @@
             this.label_RPM.Location = new System.Drawing.Point(2, 9);
             this.label_RPM.Name = "label_RPM";
             this.label_RPM.Size = new System.Drawing.Size(44, 20);
-            this.label_RPM.TabIndex = 1;
+            this.label_RPM.TabIndex = 36;
             this.label_RPM.Text = "RPM";
             // 
             // textBox_RPM1
@@ -120,7 +120,7 @@
             this.label_FrMotora.Location = new System.Drawing.Point(2, 47);
             this.label_FrMotora.Name = "label_FrMotora";
             this.label_FrMotora.Size = new System.Drawing.Size(97, 44);
-            this.label_FrMotora.TabIndex = 1;
+            this.label_FrMotora.TabIndex = 36;
             this.label_FrMotora.Text = "Frekvencija motora";
             // 
             // textBox_FM1
@@ -159,7 +159,7 @@
             this.label_FrMotora2.Location = new System.Drawing.Point(3, 89);
             this.label_FrMotora2.Name = "label_FrMotora2";
             this.label_FrMotora2.Size = new System.Drawing.Size(97, 55);
-            this.label_FrMotora2.TabIndex = 1;
+            this.label_FrMotora2.TabIndex = 36;
             this.label_FrMotora2.Text = "Frekvencija motora drugog reda";
             // 
             // textBox_FM12
@@ -198,7 +198,7 @@
             this.label_FrMotora3.Location = new System.Drawing.Point(3, 137);
             this.label_FrMotora3.Name = "label_FrMotora3";
             this.label_FrMotora3.Size = new System.Drawing.Size(97, 55);
-            this.label_FrMotora3.TabIndex = 1;
+            this.label_FrMotora3.TabIndex = 36;
             this.label_FrMotora3.Text = "Frekvencija motora trećeg reda";
             // 
             // textBox_FM13
@@ -237,7 +237,7 @@
             this.label_FrMotora4.Location = new System.Drawing.Point(3, 185);
             this.label_FrMotora4.Name = "label_FrMotora4";
             this.label_FrMotora4.Size = new System.Drawing.Size(97, 55);
-            this.label_FrMotora4.TabIndex = 1;
+            this.label_FrMotora4.TabIndex = 36;
             this.label_FrMotora4.Text = "Frekvencija motora četvrtog reda";
             // 
             // textBox_FM14
@@ -276,7 +276,7 @@
             this.label_FrBregaste.Location = new System.Drawing.Point(3, 233);
             this.label_FrBregaste.Name = "label_FrBregaste";
             this.label_FrBregaste.Size = new System.Drawing.Size(97, 55);
-            this.label_FrBregaste.TabIndex = 1;
+            this.label_FrBregaste.TabIndex = 36;
             this.label_FrBregaste.Text = "Frekvencija bregaste";
             // 
             // textBox_FB1
@@ -315,7 +315,7 @@
             this.label_FrPaljenja.Location = new System.Drawing.Point(3, 281);
             this.label_FrPaljenja.Name = "label_FrPaljenja";
             this.label_FrPaljenja.Size = new System.Drawing.Size(97, 55);
-            this.label_FrPaljenja.TabIndex = 1;
+            this.label_FrPaljenja.TabIndex = 36;
             this.label_FrPaljenja.Text = "Frekvencija paljenja";
             // 
             // textBox_FP1
@@ -354,7 +354,7 @@
             this.label_IzmFrek.Location = new System.Drawing.Point(3, 329);
             this.label_IzmFrek.Name = "label_IzmFrek";
             this.label_IzmFrek.Size = new System.Drawing.Size(97, 55);
-            this.label_IzmFrek.TabIndex = 1;
+            this.label_IzmFrek.TabIndex = 36;
             this.label_IzmFrek.Text = "Izmerene frekvencije";
             // 
             // textBox_F11
@@ -543,7 +543,7 @@
             this.button_FP.Visible = false;
             this.button_FP.Click += new System.EventHandler(this.button_FP_Click);
             // 
-            // Forma_Centar_Tabela_1
+            // Forma_Centar_Tabela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -594,7 +594,7 @@
             this.Controls.Add(this.label_RPM);
             this.Controls.Add(this.label_FrMotora2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Forma_Centar_Tabela_1";
+            this.Name = "Forma_Centar_Tabela";
             this.Text = "PLACEHOLDERSTRING Forma_Centar_Tabela_1.Text";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Forma_Centar_Tabela_1_FormClosed);
             this.Load += new System.EventHandler(this.Forma_Centar_Tabela_1_Load);

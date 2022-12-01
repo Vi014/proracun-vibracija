@@ -11,12 +11,13 @@ namespace Proracun_vibracija
 {
     public partial class Forma_HomeScreen : Form
     {
+        public Forma_Centar_Glavni FormaCentarGlavni;
+        public Forma_Desni_Glavni  FormaDesniGlavni;
+
         public Forma_HomeScreen()
         {
             InitializeComponent();
         }
-
-        public Forma_Centar_Glavni FormaCentarGlavni;
 
         #region Jezik
 
@@ -116,7 +117,52 @@ namespace Proracun_vibracija
                                 "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D3_Click",
                                 "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click",
                                 "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click",
-                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click"
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click",
+
+                                // Forma_Centar_Agregat_Grafik
+                                "PLACEHOLDERSTRING Forma_Centar_Agregat_Grafik.Text",
+                                "Iscrtaj ponovo",
+                                "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV NE ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN",
+                                "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV NE ISPUNJEN",
+                                "D1",
+                                "D2",
+                                "D3",
+                                "D4",
+                                "D5",
+                                "D6",
+                                "D1 - frekvencija alternatora",
+                                "D2 - frekvencija kompresora klime",
+                                "D3 - frekvencija servo volana",
+                                "D4 - frekvencija pumpe za vodu",
+                                "D5 - frekvencija dodatnog agregata 1",
+                                "D6 - frekvencija dodatnog agregata 2",
+
+                                // Forma_Desni_Glavni
+                                "Vibracije vozila",
+                                "Decimale se označavaju tačkom, ne zarezom.",
+                                "Dimenzije pneumatika",
+                                "Širina",
+                                "Visina",
+                                "Prečnik felne",
+                                "Prenosni odnos diferencijala",
+                                "mm",
+                                "%",
+                                "Inča",
+                                "Izmerene vrednosti",
+                                "Brzina vozila (km/h)",
+                                "Frekvencija",
+                                "Izvrši racun"
                                 };
 
         private void PromenaJezika()
@@ -135,8 +181,13 @@ namespace Proracun_vibracija
                 {
                     FormaCentarGlavni.FormaCentarAgregatGlavni.PromenaJezika();
                     if (FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatTabela != null) FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatTabela.PromenaJezika();
-                    // if (FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatGrafik != null) FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatGrafik.PromenaJezika();
+                    if (FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatGrafik != null) FormaCentarGlavni.FormaCentarAgregatGlavni.FormaCentarAgregatGrafik.PromenaJezika();
                 }
+            }
+
+            if (FormaDesniGlavni != null)
+            {
+                FormaDesniGlavni.PromenaJezika();
             }
         }
 
@@ -238,6 +289,51 @@ namespace Proracun_vibracija
             jezik[82]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D4_Click";
             jezik[83]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D5_Click";
             jezik[84]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Tabela.button_D6_Click";
+
+            // Forma_Centar_Agregat_Grafik
+            jezik[85]  = "PLACEHOLDERSTRING Forma_Centar_Agregat_Grafik.Text";
+            jezik[86]  = "Iscrtaj ponovo";
+            jezik[87]  = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornjim i levim ivicama ekrana i pritisnite dugme:";
+            jezik[88]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV ISPUNJEN";
+            jezik[89]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D1_Click USLOV NE ISPUNJEN";
+            jezik[90]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV ISPUNJEN";
+            jezik[91]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D2_Click USLOV NE ISPUNJEN";
+            jezik[92]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV ISPUNJEN";
+            jezik[93]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D3_Click USLOV NE ISPUNJEN";
+            jezik[94]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV ISPUNJEN";
+            jezik[95]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D4_Click USLOV NE ISPUNJEN";
+            jezik[96]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV ISPUNJEN";
+            jezik[97]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D5_Click USLOV NE ISPUNJEN";
+            jezik[98]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV ISPUNJEN";
+            jezik[99]  = "PLACEHOLDERSTRING Forma_Centar_Grafik.button_D6_Click USLOV NE ISPUNJEN";
+            jezik[100] = "D1";
+            jezik[101] = "D2";
+            jezik[102] = "D3";
+            jezik[103] = "D4";
+            jezik[104] = "D5";
+            jezik[105] = "D6";
+            jezik[106] = "D1 - frekvencija alternatora";
+            jezik[107] = "D2 - frekvencija kompresora klime";
+            jezik[108] = "D3 - frekvencija servo volana";
+            jezik[109] = "D4 - frekvencija pumpe za vodu";
+            jezik[110] = "D5 - frekvencija dodatnog agregata 1";
+            jezik[111] = "D6 - frekvencija dodatnog agregata 2";
+
+            // Forma_Desni_Glavni
+            jezik[112] = "Vibracije vozila";
+            jezik[113] = "Decimale se označavaju tačkom, ne zarezom.";
+            jezik[114] = "Dimenzije pneumatika";
+            jezik[115] = "Širina";
+            jezik[116] = "Visina";
+            jezik[117] = "Prečnik felne";
+            jezik[118] = "Prenosni odnos diferencijala";
+            jezik[119] = "mm";
+            jezik[120] = "%";
+            jezik[121] = "Inča";
+            jezik[122] = "Izmerene vrednosti";
+            jezik[123] = "Brzina vozila (km/h)";
+            jezik[124] = "Frekvencija";
+            jezik[125] = "Izvrši racun";
 
             PromenaJezika();
         }
@@ -341,6 +437,51 @@ namespace Proracun_vibracija
             jezik[83]  = "P ID 83";
             jezik[84]  = "P ID 84";
 
+            // Forma_Centar_Agregat_Grafik
+            jezik[85]  = "P ID 85";
+            jezik[86]  = "P ID 86";
+            jezik[87]  = "P ID 87";
+            jezik[88]  = "P ID 88";
+            jezik[89]  = "P ID 89";
+            jezik[90]  = "P ID 90";
+            jezik[91]  = "P ID 91";
+            jezik[92]  = "P ID 92";
+            jezik[93]  = "P ID 93";
+            jezik[94]  = "P ID 94";
+            jezik[95]  = "P ID 95";
+            jezik[96]  = "P ID 96";
+            jezik[97]  = "P ID 97";
+            jezik[98]  = "P ID 98";
+            jezik[99]  = "P ID 99";
+            jezik[100] = "P ID 100";
+            jezik[101] = "P ID 101";
+            jezik[102] = "P ID 102";
+            jezik[103] = "P ID 103";
+            jezik[104] = "P ID 104";
+            jezik[105] = "P ID 105";
+            jezik[106] = "P ID 106";
+            jezik[107] = "P ID 107";
+            jezik[108] = "P ID 108";
+            jezik[109] = "P ID 109";
+            jezik[110] = "P ID 110";
+            jezik[111] = "P ID 111";
+
+            // Forma_Desni_Glavni
+            jezik[112] = "P ID 112";
+            jezik[113] = "P ID 113";
+            jezik[114] = "P ID 114";
+            jezik[115] = "P ID 115";
+            jezik[116] = "P ID 116";
+            jezik[117] = "P ID 117";
+            jezik[118] = "P ID 118";
+            jezik[119] = "P ID 119";
+            jezik[120] = "P ID 120";
+            jezik[121] = "P ID 121";
+            jezik[122] = "P ID 122";
+            jezik[123] = "P ID 123";
+            jezik[124] = "P ID 124";
+            jezik[125] = "P ID 125";
+
             PromenaJezika();
         }
 
@@ -369,6 +510,21 @@ namespace Proracun_vibracija
         {
             get { return dugmeCentar.Enabled;  }
             set { dugmeCentar.Enabled = value; }
+        }
+
+        private void dugmeDesno_Click(object sender, EventArgs e)
+        {
+            FormaDesniGlavni = new Forma_Desni_Glavni(this);
+            FormaDesniGlavni.Owner = this;
+            FormaDesniGlavni.Show();
+
+            dugmeDesno.Enabled = false;
+        }
+
+        public Boolean dugmeDesnoEnabled
+        {
+            get { return dugmeDesno.Enabled;  }
+            set { dugmeDesno.Enabled = value; }
         }
     }
 }

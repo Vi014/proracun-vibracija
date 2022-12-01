@@ -59,7 +59,7 @@
             this.label_UnosPodataka.Location = new System.Drawing.Point(62, 9);
             this.label_UnosPodataka.Name = "label_UnosPodataka";
             this.label_UnosPodataka.Size = new System.Drawing.Size(118, 20);
-            this.label_UnosPodataka.TabIndex = 0;
+            this.label_UnosPodataka.TabIndex = 17;
             this.label_UnosPodataka.Text = "Unos podataka";
             // 
             // label_RPM
@@ -69,7 +69,7 @@
             this.label_RPM.Location = new System.Drawing.Point(27, 50);
             this.label_RPM.Name = "label_RPM";
             this.label_RPM.Size = new System.Drawing.Size(44, 20);
-            this.label_RPM.TabIndex = 0;
+            this.label_RPM.TabIndex = 17;
             this.label_RPM.Text = "RPM";
             // 
             // textBox_RPM1
@@ -106,7 +106,7 @@
             this.label_IzmFrek.Location = new System.Drawing.Point(136, 50);
             this.label_IzmFrek.Name = "label_IzmFrek";
             this.label_IzmFrek.Size = new System.Drawing.Size(155, 20);
-            this.label_IzmFrek.TabIndex = 0;
+            this.label_IzmFrek.TabIndex = 17;
             this.label_IzmFrek.Text = "Izmerena frekvencija";
             // 
             // textBox_F11
@@ -197,7 +197,7 @@
             this.label_BrojCilindara.Location = new System.Drawing.Point(27, 215);
             this.label_BrojCilindara.Name = "label_BrojCilindara";
             this.label_BrojCilindara.Size = new System.Drawing.Size(99, 20);
-            this.label_BrojCilindara.TabIndex = 0;
+            this.label_BrojCilindara.TabIndex = 17;
             this.label_BrojCilindara.Text = "Broj cilindara";
             // 
             // button_Tabela
@@ -262,7 +262,7 @@
             this.label_Upozorenje.Location = new System.Drawing.Point(28, 32);
             this.label_Upozorenje.Name = "label_Upozorenje";
             this.label_Upozorenje.Size = new System.Drawing.Size(315, 18);
-            this.label_Upozorenje.TabIndex = 16;
+            this.label_Upozorenje.TabIndex = 17;
             this.label_Upozorenje.Text = "Decimale se označavaju tačkom, ne zarezom.";
             // 
             // button_Agregat
@@ -271,7 +271,7 @@
             this.button_Agregat.Location = new System.Drawing.Point(214, 257);
             this.button_Agregat.Name = "button_Agregat";
             this.button_Agregat.Size = new System.Drawing.Size(128, 23);
-            this.button_Agregat.TabIndex = 13;
+            this.button_Agregat.TabIndex = 16;
             this.button_Agregat.Text = "Vibracije agregata";
             this.button_Agregat.UseVisualStyleBackColor = true;
             this.button_Agregat.Click += new System.EventHandler(this.button_Agregat_Click);

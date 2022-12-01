@@ -100,6 +100,7 @@
             this.dugmeDesno.TabIndex = 5;
             this.dugmeDesno.Text = "Auto";
             this.dugmeDesno.UseVisualStyleBackColor = true;
+            this.dugmeDesno.Click += new System.EventHandler(this.dugmeDesno_Click);
             // 
             // pictureBox1
             // 

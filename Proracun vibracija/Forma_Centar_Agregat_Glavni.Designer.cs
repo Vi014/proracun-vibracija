@@ -75,7 +75,7 @@
             this.label2.Location = new System.Drawing.Point(7, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 20);
-            this.label2.TabIndex = 8;
+            this.label2.TabIndex = 10;
             this.label2.Text = "Prečnik remenice alternatora";
             // 
             // label1
@@ -85,7 +85,7 @@
             this.label1.Location = new System.Drawing.Point(7, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 20);
-            this.label1.TabIndex = 7;
+            this.label1.TabIndex = 10;
             this.label1.Text = "Prečnik remenice radilice";
             // 
             // label3
@@ -95,7 +95,7 @@
             this.label3.Location = new System.Drawing.Point(7, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(258, 20);
-            this.label3.TabIndex = 8;
+            this.label3.TabIndex = 10;
             this.label3.Text = "Prečnik remenice kompresora klime";
             // 
             // textBox_D2
@@ -115,7 +115,7 @@
             this.label4.Location = new System.Drawing.Point(7, 154);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(222, 20);
-            this.label4.TabIndex = 8;
+            this.label4.TabIndex = 10;
             this.label4.Text = "Prečnik remenice servo volana";
             // 
             // textBox_D3
@@ -145,7 +145,7 @@
             this.label6.Location = new System.Drawing.Point(7, 230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(283, 20);
-            this.label6.TabIndex = 8;
+            this.label6.TabIndex = 10;
             this.label6.Text = "Prečnik remenice dodatnog agregata 1";
             // 
             // textBox_D5
@@ -165,7 +165,7 @@
             this.label5.Location = new System.Drawing.Point(7, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 20);
-            this.label5.TabIndex = 8;
+            this.label5.TabIndex = 10;
             this.label5.Text = "Prečnik remenice pumpe za vodu";
             // 
             // label7
@@ -175,7 +175,7 @@
             this.label7.Location = new System.Drawing.Point(7, 268);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(283, 20);
-            this.label7.TabIndex = 8;
+            this.label7.TabIndex = 10;
             this.label7.Text = "Prečnik remenice dodatnog agregata 2";
             // 
             // textBox_D6
@@ -206,8 +206,9 @@
             this.button_Grafik.Location = new System.Drawing.Point(328, 335);
             this.button_Grafik.Name = "button_Grafik";
             this.button_Grafik.Size = new System.Drawing.Size(54, 23);
-            this.button_Grafik.TabIndex = 17;
+            this.button_Grafik.TabIndex = 9;
             this.button_Grafik.UseVisualStyleBackColor = true;
+            this.button_Grafik.Click += new System.EventHandler(this.button_Grafik_Click);
             // 
             // button_Tabela
             // 
@@ -217,7 +218,7 @@
             this.button_Tabela.Location = new System.Drawing.Point(254, 335);
             this.button_Tabela.Name = "button_Tabela";
             this.button_Tabela.Size = new System.Drawing.Size(54, 23);
-            this.button_Tabela.TabIndex = 16;
+            this.button_Tabela.TabIndex = 8;
             this.button_Tabela.UseVisualStyleBackColor = true;
             this.button_Tabela.Click += new System.EventHandler(this.button_Tabela_Click);
             // 
@@ -228,7 +229,7 @@
             this.label_Upozorenje.Location = new System.Drawing.Point(7, 9);
             this.label_Upozorenje.Name = "label_Upozorenje";
             this.label_Upozorenje.Size = new System.Drawing.Size(375, 18);
-            this.label_Upozorenje.TabIndex = 18;
+            this.label_Upozorenje.TabIndex = 10;
             this.label_Upozorenje.Text = "Decimale se označavaju tačkom, ne zarezom.";
             // 
             // Forma_Centar_Agregat_Glavni

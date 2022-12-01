@@ -13,6 +13,7 @@ namespace Proracun_vibracija
     {
         public Forma_Centar_Glavni         FormaCentarGlavni;
         public Forma_Centar_Agregat_Tabela FormaCentarAgregatTabela;
+        public Forma_Centar_Agregat_Grafik FormaCentarAgregatGrafik;
 
         public Forma_Centar_Agregat_Glavni(Forma_Centar_Glavni konstruktor)
         {
@@ -397,7 +398,7 @@ namespace Proracun_vibracija
             #endregion
 
             if (FormaCentarAgregatTabela != null) FormaCentarAgregatTabela.IspisVrednosti();
-            // if (FormaCentarAgregatGrafik != null) FormaCentarAgregatGrafik.Racun();
+            if (FormaCentarAgregatGrafik != null) FormaCentarAgregatGrafik.Racun();
         }
 
         #endregion
@@ -422,7 +423,7 @@ namespace Proracun_vibracija
                     Konvertovanje();
                     Racun();
                     if (!aktivirano) aktivirano = true;
-                    if (FormaCentarAgregatTabela == null /* && FormaCentarAgregatGrafik == null */) button_Tabela.Enabled = button_Grafik.Enabled = true;
+                    if (FormaCentarAgregatTabela == null && FormaCentarAgregatGrafik == null) button_Tabela.Enabled = button_Grafik.Enabled = true;
                 }
                 else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[68]);
             }
@@ -442,6 +443,21 @@ namespace Proracun_vibracija
         {
             get { return button_Tabela.Enabled;  }
             set { button_Tabela.Enabled = value; }
+        }
+
+        private void button_Grafik_Click(object sender, EventArgs e)
+        {
+            FormaCentarAgregatGrafik = new Forma_Centar_Agregat_Grafik(this);
+            FormaCentarAgregatGrafik.Owner = this;
+            FormaCentarAgregatGrafik.Show();
+
+            button_Grafik.Enabled = false;
+        }
+
+        public Boolean buttonGrafikEnabled
+        {
+            get { return button_Grafik.Enabled;  }
+            set { button_Grafik.Enabled = value; }
         }
     }
 }

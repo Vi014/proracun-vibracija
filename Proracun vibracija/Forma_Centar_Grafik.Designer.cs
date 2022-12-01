@@ -208,7 +208,7 @@
             this.button1.Location = new System.Drawing.Point(1263, 520);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 75);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 12;
             this.button1.Text = "Iscrtaj ponovo";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.PozoviIscrtajGrafik);
@@ -218,7 +218,7 @@
             this.label1.Location = new System.Drawing.Point(1260, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 352);
-            this.label1.TabIndex = 15;
+            this.label1.TabIndex = 14;
             this.label1.Text = "U slučaju da koordinatni sistem nije pravilno iscrtan, poravnajte prozor sa gornj" +
                 "im i levim ivicama ekrana i pritisnite dugme:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;

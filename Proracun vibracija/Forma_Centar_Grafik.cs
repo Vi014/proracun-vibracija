@@ -192,7 +192,7 @@ namespace Proracun_vibracija
         private void IscrtajGrafik()
         {
             g.Clear(Color.White);
-            g.DrawImage(Properties.Resources.placeholder, panel1.Width / 2 - Properties.Resources.placeholder.Width / 2, panel1.Height / 2 - Properties.Resources.placeholder.Height / 2);
+            // g.DrawImage(Properties.Resources.placeholder, panel1.Width / 2 - Properties.Resources.placeholder.Width / 2, panel1.Height / 2 - Properties.Resources.placeholder.Height / 2);
 
             g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[51], osaFont, cetkaL1, centarX + 30, 0);
             g.DrawString(FormaCentarGlavni.FormaHomeScreen.jezik[52], osaFont, cetkaL2, centarX + 30, 15);
@@ -253,7 +253,7 @@ namespace Proracun_vibracija
                 if (FormaCentarGlavni.F33 != 0) g.DrawString("X", font, cetkaError, (centarX + Convert.ToInt32(FormaCentarGlavni.RPM3 * konverzijaX) - 10), (centarY - Convert.ToInt32(FormaCentarGlavni.F33 * konverzijaY) - 6));
             }
 
-
+            #region checkboxovi
 
             if (checkBox_L1.Checked)
             {
@@ -308,12 +308,16 @@ namespace Proracun_vibracija
 
                 g.DrawLine(p_L6, centarX, centarY, (centarX + Convert.ToInt32(Xmax * konverzijaX)), (centarY - Convert.ToInt32(y * konverzijaY)));
             }
+
+            #endregion
         }
 
         private void PozoviIscrtajGrafik(object sender, EventArgs e)
         {
             IscrtajGrafik();
         }
+
+        #region dugmici sa znakom pitanja
 
         private void button_FM_Click(object sender, EventArgs e)
         {
@@ -416,5 +420,7 @@ namespace Proracun_vibracija
                  MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[43]);
             else MessageBox.Show(FormaCentarGlavni.FormaHomeScreen.jezik[44]);
         }
+
+        #endregion
     }
 }
