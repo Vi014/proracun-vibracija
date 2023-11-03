@@ -35,6 +35,7 @@ namespace Proracun_vibracija
             label6.Text           = FormaCentarGlavni.FormaHomeScreen.Jezik[64];
             label7.Text           = FormaCentarGlavni.FormaHomeScreen.Jezik[65];
             button_Racun.Text     = FormaCentarGlavni.FormaHomeScreen.Jezik[66];
+            label_PR.Text = FormaCentarGlavni.FormaHomeScreen.Jezik[510];
         }
 
         private void Forma_Centar_Agregat_Glavni_Load(object sender, EventArgs e)

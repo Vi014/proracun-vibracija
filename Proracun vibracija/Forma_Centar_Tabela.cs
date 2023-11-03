@@ -32,6 +32,7 @@ namespace Proracun_vibracija
             label_FrBregaste.Text = FormaCentarGlavni.FormaHomeScreen.Jezik[21];
             label_FrPaljenja.Text = FormaCentarGlavni.FormaHomeScreen.Jezik[22];
             label_IzmFrek.Text    = FormaCentarGlavni.FormaHomeScreen.Jezik[23];
+            label_FM.Text         = FormaCentarGlavni.FormaHomeScreen.Jezik[509];
         }
 
         private void Forma_Centar_Tabela_1_Load(object sender, EventArgs e)

@@ -49,13 +49,14 @@
             this.button_Tabela = new System.Windows.Forms.Button();
             this.label_Upozorenje = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label_PR = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox_D1
             // 
             this.textBox_D1.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D1.Location = new System.Drawing.Point(325, 78);
+            this.textBox_D1.Location = new System.Drawing.Point(328, 105);
             this.textBox_D1.Name = "textBox_D1";
             this.textBox_D1.Size = new System.Drawing.Size(54, 20);
             this.textBox_D1.TabIndex = 1;
@@ -65,7 +66,7 @@
             // textBox_DR
             // 
             this.textBox_DR.ForeColor = System.Drawing.Color.Black;
-            this.textBox_DR.Location = new System.Drawing.Point(325, 40);
+            this.textBox_DR.Location = new System.Drawing.Point(328, 67);
             this.textBox_DR.Name = "textBox_DR";
             this.textBox_DR.Size = new System.Drawing.Size(54, 20);
             this.textBox_DR.TabIndex = 0;
@@ -76,36 +77,36 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 78);
+            this.label2.Location = new System.Drawing.Point(7, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 20);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Prečnik remenice alternatora";
+            this.label2.Text = "Alternatora";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 40);
+            this.label1.Location = new System.Drawing.Point(7, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 20);
+            this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Prečnik remenice radilice";
+            this.label1.Text = "Radilice";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 116);
+            this.label3.Location = new System.Drawing.Point(7, 143);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(258, 20);
+            this.label3.Size = new System.Drawing.Size(135, 20);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Prečnik remenice kompresora klime";
+            this.label3.Text = "Kompresora klime";
             // 
             // textBox_D2
             // 
             this.textBox_D2.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D2.Location = new System.Drawing.Point(325, 116);
+            this.textBox_D2.Location = new System.Drawing.Point(328, 143);
             this.textBox_D2.Name = "textBox_D2";
             this.textBox_D2.Size = new System.Drawing.Size(54, 20);
             this.textBox_D2.TabIndex = 2;
@@ -116,16 +117,16 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 154);
+            this.label4.Location = new System.Drawing.Point(7, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 20);
+            this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Prečnik remenice servo volana";
+            this.label4.Text = "Servo volana";
             // 
             // textBox_D3
             // 
             this.textBox_D3.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D3.Location = new System.Drawing.Point(325, 154);
+            this.textBox_D3.Location = new System.Drawing.Point(328, 181);
             this.textBox_D3.Name = "textBox_D3";
             this.textBox_D3.Size = new System.Drawing.Size(54, 20);
             this.textBox_D3.TabIndex = 3;
@@ -135,7 +136,7 @@
             // textBox_D4
             // 
             this.textBox_D4.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D4.Location = new System.Drawing.Point(325, 192);
+            this.textBox_D4.Location = new System.Drawing.Point(328, 219);
             this.textBox_D4.Name = "textBox_D4";
             this.textBox_D4.Size = new System.Drawing.Size(54, 20);
             this.textBox_D4.TabIndex = 4;
@@ -146,16 +147,16 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 230);
+            this.label6.Location = new System.Drawing.Point(7, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(283, 20);
+            this.label6.Size = new System.Drawing.Size(161, 20);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Prečnik remenice dodatnog agregata 1";
+            this.label6.Text = "Dodatnog agregata 1";
             // 
             // textBox_D5
             // 
             this.textBox_D5.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D5.Location = new System.Drawing.Point(325, 230);
+            this.textBox_D5.Location = new System.Drawing.Point(328, 257);
             this.textBox_D5.Name = "textBox_D5";
             this.textBox_D5.Size = new System.Drawing.Size(54, 20);
             this.textBox_D5.TabIndex = 5;
@@ -166,26 +167,26 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 192);
+            this.label5.Location = new System.Drawing.Point(7, 219);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(242, 20);
+            this.label5.Size = new System.Drawing.Size(118, 20);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Prečnik remenice pumpe za vodu";
+            this.label5.Text = "Pumpe za vodu";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 268);
+            this.label7.Location = new System.Drawing.Point(7, 295);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(283, 20);
+            this.label7.Size = new System.Drawing.Size(161, 20);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Prečnik remenice dodatnog agregata 2";
+            this.label7.Text = "Dodatnog agregata 2";
             // 
             // textBox_D6
             // 
             this.textBox_D6.ForeColor = System.Drawing.Color.Black;
-            this.textBox_D6.Location = new System.Drawing.Point(325, 268);
+            this.textBox_D6.Location = new System.Drawing.Point(328, 295);
             this.textBox_D6.Name = "textBox_D6";
             this.textBox_D6.Size = new System.Drawing.Size(54, 20);
             this.textBox_D6.TabIndex = 6;
@@ -194,7 +195,7 @@
             // 
             // button_Racun
             // 
-            this.button_Racun.Location = new System.Drawing.Point(251, 306);
+            this.button_Racun.Location = new System.Drawing.Point(254, 321);
             this.button_Racun.Name = "button_Racun";
             this.button_Racun.Size = new System.Drawing.Size(128, 23);
             this.button_Racun.TabIndex = 7;
@@ -207,7 +208,7 @@
             this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.graph;
             this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Grafik.Enabled = false;
-            this.button_Grafik.Location = new System.Drawing.Point(325, 335);
+            this.button_Grafik.Location = new System.Drawing.Point(328, 347);
             this.button_Grafik.Name = "button_Grafik";
             this.button_Grafik.Size = new System.Drawing.Size(54, 23);
             this.button_Grafik.TabIndex = 9;
@@ -219,7 +220,7 @@
             this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.tabela;
             this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Tabela.Enabled = false;
-            this.button_Tabela.Location = new System.Drawing.Point(251, 335);
+            this.button_Tabela.Location = new System.Drawing.Point(268, 347);
             this.button_Tabela.Name = "button_Tabela";
             this.button_Tabela.Size = new System.Drawing.Size(54, 23);
             this.button_Tabela.TabIndex = 8;
@@ -240,12 +241,22 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label_PR
+            // 
+            this.label_PR.AutoSize = true;
+            this.label_PR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_PR.Location = new System.Drawing.Point(7, 33);
+            this.label_PR.Name = "label_PR";
+            this.label_PR.Size = new System.Drawing.Size(130, 20);
+            this.label_PR.TabIndex = 10;
+            this.label_PR.Text = "Prečnik remenice";
+            // 
             // Forma_Centar_Agregat_Glavni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 367);
+            this.ClientSize = new System.Drawing.Size(390, 377);
             this.Controls.Add(this.label_Upozorenje);
             this.Controls.Add(this.button_Grafik);
             this.Controls.Add(this.button_Tabela);
@@ -262,6 +273,7 @@
             this.Controls.Add(this.textBox_DR);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label_PR);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Racun);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -298,5 +310,6 @@
         private System.Windows.Forms.Button button_Tabela;
         private System.Windows.Forms.Label label_Upozorenje;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label_PR;
     }
 }
