@@ -349,44 +349,40 @@
             // 
             // label_FTx1
             // 
-            this.label_FTx1.AutoSize = true;
             this.label_FTx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FTx1.Location = new System.Drawing.Point(95, 75);
+            this.label_FTx1.Location = new System.Drawing.Point(6, 75);
             this.label_FTx1.Name = "label_FTx1";
-            this.label_FTx1.Size = new System.Drawing.Size(85, 20);
+            this.label_FTx1.Size = new System.Drawing.Size(174, 20);
             this.label_FTx1.TabIndex = 68;
             this.label_FTx1.Text = "Prvog reda";
             this.label_FTx1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FTx2
             // 
-            this.label_FTx2.AutoSize = true;
             this.label_FTx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FTx2.Location = new System.Drawing.Point(82, 108);
+            this.label_FTx2.Location = new System.Drawing.Point(12, 108);
             this.label_FTx2.Name = "label_FTx2";
-            this.label_FTx2.Size = new System.Drawing.Size(98, 20);
+            this.label_FTx2.Size = new System.Drawing.Size(168, 20);
             this.label_FTx2.TabIndex = 68;
             this.label_FTx2.Text = "Drugog reda";
             this.label_FTx2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FTx3
             // 
-            this.label_FTx3.AutoSize = true;
             this.label_FTx3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FTx3.Location = new System.Drawing.Point(86, 141);
+            this.label_FTx3.Location = new System.Drawing.Point(10, 141);
             this.label_FTx3.Name = "label_FTx3";
-            this.label_FTx3.Size = new System.Drawing.Size(94, 20);
+            this.label_FTx3.Size = new System.Drawing.Size(170, 20);
             this.label_FTx3.TabIndex = 68;
             this.label_FTx3.Text = "Trećeg reda";
             this.label_FTx3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FTx4
             // 
-            this.label_FTx4.AutoSize = true;
             this.label_FTx4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FTx4.Location = new System.Drawing.Point(75, 174);
+            this.label_FTx4.Location = new System.Drawing.Point(16, 174);
             this.label_FTx4.Name = "label_FTx4";
-            this.label_FTx4.Size = new System.Drawing.Size(105, 20);
+            this.label_FTx4.Size = new System.Drawing.Size(164, 20);
             this.label_FTx4.TabIndex = 68;
             this.label_FTx4.Text = "Četvrtog reda";
             this.label_FTx4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -403,44 +399,40 @@
             // 
             // label_FKx1
             // 
-            this.label_FKx1.AutoSize = true;
             this.label_FKx1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FKx1.Location = new System.Drawing.Point(95, 240);
+            this.label_FKx1.Location = new System.Drawing.Point(6, 240);
             this.label_FKx1.Name = "label_FKx1";
-            this.label_FKx1.Size = new System.Drawing.Size(85, 20);
+            this.label_FKx1.Size = new System.Drawing.Size(174, 20);
             this.label_FKx1.TabIndex = 68;
             this.label_FKx1.Text = "Prvog reda";
             this.label_FKx1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FKx2
             // 
-            this.label_FKx2.AutoSize = true;
             this.label_FKx2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FKx2.Location = new System.Drawing.Point(82, 273);
+            this.label_FKx2.Location = new System.Drawing.Point(12, 273);
             this.label_FKx2.Name = "label_FKx2";
-            this.label_FKx2.Size = new System.Drawing.Size(98, 20);
+            this.label_FKx2.Size = new System.Drawing.Size(168, 20);
             this.label_FKx2.TabIndex = 68;
             this.label_FKx2.Text = "Drugog reda";
             this.label_FKx2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FKx3
             // 
-            this.label_FKx3.AutoSize = true;
             this.label_FKx3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FKx3.Location = new System.Drawing.Point(86, 306);
+            this.label_FKx3.Location = new System.Drawing.Point(10, 306);
             this.label_FKx3.Name = "label_FKx3";
-            this.label_FKx3.Size = new System.Drawing.Size(94, 20);
+            this.label_FKx3.Size = new System.Drawing.Size(170, 20);
             this.label_FKx3.TabIndex = 68;
             this.label_FKx3.Text = "Trećeg reda";
             this.label_FKx3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label_FKx4
             // 
-            this.label_FKx4.AutoSize = true;
             this.label_FKx4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_FKx4.Location = new System.Drawing.Point(75, 339);
+            this.label_FKx4.Location = new System.Drawing.Point(16, 339);
             this.label_FKx4.Name = "label_FKx4";
-            this.label_FKx4.Size = new System.Drawing.Size(105, 20);
+            this.label_FKx4.Size = new System.Drawing.Size(164, 20);
             this.label_FKx4.TabIndex = 68;
             this.label_FKx4.Text = "Četvrtog reda";
             this.label_FKx4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

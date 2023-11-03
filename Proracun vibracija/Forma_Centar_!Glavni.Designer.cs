@@ -71,7 +71,7 @@
             // 
             this.label_RPM.AutoSize = true;
             this.label_RPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_RPM.Location = new System.Drawing.Point(27, 87);
+            this.label_RPM.Location = new System.Drawing.Point(27, 56);
             this.label_RPM.Name = "label_RPM";
             this.label_RPM.Size = new System.Drawing.Size(44, 20);
             this.label_RPM.TabIndex = 17;
@@ -79,7 +79,7 @@
             // 
             // textBox_RPM1
             // 
-            this.textBox_RPM1.Location = new System.Drawing.Point(31, 123);
+            this.textBox_RPM1.Location = new System.Drawing.Point(31, 92);
             this.textBox_RPM1.Name = "textBox_RPM1";
             this.textBox_RPM1.Size = new System.Drawing.Size(54, 20);
             this.textBox_RPM1.TabIndex = 0;
@@ -88,7 +88,7 @@
             // 
             // textBox_RPM2
             // 
-            this.textBox_RPM2.Location = new System.Drawing.Point(31, 165);
+            this.textBox_RPM2.Location = new System.Drawing.Point(31, 134);
             this.textBox_RPM2.Name = "textBox_RPM2";
             this.textBox_RPM2.Size = new System.Drawing.Size(54, 20);
             this.textBox_RPM2.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             // textBox_RPM3
             // 
-            this.textBox_RPM3.Location = new System.Drawing.Point(31, 207);
+            this.textBox_RPM3.Location = new System.Drawing.Point(31, 176);
             this.textBox_RPM3.Name = "textBox_RPM3";
             this.textBox_RPM3.Size = new System.Drawing.Size(54, 20);
             this.textBox_RPM3.TabIndex = 8;
@@ -108,7 +108,7 @@
             // 
             this.label_IzmFrek.AutoSize = true;
             this.label_IzmFrek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_IzmFrek.Location = new System.Drawing.Point(136, 87);
+            this.label_IzmFrek.Location = new System.Drawing.Point(136, 56);
             this.label_IzmFrek.Name = "label_IzmFrek";
             this.label_IzmFrek.Size = new System.Drawing.Size(155, 20);
             this.label_IzmFrek.TabIndex = 17;
@@ -116,7 +116,7 @@
             // 
             // textBox_F11
             // 
-            this.textBox_F11.Location = new System.Drawing.Point(140, 123);
+            this.textBox_F11.Location = new System.Drawing.Point(140, 92);
             this.textBox_F11.Name = "textBox_F11";
             this.textBox_F11.Size = new System.Drawing.Size(54, 20);
             this.textBox_F11.TabIndex = 1;
@@ -125,7 +125,7 @@
             // 
             // textBox_F21
             // 
-            this.textBox_F21.Location = new System.Drawing.Point(140, 165);
+            this.textBox_F21.Location = new System.Drawing.Point(140, 134);
             this.textBox_F21.Name = "textBox_F21";
             this.textBox_F21.Size = new System.Drawing.Size(54, 20);
             this.textBox_F21.TabIndex = 5;
@@ -134,7 +134,7 @@
             // 
             // textBox_F31
             // 
-            this.textBox_F31.Location = new System.Drawing.Point(140, 207);
+            this.textBox_F31.Location = new System.Drawing.Point(140, 176);
             this.textBox_F31.Name = "textBox_F31";
             this.textBox_F31.Size = new System.Drawing.Size(54, 20);
             this.textBox_F31.TabIndex = 9;
@@ -143,7 +143,7 @@
             // 
             // textBox_F12
             // 
-            this.textBox_F12.Location = new System.Drawing.Point(223, 123);
+            this.textBox_F12.Location = new System.Drawing.Point(223, 92);
             this.textBox_F12.Name = "textBox_F12";
             this.textBox_F12.Size = new System.Drawing.Size(54, 20);
             this.textBox_F12.TabIndex = 2;
@@ -152,7 +152,7 @@
             // 
             // textBox_F22
             // 
-            this.textBox_F22.Location = new System.Drawing.Point(223, 165);
+            this.textBox_F22.Location = new System.Drawing.Point(223, 134);
             this.textBox_F22.Name = "textBox_F22";
             this.textBox_F22.Size = new System.Drawing.Size(54, 20);
             this.textBox_F22.TabIndex = 6;
@@ -161,7 +161,7 @@
             // 
             // textBox_F32
             // 
-            this.textBox_F32.Location = new System.Drawing.Point(223, 207);
+            this.textBox_F32.Location = new System.Drawing.Point(223, 176);
             this.textBox_F32.Name = "textBox_F32";
             this.textBox_F32.Size = new System.Drawing.Size(54, 20);
             this.textBox_F32.TabIndex = 10;
@@ -170,7 +170,7 @@
             // 
             // textBox_F13
             // 
-            this.textBox_F13.Location = new System.Drawing.Point(307, 123);
+            this.textBox_F13.Location = new System.Drawing.Point(307, 92);
             this.textBox_F13.Name = "textBox_F13";
             this.textBox_F13.Size = new System.Drawing.Size(54, 20);
             this.textBox_F13.TabIndex = 3;
@@ -179,7 +179,7 @@
             // 
             // textBox_F23
             // 
-            this.textBox_F23.Location = new System.Drawing.Point(307, 165);
+            this.textBox_F23.Location = new System.Drawing.Point(307, 134);
             this.textBox_F23.Name = "textBox_F23";
             this.textBox_F23.Size = new System.Drawing.Size(54, 20);
             this.textBox_F23.TabIndex = 7;
@@ -188,7 +188,7 @@
             // 
             // textBox_F33
             // 
-            this.textBox_F33.Location = new System.Drawing.Point(307, 207);
+            this.textBox_F33.Location = new System.Drawing.Point(307, 176);
             this.textBox_F33.Name = "textBox_F33";
             this.textBox_F33.Size = new System.Drawing.Size(54, 20);
             this.textBox_F33.TabIndex = 11;
@@ -199,7 +199,7 @@
             // 
             this.label_BrojCilindara.AutoSize = true;
             this.label_BrojCilindara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_BrojCilindara.Location = new System.Drawing.Point(27, 252);
+            this.label_BrojCilindara.Location = new System.Drawing.Point(27, 221);
             this.label_BrojCilindara.Name = "label_BrojCilindara";
             this.label_BrojCilindara.Size = new System.Drawing.Size(99, 20);
             this.label_BrojCilindara.TabIndex = 17;
@@ -210,7 +210,7 @@
             this.button_Tabela.BackgroundImage = global::Proracun_vibracija.Properties.Resources.tabela;
             this.button_Tabela.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Tabela.Enabled = false;
-            this.button_Tabela.Location = new System.Drawing.Point(223, 316);
+            this.button_Tabela.Location = new System.Drawing.Point(223, 285);
             this.button_Tabela.Name = "button_Tabela";
             this.button_Tabela.Size = new System.Drawing.Size(65, 65);
             this.button_Tabela.TabIndex = 14;
@@ -222,7 +222,7 @@
             this.button_Grafik.BackgroundImage = global::Proracun_vibracija.Properties.Resources.graph;
             this.button_Grafik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button_Grafik.Enabled = false;
-            this.button_Grafik.Location = new System.Drawing.Point(296, 316);
+            this.button_Grafik.Location = new System.Drawing.Point(296, 285);
             this.button_Grafik.Name = "button_Grafik";
             this.button_Grafik.Size = new System.Drawing.Size(65, 65);
             this.button_Grafik.TabIndex = 15;
@@ -231,7 +231,7 @@
             // 
             // button_Racun
             // 
-            this.button_Racun.Location = new System.Drawing.Point(223, 287);
+            this.button_Racun.Location = new System.Drawing.Point(223, 256);
             this.button_Racun.Name = "button_Racun";
             this.button_Racun.Size = new System.Drawing.Size(138, 23);
             this.button_Racun.TabIndex = 13;
@@ -256,7 +256,7 @@
             "10",
             "11",
             "12"});
-            this.comboBox_BrojCilindara.Location = new System.Drawing.Point(140, 251);
+            this.comboBox_BrojCilindara.Location = new System.Drawing.Point(140, 220);
             this.comboBox_BrojCilindara.Name = "comboBox_BrojCilindara";
             this.comboBox_BrojCilindara.Size = new System.Drawing.Size(54, 21);
             this.comboBox_BrojCilindara.TabIndex = 12;
@@ -273,7 +273,7 @@
             // button_Agregat
             // 
             this.button_Agregat.Enabled = false;
-            this.button_Agregat.Location = new System.Drawing.Point(223, 386);
+            this.button_Agregat.Location = new System.Drawing.Point(223, 355);
             this.button_Agregat.Name = "button_Agregat";
             this.button_Agregat.Size = new System.Drawing.Size(138, 23);
             this.button_Agregat.TabIndex = 16;
@@ -287,11 +287,13 @@
             // 
             // comboBox_Preset
             // 
+            this.comboBox_Preset.Enabled = false;
             this.comboBox_Preset.FormattingEnabled = true;
             this.comboBox_Preset.Location = new System.Drawing.Point(140, 55);
             this.comboBox_Preset.Name = "comboBox_Preset";
             this.comboBox_Preset.Size = new System.Drawing.Size(221, 21);
             this.comboBox_Preset.TabIndex = 18;
+            this.comboBox_Preset.Visible = false;
             this.comboBox_Preset.SelectedIndexChanged += new System.EventHandler(this.comboBox_Preset_SelectedIndexChanged);
             // 
             // Forma_Centar_Glavni
@@ -299,8 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(380, 417);
-            this.Controls.Add(this.comboBox_Preset);
+            this.ClientSize = new System.Drawing.Size(370, 382);
             this.Controls.Add(this.label_Upozorenje);
             this.Controls.Add(this.comboBox_BrojCilindara);
             this.Controls.Add(this.button_Agregat);
@@ -323,6 +324,7 @@
             this.Controls.Add(this.label_IzmFrek);
             this.Controls.Add(this.label_RPM);
             this.Controls.Add(this.label_UnosPodataka);
+            this.Controls.Add(this.comboBox_Preset);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
